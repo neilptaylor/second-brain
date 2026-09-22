@@ -16,13 +16,14 @@ The last three were frozen only after merging Drive content the repo was missing
 - `linkedin-engagement` gained the North Star v2 engagement allocation, 12 lines. The 30/30/30/10 split, plus owning your own comment section for 30 minutes.
 - `linkedin-post` gained the carousel delivery spec, 10 lines. List posts always ship with a carousel, rendered to PNGs and a combined PDF, never left as a sidebar artifact.
 
-## Not frozen, 7 skills, diverged both ways
+## Not frozen, 6 skills, diverged both ways
 
 Each of these has content in Drive the repo lacks AND content in the repo that Drive lacks. They need a human call, not a merge script.
 
+`new-client` was resolved on 22 September, see below. Six remain.
+
 | Skill | Drive-only lines | Repo-only lines | Note |
 |---|---|---|---|
-| new-client | 122 | 15 | Biggest gap. Drive has tier folder rules (Bronze is 3 folders, never a 4th Wrap Up, learned from the Kumar build), Airtable pipeline logging, and Music Tracker logging. All in Bronze/Silver/Gold language that predates the A to D ladder. |
 | editor-briefing | 240 | 288 | Both sides heavily edited. |
 | mmom-podcast-pr | 14 | 58 | Repo mostly ahead. |
 | form-response-to-doc | 14 | 28 | Repo mostly ahead. |
@@ -34,6 +35,21 @@ Each of these has content in Drive the repo lacks AND content in the repo that D
 
 `morning`, `onboarding-complete`. Nothing to do.
 
+## new-client, resolved 22 September
+
+All 15 repo-only lines turned out to be pre-edit originals of lines Drive had modified, so Drive was a clean superset. Taken wholesale, then retranslated from tiers to options. The repo gained three logging steps it never had: Airtable Editor Pipeline rows, the Production Tracker Sheet, and the Music Selection Tracker Sheet.
+
+Tier to option translation, confirmed with Neil:
+
+| Option | Children chapters | Wrap Up | Folders |
+|---|---|---|---|
+| A | none | no | 3 |
+| B | 1, the buying child | yes | 5 |
+| C | 1 shared, `Ch1. Us & [Old Man/Mum]` | yes | 5 |
+| D | one per child | yes | 4 + one per child |
+
+The old rule said "Bronze has no children chapters". That was wrong under the new ladder, because it covered both A and B, and B does interview the buying child. Option A is now the only option with no Wrap Up.
+
 ## Next
 
-Work through the 7 above one at a time, newest content wins on a per-rule basis rather than per-file. `new-client` first, it has the most at stake and its tier language needs updating to the A to D ladder while someone is in there anyway.
+Work through the 6 remaining one at a time, newest content wins on a per-rule basis rather than per-file. `editor-briefing` is the biggest, 240 Drive-only lines against 288 repo-only.
