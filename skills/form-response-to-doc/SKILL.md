@@ -112,10 +112,19 @@ Internal` subfolder, use the Ch-folder itself.
 
 ## Step 4: Check for an existing doc (the dedup step)
 
-Build the target title: `[Family Surname] ([Respondent First Name]) — [Submission Date]`
-(e.g. `Taylor (Carl) — 11 July 2026`). Including the respondent's first name
-matters — two siblings can submit about the same parent on the same day, and
-without it their doc titles would collide.
+Build the target title: `[Family Surname] ([Respondent First Name]) — [Parent Relationship], [Parent First Name] — [Submission Date]`
+(e.g. `Taylor (Carl) — Dad, Phil — 11 July 2026`). Every part of this earns its
+place:
+
+- The respondent's first name — two siblings can submit about the same parent
+  on the same day, and without it their doc titles would collide.
+- **Which parent this response is about, spelled out in the title itself
+  (not just implied by the folder it's filed in)** — Neil reviews these docs
+  open in a tab, not by their folder breadcrumb, so the doc has to be
+  self-identifying at a glance. A family with both a Mum doc and a Dad doc
+  from the same respondent on the same day is the normal case here (see Carl
+  Taylor), not an edge case — get this right every time, not just when it's
+  convenient.
 
 Search the matched destination folder for a doc already titled this. If
 found, skip this row — it's already been processed — and move to the next
@@ -130,7 +139,21 @@ Use `create_file` with:
 - `textContent`: HTML built as below (leave `disableConversionToGoogleType`
   unset/false so Drive converts it into a native Google Doc)
 
-HTML structure — question bold, answer plain, a blank paragraph between pairs:
+**Always open with a bold heading that repeats which parent the doc is
+about** — this is the same information as the title, but it needs to be
+visible the instant the doc is open, not just in the browser tab or Drive
+listing:
+
+```html
+<h1>[RESPONDENT NAME] — REFLECTION ON [MUM/DAD] ([PARENT FULL NAME])</h1>
+<p><b>Submitted by:</b> [Respondent Name] ([email])</p>
+<p><b>About:</b> [Parent Full Name] ([Mum/Dad])</p>
+<p><b>Date:</b> [Submission Date]</p>
+<p></p>
+```
+
+Then the Q&A pairs — question bold, answer plain, a blank paragraph between
+pairs:
 
 ```html
 <p><b>Question text here?</b></p>
@@ -138,15 +161,6 @@ HTML structure — question bold, answer plain, a blank paragraph between pairs:
 <p></p>
 <p><b>Next question?</b></p>
 <p>Next answer.</p>
-<p></p>
-```
-
-Put the respondent's name and email at the top of the doc (before the first
-Q&A pair) so the editor has contact context at a glance:
-
-```html
-<p><b>Submitted by:</b> [Respondent Name] ([email])</p>
-<p><b>Date:</b> [Submission Date]</p>
 <p></p>
 ```
 
