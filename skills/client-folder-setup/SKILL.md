@@ -22,9 +22,11 @@ dates are locked in).
 ## Before you start: gather these details
 
 1. **Family surname** — exact spelling
-2. **Tier** — Bronze, Silver, or Gold (this determines what guides exist)
+2. **Option** — A, B, C or D (this determines what guides exist). Internal
+   labels; families see Hero Story (A and B), Family Documentary (C), Full
+   Chorus (D). See `knowledge/offer/pricing.md`.
 3. **Children** — first names of all children, in order of their recording
-   sessions (nil for Bronze)
+   sessions (nil for Option A, which has no child interview)
 4. **Parent(s)** — first name(s) and whether each is "Dad," "Mum," or a given
    name (check how Neil refers to them)
 5. **Where the family folder already is** — Neil will have created this when
@@ -51,7 +53,7 @@ Inside the family's project folder (e.g., `Pinkham - Families`), create exactly
 05 Stories
 ```
 
-**Bronze tier:** Same 5 folders. The 02 Guides folder still exists but will
+**Option A:** Same 5 folders. The 02 Guides folder still exists but will
 only contain a "Parents" subfolder (no children).
 
 ## Inside each folder
@@ -82,7 +84,7 @@ them:
    - The parent reflection guide PDF
    - The audio version (usually .mp3, filename like "Parent Reflection Guide
      Audio.mp3")
-   - The family life chart PDF (if this is a Silver or Gold project; Bronze
+   - The family life chart PDF (if this is a C or D project; A and B
      may not have this)
 
 If guides aren't yet in the Drive, leave those folders empty and flag it to

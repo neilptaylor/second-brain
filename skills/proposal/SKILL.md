@@ -1,8 +1,10 @@
 ---
 name: proposal
-description: Generates a personalised Me & My Old Man sales proposal HTML file for a named prospective client. ALWAYS use this skill when Neil types /proposal followed by any client name, or asks to "create a proposal for", "write a proposal for", "build a deck for", or "generate a proposal for" any person. The skill reads the client's Fathom sales call transcript from Google Drive, the current three-tier offer, and the latest testimonials, then produces a complete branded 6–12 slide HTML deck in the MMOM light design system. One command → finished proposal file, ready to open in browser and print to PDF.
+description: Generates a personalised Me & My Old Man sales proposal HTML file for a named prospective client. ALWAYS use this skill when Neil types /proposal followed by any client name, or asks to "create a proposal for", "write a proposal for", "build a deck for", or "generate a proposal for" any person. The skill reads the client's Fathom sales call transcript from Google Drive, the current offer ladder (options A to D, see knowledge/offer/pricing.md), and the latest testimonials, then produces a complete branded 6–12 slide HTML deck in the MMOM light design system. One command → finished proposal file, ready to open in browser and print to PDF.
 ---
 <!-- v1.5 — 2026-07-23: Gold→Bronze→Silver anchor ordering; single-price separate-interview model replaces dual options; full standalone value table required for all three tiers, not just the recommended one; bonuses+guarantee merged into one dedicated closing slide; added one-week booking urgency discount. Lessons from Sam Tillett proposal V2→V3 rebuild. -->
+
+<!-- v2.0 — 2026-09-22: removed the stale V8 tier prices, which the skill was instructing the model to treat as ground truth in client-facing decks. Replaced with the A to D ladder and a hard pointer to knowledge/offer/pricing.md. The three-tier slide/anchoring logic below is flagged as unrewritten and needs Neil. -->
 
 # Me & My Old Man — Proposal Generator
 
@@ -78,23 +80,46 @@ for i, row in df.iterrows():
 "
 ```
 
-**Current figures (V8 — May 2026). Use these unless Neil states a hard override:**
+> **STOP — THESE PRICES ARE WRONG. READ THIS BEFORE GENERATING ANYTHING.**
+>
+> The V8 tier figures that used to sit here (Bronze £1,750, Silver £3,800,
+> Gold £8,000, and the 2P set) were superseded on 4 September 2026 and
+> removed on 22 September 2026. They were roughly £650 under the current
+> price for the nearest equivalent option. Do not reconstruct them from
+> memory, from an old proposal, or from an archived copy of this skill.
+>
+> **Read `knowledge/offer/pricing.md` and take every figure from there.**
+> It is the only current source. Margin-check any agreed price against
+> Cost Model V10 (`1vN5YckOTYgne0yppRkfm2jYBjPp1ff6ug8gWntLeS8k`).
 
-| | Bronze | Silver | Gold |
+**The current ladder, one parent (LIST, per parent):**
+
+| Option | What they're buying | LIST | Standalone value |
 |---|---|---|---|
-| **Selling price** | **£1,750** | **£3,800** | **£8,000** |
-| Delivery cost | £898.75 | £1,583.13 | £3,000 |
-| Gross profit | £851.25 | £2,216.88 | £5,000 |
-| Profit margin | 48.6% | 58.3% | 62.5% |
-| Standalone value | £7,050 | £11,700 | £22,800 |
-| Value stack ratio | 4.0× | 3.1× | 2.85× |
-| Client saving vs market | £5,300 | £7,900 | £14,800 |
+| A | Solo, no child interview | £2,400 | £7,000 |
+| B | Solo, buyer interviewed | £3,150 | £8,500 |
+| C | Children batched, one session | £3,350 | £11,000 |
+| D | Children individually, 2 children baseline | £4,000 | £13,000 |
 
-**2-Parent prices (V8):** Bronze 2P £3,250 · Silver 2P £7,400 · Silver+ 2P £8,000 · Gold 2P £15,000
+Option D adds £300 per child above the baseline of 2, value uplift £1,000 per
+extra child. Two-parent LIST is 2.5% off double the one-parent LIST, rounded
+up to the nearest £100 — confirm the exact figure in `pricing.md` rather than
+calculating it here.
 
-**Bonus values:** Bronze: Audio Story Reel £350 + Quickfire Round £200 · Silver: Extended Archive Session £350 + Grandchildren Voice Notes £500 · Gold: Bespoke Soundtrack £400 + Memory Book £500
+**Families never see A to D.** They see Hero Story (A and B), Family
+Documentary (C), Full Chorus (D), with the metal name only ever as a
+sub-heading. The brand name always leads.
 
-**Hard override rule:** If Neil's prompt explicitly states a price, tier, or scenario (e.g. "Bronze", "Silver 2P", "Silver+"), use that. In all other cases these figures are ground truth.
+> **Also stale, not yet rewritten:** everything below this point that assumes
+> three tiers — the Gold → Bronze → Silver slide order and its anchoring
+> logic, the per-tier value stacks, the bonus structure, the "Silver is
+> always the default" rule, the Silver+ 2P scenario, and the per-tier
+> inclusion lists. The pricing is now four options, not three. Ask Neil how
+> he wants the tier comparison slides to work under A to D before generating
+> a deck that depends on them. Flag this to him rather than improvising a
+> mapping.
+
+**Hard override rule:** If Neil's prompt explicitly states a price or option, use that. In all other cases `knowledge/offer/pricing.md` is ground truth — never this file, and never a figure remembered from a previous proposal.
 
 ---
 
@@ -196,14 +221,14 @@ Extract every quote that should appear in the proposal verbatim. Aim for 5–8. 
 
 State: recommended tier and why · alternative if relevant · pricing flexibility notes · sensitive topics.
 
-**Silver (£3,800 · 12 weeks) is always the default** unless one of these hard overrides applies:
+**Silver (£[see pricing.md] · 12 weeks) is always the default** unless one of these hard overrides applies:
 - Client explicitly stated they cannot spend more than £1,800
 - Fixed deadline that physically cannot fit 12 weeks
 - Solo buyer confirmed, no siblings, no grandchildren, no family dimension — and they explicitly need speed over depth
 
-Bronze (£1,750) is never the "cheap option." It is a complete, standalone experience. The only thing it doesn't include is siblings.
+Bronze (£[see pricing.md]) is never the "cheap option." It is a complete, standalone experience. The only thing it doesn't include is siblings.
 
-**Gold (£8,000 · 16 weeks):** Recommend when grandchildren are young and the window for capturing their voices alongside a grandparent is genuinely live. Gold always appears in the tier comparison as a price anchor.
+**Gold (£[see pricing.md] · 16 weeks):** Recommend when grandchildren are young and the window for capturing their voices alongside a grandparent is genuinely live. Gold always appears in the tier comparison as a price anchor.
 
 **Silver seeds — mandatory:** When selecting facts for Slide 2, deliberately choose the details that build the case for Silver — siblings mentioned, multiple children, family stories that belong to more than one person, grandchildren. By the time the prospect reaches the tier slide, they already feel why Silver is right.
 
@@ -255,7 +280,7 @@ Watch-outs:       [two-parent flag / sensitive topic / sibling blocker / anythin
 Generating proposal now.
 ```
 
-**Two-parent rule:** If there is a two-parent flag, STOP after the pre-flight note and ask Neil: "Two parents were mentioned — should I price this as Silver 2P (£7,400), Silver+ 2P (£8,000), or start with one parent only?" Wait for the answer before generating.
+**Two-parent rule:** If there is a two-parent flag, STOP after the pre-flight note and ask Neil: "Two parents were mentioned — which option, and one parent or both?" Take the two-parent figure from `pricing.md`. Wait for the answer before generating.
 
 For all other situations: output the pre-flight note and immediately proceed to generate. No waiting.
 
@@ -297,10 +322,10 @@ Build a single self-contained HTML file:
   **Every tier gets its own full value-stack table.** Do not show a detailed table for the recommended tier only and a compressed price-only mention for the other two — Gold and Bronze each need their standalone value total and price shown with the same weight as Silver. Pull exact line items and figures from the current offer doc / cost model, never estimate.
 
 - **Tier naming — CRITICAL UPDATE #6:** Always show tier names next to prices.
-  - ✅ "Bronze: Hero Story Capture — £1,750"
-  - ✅ "Silver: Family Stories Across Generations — £3,800"
-  - ✅ "Gold: Multi-Generational Heirloom — £8,000"
-  - ❌ Do NOT write "Bronze — £1,750" without the name.
+  - ✅ "Bronze: Hero Story Capture — £[see pricing.md]"
+  - ✅ "Silver: Family Stories Across Generations — £[see pricing.md]"
+  - ✅ "Gold: Multi-Generational Heirloom — £[see pricing.md]"
+  - ❌ Do NOT write "Bronze — £[see pricing.md]" without the name.
 
 - **CRITICAL UPDATE #5:** Verify tier inclusions against the Latest Offer Document before writing Slides 5–7.
   - **Bronze NEVER includes:** child interviews, personalised era soundtrack, Audio Story Reels (unless explicitly listed as current bonus), any extended family voices.
@@ -313,7 +338,7 @@ Build a single self-contained HTML file:
 
 - **Slide 9–10 CTA buttons** — CRITICAL UPDATE #9: All CTAs are payment-focused, never "book a call."
   - Under each tier price, add a button: "Start [Tier Name]" or "Get [Tier Name]"
-  - Example: Bronze button = "Hero Story Capture — £1,750 / Start Now"
+  - Example: Bronze button = "Hero Story Capture — £[see pricing.md] / Start Now"
   - Link to payment/booking system (Stripe, Calendly, or email reply to Neil)
 
 - **Slide 12 close** — do NOT address the prospect by name anywhere in the body copy. They are reading this — it feels unnatural to be called by name mid-document. The cover title tag ("For [Name]") and the HTML `<title>` tag are the only places the name appears. Repeat the three tier buttons in a footer.
@@ -436,12 +461,12 @@ Two-parent interest is the most common source of pricing confusion. Handle preci
 
 | Tier | Price | When to use |
 |---|---|---|
-| Bronze 2P | £3,250 | Two parents, two complete stories, delivered as a paired collection |
-| Silver 2P | £7,400 | Full family experience for both parents. Children's group session shared — no extra cost. |
-| Silver+ 2P | £8,000 | Silver 2P with individual 1:1 child briefings instead of the group session. Use when sibling dynamics are complicated. |
-| Gold 2P | £15,000 | Full multi-generational biopic for both parents. Every lever deployed. |
+| Bronze 2P | £[see pricing.md] | Two parents, two complete stories, delivered as a paired collection |
+| Silver 2P | £[see pricing.md] | Full family experience for both parents. Children's group session shared — no extra cost. |
+| Silver+ 2P | £[see pricing.md] | Silver 2P with individual 1:1 child briefings instead of the group session. Use when sibling dynamics are complicated. |
+| Gold 2P | £[see pricing.md] | Full multi-generational biopic for both parents. Every lever deployed. |
 
-**Starting with one parent:** If the prospect wants to start with one parent only, generate the single-parent proposal. Flag in private note: "Two-parent interest identified. V8 Silver 2P = £7,400. Mention only if they ask."
+**Starting with one parent:** If the prospect wants to start with one parent only, generate the single-parent proposal. Flag in private note: "Two-parent interest identified. Two-parent LIST is in `pricing.md`. Mention only if they ask."
 
 **Silver+ signal:** Listen for: siblings who don't get on · geographical distance · one child who seems less involved · "we wouldn't all say the same thing in front of each other." Don't pitch it — hear it. The conversation leads you there.
 
@@ -458,7 +483,7 @@ These changes reshape the proposal to be clearer, more direct, and prospect-focu
 3. **No blockers on early slides** — Move pain points to the closing summary slide; flow is pain → dream → solution → objection handling
 4. **Tier details before any summary table** — Slides 5–7 each fully explain one tier; a comparison table is optional and only added if it adds something new
 5. **Verify Bronze/Silver inclusions** — Always check Latest Offer Document; Bronze never has child interviews or personalised era soundtrack
-6. **Add tier names next to prices** — "Bronze: Hero Story Capture — £1,750" not just "Bronze — £1,750"
+6. **Add tier names next to prices** — "Bronze: Hero Story Capture — £[see pricing.md]" not just "Bronze — £[see pricing.md]"
 7. **One-week bonus expiry explicit** — If mentioned on call, include it as a dated callout on the closing summary slide
 8. **Never pre-empt sales tactics** — Remove disclaimers that explain *why* a limit exists
 9. **CTA is payment, not "book a call"** — Buttons link to payment/booking, not another call

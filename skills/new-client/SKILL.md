@@ -14,6 +14,7 @@ description: >
 <!-- v1.2 — 2026-07-24: Added Airtable Editor Pipeline logging step so upcoming sessions are tracked (TBC) from the moment a client closes, ahead of real dates. -->
 <!-- v1.3 — 2026-08-24: Added Music Selection Tracker Google Sheet logging step, so intro/outro picks are tracked per chapter and don't get duplicated within a family. -->
 <!-- v1.4 — 2026-09-22: Retranslated from Bronze/Silver/Gold to the A to D option ladder. Option A is the only one with no Wrap Up. B gets a buyer chapter, C gets one shared children chapter. -->
+<!-- v1.5 — 2026-09-22: Added Family Hours & Countries Tracker logging step, and a step to refresh knowledge/offer/business-stats.md from it. business-stats.md is now the single source of truth every content skill reads its families/hours/countries figure from, so it must be kept current the moment a new client is won. -->
 
 # New Client — Editing Folder Setup
 
@@ -218,15 +219,71 @@ Production Tracker step above. If the browser isn't available in this
 session, skip this step and flag it clearly so Neil (or a later run) can
 add the rows once a browser is available.
 
+## Also log it in the Family Hours & Countries Tracker Google Sheet
+
+Neil tracks total families, hours and countries served in this Sheet, and
+it's the source data behind every "X families / Y hours / Z countries"
+figure used in his bios and content:
+`https://docs.google.com/spreadsheets/d/1njqBD96T5MLP4GGAK5_PTS-dAM6wX0peIF3AWOOhZA0/edit`.
+Columns, in order: `#` | `Family` | `Child` (hours) | `Parent` (hours) |
+`Wrap Ups` (hours) | `Countries` | `Country #`.
+
+Add one new row for this family:
+- **#** — next sequential number after the last filled row.
+- **Family** — the surname.
+- **Child / Parent / Wrap Ups** — hours for each, following the pattern of
+  existing rows for the same option (A/B/C/D). If it isn't obvious from the
+  option and session count, ask Neil for the hours rather than guessing —
+  these numbers roll up into the headline stats everyone else quotes.
+- **Countries** — only fill in if this family is based outside the UK. If
+  Neil hasn't said where the family is based when invoking this skill, ask.
+  Leave blank for UK families.
+- **Country #** — put `1` only if this is a country not already listed
+  elsewhere in the Countries column (i.e. it adds a new country to the
+  total, not a repeat). Scan the existing Countries column first. Leave
+  blank for UK families or repeat countries.
+
+Use the claude-in-chrome browser tools to edit this Sheet, same as the
+Production Tracker step above. If the browser isn't available in this
+session, skip this step and flag it clearly — the stats refresh below
+depends on it, so do it as soon as a browser is available.
+
+## Refresh knowledge/offer/business-stats.md
+
+`knowledge/offer/business-stats.md` is the single source of truth every
+content skill (linkedin-post, newsletter, mmom-podcast-pr,
+mmom-sales-strategist, instagram, and others) reads its families/hours/
+countries figure from. It must be updated the same session a new client is
+won, using the tracker sheet you just updated:
+
+1. Read the tracker sheet's totals row (Sub-Total Hrs / Total, and the
+   Country # sum).
+2. **Families** — exact count of families logged in the tracker (no
+   rounding).
+3. **Hours** — sum of the Child + Parent + Wrap Ups totals, rounded DOWN to
+   the nearest 10. Never round up, never use the raw total.
+4. **Countries** — exact count of flagged (`1`) entries in the Country #
+   column (no rounding).
+5. Edit `knowledge/offer/business-stats.md`: update the three numbers, the
+   "Current numbers (as of ...)" date, and the worked examples under "How
+   to phrase it in copy" so they still read correctly with the new figures.
+
+Do this even if the Sheet step above had to be skipped for lack of a
+browser — in that case, compute the new totals from what you just logged
+in Airtable/the Production Tracker instead, and flag that the Sheet itself
+still needs the row added later.
+
 ## After building
 
 List back the full folder tree you created (chapter names, subfolder names,
 doc names) AND the pipeline rows you logged (Airtable and, if you managed
-it, the Production Tracker Sheet and the Music Selection Tracker Sheet), so
-Neil can quickly eyeball all of it against what he asked for — this catches
-naming mistakes before an editor starts working from a wrong folder. For
-Option A, explicitly confirm only 3 chapter folders were created (no Wrap
-Up). For every other option, confirm the Wrap Up folder exists.
+it, the Production Tracker Sheet, the Music Selection Tracker Sheet, and
+the Family Hours & Countries Tracker), plus the new families/hours/
+countries figures now in `business-stats.md`, so Neil can quickly eyeball
+all of it against what he asked for — this catches naming mistakes before
+an editor starts working from a wrong folder. For Option A, explicitly
+confirm only 3 chapter folders were created (no Wrap Up). For every other
+option, confirm the Wrap Up folder exists.
 Share the link to the top-level family folder.
 
 ## Notes on care

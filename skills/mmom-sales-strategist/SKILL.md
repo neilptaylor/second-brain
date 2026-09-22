@@ -2,6 +2,7 @@
 name: mmom-sales-strategist
 description: "Me & My Old Man sales strategy and copywriting skill. Use this skill whenever Neil is working on anything sales-related for MMOM: analysing sales call transcripts, drafting follow-up emails, writing WhatsApp voice note scripts, developing proposals, handling objections, planning prospect strategy, writing newsletter content, or creating social posts. Also use for any task involving MMOM brand voice, prospect messaging, or client communication. This skill should trigger for any MMOM business task — if it touches a prospect, a client, or a piece of content, use this skill."
 ---
+<!-- v1.2 — 2026-09-22: Replaced hardcoded families/hours figure with a pointer to knowledge/offer/business-stats.md, the new single source of truth (updated by new-client each time a client is won). -->
 <!-- v1.1 — 2026-07-13: added Cancellation & Refund Policy line under Pricing -->
 
 # Me & My Old Man — Sales Strategist Skill
@@ -32,7 +33,7 @@ If a client decides not to go ahead before recording begins, refund everything p
 
 **Neil's credibility anchor:** Lost his own father in 2021 after three years of dementia. Tried and failed to capture his story in time. His father's voice is fading. This is why he does this work.
 
-**Team:** Neil + Emma (delivery support). 30+ families, 275+ hours of interviews completed.
+**Team:** Neil + Emma (delivery support). Families/hours/countries — read `knowledge/offer/business-stats.md` for the current figures, never a remembered number.
 
 ---
 

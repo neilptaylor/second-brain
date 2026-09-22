@@ -5,6 +5,7 @@ description: "Write LinkedIn posts in Neil Taylor's voice for Me & My Old Man. U
 
 # LinkedIn Post Skill — Neil Taylor / Me & My Old Man
 ## Version 3.2 — September 2026 (Conversation Playbook added to the ladder; opt-in pages are the only source of truth)
+<!-- v3.3 — 2026-09-22: Replaced hardcoded families/hours/countries figures with pointers to knowledge/offer/business-stats.md, the new single source of truth (updated by new-client each time a client is won). -->
 <!-- v3.2 — 2026-09-17: caught in review — "The Weekly Run" [Sep 17] had CTA=Save on a Pain Points/Lead-gen post, with the Conversation Playbook's raw Google Doc link sitting in the funnel note instead of an opt-in page. Root cause: the Playbook wasn't in the lead-magnet ladder at all, so there was no live opt-in page to check it against. Fixed: added the Playbook to the ladder with its real opt-in page (https://meandmyoldman.co.uk/conversationplaybook, comment 'PLAYBOOK'), and made the ladder table the explicit single source of truth — a magnet not listed there with a URL is NOT LIVE regardless of what a Notion row's Notes field claims. Also ran a full audit of every planned post in Notion against the skill's hard rules (CTA-per-pillar, opt-in-page-only, Visual: line present, banned words, biographical facts) and corrected what was found — see the per-post notes for what changed. -->
 ## Version 3.1 — September 2026 (the Q&A scene rhythm, locked from Neil's hand-edit)
 <!-- v3.1 — 2026-09-17: locked the Q&A scene rhythm from Neil's hand-edit on "The Weekly Run" — open with "I" when relaying someone else's moment, give every question its own blank-line-separated beat, stack multi-clause answer lines with no gaps, and sharpen insight lines to present tense instead of repeating the idea across two clauses. See "The Q&A scene rhythm" under "How to write as Neil on LinkedIn". -->
@@ -28,8 +29,8 @@ description: "Write LinkedIn posts in Neil Taylor's voice for Me & My Old Man. U
 Full version lives in `Claude Outputs/LinkedIn System/MAMO_LinkedIn-North-Star_v3.md` (LOCKED). The short version:
 
 1. **Why Neil posts:** LinkedIn is the top of the Asking Engine funnel. Target by Aug 2027 — 5 discovery calls a month sourced from LinkedIn. LinkedIn gives no DM-open data: the metric is calls booked with "LinkedIn" as source, plus keyword comments and `LinkedIn`-tagged email sign-ups. Never follower count.
-2. **Internal positioning (never posted as-is):** Neil helps adult children in the sandwich-generation squeeze reconnect with their parents, through a 12-week guided story experience that becomes a private family audio documentary. 350+ hours, 35 families, 7 countries.
-   **External headline:** *I help families feel closer in 12 weeks than they have in 12 years — by recording a parent's life story in their own voice | 35 families · 7 countries · 350+ hrs*
+2. **Internal positioning (never posted as-is):** Neil helps adult children in the sandwich-generation squeeze reconnect with their parents, through a 12-week guided story experience that becomes a private family audio documentary. Read `knowledge/offer/business-stats.md` for the current hours/families/countries figures — never hardcode or reuse an old number.
+   **External headline:** *I help families feel closer in 12 weeks than they have in 12 years — by recording a parent's life story in their own voice | [families] families · [countries] countries · [hours]+ hrs* (fill from `business-stats.md`)
 3. **Personal "I" posts have carried every result so far — but that's partly survivorship** (they're the only type Neil posted at volume). Keep writing Neil, but v3 deliberately builds Pain Points and Transformation as lead drivers; re-check the Notion Pillar/Job data in ~Dec 2026.
 4. **The 5Ps build the post** (Problem → Promise → Proof → Personality → Perspective). Problem → Proof → Perspective is the spine.
 5. **Three posts a week — fixed days:** Tue, Wed, Thu.
@@ -250,7 +251,7 @@ Neil rotates between these structures. Each one has a different job.
   1. **Problem:** Name the specific thing the resource solves. One sentence, concrete.
   2. **Pain:** Make it felt, not stated. The domestic detail — the dropped story, the closed-off parent, the notebook that got two pages in. Specificity over abstraction, same as everywhere else.
   3. **Possibility:** What it looks like solved. One family's version of "and then we knew."
-  4. **Proof:** Something that shows this is real and gettable — a real line from a client or prospect, a number (350+ hours, 32+ families), never invented.
+  4. **Proof:** Something that shows this is real and gettable — a real line from a client or prospect, a number (hours/families from `knowledge/offer/business-stats.md`), never invented.
   5. **Pitch:** The resource itself, named plainly, with the comment mechanic.
 **Key rule:** The comment mechanic ("Comment 'QUESTIONS' and I'll DM you the guide") drives both engagement AND reach. The algorithm sees comments as high-value signals. Never just put a link in the post.
 **Hard rule — never post the magnet itself, and never DM the raw file link.** The magnet is never in the post body, never an attachment, and the DM that follows a keyword comment links to the **opt-in landing page**, never the Google Doc / PDF. The chain: keyword comment → public reply with a nugget (not "check your DMs") → DM the opt-in page + one question to open a conversation → email opt-in → Kit tag `magnet-<name>` → nurture → call. DMing the raw file = zero emails, no nurture, no attribution, wasted asset. Full flow + scripts: SOP §4 Step 7 (`MMOM_LinkedIn-SOP_v1.md`).
@@ -265,7 +266,7 @@ Neil rotates between these structures. Each one has a different job.
   - "97 Conversation Prompts" — comment 'PROMPTS' (legacy, still usable) — opt-in page status unconfirmed, verify before using
   - Father's Day Conversation Guide — comment 'GUIDE' (seasonal only) — opt-in page status unconfirmed, verify before using
   Every magnet: comment → DM link → email opt-in → nurture sequence → discovery call. Never post the file itself. **Never write a magnet's raw Google Doc/PDF link into a Notion row's Notes or funnel note — only ever the opt-in page URL from this list, or "TO BUILD" if it's not here.**
-**Example pattern:** "Most families talk every week. And talk about nothing that matters. I've spent 350 hours interviewing families. Here are the 107 questions that actually unlock the stories..."
+**Example pattern:** "Most families talk every week. And talk about nothing that matters. I've spent [hours from business-stats.md] hours interviewing families. Here are the 107 questions that actually unlock the stories..."
 
 **Note on the two "5" frameworks in this doc:** the 5Ps in the strategy stack above (Problem → Promise → Proof → Personality → Perspective) shape *any* post. The 5 P's here (Problem → Pain → Possibility → Proof → Pitch) are specific to Lead Magnet announcement posts only — borrowed from Lara Acosta's Session 3 framework, translated into Neil's voice. Don't conflate the two; use the strategy-stack 5Ps for everything, and this 5 P's arc only when building post type 7.
 
@@ -532,7 +533,7 @@ Neil spots AI writing instantly. If there's no dishwasher, no twelve minutes, no
 - Neil's son is 5 years old. Don't write him as a teenager or older child.
 - Neil's mum is alive. She's 75, lives in the UK, recently moved. She's in "brilliant nick" but slowing down.
 - Neil lives near Barcelona. His audience is UK-based.
-- He's done 350+ hours of interviews across 32+ families.
+- He's done [hours]+ hours of interviews across [families] families — read `knowledge/offer/business-stats.md` for the current figures, never a remembered or old number.
 - The business is called Me & My Old Man. The experience costs £4,800.
 - Never reference both parents as deceased. Never imply his mum has passed.
 
@@ -546,7 +547,7 @@ Comments are conversations, not broadcasts. They have a different rhythm and ene
 
 **Conversational entry:** Start with agreement or a genuine question — "Agreed" or "This landed for me because..." You're joining a thought, not pronouncing from above.
 
-**Proof points, not credentials:** If you mention your work, keep it soft. "I speak with a lot of 60-70 year olds" is a proof point that's curious and humble. "After 350+ hours of interviews across 32 families" is a sell that makes the reader suspicious. Soft proof lets the conversation deepen; hard proof interrupts it. If they want to know more, they'll click your profile.
+**Proof points, not credentials:** If you mention your work, keep it soft. "I speak with a lot of 60-70 year olds" is a proof point that's curious and humble. "After 350+ hours of interviews across 32 families" (pull the real current figures from `knowledge/offer/business-stats.md`) is a sell that makes the reader suspicious. Soft proof lets the conversation deepen; hard proof interrupts it. If they want to know more, they'll click your profile.
 
 **Specificity and rhythm:** Comments are thinking-out-loud. Build arguments across sentences. Use your natural speaking rhythm — dashes, parenthetical asides, "yeah?" at the end of a thought. Less formatted, more alive.
 

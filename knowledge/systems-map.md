@@ -30,4 +30,4 @@ The business runs in stages in `Shared drives/Systems`. This maps each stage to 
 
 - **Follow-ups are hardcoded per person.** There are eight scheduled tasks named after individual prospects. That is a symptom of a missing pattern: one follow-up engine reading the CRM, not one task per human.
 - **Onboarding has four overlapping skills.** onboarding-complete, client-onboarding-complete, mmom-onboarding and new-client plus client-folder-setup. Some are duplicates from different homes, some are genuinely different jobs. Needs untangling before anything is built on top.
-- **Tier language is stale everywhere.** The Onboarding folder still has Bronze, Silver and Gold SOPs. Pricing is now options A to D. Every SOP referencing a tier name is wrong.
+- **Tier language is stale everywhere outside this repo.** The Onboarding folder still has Bronze, Silver and Gold SOPs. Pricing is now options A to D. Every SOP referencing a tier name is wrong. The repo's own skills were swept clean on 22 Sep 2026, see `docs/drive-skill-sync-2026-09-22.md`, but the Drive SOPs have not been touched.

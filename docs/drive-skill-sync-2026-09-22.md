@@ -58,6 +58,18 @@ Repo taken as the base because it was newer and larger. The two Drive-only piece
 
 All five Drive originals archived to `Claude Outputs/Archive/Old-Instructions/skills-superseded-2026-09-22/`, Drive copies replaced with pointer stubs.
 
+## Stale tier sweep, 22 September
+
+Grepped every skill, workflow, prompt and knowledge file for Bronze / Silver / Gold. Three skills carried live tier logic:
+
+- **`proposal` — serious.** Held the full V8 price table (Bronze £1,750, Silver £3,800, Gold £8,000, plus the 2P set) and told the model these "are ground truth". It generates client-facing decks, so it would have quoted a family roughly £650 under the current Option A price with complete confidence. Every stale figure is now stripped from the file, replaced with the A to D ladder and a hard pointer to `pricing.md`. Bumped to v2.0.
+- **`client-folder-setup`** — keyed guide folders off tier. Retranslated to options.
+- **`client-onboarding-complete`** — family life chart was "Silver/Gold only". Now "C and D only".
+
+Still unresolved in `proposal`: the three-tier slide architecture. The Gold → Bronze → Silver anchoring order, per-tier value stacks, bonus structure, the "Silver is always the default" rule and the Silver+ 2P scenario all assume three tiers where there are now four options. Numbers are safe, structure is not. There is a flagged block in the file telling any future session to ask Neil before generating a deck that depends on it. **This is the biggest open item in the repo.**
+
+All other hits were the banned word "gold" in voice checklists, or the legitimate metal-to-brand mapping in `pricing.md`. No action needed on those.
+
 ## Next
 
 Nothing outstanding. All 23 divergent/duplicate skills identified on 22 September are now frozen or merged.

@@ -5,6 +5,8 @@ description: "Me & My Old Man podcast and PR engine. Use this skill whenever Nei
 
 # MMOM Podcast & PR Engine
 
+<!-- v1.1 — 2026-09-22: Replaced hardcoded families/hours figures with a pointer to knowledge/offer/business-stats.md, the new single source of truth (updated by new-client each time a client is won). -->
+
 Podcasts are Neil's highest-leverage channel: one hour of him talking naturally produces a month of content in his real voice. This skill runs the full loop in three modes. Detect the mode from context; ask if unclear.
 
 ---
@@ -19,7 +21,7 @@ Podcasts are Neil's highest-leverage channel: one hour of him talking naturally 
 
 **Neil's canonical talking points** (the spine of every pitch and brief):
 - Lost his dad in 2021 after three years of dementia; son born six days after. Tried and failed to capture his dad's story in time.
-- 30+ families, 350+ hours of interviews. The experience is the product; the audiobook (say "audio documentary" if it comes up) is proof it happened.
+- Families/hours/countries — read `knowledge/offer/business-stats.md` for the current figures, never a remembered number. The experience is the product; the audiobook (say "audio documentary" if it comes up) is proof it happened.
 - "Nobody stopped loving each other. Life just got in the way." / "The drift is natural." / "Stories, not skeletons." / "Stories that matter, with people you love."
 - The sandwich generation squeeze — he lives it too. Running a business about presence that pulls him away from his own family. (This contradiction is allowed on air. It's the most trustworthy thing he can say.)
 

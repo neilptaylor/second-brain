@@ -5,6 +5,7 @@ description: "Write newsletter emails for 'Stories That Matter' by Me & My Old M
 
 # Newsletter Skill — Neil Taylor / Me & My Old Man
 ## Version 2.1 — August 2026
+<!-- v2.2 — 2026-09-22: Replaced hardcoded families/hours figures with a pointer to knowledge/offer/business-stats.md, the new single source of truth (updated by new-client each time a client is won). -->
 <!-- v2.1 — 2026-08-04: added Kit performance data (last 90 days + broadcast history) to ground the go-deeper and subject-line rules in real numbers, not just theory. Formalised the LinkedIn-to-newsletter repurposing move as an explicit step. Folded in the one genuinely useful idea from Lara Acosta's Session 3 (email as an owned, compounding asset) while explicitly rejecting her urgency/FOMO launch-sequence language, which conflicts with Neil's hard rules. -->
 
 ---
@@ -267,7 +268,7 @@ Never use: preserve, legacy (mostly), heirloom, keepsake, treasure, for posterit
 - Neil's dad (Patrick) passed March 2021. Son born six days later, middle name Patrick. Son is 5.
 - Neil's mum is alive, 75, recently moved, in "brilliant nick."
 - Neil lives near Barcelona. Audience is UK-based.
-- 350+ hours of interviews, 32+ families. Experience costs £4,800.
+- Hours/families/countries figures live in `knowledge/offer/business-stats.md` — always read it fresh, never reuse a remembered number. Experience costs £4,800.
 - The newsletter is called Stories That Matter.
 
 ---

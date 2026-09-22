@@ -40,7 +40,7 @@ to Gmail to send to the family.
    - One child reflection guide per child (PDF)
    - One parent reflection guide (PDF)
    - One audio version of parent guide (MP3)
-   - One family life chart (PDF, Silver/Gold only)
+   - One family life chart (PDF, options C and D only)
    If any are missing, leave those links out of the email.
 
 If anything is unclear, ask Neil one direct question rather than guessing.
