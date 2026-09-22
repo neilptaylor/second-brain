@@ -9,7 +9,7 @@ The business runs in stages in `Shared drives/Systems`. This maps each stage to 
 | Strategy | 00 Strategy | mmom-weekly-action-plan, morning | none | Thin. Campaigns, Core, Grief, Book all sit as folders with no skill behind them |
 | Awareness | 01 Awareness | linkedin-post, linkedin-engagement, instagram, newsletter, lead-magnet, mmom-carousel, mmom-visual, mmom-podcast-pr, alex-hormozi-youtube | journorequest-watch, 3 advisor YouTube syncs | Strongest stage by far |
 | Enquiry | 02 Enquiry | none | discovery-session-crm-logger, questions-lead-crm-logger | **Weakest stage.** Four files and no skill |
-| Sale | 03 Sale | proposal, mmom-sales-strategist, mmom-voice-check, mmom-follow-up | 8 named follow-up tasks, onboarding-call-followup-scheduler | Well covered, but follow-ups are hardcoded per person |
+| Sale | 03 Sale | proposal, mmom-sales-strategist, mmom-voice-check, mmom-follow-up | 8 named follow-up tasks, onboarding-call-followup-scheduler | Covered around the call. The call itself runs off master scripts in Drive, see `knowledge/offer/sales-call-scripts.md`. Follow-ups are hardcoded per person |
 | Collections | 04 Collections | none | none | **Empty folder. No system at all** |
 | Onboarding | 05 Onboarding | onboarding-complete, client-onboarding-complete, new-client, client-folder-setup, mmom-onboarding | editor-pipeline-session-logger | Covered, but four overlapping skills doing adjacent jobs |
 | Production | 06 Production | editor-briefing | interview-briefing-watcher, fathom-transcript-filer | Covered |

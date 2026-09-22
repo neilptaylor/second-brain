@@ -29,6 +29,32 @@ Option D adds £300 per child above the baseline of 2. Value uplift £1,000 per 
 
 Every two-parent LIST is exactly 2.5% off double the one-parent LIST, rounded up to the nearest £100. Say this to families: two-parent pricing includes a flat 2.5% multi-parent saving versus two separate documentaries.
 
+## What families actually see these called
+
+The A to D labels are internal. In proposals they are named:
+
+| Internal | Client-facing name |
+|---|---|
+| A and B | Hero Story |
+| C | Family Documentary |
+| D | Full Chorus, or The Full Chorus |
+
+Option B is sold as Hero Story with the buyer's own hour added, not as a fourth shape. Confirmed against the Catlin proposal of 15 September 2026 and the Sturgess proposal of 9 September 2026.
+
+Every proposal also carries the guarantee: full refund if it doesn't feel right after the kickoff call and before the first recorded session. Thirty-five families, never invoked.
+
+## Bolt-ons appearing in proposals but not in the cost model
+
+These were offered at a discount off a stated "usually" price. Neither the usual price nor the margin is in V10.10, so they need adding to the model.
+
+| Bolt-on | Offered at | Stated usual |
+|---|---|---|
+| Mementos package, 3 audio clips plus 1 video memento, per parent | £350 | £550 |
+| Snapshot, one 1.5-hour session with the children | £250 | £400 |
+| Grandchildren, up to 30 minutes raw | £200 | £400 |
+
+Note the clash: the model prices Grandchildren at £300, the Sturgess proposal offered it at £200 against a usual of £400. Resolve before the next proposal goes out.
+
 ## Price band rules
 
 - TARGET is 5% off LIST. That is where most deals are designed to land, not conceded to.
