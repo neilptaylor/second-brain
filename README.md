@@ -10,30 +10,33 @@ I live in Spain now. But my roots are UK, my audience is UK, and my work is abou
 
 ## What I Do
 
-I run a 12-week experience where families sit down with me and I conduct audio documentary interviews with their parents. Multiple family members get interviewed: siblings, the parent's story, the layers. The result is beautifully edited audio episodes. Permanent. Shareable. A life story captured in someone's own voice.
+I run a 12-week experience where families sit down with me and I conduct audio documentary interviews with their parents. Multiple family members get interviewed: siblings, the parent's story, the layers. Even the grandchildren can be woven in, their voice notes played live to the grandparent mid-session, so a generation too young to be interviewed themselves still gets heard. The result is beautifully edited audio episodes. Permanent. Shareable. A life story captured in someone's own voice.
 
 But that's not what I'm selling.
 
-What I'm actually selling is the chance for a family to do something they've never done: sit together, unhurried, and listen to each other properly. To ask the questions they've been meaning to ask for years. To meet a version of their parent they didn't know existed.
+What I'm actually selling is helping your family feel closer in 12 weeks than you have in 12 years. The chance to do something you've never done: sit together, unhurried, and listen to each other properly. To ask the questions they've been meaning to ask for years. To meet a version of their parent they didn't know existed.
 
 The audiobook is the proof it happened. The connection is the actual product.
 
 ## What Drives This Work
 
-I've done 350+ hours of interviews across 32 families. That's changed me. I understand now, cognitively, emotionally, viscerally, how much gets lost when we don't stop and ask. How families drift not because they stopped loving each other, but because life got louder. How a parent can be a brilliant storyteller in public and a closed book at home. How siblings don't realise how much they miss each other until they're in a room together for reasons that matter.
+I've done 350+ hours of interviews across 35 families. That's changed me. I understand now, cognitively, emotionally, viscerally, how much gets lost when we don't stop and ask. How families drift not because they stopped loving each other, but because life got louder. How a parent can be a brilliant storyteller in public and a closed book at home. How siblings don't realise how much they miss each other until they're in a room together for reasons that matter.
 
 I also know the contradiction: I built a business about being present with family while the business pulls me away from mine. Not all of it has translated to my own life. That tension is real. It keeps me honest.
 
 ## Core Beliefs (The Version I Actually Live By)
 
-**"Nobody stopped loving each other. Life just got in the way."**
+**"Nobody stopped loving each other. Life just gets in the way."**
 This is not blame. It's compassion. Families don't fail. They drift. Naturally. And that drifting is fixable.
 
 **"The drift is natural."**
 You have kids. Your parents age. You move. You get busy. This isn't a moral failure. It's physics. But it doesn't have to stay that way.
 
 **"Stories, not skeletons."**
-I'm not here to excavate family secrets or force vulnerability. I'm here to capture how someone actually lived: the real moments, the small details, the essence of who they were. The dishwasher. The tax conversation. The twelve-minute phone call. The thing they always said.
+I'm not here to excavate family secrets or force vulnerability. I'm here to capture how someone actually lived: the real moments, the small details, the essence of who they were.
+
+**"The dishwasher is the problem."**
+The dishwasher. The tax conversation. The twelve-minute phone call. The thing they always said. That's the boring, habitual stuff that fills up the actual airtime we get with our parents, and it's exactly why we never reach the deeper stuff underneath it. I called my mum once and the whole twelve minutes was about the dishwasher. That's the level most families are at. Naming it specifically is what makes people feel understood, not lectured.
 
 **"Pain is the doorway, never the destination."**
 I lead with grief and regret because that's real. That's why people reach out. But I never leave families there. Connection, possibility, the chance to fix it now. That's where the work lands.
@@ -45,11 +48,11 @@ Vague emotional language does nothing. But "We talk about the dishwasher. That's
 
 Our family is like a house full of rooms. Rooms we know well. Rooms we've opened many times. But we've only ever seen them from one angle. Sometimes it's beautiful to step back into those rooms and see them from a completely different perspective. See what we missed. And sometimes you discover doors you never knew existed: stories you never knew to ask about, dimensions of your parent you'd never met.
 
-That's what happens here.
+That's what happens here. And once the discreet few months are over and I've handed everything back, the doors stay open. It's entirely up to your family which ones you choose to walk through next.
 
 ## My Customer (Sarah)
 
-Sarah is 45. She's in the sandwich generation. Her parents are slowing down, not in crisis yet, but she feels it. Her kids are grown or nearly grown. And she's realised that the conversations she wanted to have with her parents aren't happening. They talk about logistics. The weather. Never the real stuff.
+Sarah is 45. She's in the sandwich generation. Her parents are slowing down, not in crisis yet, but she feels it. Her kids are grown or nearly grown. And she's realised that the conversations she wanted to have with her parents aren't happening. They talk about logistics. The weather. Never the real stuff. Sometimes there's a sharper edge to it too: she's already lost one parent, or the other had a health scare, and that's what turned the drift into something she can't ignore any more.
 
 She doesn't think her family is broken. She thinks her family has drifted. And she's the only one doing anything about it.
 
@@ -80,7 +83,7 @@ Humour is my release valve, not my mode. Observational. Dry. Self-deprecating. I
 I don't have one offer. I have three shapes, because families don't all arrive at the same place. Each one has a name that says what it is. The name always leads. Internally I track them as options A to D. Live numbers, bolt-ons and the floor I never go below live in `knowledge/offer/pricing.md`. That file is the source of truth, not this one.
 
 **Hero Story. (Options A and B.)**
-Just the parent. No child interviewed. They're usually the one who felt the drift first, and usually the one doing something about it. They come in alone because their sibling isn't ready, or they're estranged, or it's just them. And what happens is their parent becomes a hero in their own story. They hear their father or mother say things they never knew: the guts, the choices, the "why I did it that way." That's the transformation. Not a family reconnection. Not yet. Just this: your parent becomes real to you in a way they weren't before. The simplest place to start, and the one that doesn't wait for anyone else to be ready. Add the buyer's own hour, option B, and a family wrap-up comes with it.
+Just the parent, at its simplest: option A, no child interviewed. They're usually the one who felt the drift first, and usually the one doing something about it. They come in alone because their sibling isn't ready, or they're estranged, or it's just them. And what happens is their parent becomes a hero in their own story. They hear their father or mother say things they never knew: the guts, the choices, the "why I did it that way." That's the transformation. Not a family reconnection. Not yet. Just this: your parent becomes real to you in a way they weren't before. The simplest place to start, and the one that doesn't wait for anyone else to be ready. Option B adds the buyer's own hour, so the child is interviewed too, alongside the parent, with a family wrap-up at the end.
 
 **Family Documentary. (Option C.)**
 The parent, plus the children in the room together for one shared session. The magic happens here. Because siblings hear each other properly, not through the distortion of family text chains or ten-year-old arguments. They hear each other story their parent. And that act of listening together, in real time, in someone else's presence, is where the actual drift stops. Whatever they remember together becomes what I use to prompt the parent. Includes the family wrap-up. The siblings go home changed in a way a solo recording can't manage.
@@ -99,6 +102,8 @@ Story Hunter families come to me happy. They want the audiobook. They want the h
 Crisis families come in guilt-adjacent and time-aware. They've felt the shift. They're the ones who ring their mum about the boiler and suddenly realise they've never asked her why she chose their dad. That's the whole market. Most people are somewhere in that spectrum.
 
 What doesn't work: people who want me to fix their family. People who think an audiobook will solve an estrangement. People who want me to do the emotional work for them. That's not what I do. I create the conditions for connection. The actual connection is theirs to earn.
+
+Also not for: people anchored on the £10 "Tell Me Your Story" book from Waterstones, who think this is the same thing at a bigger price, maybe £500. That's the wrong starting point. It's not about the format, it's about the why, and if someone can't articulate theirs, that's what I'm screening for on the discovery call.
 
 ## Current North Star
 
