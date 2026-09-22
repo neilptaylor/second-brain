@@ -2,6 +2,7 @@
 name: mmom-voice-check
 description: MMOM Voice Guardrail — Load this BEFORE mmom-sales-strategist. Ensures all sales strategy, copywriting, and prospect communication sounds like Neil (warm, specific, British, thoughtful) not like a CRM manager. Use whenever working on MMOM sales tasks to anchor advice in Neil's actual voice profile.
 ---
+<!-- v1.1 — 2026-09-05: added "stopped me in my tracks" to banned-phrase family (same bucket as "stopped me cold") -->
 
 # MMOM Voice Guardrail
 
@@ -43,7 +44,9 @@ Use this before you send any strategic advice or copy recommendation to Neil:
 - [ ] **Honesty over polish:** Is this what Neil actually thinks, or what sounds good?
 - [ ] **Warm not clinical:** Would this sound at home in an email to a mate, or does it belong in a sales training deck?
 - [ ] **Rhythm:** Long sentences → short punchy sentence? Or is it all even and flat?
-- [ ] **No banned phrases:** Check for: "switch channels," "remove the ask," "trigger," "nurture," "preserve," "legacy," "stopped me cold," "gold," "sit with."
+- [ ] **No banned phrases:** Check for: "switch channels," "remove the ask," "trigger," "nurture," "preserve," "legacy," "stopped me cold," "stopped me in my tracks" (same banned family — any "stopped me [cold/in my tracks/dead]" construction), "gold," "sit with."
+- [ ] **No em dashes:** Use a full stop or a comma instead. Applies everywhere, especially outreach/pitch emails.
+- [ ] **Outreach length:** For cold pitches/follow-ups, match the length of Neil's own short working templates (e.g. the Vicki Harper pitch) — one ask, no padding, busy recipient.
 - [ ] **Pain + light:** If there's darkness, is there a path back to light? Or just pain?
 - [ ] **Blunt but kind:** Is this direct and true without being harsh or finger-pointing?
 

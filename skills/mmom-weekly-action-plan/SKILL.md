@@ -3,12 +3,13 @@ name: "mmom-weekly-action-plan"
 description: "Me & My Old Man daily and weekly planning skill. Runs in three modes: (1) SUNDAY EVENING — generates the full weekly plan from CRM and growth strategy; (2) WEEKDAY MORNING — generates a daily briefing with top 3 priorities and Gmail triage; (3) END OF DAY — ingests voice note transcript, logs what happened, sets tomorrow's priorities. Use this skill whenever Neil asks for his weekly plan, daily briefing, or wants to log end-of-day notes."
 ---
 
-&lt;!-- v1.2 — 2026-07-15: Mode 1 template locked to April action-plan format (Real Talk, Done =, Stop List, Kill Switches, Scoreboard); sales calls = discovery calls --&gt;
-&lt;!-- v1.3 — 2026-07-17: Dashboard money tiles — cross-check Airtable Lead Status before reading a low Xero invoiced figure as "nothing billed"; some clients pay via Stripe and won't show cleanly in Xero yet --&gt;
-&lt;!-- v1.4 — 2026-07-17: Neil prefers the dashboard as a Cowork artifact, not a raw HTML file link. Moved to mcp__cowork__create_artifact / update_artifact with a fixed id ("mmom-mission-control") instead of the old claude.ai/code/artifact URL --&gt;
-&lt;!-- v1.5 — 2026-08-08: Fixed a real bug — Xero's get_cash_position/get_profit_and_loss tools cache on a slower cycle than get_aged_receivables and can silently show a stale snapshot (was ~2 weeks stale, £11,407 vs actual £14,209). Always cross-check cash_position's `last_refreshed` timestamp against aged_receivables' `last_refreshed` (or as_of_date) — if cash_position is older, don't trust its cash_balance figure at face value; sanity-check against what Neil says Revolut shows. Also added: Accounts Receivable box (Xero aged receivables, including named future-dated invoices — these are often client Direct Debit schedules, e.g. "Bronze Package - Payment 2/3" — surface them explicitly with due dates) and Accounts Payable/COGS forecast box (Airtable Editor Pipeline Budget field — money owed to editors for edits not yet paid). --&gt;
+<!-- v1.2 — 2026-07-15: Mode 1 template locked to April action-plan format (Real Talk, Done =, Stop List, Kill Switches, Scoreboard); sales calls = discovery calls -->
+<!-- v1.3 — 2026-07-17: Dashboard money tiles — cross-check Airtable Lead Status before reading a low Xero invoiced figure as "nothing billed"; some clients pay via Stripe and won't show cleanly in Xero yet -->
+<!-- v1.4 — 2026-07-17: Neil prefers the dashboard as a Cowork artifact, not a raw HTML file link. Moved to mcp__cowork__create_artifact / update_artifact with a fixed id ("mmom-mission-control") instead of the old claude.ai/code/artifact URL -->
+<!-- v1.5 — 2026-08-08: Fixed a real bug — Xero's get_cash_position/get_profit_and_loss tools cache on a slower cycle than get_aged_receivables and can silently show a stale snapshot (was ~2 weeks stale, £11,407 vs actual £14,209). Always cross-check cash_position's `last_refreshed` timestamp against aged_receivables' `last_refreshed` (or as_of_date) — if cash_position is older, don't trust its cash_balance figure at face value; sanity-check against what Neil says Revolut shows. Also added: Accounts Receivable box (Xero aged receivables, including named future-dated invoices — these are often client Direct Debit schedules, e.g. "Bronze Package - Payment 2/3" — surface them explicitly with due dates) and Accounts Payable/COGS forecast box (Airtable Editor Pipeline Budget field — money owed to editors for edits not yet paid). -->
+<!-- v1.6 — 2026-09-22: Merged with the Drive lineage (folder name `weekly-action-plan`), which had forked at v1.4 with no unique content of its own. Also repaired HTML-entity corruption (&lt; / &gt; / &amp;) that had crept into the repo copy's code fences and headings. -->
 
-# Me &amp; My Old Man — Daily &amp; Weekly Action Plan Skill
+# Me & My Old Man — Daily & Weekly Action Plan Skill
 
 This skill runs in three modes. Detect which one applies from context:
 
@@ -56,10 +57,10 @@ From the CRM, identify:
 ### Step 2 — Write the weekly plan
 
 Use this exact structure (format locked to the April 2026 action plans in
-`Shared drives/Systems/00 Rituals &amp; Action Plans/` — Neil's preferred format):
+`Shared drives/Systems/00 Rituals & Action Plans/` — Neil's preferred format):
 
 ```
-# ME &amp; MY OLD MAN — Weekly Action Plan
+# ME & MY OLD MAN — Weekly Action Plan
 [Mon Date] – [Fri Date]
 *vN — [one-line context] | Target: [the current target, e.g. "2 sales by 21 May"]*
 
@@ -331,20 +332,20 @@ Neil's visual dashboard ("MMOM Mission Control") is the front door to this whole
 
 After finishing ANY mode above — and whenever Neil says "update my dashboard" — refresh it:
 
-1. Edit the source file. Update ONLY the content inside sections marked `&lt;!-- DATA: ... --&gt;`:
+1. Edit the source file. Update ONLY the content inside sections marked `<!-- DATA: ... -->`:
    - Masthead: day name, date, and the three freshness stamps (pipeline / money / plan)
    - Today's Top 3 + "if you only do one thing" + "also owed" — from the current plan or tomorrow's priorities
    - **Cash tile — Xero MCP `get_cash_position`.** Known bug: this tool (and `get_profit_and_loss`) can return a `last_refreshed` timestamp that is days or weeks stale — it caches on a slower cycle than `get_aged_receivables`, which tends to refresh live on each call. Before trusting `cash_balance`, compare `get_cash_position`'s `last_refreshed` against `get_aged_receivables`'s `as_of_date`/`last_refreshed`. If cash_position is older, do not use its number — instead sanity-check with Neil (he can see Revolut directly) or note the figure as stale and flag it on the dashboard rather than presenting it as current. Always state the actual `last_refreshed` date on the dashboard next to the cash figure.
    - **Accounts receivable tile — Xero MCP `get_aged_receivables`.** Pull `total_outstanding`, `overdue_total`, and the `top_debtors`/`aged_receivables` list. Surface each named invoice with its due date, especially ones that read as a payment plan or Direct Debit schedule (e.g. "Bronze Package - Payment 2/3", "Payment Plan Option A - Deposit") — these are client DDs Neil wants visibility on. List them individually with amounts and due dates, not just the total.
-   - **Accounts payable / COGS forecast tile — Airtable `M&amp;MOM Database` base, `Editor Pipeline` table** (`search_bases` → `list_tables_for_base` → `list_records_for_table`, baseId `app077Z4RXX1PShzN`, tableId `tblWkRNY5rcvthBMs` as of 2026-08 — re-resolve via search if these IDs ever 404). For each record with a non-empty `Budget` field, check `Payment status` (field "Payment status": Unpaid/Paid/Logged in Xero). Sum all records where Payment status is NOT "Paid" — that's the forecast editor cost still owed. Split the total by whether `Session Date` is set (dated = a real near-term forecast, grouped by month) vs unset (still TBC, held separately). Note the `Editor` field per record if Neil wants a per-editor breakdown. Flag any record with a `Date Created` or `Session Date` that looks stale (e.g. more than ~60 days old and still unpaid) as worth double-checking rather than trusting blindly.
-   - Together these three — cash in bank, accounts receivable (what's coming in, including DD schedule), accounts payable/COGS forecast (what's going out to editors) — give Neil a simple near-term cash picture. State it as one plain sentence in the hygiene line under the payable box, not a full P&amp;L.
+   - **Accounts payable / COGS forecast tile — Airtable `M&MOM Database` base, `Editor Pipeline` table** (`search_bases` → `list_tables_for_base` → `list_records_for_table`, baseId `app077Z4RXX1PShzN`, tableId `tblWkRNY5rcvthBMs` as of 2026-08 — re-resolve via search if these IDs ever 404). For each record with a non-empty `Budget` field, check `Payment status` (field "Payment status": Unpaid/Paid/Logged in Xero). Sum all records where Payment status is NOT "Paid" — that's the forecast editor cost still owed. Split the total by whether `Session Date` is set (dated = a real near-term forecast, grouped by month) vs unset (still TBC, held separately). Note the `Editor` field per record if Neil wants a per-editor breakdown. Flag any record with a `Date Created` or `Session Date` that looks stale (e.g. more than ~60 days old and still unpaid) as worth double-checking rather than trusting blindly.
+   - Together these three — cash in bank, accounts receivable (what's coming in, including DD schedule), accounts payable/COGS forecast (what's going out to editors) — give Neil a simple near-term cash picture. State it as one plain sentence in the hygiene line under the payable box, not a full P&L.
    - Money tiles — Xero MCP: `get_cash_position` and `get_profit_and_loss` (current month to date vs last full month). "Signed, not yet invoiced" = recently signed clients at list price from the 3-tier offer, minus anything now invoiced. Before flagging a low "invoiced this month" figure as a problem, cross-check Airtable Lead Status: "Won - Recent" means the client has actually paid (often via Stripe), even if it hasn't shown up cleanly in Xero yet — don't read Xero alone as "nothing billed"
    - Pipeline bar + tiles + Hot list table — live Airtable Full CRM (Temp field; the live hot count excludes Lost and already-signed clients still tagged Hot). Don't hard-code "Nine" anywhere — state the actual current count, it drifts as leads close or die. If the Airtable connector is unavailable this refresh, say so on the dashboard and carry over last-known figures rather than guessing.
    - Rest-of-week strip — remaining days from the weekly plan
    - Audience tiles — newsletter subscribers auto-pull from the Kit MCP (`get_growth_stats`) every refresh now that the connector is live; LinkedIn/Insta stay manual — only fill if Neil gave numbers in a voice note
    - Goals panel — only when the growth strategy or monthly priorities change
    - Tonight/wins panel — wins from the latest daily log entry
-   - In the `&lt;script&gt;` block: set `var DAY = 'mmom-YYYY-MM-DD'` to today's date so the tick-boxes reset each morning
+   - In the `<script>` block: set `var DAY = 'mmom-YYYY-MM-DD'` to today's date so the tick-boxes reset each morning
 2. Data only. Never restructure the page, change the design system, or rename the file. Keep `:root { color-scheme: light }` in the stylesheet — required for Cowork artifacts.
 3. Copy the updated source file to the scratch/outputs directory, then republish with `mcp__cowork__update_artifact`, `id: "mmom-mission-control"`, pointing `html_path` at that copy. Keep the title "MMOM Mission Control".
 4. If the artifact tools aren't available in the session, say so plainly and skip — never publish under a different id.
