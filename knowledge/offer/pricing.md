@@ -1,6 +1,6 @@
 # Offer and pricing
 
-Source: Cost Model V10.10, rebuilt 4 September 2026, chapter logic settled 15 September 2026.
+Source: Cost Model V10.11, rebuilt 4 September 2026, chapter logic settled 15 September 2026, bolt-ons repriced 22 September 2026.
 Sheet: `1vN5YckOTYgne0yppRkfm2jYBjPp1ff6ug8gWntLeS8k`
 
 This supersedes the Bronze / Silver / Gold tiers in `README.md`, and it supersedes the earlier £1,800 / £2,500 / £3,500 / £4,000 ladder.
@@ -57,13 +57,15 @@ Confirmed by Neil 22 September 2026. Anchor means the struck-through "usually" p
 | Additional 2-hour session, a 4th parent session or a new voice | £750 | none | Yes |
 | Extra child on option D | £300 | none | Yes |
 
-### Three things to settle before the model is rebuilt
+### Confirmed by Neil, 22 September 2026
 
-**1. Grandchildren at £200 sits close to the floor.** The model carries a full cost of £98, so £200 is a 51.2% margin against a 50% minimum. It clears, but only just. And the model flags the £45 editor cost on that line as an estimate, not a rate either editor has quoted. If the real rate is Vuk's £65 group rate, the margin falls to 41.2% and the line breaks the floor. Agree that rate with Vuk before £200 is treated as safe.
+**Grandchildren is cheap to deliver, not expensive.** The £45 editor cost in V10.10 was wrong. Neil has never paid an editor extra for grandchildren. It is a note on the editor briefing for the final parent session, and the material is folded into the final parent chapter. It is not a separate workstream. Roughly £5 to £10 for Vuk, perhaps £10 for Jodie. Modelled at £10. That puts full cost at £62.50 and the margin at £200 at **68.8%**, comfortably clear. The old £300 was solving a cost that did not exist.
 
-**2. Snapshot's margin depends entirely on its length, and nobody has fixed the length.** The model has no Snapshot. It has "Stories We Tell", one hour, sold at £200, zero editor cost because it goes straight out of Riverside. The proposals sold a 1.5-hour Snapshot session with the children. If Snapshot is the same one-hour thing renamed, £250 gives a 63.0% margin and holds comfortably, which is exactly what the model's own margin cliff table already predicts. If it is genuinely 1.5 hours, the full cost is £132 and the margin is 47.0%, below the floor. Put an editor on it at all and it collapses to 29.0%. Decide the length first. The price follows it.
+**Stories We Tell is now called Snapshot.** Same product, renamed, and lengthened. It is 1.5 hours, not one. Neil's reasoning: an hour and a half is what it takes to get depth with an interviewee and for the thing to feel weighty. He edits it himself in Riverside, very light, about an hour of his own time. No editor cost.
 
-**3. Mementos has never been costed.** It has been sold twice at £350 and it does not exist anywhere in V10.10. No editor cost, no margin, no line. Until it is costed, nobody knows whether £350 is a good price or a loss.
+**Snapshot at £250 does not clear the floor.** This is the one number to look at again. At 1.5 hours of session time plus an hour of Neil's editing, full cost is £145. At £250 the margin is **42.0%**, against a 50% minimum. It needs **£290 to hit exactly 50%**, so £300 is the clean number and gives 51.7%. At £275 it is still short, at 47.3%. The price is currently recorded at £250 as instructed, with this flagged in the model's own notes.
+
+**Mementos is costed at last.** Two hours of work plus £45 to Vuk. Neil is refining the process, and the intent is to fold it into the editor briefing so highlight stories get flagged during the normal edit. At £350 the margin is **72.9%**, the strongest bolt-on on the sheet. One assumption to confirm: those two hours are priced as ops time at £25/hr, because the work is assembly rather than interviewing. If any of it is really session time at £80/hr the picture changes sharply, and at two full hours of session time the margin falls to 41.4%.
 
 ## Price band rules
 
@@ -78,10 +80,13 @@ Margins at LIST run 60% to 66% across the board, so there is room to move inside
 
 | Bolt-on | Price | Margin |
 |---|---|---|
-| Grandchildren, 30 minutes recorded and played to the parent live | £300 | 67.5% |
+| Grandchildren, 30 minutes recorded and played to the parent live | £200 | 68.8% |
 | Additional 2-hour session, a 4th parent session or a new voice | £750 | 62.3% |
 | Extra child on option D | £300 | 52.9% |
-| Stories We Tell, one 1-hour session, Riverside straight out | £200 | 53.8% |
+| Mementos, 3 audio clips plus 1 video memento, per parent | £350 | 72.9% |
+
+All of the above are now live in V10.11. Options A to D, their chapter counts and their margins were not touched.
+| Snapshot, one 1.5-hour session, Neil edits light in Riverside | £250 | 42.0%, below floor, see below |
 
 ## Chapters
 
