@@ -1,8 +1,13 @@
 ---
 name: editor-briefing
-description: "Creates an Editor Briefing doc for a client editing session at Me & My Old Man, links it to the Drive editing folder and the matching recording (Riverside or Zoom), reformats the raw transcript into a clean Google Doc and .md file, fills in the music track for each chapter, flips the session's Status/Onboarding fields in Airtable, and drafts the Gmail handoff to the assigned editor. Also handles interviewer prep: after the last child in a family is recorded, it builds an Interview Briefing for the parent's Session 1 from all children's transcripts; after a parent's Session 1, it builds a follow-up briefing for Session 2, and so on for later sessions. Use whenever Neil says \"brief the editor for [family/interviewee] session [n]\", \"create the briefing doc for [name]\", \"set up Ch[x]&[y] briefing\", or names a family + chapters + session number for handing a recording to an editor. Trigger even on terse asks like \"briefing for Jim Kumar S2\" — ask for missing pieces rather than skipping."
+description: "Creates an Editor Briefing doc for a client editing session at Me & My Old Man, links it to the Drive editing folder and the matching recording (Riverside or Zoom), reformats the raw transcript into a clean Google Doc and .md file, proposes chapter titles from the transcript (fixed formula for a Child Briefing or Wrap Up, 3-4 house-style options for a Parent Session), fills in the music track for each chapter and logs each selected track against its chapter in the music tracking sheet, flips the session's Status/Onboarding fields in Airtable, and drafts the Gmail handoff to the assigned editor. Also handles interviewer prep: after the last child in a family is recorded, it builds an Interview Briefing for the parent's Session 1 from all children's transcripts; after a parent's Session 1, it builds a follow-up briefing for Session 2, and so on for later sessions. Use whenever Neil says \"brief the editor for [family/interviewee] session [n]\", \"create the briefing doc for [name]\", \"set up Ch[x]&[y] briefing\", or names a family + chapters + session number for handing a recording to an editor. Trigger even on terse asks like \"briefing for Jim Kumar S2\" — ask for missing pieces rather than skipping."
 ---
 
+<!-- v1.7 — 2026-09-22: merged the forked Drive lineage back in. Gained Step 3b
+(propose chapter titles, fixed formula for Child Briefing and Wrap Up, 3-4
+house-style options for a Parent Session) plus references/chapter-title-style-examples.md,
+and the rule to log every selected track in the "family - selected tracks" tab.
+Both had been developed only in the Drive copy between 24 Aug and 16 Sep. -->
 <!-- v1.6 — 2026-09-18: two fixes.
 (1) All editor rates are quoted to Neil in GBP, always — never USD, even for
 editing whose rate card is denominated in USD with a GBP equivalent
@@ -35,8 +40,9 @@ child session, 2hr for a parent life-story session, or 1–1.5hr for a family
 wrap-up — and needs a short briefing doc so the editor knows which files to use,
 what music to drop in, and how long the piece should run. This skill produces
 that doc and does the bits of bookkeeping that go with it: linking the Drive
-folder + recording (Riverside or Zoom), reformatting the transcript, and
-updating the CRM row so the session shows as handed off.
+folder + recording (Riverside or Zoom), reformatting the transcript, proposing
+the chapter titles, and updating the CRM row so the session shows as handed
+off.
 
 There's a second, separate purpose bundled in here too: prepping Neil (as
 interviewer, not editor) for upcoming sessions. Kids get interviewed first, and
@@ -60,6 +66,7 @@ step, in each editor's own established style.
 2. Create the editor briefing doc
 3. Link the recording, download its transcript, and reformat it into a clean
    Google Doc and .md file saved in the session folder
+3b. Propose chapter titles and write them into the doc
 4. Update the Airtable Editor Pipeline
 5. Check whether this triggers an interviewer briefing (last child session, or
    parent S1, S2, S3...) and build it if so
@@ -245,6 +252,14 @@ given, that's the one legitimate reason to leave it as "TBC" — ask Neil to
 paste the URL directly rather than guessing or linking to the sheet itself,
 and say plainly in Step 7 that this is why the music link is still open.
 
+**Logging selected tracks:** every time a music track is chosen for a chapter
+(whether picked from the Music Library sheet or handed to you directly by
+Neil as a Drive/YouTube link), log it in the "family - selected tracks" tab of
+https://docs.google.com/spreadsheets/d/1DtURDPqUp1rbz6lAGOY_WrCVeoo9l_JcXWJZOQ2fBTg/edit?gid=0#gid=0 —
+list the track against the respective chapter (family/interviewee, chapter
+number, track name/link). Do this for every session briefed, not just when
+Neil explicitly asks.
+
 Before typing into any cell in the Music Library sheet via browser automation,
 verify the Name Box shows the intended cell and the formula bar shows the
 expected pre-edit content — a misdirected click/type sequence can silently
@@ -286,6 +301,80 @@ needs to be redone.
 
 Link both files from the editor briefing doc's top section (see Step 2's body
 structure) so the editor can open whichever format they prefer.
+
+## Step 3b: Propose chapter titles
+
+Every briefing carries a chapter title proposal in its Titles section — for a
+Child Briefing or a Wrap Up session this is a fixed formula, for a Parent
+Session it's a set of creative options pulled from the transcript for Neil to
+choose between.
+
+If Step 3 couldn't get a transcript (Riverside without Chrome access, and Neil
+hasn't supplied one manually), skip this step for a Parent Session (leave the
+Titles section in the doc as "TBC", flag it in Step 7) — but a Child Briefing or
+Wrap Up title doesn't need the transcript at all, since it's a fixed formula;
+fill those in regardless.
+
+**Child Briefing** — apply this fixed formula directly, no creative proposals
+needed:
+
+```
+Ch[x]. [Child First Name] & The Old Man
+```
+
+Use "& The Old Man" when the project is about Dad, "& Mum" when it's about Mum
+(see Inputs needed — confirm which if it isn't already obvious). This single
+line goes straight into the Titles section of the doc created in Step 2,
+replacing "TBC" — it's
+not a set of options, since there's only one child and one answer.
+
+**Wrap Up session** — this is always the family's final chapter, closing out
+after every child and the parent have been recorded. Apply this fixed formula,
+no creative proposals needed:
+
+```
+Ch[x]. Wrap Up & Reflections
+```
+
+Neil has also used "Family Wrap Up & Reflections" for this same chapter in past
+briefings — either wording is fine; default to the plainer "Wrap Up &
+Reflections" unless Neil says otherwise for a given family. Like the Child
+Briefing case, this is a single fixed line straight into the doc's Titles
+section, not a set of options.
+
+**Parent Session** — parent sessions run ~2hrs and the editor splits them into
+2 chapters of roughly an hour each; the exact cut point isn't finalised until
+they edit, so treat the transcript as one continuous conversation and propose
+titles for a natural first-half / second-half split, using whichever two
+chapter numbers apply to this session (e.g. "Ch3" and "Ch4"). For **each** of
+the two chapters, propose **3-4 title options** in Neil's house style. Read
+`references/chapter-title-style-examples.md` in full before generating — it
+has the complete rule set and real worked examples from Neil's own
+"Audiobook Chapter Title Creator" project; the summary below is not a
+substitute:
+
+- Format: a comma-separated string of short beats, ending "& [Last Beat]" —
+  a short word/phrase + short word/phrase + ampersand rhythm on the final pair
+- 10 words max per title
+- Beats run in chronological order of when they came up in the transcript
+- Cover the full chapter: aim for a beat from the beginning, middle, and end,
+  but let the strongest story in the chapter decide the actual weighting —
+  don't force even spacing across the three
+- 1-2 alliterative pairs read well; don't force alliteration throughout
+- Verbatim words/phrases from the transcript are great (they carry the
+  interviewee's own voice) but use them sparingly: at most 1 verbatim phrase
+  across the whole set of titles proposed in this briefing, never more than 2
+  in any single title
+- Under each option, add a one-line reasoning note — succinctly, what story
+  each beat refers to, so Neil can pick without re-reading the transcript
+
+Take your time on this — read the full transcript before drafting, don't
+skim for keywords.
+
+Write the chosen titles (or the options, for a Parent Session) into the
+Titles section of the briefing doc created in Step 2, replacing the `Ch[x]
+TBC` placeholders.
+
 
 ## Step 4: Update the Airtable Editor Pipeline
 

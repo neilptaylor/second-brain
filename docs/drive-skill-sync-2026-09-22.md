@@ -16,15 +16,14 @@ The last three were frozen only after merging Drive content the repo was missing
 - `linkedin-engagement` gained the North Star v2 engagement allocation, 12 lines. The 30/30/30/10 split, plus owning your own comment section for 30 minutes.
 - `linkedin-post` gained the carousel delivery spec, 10 lines. List posts always ship with a carousel, rendered to PNGs and a combined PDF, never left as a sidebar artifact.
 
-## Not frozen, 6 skills, diverged both ways
+## Not frozen, 5 skills, diverged both ways
 
 Each of these has content in Drive the repo lacks AND content in the repo that Drive lacks. They need a human call, not a merge script.
 
-`new-client` was resolved on 22 September, see below. Six remain.
+`new-client` and `editor-briefing` were resolved on 22 September, see below. Five remain.
 
 | Skill | Drive-only lines | Repo-only lines | Note |
 |---|---|---|---|
-| editor-briefing | 240 | 288 | Both sides heavily edited. |
 | mmom-podcast-pr | 14 | 58 | Repo mostly ahead. |
 | form-response-to-doc | 14 | 28 | Repo mostly ahead. |
 | weekly-action-plan | 10 | 16 | Named `mmom-weekly-action-plan` in the repo. |
@@ -50,6 +49,15 @@ Tier to option translation, confirmed with Neil:
 
 The old rule said "Bronze has no children chapters". That was wrong under the new ladder, because it covered both A and B, and B does interview the buying child. Option A is now the only option with no Wrap Up.
 
+## editor-briefing, resolved 22 September
+
+A true fork, not a stale copy. Both sides were actively edited after splitting around 24 August, and both independently reached a version numbered v1.5.
+
+- Drive lineage, to v1.5 on 16 Sep: Step 3 propose chapter titles, `references/chapter-title-style-examples.md`, and the rule to log every selected track in the "family - selected tracks" tab.
+- Repo lineage, to v1.6 on 18 Sep: Step 3a transcript reformat, Step 6 Gmail handoff, `references/editor-contacts.md`, hardened music lookup, Case B generalised to any parent session.
+
+Repo taken as the base because it was newer and larger. The two Drive-only pieces were merged in as v1.7. The chapter-titles step became Step 3b, because the repo lineage creates the briefing doc at Step 2 rather than after the titles exist, so the titles now get written back into the placeholders rather than filled in at creation.
+
 ## Next
 
-Work through the 6 remaining one at a time, newest content wins on a per-rule basis rather than per-file. `editor-briefing` is the biggest, 240 Drive-only lines against 288 repo-only.
+Five remain, all small: mmom-podcast-pr, form-response-to-doc, weekly-action-plan, mmom-voice-check, newsletter. Largest gap is 14 Drive-only lines.
