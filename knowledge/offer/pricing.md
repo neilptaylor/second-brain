@@ -1,6 +1,6 @@
 # Offer and pricing
 
-Source: Cost Model V10.11, rebuilt 4 September 2026, chapter logic settled 15 September 2026, bolt-ons repriced 22 September 2026.
+Source: Cost Model V10.12, rebuilt 4 September 2026, chapter logic settled 15 September 2026, bolt-ons repriced and Mementos added to the forecast 22 September 2026.
 Sheet: `1vN5YckOTYgne0yppRkfm2jYBjPp1ff6ug8gWntLeS8k`
 
 This supersedes the Bronze / Silver / Gold tiers in `README.md`, and it supersedes the earlier £1,800 / £2,500 / £3,500 / £4,000 ladder.
@@ -90,7 +90,9 @@ All of the above are live in the model. Options A to D, their chapter counts and
 
 ### Bolt-on take-up, for forecasting
 
-Mementos: **one family in four**, confirmed by Neil 22 September 2026. On the Year Model's current volumes that is 9.75 a year, worth £3,412 of revenue and £2,974 of gross profit.
+Mementos: **one family in four**, confirmed by Neil 22 September 2026 and now live in the Year Model. The rate sits in a single cell, B22, so it can be tuned in one place. On current volumes that is 9.75 a year.
+
+Both changes together take year revenue from £165,858 to **£170,470**: £1,200 from Snapshot going to £300, £3,412 from Mementos. Operating profit is up £4,174.
 
 One thing to watch: Mementos is priced per parent, but the take-up rate is expressed per family. If two-parent families routinely buy it for both parents, the forecast is understated.
 
