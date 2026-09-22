@@ -1,0 +1,30 @@
+---
+name: email3-shaggy-andrew-smethurst
+description: Create Email 3 Gmail draft for Andrew Smethurst (Shaggy) — MMOM lapsed prospect close
+---
+
+Create a Gmail draft for Neil Taylor (neil@meandmyoldman.co.uk) to Andrew Smethurst (andrewsmethurst@hotmail.com). This is Email 3 in a lapsed prospect re-engagement sequence for Me & My Old Man, a premium family storytelling service.
+
+Subject: Two options
+
+Body (use exactly this, replacing [CALENDLY LINK] with Neil's actual Calendly booking URL — search his sent emails for it if needed):
+
+Shaggy,
+
+I'm going to be straightforward with you, because we know each other well enough for that.
+
+I've sent the proposal. I've followed up. You haven't said yes and you haven't said no.
+
+That's fine — I'm an adult, I can take it either way. But I'd rather know than sit here guessing.
+
+So: two options.
+
+One — you're ready, or nearly ready, and a 30-minute call would get you there. Here's the link: [CALENDLY LINK]. We talk, we sort it, we go.
+
+Two — something's still not right. The timing, the money, something in your life I don't know about. That's genuinely okay. But if you tell me what it is, I can either fix it or leave you alone properly, rather than just going quiet.
+
+Either works for me. I just want to know where we actually are.
+
+Neil
+
+Use the mcp__ffce937d-12cb-4a5b-bc52-2321647acf20__create_draft tool to create this draft in Gmail. Search sent emails with query "from:neil@meandmyoldman.co.uk calendly" to find the Calendly URL first. If you can't find it, use [CALENDLY LINK] as the placeholder.
