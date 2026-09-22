@@ -49,11 +49,11 @@ Every proposal also carries the guarantee: full refund if it doesn't feel right 
 
 Confirmed by Neil 22 September 2026. Anchor means the struck-through "usually" price shown next to what the family actually pays.
 
-| Bolt-on | Sells at | Anchor | In V10.10? |
+| Bolt-on | Sells at | Anchor | In the model? |
 |---|---|---|---|
-| Grandchildren, 30 minutes woven in | £200 | £400 | Yes, but priced at £300 |
-| Snapshot, a session with the children for the archive | £250 | £750 | No |
-| Mementos, 3 audio clips plus 1 video memento, per parent | £350 | £550 | No |
+| Grandchildren, 30 minutes woven in | £200 | £400 | Yes |
+| Snapshot, a session with the children for the archive | £300 | £750 | Yes |
+| Mementos, 3 audio clips plus 1 video memento, per parent | £350 | £550 | Yes |
 | Additional 2-hour session, a 4th parent session or a new voice | £750 | none | Yes |
 | Extra child on option D | £300 | none | Yes |
 
@@ -63,7 +63,7 @@ Confirmed by Neil 22 September 2026. Anchor means the struck-through "usually" p
 
 **Stories We Tell is now called Snapshot.** Same product, renamed, and lengthened. It is 1.5 hours, not one. Neil's reasoning: an hour and a half is what it takes to get depth with an interviewee and for the thing to feel weighty. He edits it himself in Riverside, very light, about an hour of his own time. No editor cost.
 
-**Snapshot at £250 does not clear the floor.** This is the one number to look at again. At 1.5 hours of session time plus an hour of Neil's editing, full cost is £145. At £250 the margin is **42.0%**, against a 50% minimum. It needs **£290 to hit exactly 50%**, so £300 is the clean number and gives 51.7%. At £275 it is still short, at 47.3%. The price is currently recorded at £250 as instructed, with this flagged in the model's own notes.
+**Snapshot is priced at £300.** Neil settled this on 22 September 2026 after seeing the margin. At 1.5 hours of session time plus an hour of his own editing, full cost is £145. £250 would have given 42.0%, under the 50% minimum. £290 is the exact floor. £300 gives **51.7%** and is the clean number. The £750 anchor stays.
 
 **Mementos is costed at last.** Two hours of work plus £45 to Vuk. Neil is refining the process, and the intent is to fold it into the editor briefing so highlight stories get flagged during the normal edit. At £350 the margin is **72.9%**, the strongest bolt-on on the sheet. One assumption to confirm: those two hours are priced as ops time at £25/hr, because the work is assembly rather than interviewing. If any of it is really session time at £80/hr the picture changes sharply, and at two full hours of session time the margin falls to 41.4%.
 
@@ -83,10 +83,16 @@ Margins at LIST run 60% to 66% across the board, so there is room to move inside
 | Grandchildren, 30 minutes recorded and played to the parent live | £200 | 68.8% |
 | Additional 2-hour session, a 4th parent session or a new voice | £750 | 62.3% |
 | Extra child on option D | £300 | 52.9% |
+| Snapshot, one 1.5-hour session, Neil edits light in Riverside | £300 | 51.7% |
 | Mementos, 3 audio clips plus 1 video memento, per parent | £350 | 72.9% |
 
-All of the above are now live in V10.11. Options A to D, their chapter counts and their margins were not touched.
-| Snapshot, one 1.5-hour session, Neil edits light in Riverside | £250 | 42.0%, below floor, see below |
+All of the above are live in the model. Options A to D, their chapter counts and their margins were not touched.
+
+### Bolt-on take-up, for forecasting
+
+Mementos: **one family in four**, confirmed by Neil 22 September 2026. On the Year Model's current volumes that is 9.75 a year, worth £3,412 of revenue and £2,974 of gross profit.
+
+One thing to watch: Mementos is priced per parent, but the take-up rate is expressed per family. If two-parent families routinely buy it for both parents, the forecast is understated.
 
 ## Chapters
 
