@@ -25,7 +25,7 @@
 
 These are the next things to pull in or decide about.
 
-- **Claude.ai synced skills** at `~/.claude/skills/synced/...` — the copies here are a snapshot. Editing here does not change what Claude.ai runs. Needs a decision on which direction is canonical.
+- **Claude.ai synced skills** at `~/.claude/skills/synced/...` — as of 22 Sep 2026 every skill in `skills/` is symlinked into `~/.claude/skills/`, so Claude Code runs the repo copy and edits here are live. The Claude.ai web app still runs its own synced copies and will drift until they are re-uploaded by hand.
 - **Drive Cowork folder** `Google Drive/My Drive/Mega Claude Cowork/` — Projects, Proposals, Templates, Lessons, and its own CLAUDE.md. Largely duplicated skills, plus real assets not yet here.
 - **Airtable CRM** `apprk3RUXdvZNJ8TF` — live operational data. Stays in Airtable, but the brain should hold a schema note.
 - **client-handover skill** at `~/.claude/skills/client-handover` — local only, not synced, not yet copied.
