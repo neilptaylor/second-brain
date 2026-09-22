@@ -200,6 +200,16 @@ Neil rotates between these structures. Each one has a different job.
 **Key rule:** Each list item should feel like a gut-punch of recognition, not a tip. "Your parents feel outside your pod" hits harder than "Communication becomes harder."
 **Default CTA:** Save / Repost
 **Example pattern:** "I moved 1,000 miles away from home. Here's what nobody tells you..."
+**Hard rule — always ships with a carousel.** Neil doesn't do List posts often, and every time he does, it gets a slide-by-slide carousel companion — not optional, not pillar-dependent (unlike the "Pain Points only, WIP" carousel guidance elsewhere in this doc). Build it in MMOM's actual website design system, not the generic cream/navy Paper design-brief palette: pull the current fonts, colours, and layout language from the live site (`meandmyoldman.co.uk`) or the latest copy deck / launch-plan artifact (see [[project_mmom_website_relaunch]] in memory for locations) before building. One slide per list item, hook slide first, CTA slide last.
+
+**Delivery — never leave it as a sidebar-only canvas artifact.** A Design-canvas Artifact opens in the side panel with no fast "save all 8 and upload" path — Neil can't action it in two clicks, so it is not a finished deliverable on its own. The finished deliverable is files he can save straight from chat and drop into LinkedIn:
+1. Build the design once (canvas artifact, or `mmom-carousel` when Paper is running) to lock the copy and layout per slide.
+2. Re-express each slide as a standalone flat HTML file (plain `<div>` sized exactly to the target canvas, e.g. 1080×1350, real Google Fonts `<link>`, inline styles — no artifact runtime dependency) and render each to a PNG at that exact pixel size with headless Chrome:
+   `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --hide-scrollbars --window-size=1080,1350 --screenshot="slide-N.png" "file:///abs/path/N.html"`
+   (verify with `sips -g pixelWidth -g pixelHeight` — must match exactly, no letterboxing).
+3. Combine the PNGs into one PDF, page order = slide order (e.g. `Pillow`/PIL `Image.save(..., save_all=True, append_images=[...])`, or any equivalent) — LinkedIn's document-post carousel takes a single PDF upload and turns each page into a swipeable slide, which is the fastest path (one file, order guaranteed, no manual re-ordering of 8 separate images).
+4. Deliver via `SendUserFile`: the individual PNGs (for Instagram or manual reordering) AND the combined PDF (for the one-click LinkedIn document-post upload) — both in one message, `display: "attach"`.
+5. Also save the finished PNGs to `03 Linkedin Assets 2026/` and put the filename on the Notion row's `Visual:` line, same as any other visual — the local delivery to Neil does not replace logging the asset.
 
 ### 3. Poetic Post
 **Pillar:** 1 (The Drift)

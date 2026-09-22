@@ -192,6 +192,29 @@ The email that lands the moment someone opts in.
 - **The reader must be able to use this today.** It's not inspirational; it's actionable.
 - **Every section must pass the Sarah underline test.** At least one line per section that makes her pause and think, *"that's exactly what I want to know."*
 
+### The Three-Tier Audience Rule
+
+Write every lead magnet for three tiers simultaneously (this is why most content underperforms):
+
+1. **Die-Hards (1–5%)** — Your existing fans. They know you. They trust you. They can read a line and extrapolate the rest.
+
+2. **Dry Bias (the middle)** — Semi-familiar. They've seen you around. They're interested but not committed. They need enough specificity and context that they can follow without having to know your origin story.
+
+3. **Drop-Ins (strangers)** — Complete strangers with zero context. They found this by accident. They don't know your name, your story, or why they should care about your business. The magnet must work for them in the first 30 seconds.
+
+**Why this matters for lead magnets:**
+
+A lead magnet written only for die-hards assumes familiarity. It references your brand, your philosophy, your business — shorthand only insiders understand. You'll convert your existing list but fail to grab cold traffic.
+
+The best lead magnets work for drop-ins first. They deliver immediate utility (the questions are useful whether or not you know MMOM). The drop-in reads it, thinks "this is exactly what I need," and downloads it. Only then does the copy hint at the deeper work (MMOM) that made it possible.
+
+**Practical checklist:**
+- ✓ A stranger could use this without knowing anything about Neil or MMOM
+- ✓ The value is obvious in the first line
+- ✓ No references to your business story, your dad, your origin — none of that
+- ✓ The questions work on their own; MMOM is the deepening
+- ✓ Die-hards will recognise your philosophy in the tone, but the content doesn't require insider knowledge
+
 ### Design brief quality check
 
 - One idea per page/section. No clutter.

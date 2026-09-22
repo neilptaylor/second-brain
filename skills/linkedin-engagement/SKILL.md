@@ -4,6 +4,18 @@ description: "Draft authentic LinkedIn comments that connect with the author's p
 ---
 
 # LinkedIn Engagement Skill
+<!-- v1.1 — 2026-08-31: added the North Star engagement allocation (who to spend comment time on) — the 30/30/30/10 split. Comment craft below is unchanged. -->
+
+## Where to spend the 15 minutes (North Star v2)
+
+Engage the day each post goes out. Allocate the time:
+- **30% on Neil's ICP** — sandwich-generation adult children — to get on their radar.
+- **30% on large creators** (Jake Humphrey, Emily Maitlis types) — a strong comment on a viral post out-reaches a standalone post. Proven: 44k impressions on the Jake Humphrey "Golden Time" comment.
+- **30% on peers** in the family / legacy / longevity space — partnerships and referrals.
+- **10% on friends and colleagues.**
+- **Own Neil's own comment section for the first 30 minutes** after posting — reply to every comment, extend the thread with a question, drop an extra insight for deep readers.
+
+The comment itself always goes one level deeper than the post — answer the question the post didn't ask. Craft rules below.
 
 ## Two Comment Modes
 
