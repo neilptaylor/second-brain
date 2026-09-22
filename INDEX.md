@@ -8,6 +8,8 @@
 | Voice | `knowledge/voice/VOICE_PROFILE_Neil_Taylor.md` | Master voice profile and brand rules |
 | Voice of customer | `knowledge/voice/VOC_Intelligence_System.md` | VoC intelligence system |
 | Offer | `knowledge/offer/pricing.md` | Confirmed per-parent ladder, Sept 2026 |
+| Lessons | `knowledge/lessons.md` | Every correction Neil has made, logged as rules |
+| Systems | `knowledge/systems-map.md` | Which tool connects to what |
 | Skills | `skills/` | 23 skills: content, sales, delivery, ops |
 | Automations | `workflows/scheduled-tasks/` | 22 scheduled tasks |
 
