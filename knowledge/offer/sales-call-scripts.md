@@ -25,4 +25,4 @@ Three proposals worth reading alongside them, as worked examples of where a call
 - `Shared drives/Systems/03 Sale/02 Sales Call/20260910 Gem Catlin/20260915 Gem Caitlin Proposal v2.html`
 - `Shared drives/Systems/03 Sale/02 Sales Call/20260831 Henry Sturgess/20260909 Sales Call/20260909 Henry Sturgess Proposal vfinal sent.html`
 
-Both use the client-facing names Hero Story, Family Documentary and Full Chorus. See `pricing.md`.
+Both use the brand names Hero Story, Family Documentary and Full Chorus, with Bronze, Silver and Gold as sub-headings. See `pricing.md`.

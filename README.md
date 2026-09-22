@@ -77,15 +77,15 @@ Humour is my release valve, not my mode. Observational. Dry. Self-deprecating. I
 
 ## How I Serve Different Families
 
-I don't have one offer. I have three shapes, because families don't all arrive at the same place. The prices below are list, per parent. A second parent is priced at 95% of the first, so two parents together always costs less than two separate documentaries. Live numbers, bolt-ons and the floor I never go below live in `knowledge/offer/pricing.md`. That file is the source of truth, not this one.
+I don't have one offer. I have three shapes, because families don't all arrive at the same place. Each one has a name that says what it is, and a metal underneath it. The name always leads. Bronze, Silver and Gold are the sub-heading, never the headline, because nobody was ever moved by a metal. The prices below are list, per parent. A second parent is priced at 95% of the first, so two parents together always costs less than two separate documentaries. Live numbers, bolt-ons and the floor I never go below live in `knowledge/offer/pricing.md`. That file is the source of truth, not this one.
 
-**Hero Story (from £2,400 per parent)**
+**Hero Story. Bronze. (from £2,400 per parent)**
 Just the parent. No child interviewed. They're usually the one who felt the drift first, and usually the one doing something about it. They come in alone because their sibling isn't ready, or they're estranged, or it's just them. And what happens is their parent becomes a hero in their own story. They hear their father or mother say things they never knew: the guts, the choices, the "why I did it that way." That's the transformation. Not a family reconnection. Not yet. Just this: your parent becomes real to you in a way they weren't before. Six chapters. The simplest place to start, and the one that doesn't wait for anyone else to be ready. Add the buyer's own hour and it becomes £3,150, with eight chapters and a family wrap-up at the end.
 
-**Family Documentary (£3,350 per parent)**
+**Family Documentary. Silver. (£3,350 per parent)**
 The parent, plus the children in the room together for one shared session. The magic happens here. Because siblings hear each other properly, not through the distortion of family text chains or ten-year-old arguments. They hear each other story their parent. And that act of listening together, in real time, in someone else's presence, is where the actual drift stops. Whatever they remember together becomes what I use to prompt the parent. Eight chapters, including the family wrap-up. The siblings go home changed in a way a solo recording can't manage.
 
-**Full Chorus (£4,000 per parent)**
+**Full Chorus. Gold. (£4,000 per parent)**
 Every child gets a private hour of their own. Nothing shaped by a sibling being in the room, and a separate set of prompts for the parent from each one. This is the richest version. Priced on two children, then £300 for each child after that. Nine chapters and up, depending on how many voices. It's for families thinking generations ahead: the grandchildren can be folded in too, and when they are, they hear their grandparent's voice directly rather than through their parent as a filter. That's the dual clock. Capturing a parent before it's too late, and building something their grandchildren will understand the weight of later.
 
 Each shape is the same experience, just widened. The core never changes: three two-hour sessions with the parent, in their own voice, at their own pace. You sit with your family. You listen to each other. The drift pauses.

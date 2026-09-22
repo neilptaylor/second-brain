@@ -31,29 +31,39 @@ Every two-parent LIST is exactly 2.5% off double the one-parent LIST, rounded up
 
 ## What families actually see these called
 
-The A to D labels are internal. In proposals they are named:
+The A to D labels are internal. Families see a brand name, with the metal as a sub-heading underneath it. The brand name always leads, because it is the communicative and compelling one. Bronze, Silver and Gold are never the headline.
 
-| Internal | Client-facing name |
-|---|---|
-| A and B | Hero Story |
-| C | Family Documentary |
-| D | Full Chorus, or The Full Chorus |
+| Internal | Brand name, what leads | Sub-heading |
+|---|---|---|
+| A and B | Hero Story | Bronze |
+| C | Family Documentary | Silver |
+| D | Full Chorus, or The Full Chorus | Gold |
 
-Option B is sold as Hero Story with the buyer's own hour added, not as a fourth shape. Confirmed against the Catlin proposal of 15 September 2026 and the Sturgess proposal of 9 September 2026.
+Option B is sold as Hero Story with the buyer's own hour added, not as a fourth shape.
+
+Worth knowing: the two most recent sent proposals, Catlin 15 September and Sturgess 9 September 2026, use the brand names only. The metals do not appear as visible text on either. So the pairing above is the rule, not something those two decks demonstrate.
 
 Every proposal also carries the guarantee: full refund if it doesn't feel right after the kickoff call and before the first recorded session. Thirty-five families, never invoked.
 
-## Bolt-ons appearing in proposals but not in the cost model
+## Bolt-on prices, and where the model disagrees
 
-These were offered at a discount off a stated "usually" price. Neither the usual price nor the margin is in V10.10, so they need adding to the model.
+Confirmed by Neil 22 September 2026. Anchor means the struck-through "usually" price shown next to what the family actually pays.
 
-| Bolt-on | Offered at | Stated usual |
-|---|---|---|
-| Mementos package, 3 audio clips plus 1 video memento, per parent | £350 | £550 |
-| Snapshot, one 1.5-hour session with the children | £250 | £400 |
-| Grandchildren, up to 30 minutes raw | £200 | £400 |
+| Bolt-on | Sells at | Anchor | In V10.10? |
+|---|---|---|---|
+| Grandchildren, 30 minutes woven in | £200 | £400 | Yes, but priced at £300 |
+| Snapshot, a session with the children for the archive | £250 | £750 | No |
+| Mementos, 3 audio clips plus 1 video memento, per parent | £350 | £550 | No |
+| Additional 2-hour session, a 4th parent session or a new voice | £750 | none | Yes |
+| Extra child on option D | £300 | none | Yes |
 
-Note the clash: the model prices Grandchildren at £300, the Sturgess proposal offered it at £200 against a usual of £400. Resolve before the next proposal goes out.
+### Three things to settle before the model is rebuilt
+
+**1. Grandchildren at £200 sits close to the floor.** The model carries a full cost of £98, so £200 is a 51.2% margin against a 50% minimum. It clears, but only just. And the model flags the £45 editor cost on that line as an estimate, not a rate either editor has quoted. If the real rate is Vuk's £65 group rate, the margin falls to 41.2% and the line breaks the floor. Agree that rate with Vuk before £200 is treated as safe.
+
+**2. Snapshot's margin depends entirely on its length, and nobody has fixed the length.** The model has no Snapshot. It has "Stories We Tell", one hour, sold at £200, zero editor cost because it goes straight out of Riverside. The proposals sold a 1.5-hour Snapshot session with the children. If Snapshot is the same one-hour thing renamed, £250 gives a 63.0% margin and holds comfortably, which is exactly what the model's own margin cliff table already predicts. If it is genuinely 1.5 hours, the full cost is £132 and the margin is 47.0%, below the floor. Put an editor on it at all and it collapses to 29.0%. Decide the length first. The price follows it.
+
+**3. Mementos has never been costed.** It has been sold twice at £350 and it does not exist anywhere in V10.10. No editor cost, no margin, no line. Until it is costed, nobody knows whether £350 is a good price or a loss.
 
 ## Price band rules
 
