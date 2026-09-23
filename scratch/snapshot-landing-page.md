@@ -107,7 +107,7 @@ That's most people, at the start. The prompts sort that out, and then I do the a
 [Pending the bundle decision]
 
 **Is this the same as your family audio documentaries?**
-No. Those are twelve weeks with a parent and the family. Snapshot is one conversation, about you, now. Plenty of people finish one and start thinking about their own mum or dad. If that's you, what you paid for your Snapshot comes off a family documentary booked within twelve months.
+No. Those are twelve weeks with a parent and the family. Snapshot is one conversation, about you, now. If it gets you thinking about your own mum or dad, what you paid for your Snapshot comes off a family documentary booked within twelve months.
 
 ---
 
