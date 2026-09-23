@@ -21,6 +21,7 @@ Style, applies everywhere including plain chat replies:
 - British English, British spelling, pounds sterling.
 - No "nothing salesy" style disclaimers. The disclaimer is itself salesy.
 - Never name sales gurus or frameworks in client-facing drafts. Use the thinking, drop the label.
+- Google Docs are built as HTML (`<h1>`/`<h2>` for Title/Heading, `<b>` for bold, `<ul><li>` for lists), never as markdown text uploaded as plain text. Drive's plain-text upload renders `#` and `**` as literal characters on the page instead of formatting.
 
 Facts:
 

@@ -2,7 +2,7 @@
 name: lead-magnet
 description: "Build lead magnets for Me & My Old Man — downloadable question lists, prompt sheets, checklists, and scripts designed to turn cold traffic into email subscribers and nurture existing lists. Use this skill whenever the user asks to create, plan, draft, or design a lead magnet, opt-in, freebie, free guide, free PDF, downloadable, infographic, tripwire, content upgrade, or list-builder. Also trigger when Neil mentions 'questions to ask your parents', 'conversation starters', 'prompt sheet', 'checklist', 'starter guide', 'how to bring it up script', 'definitive questions list', or anything designed to drive an email signup or discovery call. Trigger on phrases like 'let's build a lead magnet', 'I need an opt-in', 'make a freebie', 'design a PDF for LinkedIn', or 'create a downloadable' even when the type isn't specified."
 ---
-<!-- v1.1, 2026-09-23: lifted the ban on "snapshot". Snapshot is now a product name, so the word is fine to use. -->
+<!-- v1.2, 2026-09-23: added references/google-doc-design-template.md — locked HTML/CSS method for shipping the Google Doc format pre-styled to match the Conversation Playbook design (Marcellus/terracotta headings, Merriweather body, teal script accents), uploaded via Drive create_file HTML-to-Doc conversion. Supersedes the "plain text, no design" instruction in Step 2A for this format. -->
 
 # Lead Magnet Skill — Me & My Old Man
 
@@ -34,6 +34,7 @@ Read these, in this order, every single run. Non-negotiable:
 7. `references/design-brief.md` — How to brief Nano Banana / Gamma for infographics.
 8. `references/promo-copy.md` — Landing page, email, promo post templates.
 9. `references/existing-assets.md` — What's live, what's WIP, what gaps remain.
+10. `references/google-doc-design-template.md` — the locked HTML/CSS method for shipping a Google Doc pre-styled to match the Conversation Playbook design. Read this before producing any Google Doc deliverable.
 
 ### New Source Materials (April 2026)
 
@@ -117,12 +118,7 @@ For **Lead Magnet #2 (How to Bring It Up — Your Why Script)**, the strategy is
 
 ### B. Three Formats of the Deliverable
 
-1. **Google Doc version** (`<title>_GoogleDoc_v1.md`)
-   - Plain text, scannable, super shareable
-   - Headers for each life stage section
-   - Questions in clean, one-per-line format
-   - No design, just clarity
-   - Neil can copy this directly into a shared Google Doc
+1. **Google Doc version** — shipped as an actual styled Google Doc, not plain text. Follow `references/google-doc-design-template.md` exactly: Marcellus/terracotta headings, Merriweather body, teal script accents, uploaded via the Drive HTML-to-Doc conversion method. This is the default now — don't hand Neil an unstyled .md and make him format it himself.
 
 2. **One-page infographic design brief** (`<title>_InfographicBrief_v1.md`)
    - For Nano Banana / Gamma Designer
