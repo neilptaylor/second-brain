@@ -2,6 +2,7 @@
 name: lead-magnet
 description: "Build lead magnets for Me & My Old Man — downloadable question lists, prompt sheets, checklists, and scripts designed to turn cold traffic into email subscribers and nurture existing lists. Use this skill whenever the user asks to create, plan, draft, or design a lead magnet, opt-in, freebie, free guide, free PDF, downloadable, infographic, tripwire, content upgrade, or list-builder. Also trigger when Neil mentions 'questions to ask your parents', 'conversation starters', 'prompt sheet', 'checklist', 'starter guide', 'how to bring it up script', 'definitive questions list', or anything designed to drive an email signup or discovery call. Trigger on phrases like 'let's build a lead magnet', 'I need an opt-in', 'make a freebie', 'design a PDF for LinkedIn', or 'create a downloadable' even when the type isn't specified."
 ---
+<!-- v1.1, 2026-09-23: lifted the ban on "snapshot". Snapshot is now a product name, so the word is fine to use. -->
 
 # Lead Magnet Skill — Me & My Old Man
 
@@ -177,7 +178,7 @@ The email that lands the moment someone opts in.
 ### Voice rules (from Neil's profile)
 
 - **Specific domestic detail → emotional truth.** The dishwasher. The twelve-minute call. The fluffy tufts of hair. Generic = failure.
-- **Banned words:** preserve, legacy (sparingly), heirloom, keepsake, snapshot, sit with, achieved, process. Use: earned, memory, story, experience.
+- **Banned words:** preserve, legacy (sparingly), heirloom, keepsake, sit with, achieved, process. Use: earned, memory, story, experience.
 - **Loved words:** drift, emotional, space, glimpse, reflect on, subtle, earned, "what matters most".
 - **Sentence rhythm:** long flowing sentences break on short blunt lines. *"Different feelings mind."* The short line hits harder after the long.
 - **Tone:** warm, direct, poetic, British-restrained. No American sales cadence. No exclamation stacks. Neil is a poet disguised as a founder.

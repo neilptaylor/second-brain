@@ -1,4 +1,4 @@
-# Snapshot landing page: copy deck v1
+# Snapshot landing page: copy deck v2
 
 Draft. Price is a placeholder until Step 3 pricing is locked. Kit: the main form tags `snapshot-waitlist`, the tick box adds `video-waitlist`.
 
@@ -51,7 +51,9 @@ Within a week you get it back. About an hour of edited audio, and a handful of s
 
 It isn't coaching. It isn't therapy. It's just space, and your stories.
 
-Why do it? Because it brings you closer to yourself. Closer to what matters. Closer to the people you're rushing about for. And in thirty years you'll be able to press play and hear who you were, not just what you did.
+Why do it? Because it brings you closer to yourself, and to what matters. Because one day your children will ask what you were like when they were small, and you'll have more to give them than a shrug and a photo album. And because in thirty years you'll be able to press play and hear who you were, not just what you did.
+
+What are we, if not a collection of stories? And what a shame it would be to let them slip by.
 
 Pop your email below, and I'll let you know when the next dates open.
 
@@ -63,7 +65,7 @@ Pop your email below, and I'll let you know when the next dates open.
 
 **2. We talk.** An hour and a half, recorded online. I ask, you talk, nobody interrupts.
 
-**3. You get it back.** Within a week. About an hour of edited audio, plus short video clips you can keep or share.
+**3. You get it back.** Within a week. About an hour of edited audio, plus short video clips: yours to reflect on, for your kids one day, to share with your partner.
 
 ---
 
@@ -86,7 +88,7 @@ Not coaching. Not therapy. Nothing to fix and no homework afterwards. Just space
 
 ## WHO I AM
 
-I'm Neil. Since 2024 I've recorded 350+ hours of interviews with 35 families, mostly parents in their seventies and eighties telling their life story in their own voice, so their children can keep it. Snapshot is what those hours taught me: don't wait until you're seventy-five.
+I'm Neil. Since 2024 I've recorded 350+ hours of interviews with 35 families, mostly parents in their seventies and eighties telling their life story in their own voice. They get to hear their own life handed back to them. Their children and grandchildren get to keep it. Snapshot is what those hours taught me: don't wait until you're seventy-five.
 
 ---
 
@@ -105,13 +107,13 @@ That's most people, at the start. The prompts sort that out, and then I do the a
 [Pending the bundle decision]
 
 **Is this the same as your family audio documentaries?**
-No. Those are twelve weeks with a parent and the family. Snapshot is one conversation, about you, now.
+No. Those are twelve weeks with a parent and the family. Snapshot is one conversation, about you, now. Plenty of people finish one and start thinking about their own mum or dad. If that's you, what you paid for your Snapshot comes off a family documentary booked within twelve months.
 
 ---
 
 ## CLOSING CAPTURE
 
-The stories are happening anyway. This is just a way to keep a few.
+What are we, if not a collection of stories? And what a shame it would be to let them slip by.
 
 [ Email ] [ Save my place ]
 [ ] Also tell me when full video documentaries open in 2027.

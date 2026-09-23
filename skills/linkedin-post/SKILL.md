@@ -5,6 +5,7 @@ description: "Write LinkedIn posts in Neil Taylor's voice for Me & My Old Man. U
 
 # LinkedIn Post Skill — Neil Taylor / Me & My Old Man
 ## Version 3.2 — September 2026 (Conversation Playbook added to the ladder; opt-in pages are the only source of truth)
+<!-- v3.4, 2026-09-23: lifted the ban on "snapshot". Snapshot is now a product name, so the word is fine to use. -->
 <!-- v3.3 — 2026-09-22: Replaced hardcoded families/hours/countries figures with pointers to knowledge/offer/business-stats.md, the new single source of truth (updated by new-client each time a client is won). -->
 <!-- v3.2 — 2026-09-17: caught in review — "The Weekly Run" [Sep 17] had CTA=Save on a Pain Points/Lead-gen post, with the Conversation Playbook's raw Google Doc link sitting in the funnel note instead of an opt-in page. Root cause: the Playbook wasn't in the lead-magnet ladder at all, so there was no live opt-in page to check it against. Fixed: added the Playbook to the ladder with its real opt-in page (https://meandmyoldman.co.uk/conversationplaybook, comment 'PLAYBOOK'), and made the ladder table the explicit single source of truth — a magnet not listed there with a URL is NOT LIVE regardless of what a Notion row's Notes field claims. Also ran a full audit of every planned post in Notion against the skill's hard rules (CTA-per-pillar, opt-in-page-only, Visual: line present, banned words, biographical facts) and corrected what was found — see the per-post notes for what changed. -->
 ## Version 3.1 — September 2026 (the Q&A scene rhythm, locked from Neil's hand-edit)
@@ -503,7 +504,7 @@ If the post is too personal to Neil's specific situation without a universal hoo
 ## Hard rules — never break these
 
 ### Banned words and phrases
-Never use: preserve, legacy (mostly), heirloom, keepsake, treasure, for posterity, process (say "experience"), "stopped me cold", "stopped me in my tracks", "gold" (as exclamation), snapshot, "sit with" (therapy vibes), achieved (corporate), "let's get connected!" (motivational coach), "hold space for", withholding (say "holding back")
+Never use: preserve, legacy (mostly), heirloom, keepsake, treasure, for posterity, process (say "experience"), "stopped me cold", "stopped me in my tracks", "gold" (as exclamation), "sit with" (therapy vibes), achieved (corporate), "let's get connected!" (motivational coach), "hold space for", withholding (say "holding back")
 
 Never end a post with hashtags. No #Family #Legacy #Storytelling. It cheapens everything that came before it.
 

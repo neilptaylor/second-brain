@@ -2,6 +2,7 @@
 name: instagram
 description: "Create Instagram content in Neil Taylor's voice for Me & My Old Man. Use this skill whenever Neil asks to write, draft, create, or brainstorm Instagram content — including Reel scripts, carousel posts, captions, or DM copy. Also trigger when he shares a topic, story, or idea and wants it turned into Instagram content, or when he mentions 'Reel', 'carousel', 'caption', 'DM', 'IG', or 'Instagram'. If he says 'make this into a Reel' or 'write a carousel about X', this is the skill to use."
 ---
+<!-- v1.1, 2026-09-23: lifted the ban on "snapshot". Snapshot is now a product name, so the word is fine to use. -->
 
 # Instagram Skill — Neil Taylor / Me & My Old Man
 
@@ -236,7 +237,7 @@ All rules from the Voice Profile apply. Instagram-specific additions:
 - Write anything that sounds scripted or sales-y — Instagram audiences smell inauthenticity faster than LinkedIn
 - Use fear/regret without pairing it with transformation and possibility
 - Composite or fictionalise family stories — every story is real, one family, as it happened
-- Use: preserve, legacy (mostly), heirloom, keepsake, treasure, for posterity, process (say "experience"), "stopped me cold", "gold" (as exclamation), snapshot, "sit with"
+- Use: preserve, legacy (mostly), heirloom, keepsake, treasure, for posterity, process (say "experience"), "stopped me cold", "gold" (as exclamation), "sit with"
 - End with a row of hashtags — one comment, or 3–5 max, separated from the close
 
 **Always:**

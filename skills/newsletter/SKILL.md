@@ -5,6 +5,7 @@ description: "Write newsletter emails for 'Stories That Matter' by Me & My Old M
 
 # Newsletter Skill — Neil Taylor / Me & My Old Man
 ## Version 2.1 — August 2026
+<!-- v2.3, 2026-09-23: lifted the ban on "snapshot". Snapshot is now a product name, so the word is fine to use. -->
 <!-- v2.2 — 2026-09-22: Replaced hardcoded families/hours figures with a pointer to knowledge/offer/business-stats.md, the new single source of truth (updated by new-client each time a client is won). -->
 <!-- v2.1 — 2026-08-04: added Kit performance data (last 90 days + broadcast history) to ground the go-deeper and subject-line rules in real numbers, not just theory. Formalised the LinkedIn-to-newsletter repurposing move as an explicit step. Folded in the one genuinely useful idea from Lara Acosta's Session 3 (email as an owned, compounding asset) while explicitly rejecting her urgency/FOMO launch-sequence language, which conflicts with Neil's hard rules. -->
 
@@ -249,7 +250,7 @@ Patterns to avoid:
 ## Hard rules — never break these
 
 ### Banned words and phrases
-Never use: preserve, legacy (mostly), heirloom, keepsake, treasure, for posterity, process (say "experience"), "stopped me cold," "stopped me in my tracks," "gold" (as exclamation), snapshot, "sit with," achieved, "hold space for," "audiobook" (say "audio documentary"), "how it landed"
+Never use: preserve, legacy (mostly), heirloom, keepsake, treasure, for posterity, process (say "experience"), "stopped me cold," "stopped me in my tracks," "gold" (as exclamation), "sit with," achieved, "hold space for," "audiobook" (say "audio documentary"), "how it landed"
 
 ### Banned punctuation
 **No em dashes (—).** This is Neil's anti-AI writing policy. Replace with: commas for parenthetical asides, periods for sentence breaks, colons before elaboration. Restructure if needed. Never use an em dash anywhere in copy, subject lines, preview text, or P.S. lines.

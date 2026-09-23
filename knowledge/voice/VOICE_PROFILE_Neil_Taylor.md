@@ -143,7 +143,7 @@ On LinkedIn, the uniform short-line format overrides this instinct, flattening t
 
 **LOVES:** drift, emotional, space, glimpse, reflect on, subtle, earned, "what matters most" (simple, hits home). Distance is OK depending on context.
 
-**HATES:** snapshot (not soft enough), "sit with" (too much therapy vibes), achieved (corporate goal energy), "stopped me cold" (AI-ism — performative, used to manipulate the reader into continuing).
+**HATES:** snapshot (not soft enough, but lifted 23 Sep 2026: Snapshot is now a product name and fine to use), "sit with" (too much therapy vibes), achieved (corporate goal energy), "stopped me cold" (AI-ism — performative, used to manipulate the reader into continuing).
 
 **PATTERN:** His loved words all have movement or atmosphere — they're not static. "Drift" moves slowly. "Space" opens up. "Glimpse" is fleeting. "Earned" implies effort over time. These are words with a sense of time passing through them.
 
