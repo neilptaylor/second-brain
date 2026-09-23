@@ -6,6 +6,8 @@ description: Generates a personalised Me & My Old Man sales proposal HTML file f
 
 <!-- v2.0 — 2026-09-22: removed the stale V8 tier prices, which the skill was instructing the model to treat as ground truth in client-facing decks. Replaced with the A to D ladder and a hard pointer to knowledge/offer/pricing.md. The three-tier slide/anchoring logic below is flagged as unrewritten and needs Neil. -->
 
+<!-- v3.0 — 2026-09-23: scrapped the Gold→Bronze→Silver architecture entirely, per Neil. Retranslated to the four-option ladder (Hero Story = A/B, Family Documentary = C, Full Chorus = D) using MMOM_3-Tier-Offer_V9 (Drive, 14 Sep 2026) as the structural source, cross-checked against knowledge/offer/pricing.md (22 Sep 2026, newer on numbers) and the Henry Sturgess (9 Sep) and Gem Catlin (15 Sep) proposals V9 says it was built from. Dropped: the itemised standalone-value-stack table per tier, "Silver is always the default", "Silver seeds", the forced Gold→Bronze→Silver anchor order, and the Silver+ 2P scenario (folded into Option D's flexible child-session shape). Replaced with: one number per option, a single recommended option chosen by family shape (not a fixed default), and Option A kept as the quiet appendix fallback, never a headline slide. -->
+
 # Me & My Old Man — Proposal Generator
 
 You generate a bespoke 6–12 slide HTML sales proposal for Neil Taylor's family storytelling service. Each proposal must feel like it was written only for this one person — because it was.
@@ -110,16 +112,9 @@ calculating it here.
 Documentary (C), Full Chorus (D), with the metal name only ever as a
 sub-heading. The brand name always leads.
 
-> **Also stale, not yet rewritten:** everything below this point that assumes
-> three tiers — the Gold → Bronze → Silver slide order and its anchoring
-> logic, the per-tier value stacks, the bonus structure, the "Silver is
-> always the default" rule, the Silver+ 2P scenario, and the per-tier
-> inclusion lists. The pricing is now four options, not three. Ask Neil how
-> he wants the tier comparison slides to work under A to D before generating
-> a deck that depends on them. Flag this to him rather than improvising a
-> mapping.
-
 **Hard override rule:** If Neil's prompt explicitly states a price or option, use that. In all other cases `knowledge/offer/pricing.md` is ground truth — never this file, and never a figure remembered from a previous proposal.
+
+**No value-stack table, anywhere.** Per Neil's 7 September decision (carried into V9): no "Total Standalone Value" / "You Save £X" table, itemised or otherwise, for any option. One number per option — the price — full stop. If you catch yourself building a line-item table of what each session/chapter is "worth," stop, that's the retired V8 pattern.
 
 ---
 
@@ -176,7 +171,7 @@ Extract 2–3 specific fear expressions verbatim. Common patterns:
 | Price | "That's a lot", "need to think", sibling cost-splitting mentioned | Logistics problem or genuine constraint? |
 | Timing | "After Christmas", "when things settle down" | Real or avoidance? Name the cost of delay specifically. |
 | Parent resistance | "He won't want to", "she's quite private" | Solvable. Parents almost always come round. Use Steve Millard testimonial. |
-| Sibling alignment | "Need to check with my brother/sister" | Who is the actual decision-maker? Bronze removes this blocker entirely. |
+| Sibling alignment | "Need to check with my brother/sister" | Who is the actual decision-maker? Hero Story (with the buyer's own hour) removes this blocker entirely — it never needs sibling agreement to go ahead. |
 | Overwhelm | Too many options, unclear next step | Simplify the path in Slide 3. |
 
 A price objection is almost never purely about money. Identify the real fear underneath it.
@@ -217,22 +212,20 @@ Extract every quote that should appear in the proposal verbatim. Aim for 5–8. 
 - Fear/pain quote → Slide 9
 - Close quote → Slide 12
 
-### 3.9 — Tier recommendation
+### 3.9 — Option recommendation
 
-State: recommended tier and why · alternative if relevant · pricing flexibility notes · sensitive topics.
+State: recommended option and why · alternative if relevant · pricing flexibility notes · sensitive topics.
 
-**Silver (£[see pricing.md] · 12 weeks) is always the default** unless one of these hard overrides applies:
-- Client explicitly stated they cannot spend more than £1,800
-- Fixed deadline that physically cannot fit 12 weeks
-- Solo buyer confirmed, no siblings, no grandchildren, no family dimension — and they explicitly need speed over depth
+There is no fixed default. The recommendation follows family shape, per `pricing.md` and V9:
 
-Bronze (£[see pricing.md]) is never the "cheap option." It is a complete, standalone experience. The only thing it doesn't include is siblings.
+- **No siblings mentioned, solo buyer, wants speed over depth** → **Full Chorus** is never right here — there's no one to give it to. Recommend **Hero Story** (Option B, the buyer's own hour woven in). This is the option that removes sibling-alignment as a blocker entirely, because it never needed sibling agreement to go ahead.
+- **Siblings mentioned, family wants to be recorded together, or wants the simplest ask of a busy family** → **Family Documentary** (Option C) — one joint 90-minute sibling session, same finished documentary as Hero Story, just whose voices are in it changes.
+- **Siblings who don't get on well, live apart, or "we wouldn't all say the same thing in front of each other"** → **Full Chorus** (Option D) — each sibling gets a private hour, no group dynamics, nobody holding back. Don't pitch this signal, hear it; the conversation leads you there.
+- **No child interview wanted at all, genuinely just the parent's own story** → the appendix fallback (Option A, "Parent's story alone"). Never a headline slide, never anchored high, never presented as the cheap option — it's the quiet minimum for a family that has actively said they want nothing else.
 
-**Gold (£[see pricing.md] · 16 weeks):** Recommend when grandchildren are young and the window for capturing their voices alongside a grandparent is genuinely live. Gold always appears in the tier comparison as a price anchor.
+Whichever option is recommended, present it as a complete, standalone experience in its own right, not as a step up from something smaller or down from something bigger. Hero Story specifically is never "the cheap option" — it is the full parent's-story documentary plus the buyer's hour, full stop.
 
-**Silver seeds — mandatory:** When selecting facts for Slide 2, deliberately choose the details that build the case for Silver — siblings mentioned, multiple children, family stories that belong to more than one person, grandchildren. By the time the prospect reaches the tier slide, they already feel why Silver is right.
-
-**Single price, not dual options — CRITICAL UPDATE #11:** When siblings are involved, default to ONE price with separate (not joint) sibling interviews as standard — never present a joint-session option and a separate-session option side by side ("Option A / Option B"). Two priced options force the prospect to do maths and second-guess themselves; one option with the best structure already built in removes that friction entirely. Explain the separate-interview benefit directly: sitting down alone, before recording, to really think about what you want to know about a parent is part of the value, not just prep for it. Kept separate, no one is shaping what they say around a sibling — no groupthink. Each person prepares, reflects, shares, and listens back to their own reflections and each other's afterwards. Siblings very often name this as one of the biggest transformations of the whole experience. Only offer a joint session as the default if the prospect explicitly said on the call that they want to be interviewed together.
+**Single price, not dual options — CRITICAL UPDATE #11:** When siblings are involved, default to ONE recommended option with separate (not joint) sibling interviews as standard when the family shape calls for Full Chorus — never present a joint-session option and a separate-session option side by side ("Option A / Option B"). Two priced options force the prospect to do maths and second-guess themselves; one option with the best structure already built in removes that friction entirely. Explain the separate-interview benefit directly: sitting down alone, before recording, to really think about what you want to know about a parent is part of the value, not just prep for it. Kept separate, no one is shaping what they say around a sibling — no groupthink. Each person prepares, reflects, shares, and listens back to their own reflections and each other's afterwards. Siblings very often name this as one of the biggest transformations of the whole experience. Only recommend the joint (Family Documentary) shape as the default if the prospect explicitly said on the call that they want to be interviewed together, or the family shape signals above point there.
 
 ### 3.10 — Testimonial selector
 
@@ -243,7 +236,7 @@ Match 2–3 testimonials to this prospect's situation (see Appendix A for full m
 ## Step 3b — Three Hormozi elements (non-negotiable)
 
 **1. Reason Why (closing summary slide — see below)**
-Show why the price is lower than the standalone value. One sentence. Direct. No false modesty. Example: "I take on four Silver families per month. That's not a marketing line — it's how I can promise you that every session gets my full attention, from kickoff to delivery. The price reflects that model."
+One sentence on why the price is what it is. Direct. No false modesty, and no standalone-value comparison (there's no value-stack table to point back to any more). Example: "I take on five family projects a month. That's not a marketing line — it's how I can promise you that every session gets my full attention, from kickoff to delivery. The price reflects that model."
 
 **2. Bonus expiry + booking discount (closing summary slide — see below)**
 Calculate today + 7 days. Format: "Bonuses included if confirmed by [DATE]." Styled callout directly below the value stack rows — same visual level as the price, not a footnote.
@@ -255,7 +248,7 @@ Calculate today + 7 days. Format: "Bonuses included if confirmed by [DATE]." Sty
 **3. Cost of delay + guarantee (closing summary slide — see below)**
 Don't assert urgency — argue it. One honest, precise statement about what waiting actually costs. Adapt to their specific situation — if health is a factor, name it. If memory concerns were mentioned, reference them. Use their own words. The Angus Watts line ("You always assume there will be more time. Now is the time.") is the strongest closer when it fits.
 
-**Closing summary slide — CRITICAL UPDATE #13:** Bonuses, urgency deadline, and guarantee belong together on ONE dedicated slide near the end of the deck (immediately before the final "say yes" slide), not scattered across separate slides or folded quietly into the value stack table. Structure it as: what everything is worth standalone → what the bonuses are worth and when they expire → the investment price → the guarantee. This is the "here's what it should cost, here's what it does cost, here's what you get, here's the bonus, here's the guarantee" slide — it's the last piece of resistance-removal before the close, so give it its own full slide rather than compressing it.
+**Closing summary slide — CRITICAL UPDATE #13:** Bonuses, urgency deadline, and guarantee belong together on ONE dedicated slide near the end of the deck (immediately before the final "say yes" slide), not scattered across separate slides. There's no value-stack table any more, so structure it as: what's included (short list, no pricing per line) → the bonuses and when they expire → the investment price → the guarantee. This is the last piece of resistance-removal before the close, so give it its own full slide rather than compressing it.
 
 **Guarantee copy — always use this framing unless Neil gives a different one for this client:** "If after your kickoff call — and before [Parent]'s first recorded session — this doesn't feel right for any reason, a full refund is issued immediately. No questions asked." Pair it with the positive-spin proof stat, pulled fresh from the latest count (do not hardcode a number that will go stale): "[N] families · [N] countries · 0 guarantees invoked." Frame as 100% progressed / 0% invoked — never phrase the guarantee defensively.
 
@@ -269,7 +262,7 @@ Output this before generating the HTML:
 PROPOSAL PRE-FLIGHT — [Client Name]
 ──────────────────────────────────────────
 Buyer type:       [type from 3.1]
-Tier:             [Bronze / Silver / Gold] — [one sentence why]
+Option:           [Hero Story / Family Documentary / Full Chorus / appendix fallback] — [one sentence why]
 Emotional anchor: "[exact quote from 3.8]"
 Trigger event:    [from 3.2]
 Key objection:    [from 3.5]
@@ -303,45 +296,41 @@ Build a single self-contained HTML file:
 
 - **Slide 1 cover** — context tag from: INTRODUCTION (first proposal after a call) · RE-ENGAGEMENT (lapsed prospect) · GIFT (buying for someone else) · MILESTONE (birthday/anniversary anchor). Add one line naming the occasion.
 
-- **Slide 2 quote** — their exact words from the call, verbatim. Silver seeds: select beats that build the case for Silver — siblings, multiple children, grandchildren, family stories that belong to more than one person.
+- **Slide 2 quote** — their exact words from the call, verbatim. Select beats that build the case for whichever option Step 3.9 actually recommended for this family — siblings, multiple children, grandchildren, family stories that belong to more than one person, or (for a Hero Story recommendation) the buyer's own relationship to the parent.
 
 - **Slide 3 mode:**
   - **First-time:** Name their trigger event exactly as it happened ("Your Mum (Linda)'s diagnosis in March", never "a health event"). State what the window is. What changes if they wait. Close with their own words.
   - **Re-engagement:** Name the old quote. Name the specific blocker that stopped them. Show THEN vs NOW. Name what they can say yes to today.
 
-- **Slide 4 Bronze identity line** — mandatory. In the `compare-note` section (or immediately below the table): *"Bronze is for people ready to act now, for their parent, alone. It is not an entry-level product — it is a complete, standalone experience. The only thing it doesn't include is siblings."* Never present Bronze apologetically.
+- **Hero Story identity line** — when Hero Story is the recommendation, use somewhere in the deck (compare-note section or immediately below its price): *"Hero Story is for people ready to act now, for their parent, alone or with your own hour woven in. It is not an entry-level product — it is a complete, standalone experience."* Never present it apologetically, and never call it the cheap option.
 
-- **Slides 5–7 Tier details** — CRITICAL UPDATE #4: Explain each tier in detail BEFORE showing the summary table.
+- **Slides 5–7 Option detail(s)** — one full slide for the recommended option: what it includes, the price, the specific benefit/differentiator for this family, and one matched testimonial folded into the slide (do not give the testimonial its own slide). No value-stack table — see the rule above, one number only.
 
-  **Order — CRITICAL UPDATE #10 (price anchoring):** Show Gold first, then Bronze, then Silver last. This is deliberate Hormozi price anchoring: Gold sets the ceiling (makes the real offer feel reasonable by comparison), Bronze shows the floor (proves the model isn't only expensive), Silver lands last as the obvious, already-desired middle. Never default to Bronze→Silver→Gold — that order buries the anchor and makes Silver look like an upsell rather than the landing choice.
-  - Slide 5: Gold — full standalone value table (every line item priced, not summarised) + investment price + "who this is for" / "not the shape of what you've described" framing if Silver is the recommendation. This is a genuine full slide, not a compressed "for context" strip.
-  - Slide 6: Bronze — full standalone value table + investment price + Bronze identity line (see below). Also a genuine full slide, matching Gold's treatment.
-  - Slide 7: Silver — the recommended tier. Full standalone value table + investment price + the specific benefit/differentiator for this family + one matched testimonial folded into this slide (do not give the testimonial its own slide).
-  - Slide 8: Summary comparison table only if it adds something the three full slides didn't already show — often it's redundant once Gold/Bronze/Silver each have their own complete slide. Default to omitting it unless Neil asks for a side-by-side.
+  **No forced anchor order.** There is no Gold→Bronze→Silver equivalent here and nothing to retrofit one onto. Present the recommended option on its own full slide. Only give a second option its own slide if the transcript genuinely supports a real alternative (e.g. the family is torn between Family Documentary and Full Chorus) — don't manufacture a ceiling/floor pairing just to anchor the price. Sturgess and Catlin, the reference proposals, both run on a single clearly recommended option plus the appendix mention of the solo fallback, not a three-way comparison.
+  - Appendix mention: if Option A (parent's story alone, no child interview) is relevant — e.g. the prospect asked directly, or it's clearly cheaper than what they expect — mention it briefly, low-key, near the end (Slide 8 or the closing slide), never as a headline slide and never anchored against the recommendation.
+  - Slide 8: Summary comparison table only if the family is genuinely weighing two real options and a side-by-side would help them decide. Default to omitting it — most proposals need one clear recommendation, not a menu.
 
-  **Every tier gets its own full value-stack table.** Do not show a detailed table for the recommended tier only and a compressed price-only mention for the other two — Gold and Bronze each need their standalone value total and price shown with the same weight as Silver. Pull exact line items and figures from the current offer doc / cost model, never estimate.
+- **Option naming:** Always show the brand name next to the price, metal only as a sub-heading if at all — never lead with the metal.
+  - ✅ "Hero Story — £[see pricing.md]"
+  - ✅ "Family Documentary — £[see pricing.md]"
+  - ✅ "Full Chorus — £[see pricing.md]"
+  - ❌ Do NOT write "Bronze / Silver / Gold — £[see pricing.md]". Those names are retired, don't use them anywhere in client-facing copy.
 
-- **Tier naming — CRITICAL UPDATE #6:** Always show tier names next to prices.
-  - ✅ "Bronze: Hero Story Capture — £[see pricing.md]"
-  - ✅ "Silver: Family Stories Across Generations — £[see pricing.md]"
-  - ✅ "Gold: Multi-Generational Heirloom — £[see pricing.md]"
-  - ❌ Do NOT write "Bronze — £[see pricing.md]" without the name.
-
-- **CRITICAL UPDATE #5:** Verify tier inclusions against the Latest Offer Document before writing Slides 5–7.
-  - **Bronze NEVER includes:** child interviews, personalised era soundtrack, Audio Story Reels (unless explicitly listed as current bonus), any extended family voices.
-  - **Bronze ALWAYS includes:** one parent, hero story capture, deep-dive interviews, audio file output.
-  - **Silver MUST mention:** sibling inclusion (group session with all children), both parents' full stories (if two-parent), grandchildren voice collection (if mentioned).
+- **Verify inclusions against `pricing.md` before writing Slides 5–7:**
+  - **Hero Story (A/B):** A is the parent's story alone, no child interview, no wrap-up. B adds the buyer's own hour, woven in, plus the family wrap-up. Never includes other siblings.
+  - **Family Documentary (C):** everything in Hero Story B, except the buyer's hour becomes one shared 90-minute joint session with every sibling, plus the wrap-up. Same finished documentary — what changes is whose voices are in it.
+  - **Full Chorus (D):** everything in Family Documentary, except every sibling gets their own private hour instead of the joint session. 2 children baseline, +£300 and +1 chapter per child beyond 2.
 
 - **Closing summary slide (bonuses + guarantee)** — use figures from Step 2b for the recommended tier. Include: standalone value total, bonus items with combined value and expiry callout (explicit date), investment price, Reason Why paragraph, and the guarantee block (see Step 3b). **Payment plan line:** include only for first-contact proposals (context tag: INTRODUCTION or MILESTONE). Do NOT include for re-engagement proposals (context tag: RE-ENGAGEMENT) — lapsed prospects who walked away on price should not see a payment plan offered upfront; it signals desperation. If they ask, address it in follow-up.
 
 - **Slide 9 cost of delay** — argued not asserted. Specific to their parent's situation. Never vague. This is where pain points from 3.4 belong — NOT shown earlier.
 
 - **Slide 9–10 CTA buttons** — CRITICAL UPDATE #9: All CTAs are payment-focused, never "book a call."
-  - Under each tier price, add a button: "Start [Tier Name]" or "Get [Tier Name]"
-  - Example: Bronze button = "Hero Story Capture — £[see pricing.md] / Start Now"
+  - Under the recommended option's price, add a button: "Start [Option Name]" or "Get [Option Name]"
+  - Example: "Hero Story — £[see pricing.md] / Start Now"
   - Link to payment/booking system (Stripe, Calendly, or email reply to Neil)
 
-- **Slide 12 close** — do NOT address the prospect by name anywhere in the body copy. They are reading this — it feels unnatural to be called by name mid-document. The cover title tag ("For [Name]") and the HTML `<title>` tag are the only places the name appears. Repeat the three tier buttons in a footer.
+- **Slide 12 close** — do NOT address the prospect by name anywhere in the body copy. They are reading this — it feels unnatural to be called by name mid-document. The cover title tag ("For [Name]") and the HTML `<title>` tag are the only places the name appears. Repeat the recommended option's button in a footer (plus the appendix option's, only if it was mentioned earlier in the deck).
 
 **CRITICAL UPDATE #8:** Never pre-empt sales tactics in copy. Remove any line that explains *why* a constraint exists.
 - ❌ "That limit isn't there to create pressure—it's just how I manage my calendar."
@@ -454,23 +443,16 @@ Two-parent interest is the most common source of pricing confusion. Handle preci
 
 **When the transcript indicates interest in capturing both parents:**
 1. Flag it in the pre-flight note
-2. Stop and ask Neil which pricing scenario applies before generating
-3. Use V8 2P pricing — never invent a bundle price
+2. Stop and ask Neil which option applies before generating
+3. Use the two-parent LIST prices in `pricing.md` — never invent a bundle price, and never reuse an old V8 2P figure
 
-**Official 2-parent prices (V8):**
-
-| Tier | Price | When to use |
-|---|---|---|
-| Bronze 2P | £[see pricing.md] | Two parents, two complete stories, delivered as a paired collection |
-| Silver 2P | £[see pricing.md] | Full family experience for both parents. Children's group session shared — no extra cost. |
-| Silver+ 2P | £[see pricing.md] | Silver 2P with individual 1:1 child briefings instead of the group session. Use when sibling dynamics are complicated. |
-| Gold 2P | £[see pricing.md] | Full multi-generational biopic for both parents. Every lever deployed. |
+**Two-parent prices:** see the "Two parents (LIST)" table in `knowledge/offer/pricing.md` — Hero Story, Family Documentary and Full Chorus (2–4 children) all have two-parent LIST figures there. With two parents, the family wrap-up runs 1.5 hours instead of 1, and on Full Chorus each child sits a second private hour (one per parent), which is why Full Chorus's price and chapter count step up more than Hero Story or Family Documentary's do.
 
 **Starting with one parent:** If the prospect wants to start with one parent only, generate the single-parent proposal. Flag in private note: "Two-parent interest identified. Two-parent LIST is in `pricing.md`. Mention only if they ask."
 
-**Silver+ signal:** Listen for: siblings who don't get on · geographical distance · one child who seems less involved · "we wouldn't all say the same thing in front of each other." Don't pitch it — hear it. The conversation leads you there.
+**Full Chorus signal (siblings interviewed separately, the two-parent-aware version of the old "Silver+" case):** Listen for: siblings who don't get on · geographical distance · one child who seems less involved · "we wouldn't all say the same thing in front of each other." Don't pitch it — hear it. The conversation leads you there.
 
-**Additional children in Gold:** Gold includes 3 children's 1:1 sessions. Extra children beyond 3: £200/child. Mention conversationally only if a family has 4+ children. Never put it in the proposal.
+**Additional children on Full Chorus:** baseline is 2 children. Extra children beyond 2: £300/child, per `pricing.md`. Mention conversationally only if a family has 3+ children. Never put the per-child add-on maths in the proposal itself.
 
 ---
 
@@ -481,13 +463,13 @@ These changes reshape the proposal to be clearer, more direct, and prospect-focu
 1. **Parent naming (Mum/Dad FirstName)** — Section 3.6, Appendix B, all copy
 2. **Write to prospect as "you"** — Never use their name in body copy; appears only in cover tag and HTML title
 3. **No blockers on early slides** — Move pain points to the closing summary slide; flow is pain → dream → solution → objection handling
-4. **Tier details before any summary table** — Slides 5–7 each fully explain one tier; a comparison table is optional and only added if it adds something new
-5. **Verify Bronze/Silver inclusions** — Always check Latest Offer Document; Bronze never has child interviews or personalised era soundtrack
-6. **Add tier names next to prices** — "Bronze: Hero Story Capture — £[see pricing.md]" not just "Bronze — £[see pricing.md]"
+4. **One full slide for the recommended option** — no forced multi-tier walkthrough; a comparison table is optional and only added if the family is genuinely weighing two real options
+5. **Verify option inclusions against `pricing.md`** — Hero Story (A/B) never has other siblings; Family Documentary (C) is a joint sibling session; Full Chorus (D) is separate sibling sessions
+6. **Add option names next to prices** — "Hero Story — £[see pricing.md]", never the metal name as the lead ("Bronze/Silver/Gold" are retired)
 7. **One-week bonus expiry explicit** — If mentioned on call, include it as a dated callout on the closing summary slide
 8. **Never pre-empt sales tactics** — Remove disclaimers that explain *why* a limit exists
 9. **CTA is payment, not "book a call"** — Buttons link to payment/booking, not another call
-10. **Gold → Bronze → Silver slide order** — Anchor high (Gold), show the floor (Bronze), land on the recommendation (Silver) last. Every tier gets a full standalone value table, not just the recommended one.
-11. **Single price, not dual options** — When siblings are involved, default to one price with separate (not joint) interviews built in as standard. Never present "Option A / Option B" side by side.
+10. **No forced anchor order, no value-stack table** — Present the recommended option on its own; Option A (solo, no child interview) only gets a brief low-key mention as the appendix fallback, never a headline slide
+11. **Single price, not dual options** — When siblings are involved, default to one recommended option with the right interview shape (joint for Family Documentary, separate for Full Chorus) built in as standard. Never present two priced options side by side.
 12. **One-week booking discount (5%)** — Offer alongside bonuses; keep the discounted number in the private note, not printed in the client-facing deck, unless Neil says otherwise.
-13. **Bonuses + guarantee share one closing slide** — Standalone value → bonuses + expiry → investment price → guarantee, all on one dedicated slide right before the final close, not scattered or buried in the value table.
+13. **Bonuses + guarantee share one closing slide** — What's included → bonuses + expiry → investment price → guarantee, all on one dedicated slide right before the final close, not scattered across the deck.
