@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>MMOM carousel</title>
+<!-- Matched by eye to MMOM_LI_Carousel_v1.pdf. Lora (serif) + DM Sans (sans). -->
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,500&family=DM+Sans:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f9f6f1;   /* slide background */
+    --ink: #1c1814;     /* headlines, dark slide bg */
+    --body: #7a6e62;    /* supporting lines, wordmark */
+    --peach: #b8644b;   /* numbers, page count, the one accent */
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #ccc; }
+  .slide {
+    width: 1080px; height: 1350px; position: relative; overflow: hidden;
+    background: var(--cream); color: var(--ink);
+    padding: 0 88px; display: flex; flex-direction: column; justify-content: center;
+    font-family: "DM Sans", sans-serif;
+  }
+  .slide + .slide { margin-top: 40px; }
+  .mark {
+    position: absolute; top: 96px; left: 88px;
+    font: 500 21px/1 "DM Sans", sans-serif; letter-spacing: 0.16em; text-transform: uppercase; color: var(--body);
+  }
+  .mark::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--peach); margin-right: 14px; vertical-align: 3px; }
+  .num { font: 600 150px/1 "Lora", serif; color: var(--peach); margin-bottom: 44px; }
+  h1 { font: 600 76px/1.12 "Lora", serif; letter-spacing: -0.01em; max-width: 860px; }
+  h2 { font: 600 66px/1.15 "Lora", serif; letter-spacing: -0.005em; max-width: 860px; }
+  .accent { font: italic 500 44px/1.3 "Lora", serif; color: var(--peach); margin-top: 36px; }
+  p { font: 400 32px/1.6 "DM Sans", sans-serif; color: var(--body); max-width: 780px; margin-top: 32px; }
+  p + p { margin-top: 26px; }
+  .foot { position: absolute; left: 88px; right: 88px; bottom: 96px; display: flex; justify-content: space-between; align-items: baseline; }
+  .foot .left { font: 500 25px/1 "DM Sans", sans-serif; color: var(--body); }
+  .foot .page { font: 600 30px/1 "Lora", serif; color: var(--peach); margin-left: auto; }
+
+  /* Break slide: full peach, everything cream */
+  .slide.peach { background: var(--peach); color: var(--cream); }
+  .slide.peach .mark, .slide.peach p, .slide.peach .num, .slide.peach .page { color: var(--cream); }
+  .slide.peach .mark::before { background: var(--cream); }
+  /* CTA slide: near-black, cream type, peach accents */
+  .slide.dark { background: var(--ink); color: var(--cream); }
+  .slide.dark .mark, .slide.dark .foot .left { color: var(--cream); }
+  .slide.dark p { color: var(--peach); }
+
+  /* Render mode: ?s=N shows only slide N at 0,0 */
+  body.solo { background: none; }
+  body.solo .slide { display: none; margin: 0; }
+  body.solo .slide.on { display: flex; }
+</style>
+</head>
+<body>
+
+<!-- 01 HOOK -->
+<section class="slide">
+  <div class="mark">Me &amp; My Old Man</div>
+  <h1>HOOK HEADLINE.</h1>
+  <p>One or two supporting lines.</p>
+  <div class="foot"><span class="left">Tease line &rarr;</span><span class="page">01 / 08</span></div>
+</section>
+
+<!-- 02 NUMBERED POINT (repeat for each point) -->
+<section class="slide">
+  <div class="mark">Me &amp; My Old Man</div>
+  <div class="num">1</div>
+  <h2>The point, in one line.</h2>
+  <p>Short supporting line.</p>
+  <div class="foot"><span class="page">02 / 08</span></div>
+</section>
+
+<!-- PEACH BREAK (one per carousel, max) -->
+<section class="slide peach">
+  <div class="mark">Me &amp; My Old Man</div>
+  <div class="num">5</div>
+  <h2>The turn.</h2>
+  <p>Short supporting line.</p>
+  <div class="foot"><span class="page">06 / 08</span></div>
+</section>
+
+<!-- LAND (the reframe, with a peach italic accent) -->
+<section class="slide">
+  <div class="mark">Me &amp; My Old Man</div>
+  <h2>The reframe.</h2>
+  <div class="accent">One word.</div>
+  <p>Short supporting line.</p>
+  <div class="foot"><span class="page">07 / 08</span></div>
+</section>
+
+<!-- CTA (always last, always dark) -->
+<section class="slide dark">
+  <div class="mark">Me &amp; My Old Man</div>
+  <h2>The ask, in one serif line.</h2>
+  <p>A quiet second line.</p>
+  <div class="foot"><span class="left">meandmyoldman.co.uk</span><span class="page">08 / 08</span></div>
+</section>
+
+<script>
+  const s = new URLSearchParams(location.search).get("s");
+  if (s) {
+    document.body.classList.add("solo");
+    const el = document.querySelectorAll(".slide")[+s - 1];
+    if (el) el.classList.add("on");
+  }
+</script>
+</body>
+</html>
