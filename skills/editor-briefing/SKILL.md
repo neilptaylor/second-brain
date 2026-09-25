@@ -3,6 +3,10 @@ name: editor-briefing
 description: "Creates an Editor Briefing doc for a client editing session at Me & My Old Man, links it to the Drive editing folder and the matching recording (Riverside or Zoom), reformats the raw transcript into a clean Google Doc and .md file, proposes chapter titles from the transcript (fixed formula for a Child Briefing or Wrap Up, 3-4 house-style options for a Parent Session), fills in the music track for each chapter and logs each selected track against its chapter in the music tracking sheet, flips the session's Status/Onboarding fields in Airtable, and drafts the Gmail handoff to the assigned editor. Also handles interviewer prep: after the last child in a family is recorded, it builds an Interview Briefing for the parent's Session 1 from all children's transcripts; after a parent's Session 1, it builds a follow-up briefing for Session 2, and so on for later sessions. Use whenever Neil says \"brief the editor for [family/interviewee] session [n]\", \"create the briefing doc for [name]\", \"set up Ch[x]&[y] briefing\", or names a family + chapters + session number for handing a recording to an editor. Trigger even on terse asks like \"briefing for Jim Kumar S2\" — ask for missing pieces rather than skipping."
 ---
 
+<!-- v1.8 — 2026-09-25: added Step 5b — a Wrap Up briefing now flags the
+referral-page skill in its Step 7 report, since the wrap-up is the trigger
+point for building a family's /refer-[family] page and Neil said he's prone
+to forgetting otherwise. -->
 <!-- v1.7 — 2026-09-22: merged the forked Drive lineage back in. Gained Step 3b
 (propose chapter titles, fixed formula for Child Briefing and Wrap Up, 3-4
 house-style options for a Parent Session) plus references/chapter-title-style-examples.md,
@@ -476,6 +480,12 @@ number + 1.
    already exist as the S3 folder even without an explicit "S.3" suffix) so
    you don't create a duplicate.
 
+## Step 5b: Wrap Up session — flag the referral-page skill
+
+If this briefing is for a **Wrap Up session**, this is the final chapter of the project and the natural moment to start building the family's `/refer-[family]` page — Neil now scans back through the project's transcripts (parent sessions for stories, child briefings for testimonials, this wrap-up for most testimonials) right after this point, and is prone to forgetting if it isn't surfaced here.
+
+Don't run the `referral-page` skill yourself as part of this one — just flag it clearly in your Step 7 report, e.g. "This is Griffiths' Wrap Up briefing — run the referral-page skill next to start their /refer-griffiths page." Skip this flag for a Child Briefing or Parent Session.
+
 ## Step 6: Draft the Gmail handoff to the assigned editor
 
 This step always runs — don't ask Neil first, just draft it and mention it in
@@ -529,4 +539,5 @@ added by hand (Riverside without Chrome access), the music tracks used (or
 left TBC), the Airtable status change (and any date/naming mismatch flagged),
 the Gmail draft created (recipient + subject), and — if applicable — the
 interviewer briefing you built (or the mismatch you flagged, or that Neil
-asked to hold it back). Keep this short — a few lines, not a report.
+asked to hold it back), and — if this was a Wrap Up session — the referral-page
+flag from Step 5b. Keep this short — a few lines, not a report.
