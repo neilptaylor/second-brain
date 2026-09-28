@@ -1,4 +1,4 @@
-# Snapshot landing page: copy deck v2
+# Snapshot landing page: copy deck v3
 
 Draft. Price is a placeholder until Step 3 pricing is locked. Kit: the main form tags `snapshot-waitlist`, the tick box adds `video-waitlist`.
 
@@ -6,9 +6,9 @@ Draft. Price is a placeholder until Step 3 pricing is locked. Kit: the main form
 
 ## HERO
 
-**Headline:** The stories you'll wish you remembered are happening this week.
+**Headline:** You'll remember that this year happened. You won't remember what it felt like.
 
-**Subhead:** Snapshot. An hour and a half with me, about your life as it is right now.
+**Subhead:** Snapshot keeps it, for you and for the kids who'll one day ask.
 
 [VSL, about 3 minutes, script below]
 
@@ -59,13 +59,12 @@ Pop your email below, and I'll let you know when the next dates open.
 
 ---
 
-## HOW IT WORKS
+## WHAT YOU GET
 
-**1. You get ready.** A short set of prompts a few days before, so you arrive with more than "erm, work's been busy".
-
-**2. We talk.** An hour and a half, recorded online. I ask, you talk, nobody interrupts.
-
-**3. You get it back.** Within a week. About an hour of edited audio, plus short video clips: yours to reflect on, for your kids one day, to share with your partner.
+- A reflection guide beforehand, so you arrive with more than "erm, work's been busy"
+- A 1h30 recorded interview, online. I ask, you talk, nobody interrupts.
+- One week later, a ~60-minute edited recording
+- A Snapshot [NEIL TO CONFIRM: is this the short video clips? Earlier copy: "yours to reflect on, for your kids one day, to share with your partner"]
 
 ---
 
@@ -118,6 +117,9 @@ What are we, if not a collection of stories? And what a shame it would be to let
 [ Email ] [ Save my place ]
 [ ] Also tell me when full video documentaries open in 2027.
 
+Stories That Matter.
+With People You Love.
+
 ---
 
 ## Alternative hooks (headline and VSL first line)
@@ -127,3 +129,18 @@ What are we, if not a collection of stories? And what a shame it would be to let
 
 2. **Headline:** Don't wait until you're seventy-five to tell your story.
    **VSL opens:** "Most people I interview are seventy-five. I've started to think that's too late."
+
+3. **Headline:** The stories you'll wish you remembered are happening this week.
+   **Subhead:** Snapshot. An hour and a half with me, about your life as it is right now. (v1 and v2 hero)
+
+Other one-liner options considered are kept in `snapshot-refer-copy.md`.
+
+---
+
+## Change log
+
+| Version | Date | Change |
+|---|---|---|
+| v1 | 23 Sep 2026 | First draft: hero, VSL script, how it works, what we might talk about, what it isn't, who I am, FAQ, closing capture with a video waitlist tick box. |
+| v2 | 23 Sep 2026 | "Why do it" line now includes the children ("more than a shrug and a photo album"). New closing line: "What are we, if not a collection of stories? And what a shame it would be to let them slip by." Video clips now "yours to reflect on, for your kids one day, to share with your partner". Who I am verbs sharpened. FAQ links Snapshot to the family documentaries, with the Snapshot price credited within 12 months. |
+| v3 | 28 Sep 2026 | New hero: "You'll remember that this year happened. You won't remember what it felt like. Snapshot keeps it, for you and for the kids who'll one day ask." How it works replaced by a four-item "What you get" list: reflection guide, 1h30 interview, ~60-minute edit a week later, a Snapshot. "Stories That Matter. With People You Love." added as the sign-off. The old hero moved to alternative hooks. |

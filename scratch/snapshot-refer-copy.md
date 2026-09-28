@@ -34,7 +34,7 @@ Small print: the Snapshot reward expires 12 months after your family's booking.
 
 ## Round 2, after Neil's notes (28 Sep)
 
-- **2a.** You'll remember that this year happened. You won't remember what it felt like. Snapshot keeps it, for you and for the kids who'll one day ask.
+- **2a. CHOSEN 28 Sep, now the landing page hero.** You'll remember that this year happened. You won't remember what it felt like. Snapshot keeps it, for you and for the kids who'll one day ask.
 - **2b.** You'll remember that this year happened. You won't remember what it felt like. Unless you catch it now.
 - **5a.** One day your children will ask what you were like when they were small. Give them more than a shrug and a photo album.
 - **5b.** One day your children will ask what you were like at their age. Give them more than a shrug and a photo album.

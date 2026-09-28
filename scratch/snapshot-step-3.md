@@ -76,7 +76,7 @@ Draft copy and VSL script: `scratch/snapshot-landing-page.md`.
 | Positioning paragraph | N | Drafted, above |
 | Pricing, two numbers (4x dropped) | N | Recommended £195 / £350, waiting on your yes |
 | Deliverable and true cost | N | Done, £145 a session |
-| Landing page with VSL | C + N | Copy v2 drafted |
+| Landing page with VSL | C + N | Copy v3 drafted, hero line chosen 28 Sep |
 | Video waitlist capture | C + N | In the landing page draft |
 | Once pricing is locked, add Snapshot front-door pricing to V10 and pricing.md | C | After your yes |
 | DOB and anniversary fields, kickoff agenda | N | Separate session |
