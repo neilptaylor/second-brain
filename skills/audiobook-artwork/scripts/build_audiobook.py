@@ -29,6 +29,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from mutagen.id3 import ID3, TIT2
+
 CHAPTER_RE = re.compile(r"^Ch\s*0*(\d+)\b", re.IGNORECASE)
 IMAGE_EXTS = {".jpg", ".jpeg", ".png"}
 
@@ -103,10 +105,23 @@ def run_track(chapter, artist, album, genre, year, track_count):
         str(track_count),
     ]
     result = subprocess.run(args, capture_output=True, text=True)
-    if result.returncode != 0 or "OK" not in result.stdout:
+    output = result.stdout.strip()
+    if result.returncode != 0 or not output.startswith("OK"):
         raise RuntimeError(
             f"AppleScript failed for {chapter['mp3'].name}:\n{result.stderr.strip()}"
         )
+
+    # Belt and braces: Music's AppleScript "set name of ..." doesn't
+    # reliably flush the title back to the file's ID3 tag before the
+    # command returns (confirmed on the Griffiths build — artist/album/
+    # genre/track/artwork all wrote correctly, but 9 of 10 tracks came
+    # out with no TIT2 frame at all). Write the title directly with
+    # mutagen as a guaranteed backstop.
+    if "|" in output:
+        library_path = output.split("|", 1)[1]
+        tags = ID3(library_path)
+        tags["TIT2"] = TIT2(encoding=3, text=chapter["title"])
+        tags.save(library_path)
 
 
 def main():

@@ -4,7 +4,7 @@ description: "Draft authentic LinkedIn comments that connect with the author's p
 ---
 
 # LinkedIn Engagement Skill
-<!-- v1.1 — 2026-08-31: added the North Star engagement allocation (who to spend comment time on) — the 30/30/30/10 split. Comment craft below is unchanged. -->
+<!-- v1.2 — 2026-09-24: added the connection-request rule — accept never happens silently. -->
 
 ## Where to spend the 15 minutes (North Star v2)
 
@@ -16,6 +16,10 @@ Engage the day each post goes out. Allocate the time:
 - **Own Neil's own comment section for the first 30 minutes** after posting — reply to every comment, extend the thread with a question, drop an extra insight for deep readers.
 
 The comment itself always goes one level deeper than the post — answer the question the post didn't ask. Craft rules below.
+
+## Connection requests: never a silent Accept
+
+When reviewing incoming LinkedIn connection requests, first sort into Accept (organic fit — ICP, large creator, or peer) vs. Ignore (no fit). For every Accept, draft a short personal opener before it's sent — one line showing you actually read their profile or work, one line of genuine curiosity, no pitch. A request with no message from the sender is lazy on their part; Neil doesn't want to mirror that by connecting silently himself. This overrides the North Star's "peer bucket is networking, not conversation, no message needed" allowance — that allowance is about where to spend proactive comment time, not about how to handle an inbound accept. Ignore still needs no message. Confirmed 2026-09-24 across a real batch (Carlos Saba, Reena Friedman Watts, Irshad Manji, Mark Young, David Fullerton accepted with openers; Sarah Carter, James Mathews ignored).
 
 ## Two Comment Modes
 

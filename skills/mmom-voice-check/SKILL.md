@@ -2,6 +2,7 @@
 name: mmom-voice-check
 description: MMOM Voice Guardrail — Load this BEFORE mmom-sales-strategist. Ensures all sales strategy, copywriting, and prospect communication sounds like Neil (warm, specific, British, thoughtful) not like a CRM manager. Use whenever working on MMOM sales tasks to anchor advice in Neil's actual voice profile.
 ---
+<!-- v1.3 — 2026-09-24: extended flag-and-deny ban to the "no pressure"/"not chasing"/"no agenda" family, not just pitching/selling language --><!-- v1.2 — 2026-09-24: added flag-and-deny disclaimers ("genuinely curious rather than pitching") to banned phrases -->
 <!-- v1.1 — 2026-09-05: added "stopped me in my tracks" to banned-phrase family (same bucket as "stopped me cold") -->
 
 # MMOM Voice Guardrail
@@ -45,6 +46,7 @@ Use this before you send any strategic advice or copy recommendation to Neil:
 - [ ] **Warm not clinical:** Would this sound at home in an email to a mate, or does it belong in a sales training deck?
 - [ ] **Rhythm:** Long sentences → short punchy sentence? Or is it all even and flat?
 - [ ] **No banned phrases:** Check for: "switch channels," "remove the ask," "trigger," "nurture," "preserve," "legacy," "stopped me cold," "stopped me in my tracks" (same banned family — any "stopped me [cold/in my tracks/dead]" construction), "gold," "sit with."
+- [ ] **No flag-and-deny disclaimers:** Cut any line that names the angle and then denies it — "genuinely curious rather than pitching," "not trying to sell you anything," "no agenda here," "nothing salesy about this," "no pressure," "genuinely no pressure," "not chasing [this/the page/you]," "quick one, just...". Naming the pitch (or the ask, or the low stakes) and then disclaiming it is what makes it read as staged. If the message isn't a pitch, or has no ask, it needs no disclaimer, just leave the thing out. If it is one, say so plainly or say nothing.
 - [ ] **No em dashes:** Use a full stop or a comma instead. Applies everywhere, especially outreach/pitch emails.
 - [ ] **Outreach length:** For cold pitches/follow-ups, match the length of Neil's own short working templates (e.g. the Vicki Harper pitch) — one ask, no padding, busy recipient.
 - [ ] **Pain + light:** If there's darkness, is there a path back to light? Or just pain?

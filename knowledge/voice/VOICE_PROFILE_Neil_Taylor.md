@@ -377,6 +377,8 @@ Email: organised and structured but very light and personable. Not corporate.
 - "Audiobook" (say "audio documentary" — audiobook implies a commercial product; audio documentary captures the bespoke, produced quality of the experience)
 - "That [thing] is doing a lot of work" (lazy AI phrase — show the work instead of naming it)
 - "That [thing] landed with me hard" (AI-ism that performs emotion rather than showing it)
+- Any disclaimer that names and denies the thing it's doing: "genuinely curious rather than pitching", "not trying to sell you anything", "no agenda here", "nothing salesy about this". Neil: naming the angle and then disclaiming it is what makes the reader think "this is a pitch" — it exposes the thing it's trying to hide. If a message isn't a pitch, it doesn't need to say so. If it is one, say what it is plainly. Never flag-and-deny.
+- Same family, different words: "no pressure", "genuinely no pressure", "not chasing [the page/this/you]", "no agenda in this one/here", "quick one, just...". These are still flag-and-deny — naming that the message is low-stakes or ask-free draws attention to the fact that it might not be, and reads as a stalling preamble rather than content. If a message has no ask, just don't put one in, don't say so. If it does have an ask, open with the actual thing, not a disclaimer about the message's own tone.
 
 **INSTEAD OF THOSE, SAY:**
 - "Really resonated with me"

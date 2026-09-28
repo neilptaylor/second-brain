@@ -4,7 +4,11 @@ description: "Write LinkedIn posts in Neil Taylor's voice for Me & My Old Man. U
 ---
 
 # LinkedIn Post Skill — Neil Taylor / Me & My Old Man
-## Version 3.2 — September 2026 (Conversation Playbook added to the ladder; opt-in pages are the only source of truth)
+## Version 3.8 — September 2026 (no two posts on the same day)
+<!-- v3.8 — 2026-09-28: Neil caught two posts scheduled on the same day (Oct 1) and had to move one himself. Added a same-day collision check before setting Date on a Notion row — see "Log the post to Notion". -->
+<!-- v3.7 — 2026-09-24: Neil caught a real photo ("Neil portrait, red hoodie, coastal walk") proposed for today's post that he'd already used on LinkedIn 1-2 weeks earlier — the skill had no check against recent image usage before proposing one. Added a 30-day no-repeat rule under "The visual": check the last 30 days of Content rows' Image bullets (and asset filenames) before proposing a photo or card. Swapped today's row to an unused image. -->
+<!-- v3.6 — 2026-09-24: Neil said he never reads the Notion row's Notes property or the page-body "First comment"/"Image selection" narrative blocks — he reads the post copy, then four quick bullets (Pillar, Job, CTA, Image link). Stopped setting Notes on every future row and fixed today's row ("The Question I Couldn't Answer") to the new page-body shape. Root cause: v3.2 had explicitly named Notes "the field Neil actually reads" without checking — never verified, just assumed. -->
+<!-- v3.5 — 2026-09-24: caught before publishing — the CTA Audit's "Comment [WORD] — always, no exceptions" rule for Pain Points/Lead-gen posts assumes an audience already in the habit of commenting. Neil is week 2 of a new content-pillar reset on ~800 followers, getting likes but almost no comments; a comment-trigger CTA just sits unanswered there, and swapping to a link-in-first-comment doesn't fix that, it works around it. Checked Chris Donnelly's corpus: comment-trigger (high engagement/distribution, costs fulfilment time) vs direct-link (low friction, low distribution) — his guidance is comment-triggers for a push once comments already happen, direct links for ongoing background promotion; neither is a cold-start fix. Added the "Cold-start CTA exception" below the CTA Audit. -->
 <!-- v3.4, 2026-09-23: lifted the ban on "snapshot". Snapshot is now a product name, so the word is fine to use. -->
 <!-- v3.3 — 2026-09-22: Replaced hardcoded families/hours/countries figures with pointers to knowledge/offer/business-stats.md, the new single source of truth (updated by new-client each time a client is won). -->
 <!-- v3.2 — 2026-09-17: caught in review — "The Weekly Run" [Sep 17] had CTA=Save on a Pain Points/Lead-gen post, with the Conversation Playbook's raw Google Doc link sitting in the funnel note instead of an opt-in page. Root cause: the Playbook wasn't in the lead-magnet ladder at all, so there was no live opt-in page to check it against. Fixed: added the Playbook to the ladder with its real opt-in page (https://meandmyoldman.co.uk/conversationplaybook, comment 'PLAYBOOK'), and made the ladder table the explicit single source of truth — a magnet not listed there with a URL is NOT LIVE regardless of what a Notion row's Notes field claims. Also ran a full audit of every planned post in Notion against the skill's hard rules (CTA-per-pillar, opt-in-page-only, Visual: line present, banned words, biographical facts) and corrected what was found — see the per-post notes for what changed. -->
@@ -158,6 +162,8 @@ Rotate Wednesday between Transformation and The Now across the month. Quiet-pipe
 
 Woolly questions are permitted ONLY inside the body of the post as rhetorical devices — never as the closing CTA.
 
+**Cold-start CTA exception.** COMMENT [WORD] only works once the audience already has a comment habit — it trades on existing engagement, it doesn't create it. While Neil is within roughly the first 4-6 weeks of a new content-pillar reset, or on any account where posts are consistently pulling likes but close to zero organic comments, default every post (including Pain Points/Lead-gen) to SAVE or REPOST instead. Don't substitute a link-in-first-comment either — that just works around low comment volume rather than fixing it. Keep the lead magnet's opt-in page live in the Featured section throughout, since that doesn't depend on comment volume. Come off this exception and back to COMMENT [WORD] on the weekly Pain Points post once posts are pulling organic comments without being asked. Source: Chris Donnelly's corpus — comment-trigger CTAs are for accelerating distribution on posts that already generate comments; direct links are for ongoing background promotion, not for a cold-start comment problem.
+
 ---
 
 ## What you're actually doing
@@ -256,7 +262,7 @@ Neil rotates between these structures. Each one has a different job.
   5. **Pitch:** The resource itself, named plainly, with the comment mechanic.
 **Key rule:** The comment mechanic ("Comment 'QUESTIONS' and I'll DM you the guide") drives both engagement AND reach. The algorithm sees comments as high-value signals. Never just put a link in the post.
 **Hard rule — never post the magnet itself, and never DM the raw file link.** The magnet is never in the post body, never an attachment, and the DM that follows a keyword comment links to the **opt-in landing page**, never the Google Doc / PDF. The chain: keyword comment → public reply with a nugget (not "check your DMs") → DM the opt-in page + one question to open a conversation → email opt-in → Kit tag `magnet-<name>` → nurture → call. DMing the raw file = zero emails, no nurture, no attribution, wasted asset. Full flow + scripts: SOP §4 Step 7 (`MMOM_LinkedIn-SOP_v1.md`).
-**Default CTA:** Comment [WORD] — always. No exceptions on this post type.
+**Default CTA:** Comment [WORD] — always, unless the Cold-start CTA exception (under the CTA Audit above) is in effect, in which case Save or Repost, and the opt-in page link stays in the Featured section instead of behind a comment.
 **In the CTA / funnel note, always give the opt-in page URL, never the Doc.** If the page isn't built yet, write "opt-in page: TO BUILD (`/slug`)" — never fall back to the Doc link.
 **The lead-magnet ladder** (light → expert — Thursday's Pain Points post rotates through it). **This table is the only source of truth for which magnets have a live opt-in page — if a magnet isn't listed here with a URL, treat it as NOT LIVE, whatever a Notion row's Notes field says.**
   1. **107 Questions to Get Your Parent's Stories** — Pillar: Pain Points / Drift — comment 'STORIES' — opt-in page: *live* (URL TBD — confirm with Neil if not already recorded here)
@@ -623,7 +629,7 @@ Post type: [which type from above]
 Hook strategy: [one sentence on why this hook works]
 CTA: [exactly what appears at the end and why — must be Save / Repost / Comment [WORD] / Follow, never a question]
 Funnel note: [which lead magnet this feeds, and whether it's a pinned comment or the main CTA]
-Visual: [one short line — the chosen card line / carousel concept / photo brief — per pillar, see "The visual" section. This exact line ALSO goes into the Notion row's Notes property, and gets the saved filename appended once the asset is built.]
+Visual: [one short line — the chosen card line / carousel concept / photo brief — per pillar, see "The visual" section. Goes into the Notion page body as the Image bullet, not into a Notes property — see "Log the post to Notion".]
 Format companion: [if this is a Carousel or Cheat Sheet, the full slide-by-slide brief goes in the Notion row body]
 Suggested edits for Neil: [2-3 specific places where Neil should swap in his own detail — a real name, a real moment, a real number. The soul comes from him; efficiency from AI.]
 ```
@@ -649,10 +655,22 @@ Set these properties:
 | CTA | the closing mechanic mapped to the property options: Repost + magnet comment / Save / Comment keyword / Link in comment / Book a call / None |
 | Type | Post, or Reel / Video / Short Video / Stories if the companion format is that |
 | Status | Idea |
-| Date | the target post date — the next free fixed slot for this Pillar (Tue = Drift, Wed = Transformation/Now, Thu = Pain Points). Ask Neil for the date only if the week is ambiguous. |
-| Notes | a short human-readable block: `Pillar / Job / Hook / CTA / Source`, then a **`Visual:` line** — the chosen card line or carousel concept in one sentence, plus the saved asset filename once built (or `BRIEF ONLY — Paper not running`). This is the field Neil actually reads, so the visual plan lives here, not only in the body. |
+| Date | the target post date — the next free fixed slot for this Pillar (Tue = Drift, Wed = Transformation/Now, Thu = Pain Points). **Before setting it, query "The Content" for any existing row on that same date** (`notion-query-data-sources` SQL on `date:Date:start`) — never schedule two posts on one day. If the slot's taken, move to the next free fixed slot for that Pillar instead. Ask Neil for the date only if the week is ambiguous. |
 
-Put the full post text in the page body. For a carousel, the full slide-by-slide brief also goes in the body. Report the created row's URL on the last line of your reply.
+**Never set the Notes property.** Neil doesn't read it — leaving it populated just duplicates what's already in the page body and adds a second place for CTA/lead-magnet facts to drift out of sync. Leave it blank on every row, including ones already carrying old Notes content (clear it if you touch that row for another reason).
+
+**Page body — this is what Neil actually reads, keep it to exactly this shape:**
+
+```
+## Post copy
+[the full post text, one-line paragraphs as it will appear on LinkedIn]
+
+---
+**Pillar:** [pillar] / **Job:** [job] / **CTA:** [the CTA line, with the opt-in page link inline if it's a comment-trigger CTA]
+**Image:** [link to the chosen image/asset — the pick alone, not the narrative reasoning behind it]
+```
+
+No "First comment" block, no "Image selection" writeup, no source/hook-strategy/suggested-edits prose in the body — those live in your chat reply when you first deliver the post (Output format above), not in Notion. The body is the finished artefact: the post, then four bullets Neil can scan in two seconds. For a carousel, the slide-by-slide brief still goes in the body, after the Image bullet. Report the created row's URL on the last line of your reply.
 
 **Then produce the asset (next section) before you finish.**
 
@@ -674,6 +692,8 @@ The design spec is `Claude Outputs/LinkedIn System/MMOM_Carousel-Design-Brief_v1
 **Not every post is a Paper card.** There are three visual sources — pick the one that fits the post, don't default:
 
 1. **A real photo from the Image Bank.** Often the best choice for The Drift and The Transformation — "this is my family too" travels further than a designed card. Index: `Shared drives/Systems/01 Awareness/Linkedin 2026/03 Linkedin Assets 2026/00 Image Bank Index - LinkedIn Assets 2026` (a Google Sheet) and, if built, `Neil Image Bank/_INDEX.md`. Propose 1–2 images + a one-line caption in Neil's voice. Nothing suitable → `Visual: needs a photo — [what it should show]`.
+
+**No repeat image within 30 days.** Before proposing a real photo, check the Image bullet on every "The Content" row dated within the last 30 days (`notion-query-data-sources` SQL against the CTA/date columns, or search the image's Drive file id) and rule out anything already used in that window. Same rule for a card/carousel asset filename. If the only strong match for this post's brief was used inside the last 30 days, say so and propose the next-best option rather than repeating it silently — never assume Neil will notice or catch a repeat himself.
 2. **A hand-lettered / typographic card** (`mmom-visual`, Paper). For The Drift, The Now, and pull-quotes. Propose 2–3 short lines in Neil's voice, pick one, build it. Signed `— Neil` for the wistful ones.
 3. **A carousel or infographic** (`mmom-carousel`, Paper). The default for Pain Points — the framework rides along as slides. **WIP: the carousel/infographic templates are not fully worked out with Neil yet.** Until they are, write the full slide brief into the row body and flag `Visual: CAROUSEL BRIEF — templates still to finalise with Neil` on the Notes line; don't auto-build a carousel he hasn't signed off the look of. Cards (source 2) and photos (source 1) are safe to build now.
 
@@ -683,7 +703,7 @@ By pillar, as a starting point (override when the post says otherwise):
 - **The Transformation** → a real photo, or a single pull-quote card. Carousel only if there's a genuine framework.
 - **The Now** → a hand-lettered statement card, or a single-stat card.
 
-The `Visual:` line goes in three places, identical: the Output format block in your reply, the Notion row's **Notes** property, and (for carousels) expanded to a full slide brief in the row body. Neil reads Notes — if the visual plan isn't there, it doesn't exist as far as he's concerned.
+The `Visual:` line goes in two places, identical: the Output format block in your reply, and the Notion page body's **Image** bullet (see "Log the post to Notion"). Never the Notes property — Neil doesn't read it.
 
 **Where images are saved.** Every finished image, card or carousel PDF is saved to:
 `/Users/neiltayloradmin/Library/CloudStorage/GoogleDrive-neil@meandmyoldman.co.uk/My Drive/../Shared drives/Systems/01 Awareness/Linkedin 2026/03 Linkedin Assets 2026/`

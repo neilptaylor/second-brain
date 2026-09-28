@@ -42,7 +42,10 @@ on run argv
 				delay 2
 			end try
 		end repeat
+
+		set trackLoc to location of newTrack
 	end tell
 
-	return "OK"
+	set filePath to POSIX path of trackLoc
+	return "OK|" & filePath
 end run
