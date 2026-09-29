@@ -4,6 +4,7 @@ description: Runs the handover moment at Me & My Old Man — the 30-minute Calen
 ---
 
 <!-- v1.0 — 2026-09-25: built from the Griffiths handover call. -->
+<!-- v1.1 — 2026-09-29: referral line reworded so it is clear the referrer gets the free Snapshot, not the friend. -->
 
 ## What this call is
 
@@ -39,7 +40,7 @@ Biggest failure mode this skill exists to prevent: a family that's extremely eng
 
 **3. Referral (10 min)** — say close to verbatim:
 
-> "Before we wrap up — I want to ask you something important. You know the free Snapshot session I mentioned? Worth [current anchor from pricing.md], normally. I give one of those to any family you refer.
+> "Before we wrap up — I want to ask you something important. You know the free Snapshot session I mentioned? Worth [current anchor from pricing.md], normally. Introduce someone who goes on to become a family, and that one's yours.
 >
 > So genuinely — who's coming to mind right now? Doesn't have to be a firm yes from you today, just names.
 >

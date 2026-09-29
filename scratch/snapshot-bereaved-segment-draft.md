@@ -24,7 +24,7 @@ Something's been on my mind, and I thought of you.
 
 When both your parents have gone, you become the one the family will one day wonder about. The questions we never got to ask ours, somebody will want to ask us. Where we grew up, what we were scared of, what our mum and dad were actually like. You're the last person who can answer some of those.
 
-So I've built something called Snapshot. An hour and a half with me, online, about your life. Your parents can come into it as much as you'd like, or not at all. You get about an hour of edited audio back within a week, for you, and for whoever comes after.
+So I've built something called Snapshot. An hour and a half with me, online, about your life. Your parents can come into it as much as you'd like, or not at all. You get about an hour of edited audio back within 7 days, for you, and for whoever comes after.
 
 It's £300. If it's something you'd want, reply and we'll find a time. If not, I'm just glad to have been in touch.
 

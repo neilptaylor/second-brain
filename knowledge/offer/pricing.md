@@ -65,6 +65,8 @@ Confirmed by Neil 22 September 2026. Anchor means the struck-through "usually" p
 
 **Snapshot is priced at £300.** Neil settled this on 22 September 2026 after seeing the margin. At 1.5 hours of session time plus an hour of his own editing, full cost is £145. £250 would have given 42.0%, under the 50% minimum. £290 is the exact floor. £300 gives **51.7%** and is the clean number. The £750 anchor stays.
 
+**Snapshot delivery terms, set by Neil 29 September 2026.** The deliverable is about an hour of edited audio, back within 7 days. Always say "within 7 days", never "a week" or "three working days". Video is an add-on at £50. That clears the 50% minimum only if the video takes an hour or less of Neil's time at the £25/hr ops rate. If it regularly takes two, the price should be £100. The "handful of short video clips" is no longer promised. The referral reward is still a free Snapshot (£750 anchor) for the referrer, and the £50 charity donation stays.
+
 **Mementos is costed at last.** Two hours of work plus £45 to Vuk. Neil is refining the process, and the intent is to fold it into the editor briefing so highlight stories get flagged during the normal edit. At £350 the margin is **72.9%**, the strongest bolt-on on the sheet. One assumption to confirm: those two hours are priced as ops time at £25/hr, because the work is assembly rather than interviewing. If any of it is really session time at £80/hr the picture changes sharply, and at two full hours of session time the margin falls to 41.4%.
 
 ## Price band rules

@@ -60,7 +60,7 @@ I ask, you talk.
 Before we start, I'll send you a bit to think about, so you're not starting cold. You know the score.
 Then I listen properly, the way I did with your mum and dad, and nobody interrupts.
 
-Within a week you get it back: about an hour of edited audio. Your voice, your stories, ready for the car or the kitchen.
+Within 7 days you get it back: about an hour of edited audio. Your voice, your stories, ready for the car or the kitchen.
 
 Want the video too, so the kids can see your face and not just hear it? That's £50 more.
 
@@ -69,7 +69,7 @@ It isn't therapy.
 It's just your stories.
 There's no homework after.
 
-One sitting, £300, back to you within the week.
+One sitting, £300, back to you within 7 days.
 
 **The founding five**
 
@@ -95,7 +95,7 @@ Three emails on the same thing is enough from me, so this is the last one, promi
 **Snapshot**
 
 - 1.5 hours with me, online, about your life exactly as it is now.
-- Back to you within a week as edited audio. Video too, if you'd like it, for £50.
+- Back to you within 7 days as edited audio. Video too, if you'd like it, for £50.
 - £300, one sitting.
 - The first five get the video on me, in return for their honest feedback.
 
