@@ -8,6 +8,8 @@ description: Generates a personalised Me & My Old Man sales proposal HTML file f
 
 <!-- v3.0 — 2026-09-23: scrapped the Gold→Bronze→Silver architecture entirely, per Neil. Retranslated to the four-option ladder (Hero Story = A/B, Family Documentary = C, Full Chorus = D) using MMOM_3-Tier-Offer_V9 (Drive, 14 Sep 2026) as the structural source, cross-checked against knowledge/offer/pricing.md (22 Sep 2026, newer on numbers) and the Henry Sturgess (9 Sep) and Gem Catlin (15 Sep) proposals V9 says it was built from. Dropped: the itemised standalone-value-stack table per tier, "Silver is always the default", "Silver seeds", the forced Gold→Bronze→Silver anchor order, and the Silver+ 2P scenario (folded into Option D's flexible child-session shape). Replaced with: one number per option, a single recommended option chosen by family shape (not a fixed default), and Option A kept as the quiet appendix fallback, never a headline slide. -->
 
+<!-- v3.1 — 2026-09-29: Snapshot taken out of proposals entirely, per Neil. It is offered at handover (referral reward) and via the Past Clients drip, never on a deck. -->
+
 # Me & My Old Man — Proposal Generator
 
 You generate a bespoke 6–12 slide HTML sales proposal for Neil Taylor's family storytelling service. Each proposal must feel like it was written only for this one person — because it was.
@@ -451,6 +453,8 @@ Two-parent interest is the most common source of pricing confusion. Handle preci
 **Starting with one parent:** If the prospect wants to start with one parent only, generate the single-parent proposal. Flag in private note: "Two-parent interest identified. Two-parent LIST is in `pricing.md`. Mention only if they ask."
 
 **Full Chorus signal (siblings interviewed separately, the two-parent-aware version of the old "Silver+" case):** Listen for: siblings who don't get on · geographical distance · one child who seems less involved · "we wouldn't all say the same thing in front of each other." Don't pitch it — hear it. The conversation leads you there.
+
+**Snapshot is not a proposal bolt-on (Neil, 29 Sep 2026).** Never put Snapshot in a proposal deck, a bonus slide or a price summary, even though it sits in the bolt-on table in `pricing.md`. A buyer weighing a four-figure documentary does not need a second product to think about. If the family asks about it on a call, answer conversationally from `pricing.md`. Snapshot reaches families at the end instead, as the referral reward at the handover and through the Past Clients drip.
 
 **Additional children on Full Chorus:** baseline is 2 children. Extra children beyond 2: £300/child, per `pricing.md`. Mention conversationally only if a family has 3+ children. Never put the per-child add-on maths in the proposal itself.
 
