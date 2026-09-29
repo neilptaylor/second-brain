@@ -2,7 +2,7 @@
 name: mmom-follow-up
 description: "Me & My Old Man follow-up and outreach engine, across all four growth workstreams: Lead Generation (sales pipeline, Airtable), Asking Engine (LinkedIn DM outreach to personal network), PR Outreach (national media/press), and Events (speaking opportunities). Use whenever Neil wants to follow up, chase, nudge, pitch, or re-engage anyone in any of these four — or write any post-call, post-proposal, post-delivery, DM, pitch, or press message. Triggers: 'who's due', 'run the pipeline', 'follow-ups today', 'what's outstanding', 'follow up with [name]', 'chase [name]', '[name] has gone quiet', 'day 10 chaser', 're-engage', 'lapsed prospect', 'drip', 'WhatsApp voice note for', 'welcome email for [new client]', 'thank you email', 'referral ask', 'LinkedIn outreach', 'today's five', 'PR chase', 'pitch [journalist/outlet]', 'events I should apply to', 'chase [event/organiser]'. If a named person or organisation owes Neil a reply, or he needs to know what's overdue across the business, this is the skill."
 ---
-<!-- v3.1 — 2026-09-24: fixed the Day 21-24 play, which itself suggested a "no agenda, just thought of you" line — banned announcing the absence of an ask (flag-and-deny family: "no pressure", "not chasing", "no agenda"), same fix as mmom-voice-check v1.3. v3.0 — 2026-09-24: broadened from Lead Gen only to all four workstreams (Lead Gen, Asking Engine, PR Outreach, Events). Mode 0 now scans all four trackers and buckets results so Neil can block-work. Added Modes 6-8 (LinkedIn DM, PR pitch/chase, Event pitch/chase). v2.0 — added Mode 0 pipeline run off Airtable, situation playbook, friends-vs-leads voice table -->
+<!-- v3.2 — 2026-09-29: Airtable is a prompt list, not the source of truth. Mode 0 now says so, and drafting waits on the real thread (WhatsApp screenshots, Gmail, LinkedIn). Asking Engine replies get sorted into lead vs connector. v3.1 — 2026-09-24: fixed the Day 21-24 play, which itself suggested a "no agenda, just thought of you" line — banned announcing the absence of an ask (flag-and-deny family: "no pressure", "not chasing", "no agenda"), same fix as mmom-voice-check v1.3. v3.0 — 2026-09-24: broadened from Lead Gen only to all four workstreams (Lead Gen, Asking Engine, PR Outreach, Events). Mode 0 now scans all four trackers and buckets results so Neil can block-work. Added Modes 6-8 (LinkedIn DM, PR pitch/chase, Event pitch/chase). v2.0 — added Mode 0 pipeline run off Airtable, situation playbook, friends-vs-leads voice table -->
 
 # MMOM Follow-Up & Outreach Engine
 
@@ -42,8 +42,12 @@ Scans all four trackers and reports back grouped by workstream, so Neil can pick
 **1. Lead Generation** (Airtable Full CRM)
 List rows where `Follow-up Date` is today or earlier and Lead Status is not Won/Lost/Completed. Sort Hot first (Temp field).
 
+Airtable is not the source of truth. Its dates, Situation and Next Line are often stale by the time Neil looks (confirmed 29 Sep 2026: calls already booked, people already gone quiet, lines already sent). Treat the list as "who to check", never "what to send". Before drafting for anyone, get the real latest exchange: Gmail via the connector, WhatsApp and LinkedIn via Neil's screenshots. If you haven't seen the thread, ask for it rather than drafting from the Airtable line.
+
 **2. Asking Engine** (LinkedIn outreach sheet)
 This tracker has no working Day/Sent columns yet, despite its own header note saying to use them — flag that once, don't fix it silently. Until it's tidied: take the next 5 rows in list order that have no Status/Sent marker at all, Group A before B before C etc. If Neil has already told you who he DM'd today, skip those names.
+
+People who replied (Reply = Y) come before new cold sends, and each one gets sorted before anything is drafted: a **lead** (their own parent is in play, move towards a call) or a **connector** (they refer others, e.g. Anthony Agnew). A connector gets thanks and the occasional warm touch, never a sales follow-up.
 
 **3. PR Outreach** (PR Master v2 sheet)
 Rows where the Next Action date column is today or earlier. P1 priority first, then P2, etc.
