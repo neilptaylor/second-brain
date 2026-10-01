@@ -62,6 +62,8 @@ Imported from the Drive Cowork folder on 22 September 2026. 34 entries, May to S
 
 [2026-10-01] MISTAKE: The 1 Oct post's Notion row described its carousel but gave Neil no file to click, download and upload to LinkedIn. | RULE: A carousel is built as part of the post and saved to 03B Linkedin Carousels (Drive 1H_5DZ5D5RSiqk7uu2vdWdI_ODFQLAWjf), with a clickable link in the Notion row's Notes and body. A description alone is not a deliverable. linkedin-post SKILL.md v3.5; the mmom-carousel save-location default should also point at this folder.
 
+[2026-10-01] MISTAKE: Notion text pasted into the LinkedIn box came through with the literal word "quot" in place of quote marks, and every line break was lost so Neil re-spaced the post by hand each time (several minutes per post). My earlier fix swapped one curly apostrophe but left another, and replaced <br> with plain newlines, which Notion still pastes without blank lines. | RULE: The finished post goes into Notion as a code block, already spaced for LinkedIn, so it copies exactly. Sweep for curly marks, "quot", &quot; and <br> and re-fetch to check. Carousel posts also get a Document description (the LinkedIn upload box), written in the same turn. linkedin-post SKILL.md v3.6.
+
 <!-- Example format (uncomment when first real lesson is captured):
 [2026-05-17] MISTAKE: Used "preserve" in a newsletter draft | RULE: Never use "preserve" — banned word. See VOICE_PROFILE banned words list.
 [2026-05-17] MISTAKE: Led with product features instead of family connection | RULE: Always lead with the human experience, not the deliverable. The audio documentary is the byproduct; reconnection is the product.
