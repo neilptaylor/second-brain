@@ -2,6 +2,7 @@
 name: mmom-follow-up
 description: "Me & My Old Man sales follow-up engine. Use this skill whenever Neil wants to follow up, chase, nudge, or re-engage a prospect or client — or write any post-call, post-proposal, or post-delivery message. Triggers: 'follow up with [name]', 'chase [name]', '[name] has gone quiet', 'day 10 chaser', 're-engage', 'lapsed prospect', 'drip', 'WhatsApp voice note for', 'welcome email for [new client]', 'thank you email', 'referral ask'. If a named person owes Neil a reply or has just said yes, this is the skill."
 ---
+<!-- v1.1 2026-10-01: added mode 6, NEW FOLLOWER (Chris Donnelly outbound corpus) -->
 
 # MMOM Follow-Up Engine
 
@@ -52,6 +53,20 @@ The moment after yes. Warm, specific, zero buyer's remorse. Confirm what happens
 
 ### 5. THANK-YOU + REFERRAL ASK
 Post-delivery. Lead with the specific moment from their experience (from wrap-up call or testimonial). The referral ask is one question, framed as "who else quietly needs this", never "do you know anyone who might be interested in our services". If a testimonial hasn't been captured, fold that ask in instead — one ask per message, never both.
+
+### 6. NEW FOLLOWER — someone has just followed Neil on LinkedIn
+Source: Chris Donnelly's outbound corpus (Drive folder `1K4HYGk16_Go5cnwaAhw66lLbAJAc1ClY`, especially "The Ultimate LinkedIn Outbound Templates" 01 to 03 and "The Lead Generation Blueprint" section 6). The thinking, not the label, never named in a draft.
+
+The one-liner, sent within 24 to 48 hours of the follow:
+
+> Thanks for the follow, [first name]. Out of curiosity, what caught your eye, something about your own mum or dad, or something else?
+
+**Rules:**
+- The only goal is a reply. No pitch, no link, no price, no call ask.
+- One question, easy to answer in a line. A follower has already shown interest, so this is a warm opener, not cold outreach.
+- Swap the first line for something real from their profile or the post they engaged with when there is one. Parent first, never the business.
+- If they reply, go to "When they reply" then "Moving to a call" in the Asking Engine sheet (Sheet1, tab 2). If not, one value follow-up at 3 to 4 days (the questions list, no ask), then stop. Two unanswered is the ceiling.
+- Every follow-up gives them something: a story, a resource, a clearer picture. Never "just checking in".
 
 ---
 
