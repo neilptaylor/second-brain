@@ -73,11 +73,11 @@ For each slide, in order:
 2. Also `export` each artboard individually as PNG, in case Neil wants to repost as an Instagram carousel instead.
 3. **`export` always writes to `~/Downloads` on Neil's Mac — confirmed on live test, there's no destination-path option.** Move the exported file(s) from Downloads into the target Drive folder as a separate filesystem step (Google Drive is mounted locally at `/Users/neiltayloradmin/Library/CloudStorage/GoogleDrive-neil@meandmyoldman.co.uk/My Drive/`).
 
-**Save location — confirm with Neil, this is a proposed default, not a known-correct path:**
+**Save location (confirmed by Neil, 1 Oct 2026):**
 ```
-[Google Drive]/Content/LinkedIn Carousels/[YYYY-MM-DD] [Topic]/
+03B Linkedin Carousels (Drive folder id 1H_5DZ5D5RSiqk7uu2vdWdI_ODFQLAWjf), file MMOM_LI_<post-slug>_v1.pdf
 ```
-If that folder structure doesn't already exist or doesn't match how Neil organises content, ask him where these should live before finalizing — don't silently invent a new folder tree.
+Always give Neil the clickable Drive link to the PDF.
 
 ---
 
