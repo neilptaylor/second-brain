@@ -1,7 +1,7 @@
 const { chromium } = require(process.env.PW);
 const fs = require('fs');
-const OUT = __dirname + '/assets/';
-const fcss = fs.readFileSync(__dirname+'/fonts/f.css','utf8').replace(/url\((f\d+\.ttf)\)/g,(m,f)=>'url(data:font/ttf;base64,'+fs.readFileSync(__dirname+'/fonts/'+f).toString('base64')+')');
+const OUT = __dirname + '/a3/';
+const fcss = fs.readFileSync(__dirname+'/fonts/s.css','utf8').replace(/url\((s\d+\.ttf)\)/g,(m,f)=>'url(data:font/ttf;base64,'+fs.readFileSync(__dirname+'/fonts/'+f).toString('base64')+')');
 const fonts = '<style>'+fcss+'</style>';
 const css = (h) => `
 *{margin:0;padding:0;box-sizing:border-box}
@@ -28,9 +28,9 @@ const slide = (cls, inner, n, total, mark) => `<div class="s ${cls}">${inner}${n
 // PP3 carousel: Snippet to story
 const pp3m = [
  ['Start with an object.','&ldquo;Tell me about this ring.&rdquo;'],
- ['Ask what they were afraid of,','not just what happened.'],
+ ['Ask what they were<br>afraid of,','not just what happened.'],
  ['Leave the silence.','Don&rsquo;t rescue it.'],
- ['Ask &ldquo;and then what?&rdquo;','three times before you let them move on.'],
+ ['Ask &ldquo;and then<br>what?&rdquo;','three times before you let them move on.'],
  ['End with:','&ldquo;Who else was there? Who should I ask?&rdquo;'],
 ];
 const T3 = 7;
