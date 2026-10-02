@@ -677,6 +677,10 @@ For a carousel, the full slide-by-slide brief also goes in the body, after the p
 
 **When a post is logged without its asset, or Neil asks for a batch:** query the Content database for rows dated today and the next 10 days, and for each one with empty Notes or no asset, run the visual step before anything else. Do this as the first step of any LinkedIn session, so no post inside the next week ever sits without its image.
 
+**Building assets without Paper (works from any session).** Render cards and carousels in headless Chromium: embed Marcellus, Cormorant Garamond and Inter as base64 `@font-face` (a Google Fonts `<link>` silently falls back to Times in the sandbox), 1080x1350 per slide, `page.pdf` for carousels, screenshot for cards, 1080x1920 for reel covers. Reference build script: `scratch/linkedin-assets-2026-10/build.js`. Check page count and look at one slide before reporting done.
+
+**Getting the file to Neil.** First choice: upload to Notion (`notion-create-file-upload`, then POST the file) or Drive. If the session's network policy blocks `api.notion.com` (it did on 2 Oct 2026) and Drive has no usable upload route, commit the file under `scratch/linkedin-assets-<month>/`, push, and link it from the row's Asset section. Tell Neil once that the network policy needs `api.notion.com` allowed so assets can land in Notion directly. Never hand-transcribe base64 into a Drive upload.
+
 **Pick the photo, don't defer it.** For Drift and Transformation, open the Image Bank index, choose one image, and write its filename and a one-line caption in Notes. Only write "needs a photo" if the index has nothing that fits, and say what is missing.
 
 ---
