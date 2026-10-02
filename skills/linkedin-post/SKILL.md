@@ -4,6 +4,8 @@ description: "Write LinkedIn posts in Neil Taylor's voice for Me & My Old Man. U
 ---
 
 # LinkedIn Post Skill — Neil Taylor / Me & My Old Man
+## Version 3.3 — October 2026 (post text in a Notion code block so it pastes clean; a row is not done until its asset is attached)
+<!-- v3.3 — 2026-10-02: Also added a definition of done: Notes must carry a Visual: line and the asset must be attached, or the row is flagged NO ASSET YET. Audit found today and the next week with empty Notes and no assets. Notion rows now hold the post text as a single fenced text code block (plain-text clipboard) instead of callout/paragraph blocks (HTML clipboard). Fixes LinkedIn paste losing apostrophes, showing "quot;" for quote marks, and dropping line breaks. See "Log the post to Notion". -->
 ## Version 3.2 — September 2026 (Conversation Playbook added to the ladder; opt-in pages are the only source of truth)
 <!-- v3.4, 2026-09-23: lifted the ban on "snapshot". Snapshot is now a product name, so the word is fine to use. -->
 <!-- v3.3 — 2026-09-22: Replaced hardcoded families/hours/countries figures with pointers to knowledge/offer/business-stats.md, the new single source of truth (updated by new-client each time a client is won). -->
@@ -652,9 +654,30 @@ Set these properties:
 | Date | the target post date — the next free fixed slot for this Pillar (Tue = Drift, Wed = Transformation/Now, Thu = Pain Points). Ask Neil for the date only if the week is ambiguous. |
 | Notes | a short human-readable block: `Pillar / Job / Hook / CTA / Source`, then a **`Visual:` line** — the chosen card line or carousel concept in one sentence, plus the saved asset filename once built (or `BRIEF ONLY — Paper not running`). This is the field Neil actually reads, so the visual plan lives here, not only in the body. |
 
-Put the full post text in the page body. For a carousel, the full slide-by-slide brief also goes in the body. Report the created row's URL on the last line of your reply.
+**The post text goes in the page body as ONE fenced `text` code block. Never as paragraph blocks, never in a callout, never with a background colour.** This is what makes it paste into LinkedIn clean. Neil's workflow is: open the row, hit the copy button on the code block, paste straight into LinkedIn. No Google Doc in between.
+
+Why (found 2 Oct 2026): when the post was stored as a callout of separate paragraph blocks, Notion put rich HTML on the clipboard. LinkedIn's composer read that HTML and dropped the apostrophes, turned `"` into the literal text `quot;`, and swallowed the line breaks. Round-tripping through a Google Doc fixed the characters but still lost the line breaks. A code block copies as plain text only, so newlines and blank lines survive exactly as written.
+
+Rules for the code block:
+1. Open with ```` ```text ```` and close with ```` ``` ````. Nothing else inside it: no Pillar/Job/CTA lines, no `---`, no "Post copy" label, no markdown.
+2. Real blank lines between stanzas, single newlines inside a block, exactly as the rhythm rules above describe. Write the blank lines as actual empty lines. Never rely on one block per line to create spacing.
+3. Straight ASCII `'` and `"` only. No curly quotes, no `&quot;`, `&#39;`, `&apos;` or any other HTML entity, and no backslash escapes. If the text you are about to send contains `&` followed by letters and `;`, you have corrupted it.
+4. The first comment (public) and the funnel notes sit BELOW the code block as normal text, under a plain heading, so Neil can copy the post and the comment separately.
+5. After creating or updating the row, re-fetch it and check the code block contains no `&quot;`, `&#`, `\"` or `\'`, and that the blank lines are still there. If not, fix before reporting.
+
+For a carousel, the full slide-by-slide brief also goes in the body, after the post's code block. Report the created row's URL on the last line of your reply.
 
 **Then produce the asset (next section) before you finish.**
+
+**Definition of done: Neil opens the row each morning and finds the post AND the asset, ready to post.** A row is NOT finished, and you must not report it as finished, until all of these are true:
+1. The post text is in the code block (see above).
+2. The Notes property contains a `Visual:` line. Empty Notes means the row is incomplete.
+3. The asset is attached to the row: a chosen Image Bank photo, a built card, or a carousel PDF, uploaded to the page body (or linked by Drive URL directly under the code block) with the filename. A brief alone does not count unless the fallback below applies.
+4. If you cannot build or pick the asset, the row's Status stays `Idea`, Notes starts with `NO ASSET YET:` plus the exact blocker, and you tell Neil in your reply which rows are blocked and why. Never leave Notes blank and say nothing.
+
+**When a post is logged without its asset, or Neil asks for a batch:** query the Content database for rows dated today and the next 10 days, and for each one with empty Notes or no asset, run the visual step before anything else. Do this as the first step of any LinkedIn session, so no post inside the next week ever sits without its image.
+
+**Pick the photo, don't defer it.** For Drift and Transformation, open the Image Bank index, choose one image, and write its filename and a one-line caption in Notes. Only write "needs a photo" if the index has nothing that fits, and say what is missing.
 
 ---
 
