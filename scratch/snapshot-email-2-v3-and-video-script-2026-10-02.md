@@ -15,7 +15,7 @@ Here's the shape of it, and exactly what I'd need from you.
 
 **What you get**
 
-The story of your year, in your own voice.
+The story of your year, in your own voice. An hour and a half where the phone goes face down and you check in on how this year has actually been.
 
 An hour, fully produced, back to you within 7 days. The audio for the car or the dog walk, and the video version too, so the kids can see your face and not just hear it.
 
@@ -42,34 +42,13 @@ If you want one, hit reply with "I'm in" and I'll send you two dates.
 
 Neil
 
-P.S. Where I'd love this to go: one every year, recorded the week before your birthday, back to you on the day. Your kids, one day, with a run of them. You at forty-four. Forty-five. Forty-six. I'd give a lot for just one of those of my dad.
+P.S. In 2012 I took a photo every day. It's by far the year I remember most. Where I'd love Snapshot to go: one every year, recorded the week before your birthday, back to you on the day. A birthday present to yourself.
 
 ### Alternative opening hooks
 
 - "Last week I said I'd come back with what Snapshot actually involves. Here it is, and it's less than you'd think."
 - "Two hours of your time, give or take. Here's where every minute goes."
 
-## Video script (about 90 seconds, to camera)
+## Video script
 
-I've spent nearly 400 hours sitting with people in their seventies and eighties, catching the story of their life. Your mum or dad included.
-
-And here's the thing I keep noticing. At seventy-five, they remember what happened at forty. They've lost what it felt like.
-
-My dad died in 2021. I know roughly what he was doing at forty. I've no idea what it felt like to be him. And I can't quite hear his voice any more.
-
-So I built Snapshot.
-
-An hour and a half, you and me, online. Not your parents' story this time. Yours. This year, while you're right in the middle of it. The school run. The job. The thing keeping you up at night, and the thing you're quietly proud of.
-
-Within 7 days you get it back. An hour, fully produced, audio and video, in your own voice.
-
-I'm starting with five founding places, just for families I've already worked with. £99, video included. All I ask back is a short video and twenty minutes of honest feedback.
-
-If you want one, hit reply to the email and say "I'm in". I'll send you two dates.
-
-One day, someone's going to want to hear what you sounded like right now. Let's catch it.
-
-### Alternative opening hooks
-
-- "My dad died in 2021. The thing I miss most is a sound."
-- "This is for you, not your mum or dad. Bear with me."
+Current version lives in the Drive doc "Snapshot email 2 (v3) and video script, 2 Oct" (2012 photo-a-day opening), along with the action plan.
