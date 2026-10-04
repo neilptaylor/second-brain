@@ -20,27 +20,21 @@ Sarah. She's hunting for stories, and she wants to feel something in her heart. 
 
 ## Shape
 
-- Around 30 short pieces, one to one and a half pages each, 300 to 400 words with the frame. Dip in, dip out. A long poem in disguise, written with spoken word rhythm.
+- Around 30 short pieces, one page each, 250 to 300 words, so the closing line lands at the foot of the same page. Dip in, dip out. A long poem in disguise, written with spoken word rhythm.
 - Each piece comes from one real family story, anonymised.
 - Single-word themes as the spine: Healing, Compassion, Love, Reflection, Openness, Grace, Contentment, plus Regret, Dying, Ambition, Parenthood, Loss.
-- A fixed frame for every piece, from the August flow, in this order: chapter number, one word, one quote from a family, one quote from the writer, the question that was asked, then the story. The question doubles as the nudge for Sarah to ask her own. The story is the only part that changes shape.
+- A fixed frame for every piece, in this order: chapter number, one word, one opening line, the story, then the same line repeated at the foot of the page, centred. The opening line is either the question that was asked or a quote from the story. No quote from me, and no borrowed quotes: the weight is in the story. Pick the line after the story is written, so the second reading lands differently from the first.
 - Feels like a storybook. Inspiring, light, thought-provoking on living life.
 - Not a how-to, not research, not "story then lesson".
 
 ## The tension
 
-Open with the line sitting in my stomach: "If you carry on as you are, you'll lose someone who shaped you without ever knowing them." That's what gets the book into the bigger rooms. Leave out "you only get to know your parent with my help", which puts me in the middle of the sentence.
-
-## Out of the book
-
-The four phases (Prepare and prompt, Share and listen, Craft and savour, Reflect and connect). They make it a how-to. Use them in a lead magnet, or as one page at the back.
-
+Open with the line sitting in my stomach: "If you carry on as you are, you'll lose someone who shaped you without ever knowing them." That's what gets the book into the bigger rooms.
 ## Still open
 
-- Title. Waiting to Be Asked is the working candidate. August's "The door was always open" is parked as too close to Sam's The Door Was Never Locked.
-- Whether one piece is about my own contradiction: a business about presence that pulls me away from my own family.
+- Title. Waiting to Be Asked is the working candidate.- Whether one piece is about my own contradiction: a business about presence that pulls me away from my own family.
 - Anonymising. Families may still recognise their piece from the detail. Decide which pieces are safe, or show a family its piece first.
-- The writer quote. Is it one of mine, or borrowed (Seneca and the August reading list)? Test both on three pieces before deciding.
+- The opening line. How many questions versus quotes? Enough questions that Sarah still gets nudged to ask her own.
 - Scrap the August preface. It talks about research and "we hope".
 
 ## Time
