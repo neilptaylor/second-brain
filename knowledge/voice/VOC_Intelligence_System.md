@@ -629,3 +629,89 @@ Source: Multiple (A Place for Mom / Stacker, Feb 2026; Pew Research, cited in MH
 - What they actually need: to be given permission to see their parents as whole people for the first time
 - Content opportunity: Write more for the Lane 9 buyer (Relationship Rewriter). This person exists in large numbers and has no obvious search behaviour or content category. They don't google "family audio documentary." They google nothing — they hear about it from a friend who says "healing." Referral-focus, not SEO-focus, for this lane.
 
+
+---
+
+# HANDOVER CALL UPDATE — 5 October 2026
+
+Sources: Nicola Griffiths testimonial call (Griffiths family, Vaughan's daughter) and Daniel Beard handover call. Both post-delivery. This is the first after-the-fact language in the doc, so it shows what the experience actually gave, not what buyers hoped for.
+
+## NEW SECTION L: THE HOUR OF TALKING ABOUT SOMEONE YOU LOVE
+
+The child's own briefing session is a payoff in itself, not just admin. Nobody predicts it.
+- "I don't think I knew how much it would mean to just sit and talk about someone I love for an hour. Because again, when in life do you do that?" — **Nicola Griffiths**
+- "I was on board for just the thing... And I hadn't seen that it brought all these other benefits." — **Nicola Griffiths**
+- She frames the value in three stages: enjoyable in the moment, a record at the end, then "a springboard or a conversation starter for sort of an ongoing sort of family discussion." — **Nicola Griffiths**
+
+**Copy implication:** buyers think they are buying a file. Name the hour, and name the after. Neil's open question: tell people up front, or keep it as a surprise ("It's cheeky isn't it? Because it was really lovely as a surprise." — Nicola).
+
+## NEW SECTION M: THE PARENT HEARS WHAT THEY MEAN TO US
+
+The reverse direction. Everyone assumes the gift flows to the children. The parent hearing their children talk about them is the moment that lands hardest.
+- "He was clearly really touched by it... I think he just hadn't seen himself through our eyes." — **Nicola Griffiths**
+- "We think about it as like, we're hearing all this amazing family information. And we never think, he gets to hear how important he is to us." — **Nicola Griffiths**
+- "The things that they would wait until you were dead to say." — **Nicola Griffiths** (comparing it to a living wake, and her mum's line that funerals are sad because all your favourite people are there and you're not)
+- Why it works better than a speech: "I don't have to feel weird about other people hearing it... if I'd said to his face, he would have shut me down, but he couldn't. We could press pause." — **Nicola Griffiths**
+- Neil's version, from another family: the dad called it "reassuring", his efforts were appreciated.
+
+## NEW SECTION N: NO ONE HAS TO BREAK THE TENSION
+
+Why the indirect structure goes deeper than a family conversation. Families with a joking dynamic undercut every serious moment. Separate interviews remove the need.
+- "Everyone's better at talking about deep subjects in a car because they're not facing each other." — **Nicola Griffiths**
+- "Someone's going to make a joke, someone's going to release the tension and actually maybe sometimes that's a distraction. So it was really lovely having the option to not do that." — **Nicola Griffiths**
+- "Having someone who's different... asking those questions opened him up more than he would if it was us." — **Nicola Griffiths**
+- The finished piece still keeps the light and shade: "like listening to my dad on an elongated Desert Island Discs." — **Nicola Griffiths**
+
+**Copy implication:** strong answer to "why can't we just talk to him ourselves?" Pairs with Fear 3 and Section A (deflection).
+
+## NEW SECTION O: BEHAVIOUR CHANGE AFTER DELIVERY
+
+Hardest proof yet that the project changes the family, not just records it.
+- "Jeff and dad are going to go to the pub to talk about spirituality. I couldn't see a world in which that would have happened had this not happened." — **Nicola Griffiths**
+- "I think it's stopped dad on autopilot... he's just prioritised family more." — **Nicola Griffiths**
+- On looking after the grandchildren: "I didn't feel like I was inconveniencing him by asking him to help out. It felt like he wanted to be there." — **Nicola Griffiths**
+- "Probably needed another heart attack for that to happen, so I'm glad it was this way round." — **Nicola Griffiths** (links back to the softening-after-bypass trigger in Fear 1)
+- Vaughan in the wrap-up, as Nicola reports it: this is "the first generation that wants to talk about their feelings."
+- Grandchildren: played clips to her kids, her daughter now wants to "hunt him out" and do Lego with him. Confirms Section K.
+
+## NEW SECTION P: THE FAMILY HISTORIAN BUYER
+
+The parent who has done the family tree is the same person who will love this, but has only done the "logical archivist side of it".
+- "Legacy isn't just where your genes are from, legacy is kind of the values and the characteristics that are passed down and those aren't something that you could record neatly on your sort of timeline." — **Nicola Griffiths**
+- "Who you are is part your history, but it's also part your lived experience. And to only look at one half of that is kind of missing a bit of the picture." — **Nicola Griffiths**
+- Parent nerves sit in the admin, not the content: "lots of anxiety around the admin of it but no anxiety about the actual thing... how do I upload photos but then absolutely fine talking about his dad being dead." — **Nicola Griffiths** (update to Section J)
+
+**Lane note:** ancestry and DNA households are a findable audience. Daniel Beard independently suggested Ancestry as a natural acquirer.
+
+## NEW SECTION Q: THE BUSY BUYER NEEDS THE RIGHT EMOTIONAL SPACE
+
+Daniel Beard took months to commit and longer to listen. Not reluctance, bandwidth.
+- "I couldn't listen to it until I felt I was in a right emotional space, because when you're in work mode... it's non-emotional, it's transactional." — **Daniel Beard**
+- What finally moved him: mum's carer sorted, work calm for a moment, "and then that became the priority." — **Daniel Beard**
+- On his biological family search: "I'm just adding another emotional layer to my life right now." — **Daniel Beard**
+- Same lag at the parent end: Vaughan Griffiths didn't listen for a long time after the children had binged it "like a Netflix series".
+
+**Sales implication, from the client himself:** "I've chased 3 times, if this isn't for you, can you just let me know, or let's sign up in the next 2 weeks... normally that bit of friendship pressure helps." And: "The friendship is what's got you the lead, then it goes to business." — **Daniel Beard**. He counts himself among the slow ones: "I know, and I was one of those guys."
+
+## NEW SECTION R: REFERRAL AND SHARING LANGUAGE
+
+- Daniel's planned LinkedIn opening: "You only get to know your parents from the time you're born." (Came out of the Beard wrap-up.)
+- Daniel won't use a referral link publicly: "that will make it look like I'm getting commission... I don't want people to think I'm pushing it." Keep the /refer page for one-to-one chats, the LinkedIn post clean.
+- Daniel on his dad's sessions: "He remembers the names of the people from school. Crazy." The child's surprise at the parent's memory is itself shareable.
+- Nicola, on why it isn't a file in a drawer: "It's not just a document or a file that you've created that you just have to the side, it's like a whole process, so I think it's really enriched our whole family." — **Nicola Griffiths**
+- Snapshot validation: Nicola, on her dad blanking on their childhood: "he genuinely doesn't remember our childhood... we're going to have to do it with mum just so we can fill in the gaps." Daniel: "You should charge for it." Supports Fear 9 (memory gap) as the case for starting at 40.
+
+## NEW SECTION S: GRIEF AND NARRATIVE THERAPY (PROFESSIONAL FRAMING)
+
+Nicola is a clinical psychologist. Useful framing for the grief and memorial offer, in her words not ours:
+- Narrative therapy: "weaving together the strands of identity... but you're doing it with a person not in the room."
+- "The difficulty when you lose someone is that you don't have a felt or knowledge based memory of that person and then that can feel like a missing part of your identity. So what you're doing is really lovely because you're going here is a capsule of that person."
+- On voice: "people will be incredibly upset because they can't remember the sound of that person's voice... you capture that voice which is magic."
+- Her values exercise (the 80th birthday speech, "what do you hope you hear?") mirrors what the documentary does for the parent. Possible prompt for Snapshot.
+
+## SOURCE LOG — 5 October 2026
+
+| Source | Date | Type | Key themes |
+|---|---|---|---|
+| Nicola Griffiths testimonial call | Oct 2026 | Post-delivery testimonial | The hour, parent hears their worth, tension release, behaviour change, family historian, grief framing |
+| Daniel Beard handover call | Oct 2026 | Post-delivery handover | Emotional bandwidth, friendship pressure, referral link shyness, Ancestry, Snapshot validation |
