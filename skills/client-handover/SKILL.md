@@ -1,6 +1,6 @@
 ---
 name: client-handover
-description: Runs the handover moment at Me & My Old Man — the 30-minute Calendly call ("The Handover 30mins") booked at project start and held once every chapter is edited and all assets (audio documentary, album artwork, "It's a Wrap" ebook) are ready. Prepares the family's consent & referral tracker doc before the call, gives Neil the call agenda and exact referral script, and after the call hands off into the referral-page skill for any family who consented and gave names. Trigger when Neil says "handover for [family]", "prep the handover call", "handover agenda", or is about to run or has just run a family's Handover 30mins call.
+description: Runs the handover moment at Me & My Old Man — the 30-minute Calendly call ("The Handover 30mins") booked at project start and held once every chapter is edited and all assets (audio documentary, album artwork, "It's a Wrap" ebook) are ready. Prepares the family's consent & referral tracker doc before the call, gives Neil the call agenda and exact referral script, and after the call hands off into the referral-landing-page skill for any family who consented and gave names. Trigger when Neil says "handover for [family]", "prep the handover call", "handover agenda", or is about to run or has just run a family's Handover 30mins call.
 ---
 
 <!-- v1.0 — 2026-09-25: built from the Griffiths handover call. -->
@@ -67,6 +67,6 @@ The event's own description (`thehandover-30min`, https://calendly.com/meandmyol
 ## After the call
 
 - Update the tracker doc with every answer, live during the call, not from memory afterwards.
-- Any consented testimonial/story/referral name goes to the **referral-page** skill to build or update that family's `/refer-[family]` page.
+- Any consented testimonial/story/referral name goes to the **referral-landing-page** skill to build or update that family's `/refer-[family]` page.
 - Book the 15-min check-in as a real calendar event before the call ends, not a mental note.
 - If Neil corrects anything about how this call went — a line that landed badly, a question he added, a consent level that needs splitting — log it in `knowledge/lessons.md` the same turn and fold the fix back into this SKILL.md, per the CLAUDE.md skill feedback loop.

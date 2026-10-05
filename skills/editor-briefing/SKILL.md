@@ -3,8 +3,15 @@ name: editor-briefing
 description: "Creates an Editor Briefing doc for a client editing session at Me & My Old Man, links it to the Drive editing folder and the matching recording (Riverside or Zoom), reformats the raw transcript into a clean Google Doc and .md file, proposes chapter titles from the transcript (fixed formula for a Child Briefing or Wrap Up, 3-4 house-style options for a Parent Session), fills in the music track for each chapter and logs each selected track against its chapter in the music tracking sheet, flips the session's Status/Onboarding fields in Airtable, and drafts the Gmail handoff to the assigned editor. Also handles interviewer prep: after the last child in a family is recorded, it builds an Interview Briefing for the parent's Session 1 from all children's transcripts; after a parent's Session 1, it builds a follow-up briefing for Session 2, and so on for later sessions. Use whenever Neil says \"brief the editor for [family/interviewee] session [n]\", \"create the briefing doc for [name]\", \"set up Ch[x]&[y] briefing\", or names a family + chapters + session number for handing a recording to an editor. Trigger even on terse asks like \"briefing for Jim Kumar S2\" — ask for missing pieces rather than skipping."
 ---
 
+<!-- v1.10 — 2026-10-05: Titles section moved to the bottom of the doc and
+renamed "Titles (for Neil only)"; title options must favour quirky concrete
+beats ("Squirrels at Tea") and carry any big theme (Zoroastrian values). -->
+<!-- v1.9 — 2026-10-05: track logging promoted to its own mandatory Step 3c
+with a read, update-the-seeded-row, duplicate-check, re-read procedure. It had
+been skipped on Tillett Ch2 (Tanya & Mum), so Neil's tab 2 had no record for
+him to check against. -->
 <!-- v1.8 — 2026-09-25: added Step 5b — a Wrap Up briefing now flags the
-referral-page skill in its Step 7 report, since the wrap-up is the trigger
+referral-landing-page skill in its Step 7 report, since the wrap-up is the trigger
 point for building a family's /refer-[family] page and Neil said he's prone
 to forgetting otherwise. -->
 <!-- v1.7 — 2026-09-22: merged the forked Drive lineage back in. Gained Step 3b
@@ -71,6 +78,7 @@ step, in each editor's own established style.
 3. Link the recording, download its transcript, and reformat it into a clean
    Google Doc and .md file saved in the session folder
 3b. Propose chapter titles and write them into the doc
+3c. Log every chosen track in tab 2 ("Family - Selected Tracks") of the music sheet
 4. Update the Airtable Editor Pipeline
 5. Check whether this triggers an interviewer briefing (last child session, or
    parent S1, S2, S3...) and build it if so
@@ -133,10 +141,6 @@ Link to Recording - here (hyperlinked to the Riverside/Zoom link, see Step 3)
 Transcript (Google Doc) - here / Transcript (.md) - here (hyperlinked to the
 Step 3a reformatted transcript files)
 
-Titles [Heading 3]
-Ch[x] TBC
-Ch[y] TBC
-
 Loom Briefing / Commentary [Heading 3]
 xx
 
@@ -157,7 +161,16 @@ Stings & Outro - Timestamps [Heading 3]
 
 Edits [Heading 3]
 Please drop the G Drive link to your edits here (V1, V2, Final, etc.)
+
+Titles (for Neil only) [Heading 3]
+Ch[x] TBC
+Ch[y] TBC
 ```
+
+The Titles block always sits at the very bottom of the doc, below Edits, under
+the heading "Titles (for Neil only)", for every briefing type (Child, Parent,
+Wrap Up). The editor doesn't need it, Neil does, so it must not sit near the
+top where the editor reads first.
 
 The final "Edits" heading is where the assigned editor drops the G Drive link
 to their delivered cuts as they come in — leave the line under it as a plain
@@ -256,13 +269,30 @@ given, that's the one legitimate reason to leave it as "TBC" — ask Neil to
 paste the URL directly rather than guessing or linking to the sheet itself,
 and say plainly in Step 7 that this is why the music link is still open.
 
-**Logging selected tracks:** every time a music track is chosen for a chapter
-(whether picked from the Music Library sheet or handed to you directly by
-Neil as a Drive/YouTube link), log it in the "family - selected tracks" tab of
-https://docs.google.com/spreadsheets/d/1DtURDPqUp1rbz6lAGOY_WrCVeoo9l_JcXWJZOQ2fBTg/edit?gid=0#gid=0 —
-list the track against the respective chapter (family/interviewee, chapter
-number, track name/link). Do this for every session briefed, not just when
-Neil explicitly asks.
+**Logging selected tracks (Step 3c, MANDATORY, never skipped):** every time a
+music track is chosen for a chapter (picked from the Music Library sheet, or
+handed to you as a Drive/YouTube link), write it into tab 2, "Family - Selected
+Tracks", of
+https://docs.google.com/spreadsheets/d/1DtURDPqUp1rbz6lAGOY_WrCVeoo9l_JcXWJZOQ2fBTg/edit
+Neil uses this tab to check he never repeats a track within one family's audio
+documentary, so a missing row defeats its purpose. It was missed on Tillett
+Ch2 (Tanya) for exactly that reason.
+
+1. Read the tab with the Sheets connector (`get_values`, range
+   `'Family - Selected Tracks'!A1:F400`). Columns: Last Name | First Name |
+   Chapter | Track | Status.
+2. Find the family's existing rows. new-client seeds one row per chapter with
+   Track "tbc", so update the matching row's Track cell (`update_values`), do
+   not append a duplicate. Only append a new row if none exists for that
+   family and chapter.
+3. Track text is the music file name, e.g. `Leo Delibes_The Flower Duet (From
+   Lakmé).mp3`, taken from the Drive file title. Leave Status as it is.
+4. Before settling on a track, check the family's other rows. If the same track
+   is already used in this family's documentary, tell Neil before logging it.
+5. Re-read the cells afterwards to confirm the write landed.
+6. Log every chapter briefed in this run, including any earlier chapter in the
+   same family that is still "tbc" when Neil hands you its track.
+7. Say in Step 7 which rows you set.
 
 Before typing into any cell in the Music Library sheet via browser automation,
 verify the Name Box shows the intended cell and the formula bar shows the
@@ -369,6 +399,13 @@ substitute:
   interviewee's own voice) but use them sparingly: at most 1 verbatim phrase
   across the whole set of titles proposed in this briefing, never more than 2
   in any single title
+- Favour the quirky, concrete moment over the bare noun. "Squirrels at Tea"
+  beats "Squirrels", "Runaway Donkey" beats "Donkey". Write the beat the way
+  the family would tell the story, with the small odd detail in it.
+- Give a big theme the room it earned. If a large part of the session
+  covered a value or belief (e.g. Zoroastrian values for Laila, which ran
+  through the whole chapter), at least one option per chapter must carry it
+  as a beat, don't drop it for a string of small anecdotes.
 - Under each option, add a one-line reasoning note — succinctly, what story
   each beat refers to, so Neil can pick without re-reading the transcript
 
@@ -376,8 +413,8 @@ Take your time on this — read the full transcript before drafting, don't
 skim for keywords.
 
 Write the chosen titles (or the options, for a Parent Session) into the
-Titles section of the briefing doc created in Step 2, replacing the `Ch[x]
-TBC` placeholders.
+"Titles (for Neil only)" section at the bottom of the briefing doc created in
+Step 2, replacing the `Ch[x] TBC` placeholders.
 
 
 ## Step 4: Update the Airtable Editor Pipeline
@@ -480,11 +517,11 @@ number + 1.
    already exist as the S3 folder even without an explicit "S.3" suffix) so
    you don't create a duplicate.
 
-## Step 5b: Wrap Up session — flag the referral-page skill
+## Step 5b: Wrap Up session — flag the referral-landing-page skill
 
 If this briefing is for a **Wrap Up session**, this is the final chapter of the project and the natural moment to start building the family's `/refer-[family]` page — Neil now scans back through the project's transcripts (parent sessions for stories, child briefings for testimonials, this wrap-up for most testimonials) right after this point, and is prone to forgetting if it isn't surfaced here.
 
-Don't run the `referral-page` skill yourself as part of this one — just flag it clearly in your Step 7 report, e.g. "This is Griffiths' Wrap Up briefing — run the referral-page skill next to start their /refer-griffiths page." Skip this flag for a Child Briefing or Parent Session.
+Don't run the `referral-landing-page` skill yourself as part of this one — just flag it clearly in your Step 7 report, e.g. "This is Griffiths' Wrap Up briefing — run the referral-landing-page skill next to start their /refer-griffiths page." Skip this flag for a Child Briefing or Parent Session.
 
 ## Step 6: Draft the Gmail handoff to the assigned editor
 
@@ -539,5 +576,5 @@ added by hand (Riverside without Chrome access), the music tracks used (or
 left TBC), the Airtable status change (and any date/naming mismatch flagged),
 the Gmail draft created (recipient + subject), and — if applicable — the
 interviewer briefing you built (or the mismatch you flagged, or that Neil
-asked to hold it back), and — if this was a Wrap Up session — the referral-page
+asked to hold it back), and — if this was a Wrap Up session — the referral-landing-page
 flag from Step 5b. Keep this short — a few lines, not a report.

@@ -1,9 +1,10 @@
 ---
-name: referral-page
-description: Builds or updates a family's forwardable /refer-[family] referral landing page for Me & My Old Man — scans their Drive session transcripts for approved-worthy stories and testimonials, drafts the consent HTML for family sign-off, and once approved, hands the copy deck + build brief to Lovable to publish. Trigger when Neil says "build the referral page for [family]", "refer page for [family]", "/refer-[family]", or after a client-handover call where a family consented to testimonials/stories being used. Distinct from client-handover, which runs the call itself and captures consent — this skill turns that consent into the actual page.
+name: referral-landing-page
+description: Builds or updates a family's forwardable /refer-[family] referral landing page for Me & My Old Man — scans their Drive session transcripts for approved-worthy stories and testimonials, drafts the consent HTML for family sign-off, and once approved, hands the copy deck + build brief to Lovable to publish. Also writes the Lovable copy deck on its own when consent is already in hand. Trigger when Neil says "referral landing page for [family]", "copy deck for /refer-[family]", "build the referral page for [family]", "refer page for [family]", "/refer-[family]", or after a client-handover call where a family consented to testimonials/stories being used. Distinct from client-handover, which runs the call itself and captures consent — this skill turns that consent into the actual page.
 ---
 
 <!-- v1.0 — 2026-09-25: built from Neil's existing Marsh/Pinkham/Normans/Mcmullan referral pages, which were hand-built one at a time. This skill systemises that same process. -->
+<!-- v1.1 — 2026-10-05: renamed from referral-page. Added the copy-deck-only path and the video vs text testimonial split, from the Beard build. -->
 
 ## What this builds
 
@@ -19,6 +20,17 @@ A single forwardable page per family, `meandmyoldman.co.uk/refer-[family]` (publ
 - **All families' folders live under**: Drive folder `1pty6Q4_2yNWC57bttJkOR6u0vBelgiaa` ("05 Referral Landing Pages" — or wherever it currently sits, confirm with Neil if moved), one `[Family] HTML & LP` subfolder per family.
 
 Read the brief and hosting doc fresh each run — they are the source of truth, not this file. If Neil has revised the offer terms (currently 5% off, book before end of year — check this against `knowledge/offer/pricing.md` too, since pricing terms can move independently), the brief's copy wins on wording but pricing.md wins on any number.
+
+## Fast path: copy deck only
+
+When Neil already has consent and the clips cut (usually a Riverside clip brief plus a Drive folder of testimonial videos), skip Steps 1 and 2 and write the copy deck straight from those. Reference build: `scratch/refer-beard-lovable-copy-deck.md` (Beard, 5 Oct 2026).
+
+- **Video carries the testimonial. Text is for short, sharp hooks only.** Never put a text quote on the page that repeats what someone says in one of the videos. Text slots (hero pull-quote, section 3 quotes, why-now quote) go to lines that are NOT clipped: an aside, a one-line exchange, the parent on their own parent.
+- Map every video file to the clip it contains. If the filenames do not say which is which, state the inferred mapping in the deck and ask Neil to confirm. Never guess silently.
+- Slots: strongest child video in the hero, parent video in section 2 (after "What it is"), remaining videos in section 3 grouped by person.
+- The "What it is" detail clause uses three concrete story moments from the clip brief, never the held-back or private ones. List the held-back items at the foot of the deck so Lovable never picks them up.
+- Never fill a gap with an invented fact (an age, a date, a count). Leave it out or ask.
+- Save as `scratch/refer-[family]-lovable-copy-deck.md`, fixed copy from the master brief untouched, two alternative hero H1s at the bottom, and a short "Before it goes to Lovable" checklist.
 
 ## Step 1: Find the family's transcripts
 
