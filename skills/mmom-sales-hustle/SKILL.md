@@ -28,7 +28,7 @@ Neil's problem is never wording. It is deciding how hard to push, and worrying w
 - Send the invite now to someone who is away.
 - Price goes on a call. If a deck went out first, own it.
 
-**5. Draft** with `mmom-follow-up` (voice rules, banned phrases, friend or lead table). One question per message, answerable with a word or a date. Never "checking in", never flag-and-deny ("no pressure", "not chasing"), never a parent's illness as a reason to pause, no lead magnet for a hot lead.
+**5. Draft** with `mmom-follow-up` (voice rules, banned phrases, friend or lead table, subject lines written like chapter titles). One question per message, answerable with a word or a date. Never "checking in", never flag-and-deny ("no pressure", "not chasing"), never a parent's illness as a reason to pause, no lead magnet for a hot lead.
 
 **6. If it's a call**, use the call script in the playbook.
 

@@ -50,6 +50,8 @@ Neil's problem is not wording, it is deciding how hard to push. This takes the d
 - **Lead who is away** (travelling, on leave): send the diary invite now, don't wait for them to land. The invite sits in their diary and survives the inbox backlog, which a message will not. A one-line WhatsApp on the side is fine.
 - **Sent.** When Neil says a message has gone, log Last Action and its date, set the next Follow-up Date from the rung, and replace the Next Line that was used.
 - **Lapsed lives in the Temp field.** Lead Status has no Lapsed option.
+- **Check who an asset is written to before sending it.** A lead magnet written to the adult child ("How Do I Actually Bring This Up?") is wrong for a partner or go-between, and its blockers ("is this because you think I'm dying?", "is this therapy?") seed worries the lead has not raised. Send a human question and a 20-minute offer instead. (Martin Slattery, 6 Oct 2026.)
+- **Offer two named times, each hyperlinked to the booking slot, plus the open Calendly link as backup.** One decision gets answered, a bare link gets "I'll look later". Check Google Calendar and Calendly for the times before drafting, and give them in the lead's timezone. Never leave "[Thu 5pm]" brackets for Neil to fill in.
 - **A fork ends on the move the other person makes.** Never close with a line that claims their decision for Neil ("I'll park it"). If they don't act, they have parked it.
 
 **If a lead picks up the phone (script, from the Gem call, 6 Oct 2026):**
