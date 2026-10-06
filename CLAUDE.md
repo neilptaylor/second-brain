@@ -59,7 +59,7 @@ Facts:
 
 ## Skills do the work
 
-`skills/` holds the repeatable jobs. Before writing anything from scratch, check whether a skill already covers it: content (linkedin-post, linkedin-engagement, instagram, newsletter, lead-magnet, mmom-carousel, mmom-visual), sales (mmom-sales-strategist, mmom-voice-check, proposal, mmom-follow-up, mmom-podcast-pr), delivery (new-client, client-folder-setup, onboarding-complete, client-onboarding-complete, mmom-onboarding, editor-briefing), ops (morning, mmom-weekly-action-plan, mmom-voice-profile-refresh, form-response-to-doc).
+`skills/` holds the repeatable jobs. Before writing anything from scratch, check whether a skill already covers it: content (linkedin-post, linkedin-engagement, instagram, newsletter, lead-magnet, mmom-carousel, mmom-visual), sales (mmom-sales-strategist, mmom-sales-hustle, mmom-voice-check, proposal, mmom-follow-up, mmom-podcast-pr), delivery (new-client, client-folder-setup, onboarding-complete, client-onboarding-complete, mmom-onboarding, editor-briefing), ops (morning, mmom-weekly-action-plan, mmom-voice-profile-refresh, form-response-to-doc).
 
 For any sales or prospect task, load `mmom-voice-check` before `mmom-sales-strategist`.
 

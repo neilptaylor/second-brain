@@ -17,7 +17,7 @@
 
 **Content** — linkedin-post, linkedin-engagement, instagram, newsletter, lead-magnet, mmom-carousel, mmom-visual, alex-hormozi-youtube
 
-**Sales** — mmom-sales-strategist, mmom-voice-check, proposal, mmom-follow-up, mmom-podcast-pr
+**Sales** — mmom-sales-strategist, mmom-sales-hustle, mmom-voice-check, proposal, mmom-follow-up, mmom-podcast-pr
 
 **Delivery** — new-client, client-folder-setup, onboarding-complete, client-onboarding-complete, mmom-onboarding, editor-briefing
 

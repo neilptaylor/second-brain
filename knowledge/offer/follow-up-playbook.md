@@ -12,6 +12,54 @@ Sources: Pitch OS and Sales OS (Drive, `Sales OS/`), the Hormozi YouTube corpus,
 4. **Solve the real block, not the one they name.** "Need to speak to my brother" means the brother has not heard it from Neil. "Can't afford it" means the smallest option has not been shown. Go straight at the real thing.
 5. **Every message must be fine to send even if it never gets a reply.** No guilt, no "just checking in", no mention of how long it has been.
 
+## The ladder: three touches, then a clear fork (added 6 Oct 2026)
+
+Neil's problem is not wording, it is deciding how hard to push. This takes the decision out of his head. The sheet decides, not his mood. Chasing is a service: the silent lead is avoiding a decision, not avoiding Neil, and a clear fork saves them making it alone.
+
+**The mantra, from a client's handover call (Daniel Beard, Sep 2026):** "I've chased three times. If this isn't for you, just let me know, or let's get a date in the next two weeks." His point: the friendship got the lead, then it becomes business. Use the thinking, never his name in anything client-facing.
+
+**Three touches, then the fork.**
+1. **Touch 1** (within 2 days of the call, or the day a date they gave comes round): the specific next step, two times offered.
+2. **Touch 2** (3 to 4 days later): one new thing (a detail from their call, a family story, an answer to a worry they raised) plus the same step.
+3. **Touch 3, the fork** (4 to 5 days later): "Do you want to take this forward, or park it?" with a real date and the reason for it. One word is a fine answer.
+4. **After the fork, one exit message** ("I'll leave it with you for now, shout when it's right"). Then the row goes to Lapsed and into the monthly no-ask drip. Neil stops owning it.
+
+**Age rule.** A lead more than 6 weeks old skips to touch 3. They have had long enough to decide.
+
+**Momentum exception (added 6 Oct 2026).** The age rule is for leads standing still. If the lead has moved in the last 7 days (held or booked a call, a parent or partner has engaged, they have told Neil the next step), they are moving, so nudge the next step warmly and do not fork. The decision belongs after the call that answers their questions, not before it. A close lead who is moving and gets a go/no-go line will read it as hard.
+
+**Read the temperature before drafting.** Write one line first: moving or stalled, who they are to Neil (friend or lead), what they last said and how they said it, and the real next step. Draft only once that line exists, and match the tone of the thread, not the ladder.
+
+**Shortcuts that beat chasing.**
+- **Send the invite, not the question.** Put 20 or 30 minutes in their diary with one line ("move it if it's wrong"). Silence then means no, and a moved invite means yes. This removes the "when suits?" reply they never send.
+- **Diary link plus the fork** for the elusive (phone tennis, can't pin a time): "I can't keep chasing you, so here's my diary. If you want to take it forward, book a slot." End on the link. Never add "just say and I'll park it". If they don't book, they have parked it, and that line makes Neil sound in control when he isn't. Silence is the answer: move the row to Lapsed after about two weeks without a booking, with no further message.
+- **Price goes on a call.** If a deck went out with numbers and the call never covered them, own it ("I should have talked you through those") and offer a call to go through the options.
+
+**Target price is a landing zone, not a concession.** TARGET (5% off LIST) is where deals are designed to land. Offer it in return for a decision ("if we book the first session by [date]"), never to break a silence. The floor (7.5% off) is never offered first. Read `pricing.md` before any figure is said, and say it on the call.
+
+**A deadline needs a true reason.** Their own date ("winter project", a birthday), or Neil's real capacity. Never invent urgency. If there is no real reason, the reason is "I would rather know than guess".
+
+**A no is the system working.** A clear no frees the slot and moves the row to Lapsed. Only a silence that Neil keeps managing in his head costs him anything.
+
+**Daily, not when the mood takes him.** Ten minutes, same time, open the due list, send what the ladder says. No re-reading the thread to judge whether it is "too much". The ladder has already judged.
+
+## Running it: parked, away, sent, and the call (added 6 Oct 2026)
+
+- **Cleanse day.** When the list has gone stale, work the whole thing in one pass. Every row ends up with a rung, a dated next step, or Lapsed. Nothing stays in "I'll get to it". Neil, after the first one: "the cleanse feels GOOD".
+- **Parked lead** (asked to come back, or the next step is weeks away): the row gets a Follow-up Date and a Google Calendar reminder at 9am that day, with the drafted message in the reminder. Nothing is left to memory.
+- **Lead who is away** (travelling, on leave): send the diary invite now, don't wait for them to land. The invite sits in their diary and survives the inbox backlog, which a message will not. A one-line WhatsApp on the side is fine.
+- **Sent.** When Neil says a message has gone, log Last Action and its date, set the next Follow-up Date from the rung, and replace the Next Line that was used.
+- **Lapsed lives in the Temp field.** Lead Status has no Lapsed option.
+- **A fork ends on the move the other person makes.** Never close with a line that claims their decision for Neil ("I'll park it"). If they don't act, they have parked it.
+
+**If a lead picks up the phone (script, from the Gem call, 6 Oct 2026):**
+1. Open with the honest reason for the call: "I wanted to go through the numbers properly, a deck's a rubbish way to see them."
+2. Ask for their gut reaction, then stop talking.
+3. Find the real block: "Was it the number, the timing, or something else?" Most people say price when it is a different worry.
+4. If it is price, show the lighter shape first, never the same thing cheaper.
+5. If the real block is another person (a parent, a partner), offer to join a quick word with them alongside, so the lead is not explaining it second-hand.
+6. Offer TARGET in return for a decision by a date. Never offer it to break a silence. Never offer a parent's illness as a reason to pause.
+
 ## The plays
 
 ### Decision due
