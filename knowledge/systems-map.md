@@ -37,6 +37,8 @@ The business runs in stages in `Shared drives/Systems`. This maps each stage to 
 - **Airtable Full CRM is the master.** Every lead gets `Lead Source` (dropdown: LW Email Campaign, LinkedIn Engagement, LinkedIn Inbound, DM Outbound, Instagram Inbound, Lead Magnet (107 Questions), Kit Newsletter, Podcast, Referral, Talk / Event, Google, Press / Magazine, Other) and `Knows Me` (Knows personally, Knew of me, Stranger). Channel and relationship are separate on purpose: an old contact who came via a LinkedIn post is LinkedIn Inbound + Knows personally.
 - Tick-boxes `Discovery Call`, `Sales Call`, `Won` carry each lead's funnel. Back-filled from the Sales Conversion tab.
 - `Referred By` holds the referrer name or publication.
+- `Contact Type` (added 6 Oct 2026): Client family (parents, siblings, partners on a client project) and Test rows are not leads and are left off the Lead Source tab. Blank means Lead. A client's buyer is a Lead with Won ticked. Kit's Seg: Past Clients and Seg: In Progress tags are the client list to check new rows against.
+- Kit (322 subscribers, 6 Oct 2026) will never equal the lead count: about 109 are clients and family, and leads who came by DM, LinkedIn or referral may never join the list.
 - The old free-text field is kept as `Lead Source (old text)` for reference only.
 - New leads go in with Lead Status "In Discussion".
 - The `Lead Source` tab of the Lead Gen sheet (`1hlBVSI4k-sZdJW3Y_KgSzD4yuraPl07zUv4dO3Y7tcs`) is a report, refreshed every Monday 7am by the `lead-source-sync` scheduled task, or on request ("refresh lead sources").
