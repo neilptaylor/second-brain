@@ -1,6 +1,6 @@
 # Follow-up playbook
 
-Created 24 Sep 2026. Owned by the `mmom-follow-up` skill. One play per Airtable **Situation**. Pick the situation, run the play, set the next date.
+Created 24 Sep 2026. Owned by the `mmom-sales-hustle` skill since 6 Oct 2026 (`mmom-follow-up` writes the words). One play per Airtable **Situation**. Pick the situation, run the play, set the next date.
 
 Sources: Pitch OS and Sales OS (Drive, `Sales OS/`), the Hormozi YouTube corpus, and Neil's own sent messages. Internal only. Never name any of them in a message.
 

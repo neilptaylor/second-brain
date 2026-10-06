@@ -1,8 +1,8 @@
 ---
 name: mmom-sales-hustle
-description: "Neil's daily pipeline discipline for Me & My Old Man leads: the method that keeps every live lead moving without him agonising over whether he is being annoying. Reads each lead's temperature, applies a fixed ladder (three touches, then a clear fork, then one exit message and Lapsed), sets dated next steps and Google Calendar reminders, and cleanses the CRM. Use when Neil says 'sales hustle', 'cleanse the list', 'who's gone quiet', 'what do I send', 'chase', 'nudge', 'go/no-go', 'park it', 'am I chasing too much', 'what would Hormozi do', or asks what to do about a lead who has stalled after a call or proposal. mmom-follow-up writes the messages and runs Mode 0, mmom-sales-strategist handles call strategy and objections, this skill decides what happens next and when."
+description: "Neil's daily pipeline discipline for Me & My Old Man sales leads (Airtable Full CRM), and the owner of every Lead Gen chase: the method that keeps every live lead moving without him agonising over whether he is being annoying. Reads each lead's temperature, applies a fixed ladder (three touches, then a clear fork, then one exit message and Lapsed), briefs the message for the rung, sets dated next steps and Google Calendar reminders, and cleanses the CRM. Use when Neil says 'sales hustle', 'cleanse the list', 'who's gone quiet', 'what do I send', 'chase [lead]', 'nudge', '[lead] has gone quiet', 'day 10 chaser', 're-open [lead]', 'go/no-go', 'park it', 'am I chasing too much', 'what would Hormozi do', or asks what to do about a lead who has stalled after a call or proposal. mmom-follow-up holds the voice rules and writes the words, and owns the other workstreams (Asking Engine, PR, Events, welcome and referral messages). mmom-sales-strategist handles call strategy and objections."
 ---
-<!-- v1.0 — 2026-10-06: built from the first cleanse day (Henry, Gem, Stuart, Duncan, Jimmy, Alison, Raf, Chris, Jonny, Wiggy, Dave, Gussie). One live copy of the rules lives in knowledge/offer/follow-up-playbook.md. This file holds the method and points at it, it does not copy it. -->
+<!-- v1.1 — 2026-10-06: rationalised with mmom-follow-up. This skill now owns every Lead Gen chase end to end: the due list, the rung, and the brief for each rung's message (moved here from follow-up Mode 1, whose old day-based ladder clashed with the ladder). mmom-follow-up keeps the voice rules, Mode 0 across all four workstreams, and the non-chase modes. v1.0 — 2026-10-06: built from the first cleanse day (Henry, Gem, Stuart, Duncan, Jimmy, Alison, Raf, Chris, Jonny, Wiggy, Dave, Gussie). One live copy of the rules lives in knowledge/offer/follow-up-playbook.md. This file holds the method and points at it, it does not copy it. -->
 
 # MMOM Sales Hustle
 
@@ -16,7 +16,7 @@ Neil's problem is never wording. It is deciding how hard to push, and worrying w
 
 ## The method
 
-**1. Pull the due list.** Airtable `Full CRM` (base `apprk3RUXdvZNJ8TF`, table `tblFy3hGmEDRBgExi`), Follow-up Date today or earlier. Airtable is a "who to check" list, never "what to send". Read the real latest thread (Gmail, Fathom, or the WhatsApp and LinkedIn screenshots Neil pastes) before drafting. If you haven't seen the thread, ask.
+**1. Pull the due list.** Airtable `Full CRM` (base `apprk3RUXdvZNJ8TF`, table `tblFy3hGmEDRBgExi`), Follow-up Date today or earlier, Lead Status not Won, Lost or Completed, Hot first (Temp). Older rows have First Name and Last Name swapped. Airtable is a "who to check" list, never "what to send". Read the real latest thread (Gmail, Fathom, or the WhatsApp and LinkedIn screenshots Neil pastes) before drafting. If you haven't seen the thread, ask.
 
 **2. Read the temperature, in one line, before any draft.** Moving or stalled. Who they are to Neil (friend or lead). What they last said, and in what tone. The real next step. Show Neil the line. A lead who has moved in the last 7 days (booked or held a call, a parent or partner engaged) is moving: warm nudge on the next step, never a go/no-go. The decision belongs after the call that answers their questions.
 
@@ -28,7 +28,19 @@ Neil's problem is never wording. It is deciding how hard to push, and worrying w
 - Send the invite now to someone who is away.
 - Price goes on a call. If a deck went out first, own it.
 
-**5. Draft** with `mmom-follow-up` (voice rules, banned phrases, friend or lead table, subject lines written like chapter titles). One question per message, answerable with a word or a date. Never "checking in", never flag-and-deny ("no pressure", "not chasing"), never a parent's illness as a reason to pause, no lead magnet for a hot lead.
+**5. Draft** to the rung brief below, in the voice rules and output format of `mmom-follow-up` (banned phrases, friend or lead table, subject lines written like chapter titles, two alternative openers). One question per message, answerable with a word or a date. Never "checking in", never flag-and-deny ("no pressure", "not chasing"), never a parent's illness as a reason to pause, no lead magnet for a hot lead.
+
+## What each rung's message carries
+
+- **Touch 1:** the specific next step and two real times. One detail from their call so it could only be to them ("been thinking about what you said about your mum's laugh"). No re-pitch, no price.
+- **Touch 2:** one new thing, never the same message again: a detail from their call, a real family story, an answer to a worry they raised. Plus the same step.
+- **Touch 3, the fork:** "Do you want to take this forward, or park it?" with a real date and the true reason. Diary-link version ends on the link.
+- **Exit message:** one line, warm, leaves the door open. Then Lapsed.
+- **Re-opening a Lapsed lead Neil wants to try again:** read the temperature fresh. If the old block was timing or another person, name it from their own words and ask whether it has moved. If a deck went out uncovered, own it. Then one call ask.
+- **Lapsed and staying lapsed:** the no-ask drip, written with `mmom-follow-up` Mode 3. Never more than one message every 4 to 6 weeks.
+- A WhatsApp voice note instead of text: `mmom-follow-up` Mode 2.
+
+Never two asks in a row. Never "did you get my proposal?". Never apologise for following up. Never discount to break a silence.
 
 **6. If it's a call**, use the call script in the playbook.
 
@@ -37,6 +49,10 @@ Neil's problem is never wording. It is deciding how hard to push, and worrying w
 - Google Calendar: every parked lead gets a 9am reminder on its date with the drafted message in the description.
 - Save drafts to `scratch/` as `.md` if more than two.
 - Log any correction in `knowledge/lessons.md` the same turn and edit the right section here or in the playbook, bump the version comment.
+
+## A new lead comes in
+
+Neil says "add [name] to airtable, lead source [x], email, number". Create the row with Lead Source (dropdown), Knows Me if he says, Referred By for the referrer or publication, Email, Phone, Lead Status "In Discussion". If the source is missing, ask in one line. Never pick one. The Lead Source tab of the Lead Gen sheet is fed from these fields every Monday (see `knowledge/systems-map.md`). When a lead books or holds a discovery call or sales call, or wins, tick the box the same turn.
 
 ## What the advisers add
 
