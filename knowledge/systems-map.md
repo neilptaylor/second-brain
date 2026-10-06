@@ -31,3 +31,11 @@ The business runs in stages in `Shared drives/Systems`. This maps each stage to 
 - **Follow-ups are hardcoded per person.** There are eight scheduled tasks named after individual prospects. That is a symptom of a missing pattern: one follow-up engine reading the CRM, not one task per human.
 - **Onboarding has four overlapping skills.** onboarding-complete, client-onboarding-complete, mmom-onboarding and new-client plus client-folder-setup. Some are duplicates from different homes, some are genuinely different jobs. Needs untangling before anything is built on top.
 - **Tier language is stale everywhere outside this repo.** The Onboarding folder still has Bronze, Silver and Gold SOPs. Pricing is now options A to D. Every SOP referencing a tier name is wrong. The repo's own skills were swept clean on 22 Sep 2026, see `docs/drive-skill-sync-2026-09-22.md`, but the Drive SOPs have not been touched.
+
+## Lead source tracking (added 6 Oct 2026)
+
+- **Airtable Full CRM is the master.** Every lead gets `Lead Source` (dropdown: LW Email Campaign, LinkedIn Engagement, LinkedIn Inbound, DM Outbound, Instagram Inbound, Lead Magnet (107 Questions), Kit Newsletter, Podcast, Referral, Talk / Event, Google, Other) and `Knows Me` (Knows personally, Knew of me, Stranger). Channel and relationship are separate on purpose: an old contact who came via a LinkedIn post is LinkedIn Inbound + Knows personally.
+- Tick-boxes `Discovery Call`, `Sales Call`, `Won` carry each lead's funnel. Back-filled from the Sales Conversion tab.
+- The old free-text field is kept as `Lead Source (old text)` for reference only.
+- New leads go in with Lead Status "In Discussion".
+- The `Lead Source` tab of the Lead Gen sheet (`1hlBVSI4k-sZdJW3Y_KgSzD4yuraPl07zUv4dO3Y7tcs`) is a report, refreshed every Monday 7am by the `lead-source-sync` scheduled task, or on request ("refresh lead sources").
