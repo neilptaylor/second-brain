@@ -42,3 +42,10 @@ The business runs in stages in `Shared drives/Systems`. This maps each stage to 
 - The old free-text field is kept as `Lead Source (old text)` for reference only.
 - New leads go in with Lead Status "In Discussion".
 - The `Lead Source` tab of the Lead Gen sheet (`1hlBVSI4k-sZdJW3Y_KgSzD4yuraPl07zUv4dO3Y7tcs`) is a report, refreshed every Monday 7am by the `lead-source-sync` scheduled task, or on request ("refresh lead sources").
+
+## Calendly booking links (logged 7 Oct 2026)
+
+All under `https://calendly.com/meandmyoldman/`. Individual slots hyperlink as `<link>/<UTC start time>`, for example `30min-connect/2026-10-13T16:00:00Z`.
+
+- `15min-connect`, `20min-connect`, `30min-connect`: the "connect" set, for friends and network (Vinesy, 7 Oct). Use `30min-connect` as the open-diary link at the end of a friend email.
+- `20min-family-story-discovery-session`, `30min-family-story-discovery-session`: discovery calls for leads.
