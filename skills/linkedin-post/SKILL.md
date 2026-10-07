@@ -4,6 +4,10 @@ description: "Write LinkedIn posts in Neil Taylor's voice for Me & My Old Man. U
 ---
 
 # LinkedIn Post Skill — Neil Taylor / Me & My Old Man
+## Version 4.0 — October 2026 (asset is part of the post, with a delivery gate)
+<!-- v4.0 — 2026-10-07: asked for three posts, I delivered the copy and Notion rows but only a one-line text note under "Image", no asset built, and Neil had to ask whether any existed. The skill already said to build the visual, but it sat at the bottom after the Notion step, so it was skipped under momentum. Fix: the asset is now built BEFORE the Notion row is created, and a Delivery gate (see "The visual") must pass before replying: open the file on disk, look at it, put its filename on the row. Never reply to Neil until the check passes. No Paper needed: carousels use mmom-carousel's HTML-to-PDF route, hand-lettered cards are HTML rendered with headless Chrome, photos are cropped 1080x1350 from the Image Bank. -->
+## Version 3.9 — September 2026 (paste-safe post copy in Notion)
+<!-- v3.9 — 2026-09-30: Neil reported (1) apostrophes dropping in Notion (dont, didnt, theres), (2) literal "quot;" appearing where speech marks should be, and (3) line breaks lost when pasting from Notion into LinkedIn's Start a post box. Fix: post copy now goes in a fenced code block in the Notion body (its copy button copies raw text, blank lines intact, no rich-text collapsing), written with literal straight characters, never HTML entities. Also copy the post to the clipboard as plain text with pbcopy on delivery. -->
 ## Version 3.8 — September 2026 (no two posts on the same day)
 <!-- v3.8 — 2026-09-28: Neil caught two posts scheduled on the same day (Oct 1) and had to move one himself. Added a same-day collision check before setting Date on a Notion row — see "Log the post to Notion". -->
 <!-- v3.7 — 2026-09-24: Neil caught a real photo ("Neil portrait, red hoodie, coastal walk") proposed for today's post that he'd already used on LinkedIn 1-2 weeks earlier — the skill had no check against recent image usage before proposing one. Added a 30-day no-repeat rule under "The visual": check the last 30 days of Content rows' Image bullets (and asset filenames) before proposing a photo or card. Swapped today's row to an unused image. -->
@@ -663,7 +667,9 @@ Set these properties:
 
 ```
 ## Post copy
-[the full post text, one-line paragraphs as it will appear on LinkedIn]
+```
+[the full post text, exactly as it will appear on LinkedIn, blank lines between paragraphs]
+```
 
 ---
 **Pillar:** [pillar] / **Job:** [job] / **CTA:** [the CTA line, with the opt-in page link inline if it's a comment-trigger CTA]
@@ -672,13 +678,25 @@ Set these properties:
 
 No "First comment" block, no "Image selection" writeup, no source/hook-strategy/suggested-edits prose in the body — those live in your chat reply when you first deliver the post (Output format above), not in Notion. The body is the finished artefact: the post, then four bullets Neil can scan in two seconds. For a carousel, the slide-by-slide brief still goes in the body, after the Image bullet. Report the created row's URL on the last line of your reply.
 
-**Then produce the asset (next section) before you finish.**
+**Paste-safe post copy — non-negotiable.** LinkedIn's "Start a post" box drops line breaks when you paste rich text from Notion, and the Notion write path has stripped apostrophes (dont, didnt, theres) and turned speech marks into the literal text "quot;". So:
+- The post copy always sits inside a fenced code block in the page body. Its copy button copies raw text with every line break intact, so Neil pastes straight into LinkedIn with no reformatting.
+- Write literal characters in the content. Straight apostrophes (don't, didn't, there's) and double quotes, never HTML entities (`&quot;`, `&#39;`, `&amp;`), never a backslash-escaped apostrophe.
+- After creating the row, fetch the page back and check the code block: every contraction has its apostrophe, no "quot;" anywhere, blank lines present. If not, fix before reporting the URL.
+- Also copy the finished post to the clipboard as plain text (`pbcopy`) when you deliver it, and tell Neil it's on his clipboard.
+
+**The asset comes first, not last.** Build the visual (next section) BEFORE creating the Notion row, so the row's Image bullet can hold a real filename. A row whose Image bullet is a description ("needs a card") is an unfinished row.
 
 ---
 
 ## The visual — every post gets one, and the skill BUILDS it
 
-Not optional, not "a brief for later". Every post leaves this skill with either a finished image saved to the assets folder, or (only if Paper isn't running) a complete brief plus a clear flag.
+Not optional, not "a brief for later". Every post leaves this skill with a finished image saved to the assets folder. Paper is not needed: carousels use `mmom-carousel` (HTML to PDF), hand-lettered cards are HTML rendered by headless Chrome to a 1080x1350 PNG (Caveat, navy ink, warm vignette, signed "— Neil"), photos are cropped 1080x1350 from the Image Bank. When Neil asks for several posts, that means one asset per post.
+
+**Delivery gate, run before every reply to Neil. If any line fails, fix it, do not reply.**
+1. List the assets folder and confirm a file exists for EACH post (`MMOM_LI_<slug>_v1.png/.pdf/.jpg`).
+2. Open each file (render a contact sheet and look at it) and check: no widows, nothing clipped, right size (1080x1350), face not cropped on photos.
+3. Confirm each Notion row's Image bullet holds that filename, not a description.
+4. Only then reply, and say which file belongs to which post.
 
 The design spec is `Claude Outputs/LinkedIn System/MMOM_Carousel-Design-Brief_v1.md` (canvas 1080×1350, cream/navy/one-peach palette, Marcellus + Inter + Biro Script, premium and pared back). Reference it, don't restate it.
 
