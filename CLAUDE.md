@@ -55,7 +55,19 @@ Facts:
 | Identity, beliefs, positioning | `README.md` |
 | Which tools connect to what | `knowledge/systems-map.md` |
 | Past corrections | `knowledge/lessons.md` |
+| "Hormozi's take" on an offer, price or funnel | All four sources, see "Hormozi means the whole corpus" below |
 | What exists and what does not | `INDEX.md`, `docs/handover-*.md` |
+
+## Hormozi means the whole corpus
+
+When Neil says "Hormozi", read all of these, never one alone:
+
+1. **The books** (PDFs, Drive `My Drive/Ex-FounderOS/02 Hormozi Books/`): `$100M Offers`, `100M Leads Guide`, `$100M Playbook Lead Nurture`. Extract with `pdftotext`. The books own the frameworks: value equation, Grand Slam Offer, scarcity, urgency, bonuses, guarantees, naming, referrals.
+2. **The proposal techniques doc**: `knowledge/hormozi/hormozi-techniques.md`. Use it as the checklist an offer gets scored against.
+3. **The YouTube corpus**: the `alex-hormozi-youtube` skill. It owns current tactics and numbers, cited with video date and timestamp. Check the `speaker` field, never credit a guest's point to Hormozi.
+4. **$100M Money Models** is not on this machine yet. Say so in any review until it is.
+
+Every Hormozi review names the sources it used and the ones it couldn't reach. Translate the thinking into Neil's voice in anything client-facing, and never name Hormozi there.
 
 ## Skills do the work
 
