@@ -2,7 +2,7 @@
 name: mmom-sales-hustle
 description: "Neil's daily pipeline discipline for Me & My Old Man sales leads (Airtable Full CRM), and the owner of every Lead Gen chase: the method that keeps every live lead moving without him agonising over whether he is being annoying. Reads each lead's temperature, applies a fixed ladder (three touches, then a clear fork, then one exit message and Lapsed), briefs the message for the rung, sets dated next steps and Google Calendar reminders, and cleanses the CRM. Use when Neil says 'sales hustle', 'cleanse the list', 'who's gone quiet', 'what do I send', 'chase [lead]', 'nudge', '[lead] has gone quiet', 'day 10 chaser', 're-open [lead]', 'go/no-go', 'park it', 'am I chasing too much', 'what would Hormozi do', or asks what to do about a lead who has stalled after a call or proposal. mmom-follow-up holds the voice rules and writes the words, and owns the other workstreams (Asking Engine, PR, Events, welcome and referral messages). mmom-sales-strategist handles call strategy and objections."
 ---
-<!-- v1.1 — 2026-10-06: rationalised with mmom-follow-up. This skill now owns every Lead Gen chase end to end: the due list, the rung, and the brief for each rung's message (moved here from follow-up Mode 1, whose old day-based ladder clashed with the ladder). mmom-follow-up keeps the voice rules, Mode 0 across all four workstreams, and the non-chase modes. v1.0 — 2026-10-06: built from the first cleanse day (Henry, Gem, Stuart, Duncan, Jimmy, Alison, Raf, Chris, Jonny, Wiggy, Dave, Gussie). One live copy of the rules lives in knowledge/offer/follow-up-playbook.md. This file holds the method and points at it, it does not copy it. -->
+<!-- v1.7 — 2026-10-08: every DM draft carries a suggested subject; soften sensitive questions with an aside (Chris, Lex sent versions). v1.6 — 2026-10-08: comment-to-DM questions must be what a normal person would ask, no engagement bait (Lex, Chris, Vincent). v1.5 — 2026-10-08: warm comment to DM section (Daniel Beard post: Vincent, Chris, Lex). v1.4 — 2026-10-08: echo the lead's own words, never credit an action they have not taken (Mark Douglas). v1.3 — 2026-10-07: Matt Gray cross-check added to the advisers section, no apologising for the price. v1.2 — 2026-10-07: park-with-apology rung message (Alison). v1.1 — 2026-10-06: rationalised with mmom-follow-up. This skill now owns every Lead Gen chase end to end: the due list, the rung, and the brief for each rung's message (moved here from follow-up Mode 1, whose old day-based ladder clashed with the ladder). mmom-follow-up keeps the voice rules, Mode 0 across all four workstreams, and the non-chase modes. v1.0 — 2026-10-06: built from the first cleanse day (Henry, Gem, Stuart, Duncan, Jimmy, Alison, Raf, Chris, Jonny, Wiggy, Dave, Gussie). One live copy of the rules lives in knowledge/offer/follow-up-playbook.md. This file holds the method and points at it, it does not copy it. -->
 
 # MMOM Sales Hustle
 
@@ -28,7 +28,7 @@ Neil's problem is never wording. It is deciding how hard to push, and worrying w
 - Send the invite now to someone who is away.
 - Price goes on a call. If a deck went out first, own it.
 
-**5. Draft** to the rung brief below, in the voice rules and output format of `mmom-follow-up` (banned phrases, friend or lead table, subject lines written like chapter titles, two alternative openers). One question per message, answerable with a word or a date. Never "checking in", never flag-and-deny ("no pressure", "not chasing"), never a parent's illness as a reason to pause, no lead magnet for a hot lead.
+**5. Draft** to the rung brief below, in the voice rules and output format of `mmom-follow-up` (banned phrases, friend or lead table, subject lines written like chapter titles, two alternative openers). One question per message, answerable with a word or a date. Never "checking in", never flag-and-deny ("no pressure", "not chasing"), never a parent's illness as a reason to pause, no lead magnet for a hot lead. Echo what the lead actually said, in their words, and never credit them with an action they have not taken ("as I thought about how to sell it to my folks" is thinking, not "how you've been trying to sell it"). Mark Douglas, 8 Oct 2026.
 
 ## What each rung's message carries
 
@@ -38,6 +38,7 @@ Neil's problem is never wording. It is deciding how hard to push, and worrying w
 - **Exit message:** one line, warm, leaves the door open. Then Lapsed.
 - **Re-opening a Lapsed lead Neil wants to try again:** read the temperature fresh. If the old block was timing or another person, name it from their own words and ask whether it has moved. If a deck went out uncovered, own it. Then one call ask.
 - **Lapsed and staying lapsed:** the no-ask drip, written with `mmom-follow-up` Mode 3. Never more than one message every 4 to 6 weeks.
+- **Lead parks it with an apology:** short shrug back, confirm the date and his own move, no replaying their situation. If the block is busy siblings or timing, a P.S. naming Hero Story as the lighter shape (undersold, with his own reason). If it is money, leave the lighter option out. Full wording in `mmom-follow-up` voice rules (Alison, 7 Oct 2026).
 - A WhatsApp voice note instead of text: `mmom-follow-up` Mode 2.
 
 Never two asks in a row. Never "did you get my proposal?". Never apologise for following up. Never discount to break a silence.
@@ -50,6 +51,23 @@ Never two asks in a row. Never "did you get my proposal?". Never apologise for f
 - Save drafts to `scratch/` as `.md` if more than two.
 - Log any correction in `knowledge/lessons.md` the same turn and edit the right section here or in the playbook, bump the version comment.
 
+## A warm comment or reply becomes a DM (added 8 Oct 2026)
+
+Comments on Neil's posts, or on a client's post that tags him, are the warmest cold-start signal he gets. Most deserve only a public reply. DM only when the person has said something about their own parent or asked, and no more than a handful per post.
+
+**The three-signals test.** DM if the comment (1) names their own parent, (2) says they'll do it, or already did something with a parent, or (3) is a referral from the post's author. Reactions ("great idea", "lovely"), friends catching up and anyone with no parent in the comment get the public thread only.
+
+**What each signal gets.**
+- **Referred or asked** (e.g. Vincent Leonard, dad is 90, referred by the author): a lead from today. Public reply, then a DM the same day, one question about the parent plus a 20-minute offer. Start the ladder: touch 1 within 2 days, two real times from GCal and Calendly, touch 2 and the fork on the normal gaps. Create the Airtable row (ask for Lead Source, never pick one; Referred By is the post's author).
+- **Their parent won't** (e.g. Chris Miller, "no way my old fella would do it"): not a lead. Ask what a mate would ask: is the other parent around? "Shame your old man won't go for it. Is your mum around? Could be worth asking her." If they reply, send the opt-in landing page for "How Do I Actually Bring This Up?" (written to the adult child, so it fits), never the raw Doc, and end the DM on one question.
+- **Passed it to their parents** (e.g. Lex Scott): not a lead. A plain thank-you plus the question a friend would ask: "did it spark anything, are you thinking of doing something like it with them?" If they answer, offer a 20-minute chat and nothing more.
+
+**The question must be one a normal person would ask.** Mirror what they actually said and ask about their real situation. Never a floating question designed to get engagement that the next message pounces on ("is there a story you've always wanted to hear?"). Neil, 8 Oct 2026: obvious bait. The model is the Vincent DM: "Are you thinking of having a go at recording him yourself, or would you rather someone else did the asking?" It sorts DIY from done-for-you and sounds like a person. If the lead said "borrow the idea", that may mean DIY, so ask which before offering any help.
+
+**Rules.** Non-leads get one DM and no ladder until they put a hand up. A DM never carries a price, a deck or a lead magnet before the person has answered a question. The call is the only destination. Every DM draft comes with a suggested subject line (LinkedIn DMs have a subject field), written like a chapter title with the person's name and the real subject, e.g. "Sam, That Garage & Trying It Out". When the question touches something that might be sensitive (a parent who may have died or be unwell), Neil softens it with a self-aware aside ("I hope I'm not putting my foot in it here, but is your mum around?") and may add a short line of his own experience ("That's often been the way to make it happen with families"). Neil writes and sends every DM, never a VA, because his own voice is the asset. Put a Google Calendar reminder on every DM and ladder step with the drafted message in the description.
+
+**Why.** Adviser input, untested with Neil: Hormozi's corpus (Jan to Oct 2026) says DMs are the warmest channel and the founder's own DM conversations outconvert a team's, and lists speed to contact and one conversion point as levers. His volume advice (10 to 20 cold DMs a day) does not apply, this is the opposite problem.
+
 ## A new lead comes in
 
 Neil says "add [name] to airtable, lead source [x], email, number". Create the row with Lead Source (dropdown), Knows Me if he says, Referred By for the referrer or publication, Email, Phone, Lead Status "In Discussion". If the source is missing, ask in one line. Never pick one. The Lead Source tab of the Lead Gen sheet is fed from these fields every Monday (see `knowledge/systems-map.md`). When a lead books or holds a discovery call or sales call, or wins, tick the box the same turn.
@@ -58,11 +76,13 @@ Neil says "add [name] to airtable, lead source [x], email, number". Create the r
 
 Hormozi: a deadline needs its own reason why, good selling feels good, price goes on a phone call. Donnelly: every follow-up gives something new, a graceful exit often gets the reply nothing else did, objections are interest. Neither teaches a post-call chase cadence in the current corpora, so the ladder is Neil's, built from the Daniel Beard line: "I've chased three times. If this isn't for you, just let me know, or let's get a date in the next two weeks." Never name him, or any adviser, in a message to a lead.
 
+Gray (Instagram carousel, 2 Jul 2026, "invitation vs manipulation") backs the ladder rather than changing it: invite when they are ready, scarcity only if real (capacity or their own date), "not now" is an answer, never apologise for asking for money. The one addition is the last: say the price plainly on the call, no cushion before or after. Adviser input, not yet tested with Neil.
+
 ## Never
 
 - Decide a lead is "too much to chase" from feel.
 - Offer TARGET price to break a silence. TARGET is a landing zone offered for a decision by a date.
 - Draft a fork for a lead who is moving.
 - Write a closing line that claims a decision the other person is making.
-- Quote a number in a message.
+- Quote a number in a message, or apologise for one on the call.
 - Send anything. Neil sends it.
