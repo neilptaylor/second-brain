@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Me &amp; My Old Man — for the Griffiths family</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f9f6f1;
+    --bg-2:#f0ebe3;
+    --bg-3:#e8e1d8;
+    --ink:#1c1814;
+    --ink-2:#3a3228;
+    --muted:#7a6e62;
+    --muted-soft:#9e9185;
+    --peach:#b8674e;
+    --peach-deep:#a05540;
+    --peach-tint:#f5e8e3;
+    --hair:rgba(28,24,20,.10);
+    --hair-strong:rgba(28,24,20,.18);
+    --serif:"Marcellus",Georgia,serif;
+    --italic:"Cormorant Garamond","Marcellus",serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--ink-2);
+    font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;position:relative;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:
+      radial-gradient(ellipse 80% 70% at 50% 50%,transparent 0%,rgba(0,0,0,.045) 100%),
+      radial-gradient(ellipse 60% 50% at 82% 12%,rgba(184,103,78,.05) 0%,transparent 60%);
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 26px;position:relative;z-index:1}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;color:var(--ink);letter-spacing:-.01em}
+  h1{font-size:2.6rem;margin-bottom:26px}
+  h2{font-size:1.9rem;margin-bottom:22px}
+  h3{font-family:var(--sans);font-weight:600;font-size:.95rem;letter-spacing:.02em;margin:34px 0 8px;color:var(--ink)}
+  p{margin-bottom:16px;color:var(--ink-2)}
+  p.lead{font-family:var(--italic);font-style:italic;font-weight:400;font-size:1.7rem;line-height:1.35;color:var(--ink);margin-bottom:0}
+  .review-bar{
+    background:var(--ink);color:var(--bg);text-align:center;position:relative;z-index:1;
+    font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+    padding:10px 16px;
+  }
+  header.site{text-align:center;padding:46px 24px 34px;border-bottom:1px solid var(--hair);position:relative;z-index:1}
+  .wordmark{font-family:var(--serif);font-size:1.6rem;letter-spacing:.01em;color:var(--ink)}
+  .wordmark .amp{font-family:var(--italic);font-style:italic;font-weight:300;color:var(--peach)}
+  .tagline{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+  section{padding:70px 0;border-bottom:1px solid var(--hair);position:relative;z-index:1}
+  section:last-of-type{border-bottom:none}
+  .kicker{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--peach);margin-bottom:22px}
+  .rule{width:80px;height:2px;background:var(--peach);border:0;margin:0 0 30px}
+  blockquote{
+    font-family:var(--italic);font-style:italic;font-weight:400;
+    font-size:1.5rem;line-height:1.4;color:var(--ink);
+    margin:28px 0;padding-left:26px;border-left:2px solid var(--peach);
+  }
+  blockquote cite{
+    display:block;font-family:var(--sans);font-style:normal;font-weight:600;
+    font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+    margin-top:16px;
+  }
+  .btn{
+    display:inline-block;background:var(--ink);color:var(--bg);
+    font-family:var(--sans);font-size:.76rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    padding:17px 38px;text-decoration:none;margin-top:16px;border-radius:2px;
+    transition:background .2s;
+  }
+  .btn:hover{background:var(--peach)}
+  .btn-sub{display:block;margin-top:16px;font-size:.82rem;letter-spacing:.02em;color:var(--muted)}
+  .btn-sub a{color:var(--peach-deep)}
+  .media{margin:32px 0;border:1px solid var(--hair-strong);background:var(--bg-2)}
+  .media .frame{position:relative;width:100%;padding-bottom:56.25%;height:0}
+  .media .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .media .cap{padding:13px 16px;font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--hair)}
+  .guarantee{display:flex;gap:56px;justify-content:center;text-align:center;margin:8px 0 28px;flex-wrap:wrap}
+  .guarantee .num{font-family:var(--serif);font-size:3.4rem;color:var(--ink);line-height:1}
+  .guarantee .lbl{font-family:var(--sans);font-size:.7rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+  .offer{background:var(--peach-tint);text-align:center;border-top:1px solid var(--hair)}
+  .offer h2{margin-bottom:14px}
+  .offer .big{font-family:var(--serif);font-size:2.7rem;color:var(--peach-deep);line-height:1;margin:6px 0 18px}
+  footer{padding:56px 24px;text-align:center;background:var(--ink);color:var(--bg);position:relative;z-index:1}
+  footer .wordmark{color:var(--bg)}
+  footer .wordmark .amp{color:var(--peach)}
+  footer .tagline{color:var(--muted-soft)}
+  footer a{color:#d8ccae;text-decoration:none;margin:0 10px;font-size:.85rem}
+  footer .copy{margin-top:22px;font-size:.72rem;color:#8f8578;letter-spacing:.06em}
+  @media(max-width:600px){
+    h1{font-size:2rem}h2{font-size:1.5rem}blockquote{font-size:1.25rem}
+    p.lead{font-size:1.4rem}section{padding:52px 0}
+  }
+  .media .frame.todo{display:flex;align-items:center;justify-content:center;padding:0;height:auto;aspect-ratio:16/9;font-family:var(--sans);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<div class="review-bar">Private preview for the Griffiths family · not published · not indexed</div>
+
+<header class="site">
+  <div class="wordmark">Me <span class="amp">&amp;</span> My Old Man</div>
+  <div class="tagline">Stories that matter · With people you love</div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">A referral from the Griffiths family</div>
+    <hr class="rule">
+    <h1>In 2026, Nicola and Geoff Griffiths sat their dad down and turned Vaughan's story into an audio documentary.</h1>
+    <p class="lead">And they thought of you.</p>
+
+    <div class="media">
+      <div class="frame todo">Clip A · Nicola · to be cut</div>
+      <div class="cap">Nicola Griffiths, on the hour she didn't expect</div>
+    </div>
+
+    <blockquote>
+      "I think he just hadn't seen himself through our eyes."
+      <cite>Nicola Griffiths</cite>
+    </blockquote>
+
+    <a class="btn" href="https://calendly.com/meandmyoldman/20min-family-story-discovery-session">Book a call, 20 minutes</a>
+    <span class="btn-sub">No obligation. The discovery call is free either way.</span>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">What it is</div>
+    <h2>Your mum or dad's stories. In their voice. To keep.</h2>
+    <p>There's a version of your own mum or dad you've never fully met. This is how you meet them, while they're still here to tell it. Not the headline facts. The texture underneath. Delivering papers to Althorp with his own dad. The proposal that never quite happened. A 50p Polo frisbee that sent his wife, then him, out into the sea.</p>
+    <p>Six to sixteen hours of recorded conversation, led personally by Neil Taylor. Shaped into chapters. Delivered as an audio documentary the whole family keeps, in their own voices, over the old photographs, and passes on. Most projects run 4 to 16 weeks start to finish.</p>
+
+    <div class="media">
+      <div class="frame"><iframe src="https://drive.google.com/file/d/1rZ_rVr5WW5RDtpb_dV0MW6gUT0D8APGt/preview" allow="autoplay" allowfullscreen></iframe></div>
+      <div class="cap">The Polo Frisbee · Geoff, on what his parents would do for him</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">What the family said</div>
+    <h2>From Vaughan, and from the two who started it.</h2>
+
+    <h3>Geoff, his son</h3>
+    <div class="media">
+      <div class="frame"><iframe src="https://drive.google.com/file/d/1WNpGZhYSCFbcp8HRoVN4ss1B9wt8Mtuw/preview" allow="autoplay" allowfullscreen></iframe></div>
+      <div class="cap">Geoff Griffiths, on watching his dad open up</div>
+    </div>
+    <blockquote>
+      "You've obviously asked better questions and bothered to take an interest in my poor father more than I have."
+      <cite>Geoff Griffiths, to his sister</cite>
+    </blockquote>
+
+    <h3>Nicola, his daughter</h3>
+    <div class="media">
+      <div class="frame todo">Clip C · Nicola · to be cut</div>
+      <div class="cap">Nicola Griffiths, on what changed afterwards</div>
+    </div>
+    <blockquote>
+      "Geoff and I just binged it like it was a box set. We could not ram it in our ears fast enough."
+      <cite>Nicola Griffiths</cite>
+    </blockquote>
+    <blockquote>
+      "It was like listening to my dad on an elongated Desert Island Discs."
+      <cite>Nicola Griffiths</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Why now</div>
+    <h2>The window is open right now.</h2>
+    <p>The memories, the detail, the voice, they will never be sharper than today. What fades first isn't the story, it's the texture. The names. The feeling of being in the room.</p>
+    <div class="media">
+      <div class="frame"><iframe src="https://drive.google.com/file/d/1mRmzcpolgq_R_nlwGqtBrzrifL1QFZAW/preview" allow="autoplay" allowfullscreen></iframe></div>
+      <div class="cap">Vaughan Griffiths, on the questions he never asked</div>
+    </div>
+    <p>Your mum or dad needs to be healthy and cognitively present for this to work. Not every family still has that window.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">The guarantee</div>
+    <hr class="rule">
+    <div class="guarantee">
+      <div><div class="num">35</div><div class="lbl">Projects delivered</div></div>
+      <div><div class="num">0</div><div class="lbl">Refunds invoked</div></div>
+    </div>
+    <p>Neil personally leads every project, which limits him to four families a month. If the first session doesn't capture something worth keeping, you get your money back — same day, no questions.</p>
+  </div>
+</section>
+
+<section class="offer">
+  <div class="wrap">
+    <div class="kicker">Because the Griffiths family sent you</div>
+    <div class="big">5% off your project</div>
+    <p>When you book before the end of 2026. Off the project, not the call — the 20-minute discovery call is free either way. No code, no form. Just mention the Griffiths family when you book.</p>
+    <a class="btn" href="https://calendly.com/meandmyoldman/20min-family-story-discovery-session">Book your call</a>
+    <span class="btn-sub"><a href="https://www.meandmyoldman.co.uk">Or start with the 10 Questions</a></span>
+  </div>
+</section>
+
+<footer>
+  <div class="wordmark">Me <span class="amp">&amp;</span> My Old Man</div>
+  <div class="tagline">Stories that matter · With people you love</div>
+  <div style="margin-top:18px">
+    <a href="https://www.meandmyoldman.co.uk">Home</a>
+    <a href="https://www.meandmyoldman.co.uk">Testimonials</a>
+    <a href="mailto:neil@meandmyoldman.co.uk">neil@meandmyoldman.co.uk</a>
+  </div>
+  <div class="copy">© 2026 Me &amp; My Old Man — Made with care in Barcelona</div>
+</footer>
+
+</body>
+</html>

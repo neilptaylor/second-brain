@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>MMOM carousel</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,500&family=DM+Sans:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f9f6f1;
+    --ink: #1c1814;
+    --body: #7a6e62;
+    --peach: #b8644b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #ccc; }
+  .slide {
+    width: 1080px; height: 1350px; position: relative; overflow: hidden;
+    background: var(--cream); color: var(--ink);
+    padding: 0 88px; display: flex; flex-direction: column; justify-content: center;
+    font-family: "DM Sans", sans-serif;
+  }
+  .slide + .slide { margin-top: 40px; }
+  .mark {
+    position: absolute; top: 96px; left: 88px;
+    font: 500 21px/1 "DM Sans", sans-serif; letter-spacing: 0.16em; text-transform: uppercase; color: var(--body);
+  }
+  .mark::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--peach); margin-right: 14px; vertical-align: 3px; }
+  .num { font: 600 150px/1 "Lora", serif; color: var(--peach); margin-bottom: 44px; }
+  h1 { font: 600 72px/1.14 "Lora", serif; letter-spacing: -0.01em; max-width: 860px; }
+  h2 { font: 600 58px/1.2 "Lora", serif; letter-spacing: -0.005em; max-width: 860px; }
+  .accent { font: italic 500 44px/1.3 "Lora", serif; color: var(--peach); margin-top: 36px; }
+  p { font: 400 32px/1.6 "DM Sans", sans-serif; color: var(--body); max-width: 780px; margin-top: 32px; }
+  p + p { margin-top: 26px; }
+  .foot { position: absolute; left: 88px; right: 88px; bottom: 96px; display: flex; justify-content: space-between; align-items: baseline; }
+  .foot .left { font: 500 25px/1 "DM Sans", sans-serif; color: var(--body); }
+  .foot .page { font: 600 30px/1 "Lora", serif; color: var(--peach); margin-left: auto; }
+
+  .slide.peach { background: var(--peach); color: var(--cream); }
+  .slide.peach .mark, .slide.peach p, .slide.peach .num, .slide.peach .page { color: var(--cream); }
+  .slide.peach .mark::before { background: var(--cream); }
+  .slide.dark { background: var(--ink); color: var(--cream); }
+  .slide.dark .mark, .slide.dark .foot .left { color: var(--cream); }
+  .slide.dark p { color: var(--peach); }
+
+  body.solo { background: none; }
+  body.solo .slide { display: none; margin: 0; }
+  body.solo .slide.on { display: flex; }
+</style>
+</head>
+<body>
+
+<!-- 01 HOOK -->
+<section class="slide">
+  <div class="mark">Me &amp; My Old Man</div>
+  <h1>You know the role. You don't know the roads.</h1>
+  <p>The job she turned down. The person she almost married. The year she nearly moved and didn't.</p>
+  <div class="foot"><span class="left">Here's the question that gets you there &rarr;</span><span class="page">01 / 08</span></div>
+</section>
+
+<!-- 02 -->
+<section class="slide">
+  <div class="mark">Me &amp; My Old Man</div>
+  <div class="num">1</div>
+  <h2>The job she turned down.</h2>
+  <p>You know where she worked. You've never asked about the offer she said no to.</p>
+  <div class="foot"><span class="page">02 / 08</span></div>
+</section>
+
+<!-- 03 -->
+<section class="slide">
+  <div class="mark">Me &amp; My Old Man</div>
+  <div class="num">2</div>
+  <h2>The person she almost married.</h2>
+  <p>Not your dad. Someone else, once, for a while.</p>
+  <div class="foot"><span class="page">03 / 08</span></div>
+</section>
+
+<!-- 04 -->
+<section class="slide">
+  <div class="mark">Me &amp; My Old Man</div>
+  <div class="num">3</div>
+  <h2>The year she nearly moved &mdash; and didn't.</h2>
+  <p>And how different all of it would have been.</p>
+  <div class="foot"><span class="page">04 / 08</span></div>
+</section>
+
+<!-- 05 PEACH BREAK -->
+<section class="slide peach">
+  <div class="mark">Me &amp; My Old Man</div>
+  <h2>We ask chronological questions. A CV with feelings.</h2>
+  <p>The ones that open the door are about choice, not sequence.</p>
+  <div class="foot"><span class="page">05 / 08</span></div>
+</section>
+
+<!-- 06 -->
+<section class="slide">
+  <div class="mark">Me &amp; My Old Man</div>
+  <h2>&ldquo;What's the hardest decision you ever made that no one else knew about?&rdquo;</h2>
+  <div class="accent">Start here.</div>
+  <div class="foot"><span class="page">06 / 08</span></div>
+</section>
+
+<!-- 07 -->
+<section class="slide">
+  <div class="mark">Me &amp; My Old Man</div>
+  <h2>Then follow it.</h2>
+  <p>&ldquo;What would have happened if you'd gone the other way?&rdquo;</p>
+  <p>&ldquo;Who did you talk to about it?&rdquo;</p>
+  <p>&ldquo;Do you still think you got it right?&rdquo;</p>
+  <div class="foot"><span class="page">07 / 08</span></div>
+</section>
+
+<!-- 08 CTA -->
+<section class="slide dark">
+  <div class="mark">Me &amp; My Old Man</div>
+  <h2>Comment &ldquo;ROADS&rdquo; and I'll send you the full list.</h2>
+  <p>Three follow-ups and you're somewhere you've never been in forty years of Sunday lunches.</p>
+  <div class="foot"><span class="left">meandmyoldman.co.uk</span><span class="page">08 / 08</span></div>
+</section>
+
+<script>
+  const s = new URLSearchParams(location.search).get("s");
+  if (s) {
+    document.body.classList.add("solo");
+    const el = document.querySelectorAll(".slide")[+s - 1];
+    if (el) el.classList.add("on");
+  }
+</script>
+</body>
+</html>
