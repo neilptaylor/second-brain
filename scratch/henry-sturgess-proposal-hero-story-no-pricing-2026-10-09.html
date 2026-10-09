@@ -1,0 +1,3348 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Henry Sturgess &mdash; Me &amp; My Old Man</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+/* ===== proposal-light.css (inlined) ===== */
+/* ============================================================
+   PROPOSAL 2 — SALES CALL (Light, 1920x1080)
+   BBC-documentary-titles meets founder presence — light edition.
+   ============================================================ */
+
+:root {
+  --bg: #f9f6f1;
+  --bg-2: #f0ebe3;
+  --bg-3: #e8e1d8;
+  --cream: #1c1814;
+  --cream-2: #3a3228;
+  --muted: #7a6e62;
+  --muted-soft: #9e9185;
+  --peach: #b8674e;
+  --peach-light: #c9856a;
+  --peach-deep: #a05540;
+  --peach-tint: #f5e8e3;
+  --hair: rgba(28,24,20,0.10);
+  --hair-strong: rgba(28,24,20,0.18);
+  --hair-peach: rgba(184,103,78,0.45);
+
+  --serif: "Marcellus", "Cormorant Garamond", serif;
+  --italic: "Cormorant Garamond", "Marcellus", serif;
+  --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+strong, b { font-weight: 500; }
+
+deck-stage { background: #e8e1d8; }
+
+deck-stage section {
+  width: 1920px;
+  height: 1080px;
+  background: var(--bg);
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Subtle warm grain — vignette feel without imagery */
+deck-stage section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 70% at 50% 50%, transparent 0%, rgba(0,0,0,0.04) 100%),
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(184,103,78,0.04) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+.page-d { position: relative; z-index: 1; flex: 1; display: flex; flex-direction: column; padding: 100px 120px 80px; }
+
+/* ----- Header strip ----- */
+.dhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--hair);
+  margin-bottom: 60px;
+}
+.dhead__brand { color: var(--cream); display: flex; align-items: center; gap: 14px; }
+.dhead__brand .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--peach); }
+.dhead__brand .name { font-family: var(--serif); letter-spacing: 0.04em; font-weight: 400; text-transform: none; font-size: 18px; }
+
+/* Page foot — slim */
+.dfoot {
+  position: absolute;
+  bottom: 50px;
+  left: 120px;
+  right: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted-soft);
+}
+.dfoot .num { color: var(--muted); }
+
+/* ----- Typography ----- */
+.d-h1 { font-family: var(--serif); font-size: 168px; line-height: 0.95; letter-spacing: -0.015em; font-weight: 400; }
+.d-h2 { font-family: var(--serif); font-size: 96px; line-height: 1.0; letter-spacing: -0.01em; font-weight: 400; }
+.d-h3 { font-family: var(--serif); font-size: 72px; line-height: 1.05; letter-spacing: -0.005em; font-weight: 400; }
+.d-h4 { font-family: var(--serif); font-size: 48px; line-height: 1.1; letter-spacing: -0.005em; font-weight: 400; }
+.d-italic { font-family: var(--italic); font-style: italic; font-weight: 300; }
+.peach { color: var(--peach); }
+.peach-light { color: var(--peach-light); }
+.cream { color: var(--cream); }
+.muted { color: var(--muted); }
+
+.d-kicker {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--peach);
+}
+.d-eyebrow {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.d-body { font-size: 22px; line-height: 1.55; color: var(--cream-2); max-width: 60ch; }
+.d-body p + p { margin-top: 22px; }
+.d-lead { font-family: var(--italic); font-style: italic; font-weight: 300; font-size: 36px; line-height: 1.35; color: var(--cream); max-width: 32ch; }
+
+.d-rule-peach { width: 80px; height: 2px; background: var(--peach); border: 0; }
+.d-rule-peach--full { width: 100%; height: 1px; background: var(--peach); }
+.d-rule-hair { width: 100%; height: 1px; background: var(--hair); border: 0; }
+
+/* ============================================================
+   SLIDE 1 — COVER
+   ============================================================ */
+.cover-d {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 120px;
+  position: relative;
+  z-index: 1;
+}
+.cover-d__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+.cover-d__logo {
+  font-family: var(--serif);
+  font-size: 26px;
+  letter-spacing: 0.01em;
+}
+.cover-d__logo .amp { color: var(--peach); font-style: italic; font-family: var(--italic); font-weight: 300; }
+.cover-d__logo-meta {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.cover-d__center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cover-d__eyebrow {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--peach);
+  margin-bottom: 48px;
+}
+.cover-d__title {
+  font-family: var(--serif);
+  font-size: 200px;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.cover-d__title .em {
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--peach);
+}
+.cover-d__sub {
+  margin-top: 48px;
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.35;
+  color: var(--cream-2);
+  max-width: 38ch;
+}
+.cover-d__rule {
+  width: 80px;
+  height: 2px;
+  background: var(--peach);
+  margin: 56px 0 24px;
+}
+.cover-d__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: auto;
+}
+
+/* ============================================================
+   SLIDE 2 — DISCOVERY CALLBACK
+   ============================================================ */
+.callback {
+  display: grid;
+  grid-template-rows: auto 1px auto;
+  gap: 56px;
+  align-items: start;
+  flex: 1;
+}
+.callback__shared { display: grid; grid-template-columns: 280px 1fr; gap: 80px; align-items: start; }
+.callback__shared .lbl {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.callback__shared .lbl .h {
+  display: block;
+  font-family: var(--serif);
+  font-size: 36px;
+  letter-spacing: -0.005em;
+  text-transform: none;
+  color: var(--cream);
+  margin-top: 8px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.beat-list { display: flex; flex-direction: column; gap: 18px; }
+.beat {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 24px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--hair);
+}
+.beat:last-child { border-bottom: 0; }
+.beat .n {
+  font-family: var(--serif);
+  font-size: 22px;
+  color: var(--peach);
+  letter-spacing: 0.04em;
+}
+.beat .t { font-size: 28px; line-height: 1.4; color: var(--cream); max-width: 48ch; font-weight: 300; letter-spacing: -0.005em; }
+
+.callback__rule { background: var(--peach); height: 2px; width: 100%; }
+
+.callback__rec {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.callback__rec .reco {
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 1.25;
+  color: var(--peach);
+  max-width: 32ch;
+  letter-spacing: -0.005em;
+}
+
+/* ============================================================
+   SLIDE 3 — PULL QUOTE
+   ============================================================ */
+.quote-slide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 120px;
+}
+.quote-stats {
+  display: flex;
+  gap: 96px;
+  margin-bottom: 64px;
+}
+.quote-stats .s { text-align: center; }
+.quote-stats .s .big { font-family: var(--serif); font-size: 88px; line-height: 1; color: var(--cream); }
+.quote-stats .s .lbl { font-family: var(--sans); font-size: 13px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--muted); margin-top: 12px; }
+.quote-setup {
+  font-family: var(--sans);
+  font-size: 22px;
+  color: var(--muted);
+  max-width: 60ch;
+  line-height: 1.5;
+  margin-bottom: 56px;
+}
+.quote-mark {
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 1.3;
+  color: var(--cream);
+  max-width: 26ch;
+  position: relative;
+  letter-spacing: -0.005em;
+}
+.quote-mark::before {
+  content: "\201C";
+  position: absolute;
+  left: -120px;
+  top: -80px;
+  font-family: var(--italic);
+  font-size: 280px;
+  color: var(--peach);
+  line-height: 1;
+  font-style: normal;
+}
+.quote-attrib {
+  margin-top: 40px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--peach);
+}
+
+/* ============================================================
+   SLIDE 4 — TIER OVERVIEW
+   ============================================================ */
+.tiers3 {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 32px;
+  flex: 1;
+  align-items: stretch;
+}
+.tier-col {
+  display: flex;
+  flex-direction: column;
+  padding: 56px 40px;
+  border-top: 1px solid var(--hair);
+  position: relative;
+}
+.tier-col__num {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.tier-col__name {
+  font-family: var(--serif);
+  font-size: 72px;
+  line-height: 1;
+  color: var(--cream);
+  margin-bottom: 24px;
+  letter-spacing: -0.005em;
+}
+.tier-col__name .star { color: var(--peach); font-size: 32px; vertical-align: 18px; margin-left: 8px; }
+.tier-col__tag {
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--peach);
+  margin-bottom: 32px;
+  max-width: 18ch;
+}
+.tier-col__lines { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 18px; flex: 1; }
+.tier-col__lines li {
+  font-family: var(--sans);
+  font-size: 18px;
+  color: var(--cream-2);
+  padding-left: 0;
+  line-height: 1.4;
+  border-bottom: 1px solid var(--hair);
+  padding-bottom: 18px;
+}
+.tier-col__lines li:last-child { border-bottom: 0; }
+
+.tier-col.silver {
+  background: linear-gradient(180deg, rgba(201,133,106,0.10) 0%, rgba(201,133,106,0.03) 100%);
+  border-top: 2px solid var(--peach);
+  border-radius: 8px 8px 0 0;
+  padding-top: 56px;
+}
+.tier-col.silver .tier-col__num { color: var(--peach); }
+.tier-col.silver .tier-col__lines li { border-color: rgba(201,133,106,0.18); }
+
+.tier-col__badge {
+  position: absolute;
+  top: -16px;
+  left: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--peach);
+  color: var(--bg);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 10px 16px 9px;
+  border-radius: 999px;
+}
+
+.tier-walk {
+  text-align: center;
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 28px;
+  color: var(--cream-2);
+  margin-top: 40px;
+}
+
+/* ============================================================
+   SLIDE 5/6 — TIER DETAIL (Bronze / Silver)
+   ============================================================ */
+.detail {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 96px;
+  align-items: start;
+}
+.detail__intro {
+  border-left: 2px solid var(--peach);
+  padding-left: 40px;
+}
+.detail__num {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--peach);
+  margin-bottom: 24px;
+}
+.detail__name {
+  font-family: var(--serif);
+  font-size: 96px;
+  line-height: 0.95;
+  letter-spacing: -0.005em;
+  margin-bottom: 32px;
+}
+.detail__name .star-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: var(--peach);
+  color: var(--bg);
+  padding: 9px 14px;
+  border-radius: 999px;
+  vertical-align: middle;
+  margin-left: 20px;
+  transform: translateY(-22px);
+}
+.detail__tag {
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.3;
+  color: var(--peach);
+  margin-bottom: 32px;
+  max-width: 22ch;
+}
+.detail__desc {
+  font-size: 21px;
+  line-height: 1.55;
+  color: var(--cream-2);
+  max-width: 36ch;
+}
+
+.detail__test {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--hair);
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--cream-2);
+}
+.detail__test span {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--peach);
+}
+
+/* Value table — dark */
+.vt {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 16px;
+}
+.vt th, .vt td {
+  padding: 11px 0;
+  text-align: left;
+  vertical-align: baseline;
+}
+.vt thead th {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--hair-strong);
+  padding-bottom: 12px;
+}
+.vt thead th.r { text-align: right; }
+.vt tbody td {
+  border-bottom: 1px solid var(--hair);
+  color: var(--cream-2);
+}
+.vt tbody td.r { text-align: right; font-variant-numeric: tabular-nums; color: var(--cream); }
+.vt tr.bonus td { color: var(--cream); }
+.vt tr.bonus .bonus-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: var(--peach-tint);
+  color: var(--peach-light);
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-right: 10px;
+  vertical-align: 2px;
+}
+.vt tr.spacer td { padding: 4px 0; border: 0; }
+.vt tr.summary td {
+  border-bottom: 0;
+  padding: 12px 0;
+  font-size: 17px;
+  color: var(--muted);
+}
+.vt tr.summary td.r { color: var(--cream-2); }
+.vt tr.summary--top td { border-top: 1.5px solid var(--peach); padding-top: 22px; }
+.vt tr.invest td {
+  font-family: var(--serif);
+  font-size: 44px;
+  color: var(--cream);
+  padding: 20px 0 8px;
+  border-bottom: 0;
+  letter-spacing: -0.005em;
+}
+.vt tr.invest.silver td {
+  font-size: 56px;
+  color: var(--cream);
+}
+.vt tr.invest.silver td.r {
+  color: var(--peach-light);
+}
+.vt tr.save td {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--peach);
+  padding-top: 4px;
+  border-bottom: 0;
+}
+.vt tr.save td.r { color: var(--peach); }
+
+/* Silver letter (dark) */
+.silver-letter-d {
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.4;
+  color: var(--cream);
+  max-width: 26ch;
+  letter-spacing: -0.005em;
+}
+.silver-letter-d strong {
+  font-weight: 400;
+  color: var(--peach);
+  font-style: italic;
+}
+.silver-letter-d p + p { margin-top: 22px; }
+.silver-letter-d .closing {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--hair);
+  font-size: 24px;
+  color: var(--peach-light);
+}
+
+/* ============================================================
+   SLIDE 7 — GOLD
+   ============================================================ */
+.gold-d {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: start;
+}
+.gold-d__name {
+  font-family: var(--serif);
+  font-size: 128px;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+.gold-d__tag {
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 32px;
+  color: var(--peach);
+  line-height: 1.3;
+  max-width: 22ch;
+  margin-bottom: 56px;
+}
+.gold-d__num {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--peach);
+  margin-bottom: 24px;
+}
+.gold-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: auto;
+  padding-top: 56px;
+  border-top: 1px solid var(--hair);
+}
+.gold-stats .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--hair);
+}
+.gold-stats .row:last-child { border-bottom: 0; }
+.gold-stats .lbl {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.gold-stats .val {
+  font-family: var(--serif);
+  font-size: 28px;
+  color: var(--cream);
+}
+.gold-stats .val.invest { color: var(--peach); font-size: 36px; }
+
+.gold-d__body { font-size: 20px; line-height: 1.6; color: var(--cream-2); max-width: 42ch; }
+.gold-d__body p + p { margin-top: 18px; }
+.gold-d__body strong { color: var(--cream); font-weight: 500; }
+
+/* ============================================================
+   SLIDE 8 — WHAT HAPPENS NEXT
+   ============================================================ */
+.next {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 56px;
+}
+.step {
+  border-top: 1px solid var(--hair-peach);
+  padding-top: 32px;
+}
+.step .n {
+  font-family: var(--serif);
+  font-size: 88px;
+  line-height: 1;
+  color: var(--peach);
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+.step .t {
+  font-family: var(--serif);
+  font-size: 30px;
+  line-height: 1.25;
+  color: var(--cream);
+  margin-bottom: 12px;
+  max-width: 14ch;
+  letter-spacing: -0.005em;
+}
+.step .d {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 22ch;
+}
+
+.guarantee {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 80px;
+  align-items: start;
+  padding: 40px 48px;
+  background: var(--bg-2);
+  border-left: 2px solid var(--peach);
+}
+.guarantee .lbl {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--peach);
+}
+.guarantee .lbl span {
+  display: block;
+  font-family: var(--serif);
+  font-size: 32px;
+  letter-spacing: -0.005em;
+  color: var(--cream);
+  text-transform: none;
+  margin-top: 8px;
+  font-weight: 400;
+}
+.guarantee p { font-size: 19px; line-height: 1.5; color: var(--cream-2); max-width: 60ch; }
+.guarantee p + p { margin-top: 14px; color: var(--muted); font-size: 17px; font-style: italic; font-family: var(--italic); font-weight: 300; }
+
+.next-close {
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 36px;
+  color: var(--peach-light);
+  margin-top: auto;
+  text-align: center;
+  letter-spacing: -0.005em;
+}
+
+/* ============================================================
+   SLIDE 9 — PERSONALISED CLOSE
+   ============================================================ */
+.close-d {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 200px;
+}
+.close-d p {
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 1.25;
+  color: var(--cream);
+  max-width: 22ch;
+  letter-spacing: -0.005em;
+}
+.close-d p + p { margin-top: 36px; }
+.close-d .em { color: var(--peach); }
+.close-d__sig {
+  margin-top: 96px;
+  padding-top: 48px;
+  border-top: 1px solid var(--hair-peach);
+  width: 280px;
+}
+.close-d__sig .name { font-family: var(--serif); font-size: 28px; color: var(--cream); letter-spacing: -0.005em; }
+.close-d__sig .meta {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.close-d__logo-bot {
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--serif);
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.close-d__logo-bot .amp { color: var(--peach); font-family: var(--italic); font-style: italic; }
+
+</style>
+<style>
+/* ============================================================
+   HENRY STURGESS — v3
+   Flow-first. Five lines max. Terracotta dividers.
+   ============================================================ */
+
+/* ---------- Terracotta divider ---------- */
+section.is-divider { background: var(--peach); }
+section.is-divider::before { display: none; }
+.divider { position: relative; z-index: 1; flex: 1; display: flex; flex-direction: column;
+  justify-content: center; padding: 0 120px; color: #fdf7f2; }
+.divider__num { font-family: var(--sans); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.34em; text-transform: uppercase; color: rgba(255,255,255,0.62); margin-bottom: 30px; }
+.divider__word { font-family: var(--serif); font-size: 156px; line-height: 0.94; letter-spacing: -0.02em; }
+.divider__rule { width: 96px; height: 2px; background: rgba(255,255,255,0.5); margin: 46px 0 30px; }
+.divider__sub { font-family: var(--italic); font-style: italic; font-weight: 300;
+  font-size: 31px; line-height: 1.4; color: rgba(255,255,255,0.92); max-width: 46ch; }
+.divider__sub2 { margin-top: 26px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,0.24);
+  font-family: var(--italic); font-style: italic; font-weight: 300;
+  font-size: 24px; line-height: 1.4; color: rgba(255,255,255,0.72); max-width: 42ch; }
+.divider__foot { position: absolute; bottom: 50px; left: 120px; right: 120px;
+  display: flex; justify-content: space-between; font-family: var(--sans); font-size: 11px;
+  font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+
+/* ---------- Title (terracotta) ---------- */
+section.is-title { background: var(--peach); }
+section.is-title::before { display: none; }
+.tdhead { display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: 0.22em;
+  text-transform: uppercase; color: rgba(255,255,255,0.65); padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.18); margin-bottom: 30px; }
+.tdhead__brand { color: #fdf7f2; display: flex; align-items: center; gap: 14px; }
+.tdhead__brand .dot { width: 8px; height: 8px; border-radius: 50%; background: #fdf7f2; }
+.tdhead__brand .name { font-family: var(--serif); letter-spacing: 0.04em; font-weight: 400;
+  text-transform: none; font-size: 18px; }
+.tdfoot { position: absolute; bottom: 50px; left: 120px; right: 120px; display: flex;
+  justify-content: space-between; font-family: var(--sans); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+.cover-q { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.cover-q__text { font-family: var(--serif); font-size: 92px; line-height: 1.16;
+  letter-spacing: -0.015em; max-width: 32ch; color: #fdf7f2; }
+.cover-q__text .em { font-family: var(--italic); font-style: italic; font-weight: 400; color: #2a1a12; }
+.cover-q__attrib { margin-top: 44px; font-family: var(--sans); font-size: 13px; font-weight: 500;
+  letter-spacing: 0.24em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+
+/* ---------- Agenda ---------- */
+.agenda { flex: 1; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 100px; align-items: center; }
+.agenda__h { font-family: var(--serif); font-size: 76px; line-height: 1.04; letter-spacing: -0.012em; }
+.agenda__h .em { font-family: var(--italic); font-style: italic; font-weight: 300; color: var(--peach); }
+.agenda__q { margin-top: 40px; padding-left: 28px; border-left: 2px solid var(--hair-peach);
+  font-family: var(--italic); font-style: italic; font-weight: 300; font-size: 29px;
+  line-height: 1.45; color: var(--cream-2); max-width: 32ch; }
+.agenda__list { list-style: none; }
+.agenda__item { display: flex; align-items: baseline; gap: 26px; padding: 24px 0; border-bottom: 1px solid var(--hair); }
+.agenda__item:last-child { border-bottom: none; }
+.agenda__n { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+  color: var(--peach); width: 34px; flex: 0 0 34px; }
+.agenda__t { font-family: var(--serif); font-size: 36px; line-height: 1; }
+.agenda__d { font-family: var(--sans); font-size: 17px; font-weight: 300; color: var(--muted); margin-left: auto; }
+
+/* ---------- Why we're here ---------- */
+.why { flex: 1; display: flex; flex-direction: column; }
+.why__h { font-family: var(--serif); font-size: 74px; line-height: 1.02; letter-spacing: -0.014em; }
+.why__h .em { font-family: var(--italic); font-style: italic; font-weight: 300; color: var(--peach); }
+.why__grid { flex: 1; display: grid; grid-template-columns: 0.62fr 1.38fr; gap: 90px; margin-top: 34px; }
+.why__q { padding-left: 26px; border-left: 2px solid var(--hair-peach);
+  font-family: var(--italic); font-style: italic; font-weight: 300; font-size: 27px;
+  line-height: 1.45; color: var(--cream-2); align-self: center; }
+.why__r { display: flex; flex-direction: column; }
+.why__bullets { list-style: none; }
+.why__b { display: flex; gap: 22px; align-items: flex-start; padding: 22px 0;
+  border-bottom: 1px solid var(--hair); font-family: var(--sans); font-weight: 300;
+  font-size: 26px; line-height: 1.36; }
+.why__b:first-child { padding-top: 0; }
+.why__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--peach); flex: 0 0 8px; margin-top: 14px; }
+.why__b b { font-weight: 600; color: var(--cream); }
+.why__close { margin-top: auto; padding-top: 26px; font-family: var(--italic); font-style: italic;
+  font-weight: 300; font-size: 27px; line-height: 1.4; color: var(--cream-2);
+  text-align: right; max-width: 46ch; margin-left: auto; }
+.why__close span { display: block; margin-top: 12px; font-family: var(--sans); font-style: normal;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); }
+
+/* Why we're here — v2: the quote is the hero, bullets support it below */
+.why--v2 { display: flex; flex-direction: column; }
+.why__hero { margin-top: 30px; font-family: var(--serif); font-size: 58px; line-height: 1.22;
+  letter-spacing: -0.012em; max-width: 26ch; }
+.why__hero .em { font-family: var(--italic); font-style: italic; font-weight: 400; color: var(--peach); }
+.why__hero .attrib { display: block; margin-top: 20px; font-family: var(--sans); font-style: normal;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); }
+.why__bullets--v2 { margin-top: 46px; display: grid; grid-template-columns: 1fr 1fr; gap: 0 60px; max-width: 1400px; }
+.why__bullets--v2 .why__b { padding: 22px 0; }
+
+/* ---------- Flow diagram ---------- */
+.flow-h { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 4px; }
+.flow-h__t { font-family: var(--serif); font-size: 58px; line-height: 1.02; letter-spacing: -0.01em; }
+.flow-h__t .em { font-family: var(--italic); font-style: italic; font-weight: 300; color: var(--peach); }
+.flow-h__opt { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.28em;
+  text-transform: uppercase; color: var(--muted); }
+
+.flow { flex: 1; display: grid; grid-template-columns: 244px 1fr 150px 326px; gap: 20px; align-items: center; }
+.flow__cell { display: flex; align-items: center; min-height: 1px; }
+.flow__cell--pre { justify-content: flex-end; gap: 0; }
+.flow__cell--post { justify-content: flex-start; }
+
+.core { position: relative; border: 2px dashed var(--hair-strong); border-radius: 26px;
+  background: rgba(184,103,78,0.05); padding: 46px 34px 40px; width: 100%; }
+.core__tag { position: absolute; top: -10px; left: 32px; background: var(--bg); padding: 0 14px;
+  font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.26em;
+  text-transform: uppercase; color: var(--muted); }
+.core__in { display: flex; align-items: center; gap: 18px; }
+.strands { display: flex; flex-direction: column; gap: 64px; }
+.strand { display: flex; align-items: center; gap: 16px; }
+.fig { width: 98px; height: 113px; flex: 0 0 98px; }
+.bubs { display: flex; align-items: center; }
+.bub { width: 120px; height: 120px; flex: 0 0 120px; border-radius: 50%;
+  border: 1.5px solid var(--peach); background: var(--bg); display: flex; flex-direction: column;
+  align-items: center; justify-content: center; font-family: var(--sans); font-size: 27px;
+  font-weight: 500; color: var(--peach-deep); }
+.bub small { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--muted); margin-top: 4px; }
+.bub--p { background: var(--peach); border-color: var(--peach); color: #fff; }
+.bub--p small { color: rgba(255,255,255,0.78); }
+.lnk { width: 24px; height: 1.5px; background: var(--hair-peach); flex: 0 0 24px; }
+
+/* reflection-guides node, inside the core */
+.refl { display: flex; flex-direction: column; align-items: center; gap: 12px; flex: 0 0 104px; }
+.refl__icons { display: flex; flex-direction: column; gap: 9px; }
+.refl__i { width: 78px; height: 44px; border: 1.4px solid var(--peach); border-radius: 7px;
+  background: var(--bg); display: flex; align-items: center; justify-content: center; }
+.refl__lab { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--muted); text-align: center; line-height: 1.3; }
+
+.deliver { border-left: 1px solid var(--hair-strong); padding-left: 26px; flex: 0 0 158px; }
+.deliver__n { font-family: var(--serif); font-size: 78px; line-height: 1; }
+.deliver__l { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--muted); margin-top: 8px; }
+.deliver__s { font-family: var(--italic); font-style: italic; font-weight: 300; font-size: 21px;
+  color: var(--cream-2); margin-top: 14px; line-height: 1.32; }
+
+/* rows in the pre-cell that align with the two strand rows inside the box */
+.siderows { display: flex; flex-direction: column; gap: 64px; }
+.siderow { height: 120px; display: flex; align-items: center; justify-content: flex-end; gap: 0; }
+.siderow-group { display: flex; align-items: center; gap: 10px; }
+.siderow .lnk { width: 24px; flex: 0 0 24px; }
+
+/* nodes hanging off the box */
+.node { display: flex; flex-direction: column; align-items: center; gap: 11px; }
+.node__lab { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--muted); text-align: center; line-height: 1.4; }
+.node__sub { font-family: var(--italic); font-style: italic; font-weight: 300; font-size: 16px;
+  color: var(--muted); text-align: center; line-height: 1.3; }
+
+.form-ico { width: 78px; height: 96px; border: 1.5px solid var(--peach); border-radius: 10px;
+  background: var(--bg); display: flex; flex-direction: column; justify-content: center; gap: 11px; padding: 0 15px; }
+.form-ico i { display: block; height: 1.5px; background: var(--hair-peach); }
+.form-ico i:last-child { width: 55%; }
+
+.kids-bub { width: 130px; height: 130px; border-radius: 50%; border: 1.5px solid var(--peach);
+  background: var(--bg); display: flex; align-items: center; justify-content: center; gap: 9px; }
+.kid { width: 32px; height: 32px; border-radius: 50%; background: var(--peach-tint);
+  border: 1.5px solid var(--peach); display: flex; align-items: center; justify-content: center;
+  font-family: var(--sans); font-size: 12px; font-weight: 600; color: var(--peach-deep); }
+.solo-bub { width: 96px; height: 96px; border-radius: 50%; border: 1.5px solid var(--peach);
+  background: var(--bg); display: flex; align-items: center; justify-content: center;
+  font-family: var(--sans); font-size: 24px; font-weight: 600; color: var(--peach-deep); }
+
+.diag { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.diag .kid { width: 40px; height: 40px; font-size: 14px; }
+.diag .kid:nth-child(2) { margin-left: 24px; }
+.diag .kid:nth-child(3) { margin-left: 48px; }
+
+.all-sq { width: 150px; height: 150px; border-radius: 18px; border: 1.5px solid var(--peach);
+  background: var(--bg); display: flex; flex-wrap: wrap; align-content: center; justify-content: center;
+  gap: 10px; padding: 17px; }
+.all-sq .kid { width: 36px; height: 36px; font-size: 13px; }
+.all-sq .kid--p { background: var(--peach); border-color: var(--peach); color: #fff; }
+
+/* medium bubble — Henry / siblings as individuals: smaller than the parent "2hrs" hero bubble,
+   bigger than the small roster kid-circles used in wrap-up boxes */
+.bub--sm { width: 92px; height: 92px; flex: 0 0 92px; font-size: 27px !important; }
+.hxy-stack { display: flex; align-items: center; }
+.hxy-stack .bub--sm { box-shadow: 0 0 0 4px var(--bg); }
+.hxy-stack .bub--sm + .bub--sm { margin-left: -34px; }
+
+/* child-briefing tab, attached to the core box's left border — the layout that worked (reinstated) */
+.core__brief { position: absolute; left: -144px; top: 50%; transform: translateY(-50%);
+  display: flex; flex-direction: row; align-items: center; gap: 12px; z-index: 2; white-space: nowrap; }
+.core__brief-badge { width: 44px; height: 44px; flex: 0 0 44px; border-radius: 50%; border: 1.5px solid var(--peach);
+  background: var(--bg); display: flex; align-items: center; justify-content: center; gap: 4px; }
+.core__brief-badge span { width: 4.5px; height: 4.5px; border-radius: 50%; background: var(--peach); }
+.core__brief-lab { font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--muted); text-align: right; line-height: 1.35; }
+
+/* connectors */
+.form-ico, .kids-bub, .solo-bub, .diag, .all-sq { position: relative; }
+.form-ico::after, .kids-bub::after, .solo-bub::after, .diag::after {
+  content: ""; position: absolute; left: 100%; top: 50%; width: 20px; height: 1.5px; background: var(--hair-peach); }
+.diag::after { width: 26px; }
+.all-sq::before { content: ""; position: absolute; right: 100%; top: 50%; width: 20px; height: 1.5px; background: var(--hair-peach); }
+.premini { display: flex; align-items: center; }
+.premini .lnk { width: 20px; flex: 0 0 20px; }
+
+/* right-hand "what that means" panel — builds */
+.bens { border-left: 2px solid var(--hair-peach); padding-left: 30px; align-self: center; }
+.bens__h { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.26em;
+  text-transform: uppercase; color: var(--peach); margin-bottom: 18px; }
+.bens ul { list-style: none; }
+.bens li { font-family: var(--sans); font-weight: 300; font-size: 20px; line-height: 1.38;
+  padding: 15px 0; border-bottom: 1px solid var(--hair); color: var(--cream-2); }
+.bens li:last-child { border-bottom: none; }
+.bens li.was { color: var(--muted-soft); }
+.bens li.is-new { color: var(--cream); font-weight: 400; }
+.bens li b { font-weight: 500; }
+
+/* ---------- Testimonial waveform + player ---------- */
+.testi { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.testi__q { font-family: var(--serif); font-size: 54px; line-height: 1.2; letter-spacing: -0.01em; max-width: 30ch; }
+.testi__q .em { font-family: var(--italic); font-style: italic; font-weight: 400; color: var(--peach); }
+.testi__player { margin: 54px 0 26px; display: flex; align-items: center; gap: 30px; width: 100%; }
+.testi__playbtn { width: 72px; height: 72px; flex: 0 0 72px; border-radius: 50%; border: 1.5px solid var(--peach);
+  background: var(--bg); cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s ease; padding: 0; }
+.testi__playbtn:hover { background: var(--peach-tint); }
+.testi__playbtn svg { width: 22px; height: 22px; }
+.testi__wave { flex: 1; height: 132px; width: 100%; }
+.testi__attrib { font-family: var(--sans); font-size: 13px; font-weight: 500; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--muted); display: flex; gap: 18px; align-items: center; }
+.testi__attrib span { color: var(--muted-soft); letter-spacing: 0.18em; }
+
+/* ---------- Bolt-ons ---------- */
+.bolts { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 54px; max-width: 1180px; }
+.bolt { display: flex; gap: 52px; align-items: center; padding-bottom: 54px; border-bottom: 1px solid var(--hair); }
+.bolt__n { display: flex; align-items: center; gap: 16px; }
+.bolt:last-child { border-bottom: none; padding-bottom: 0; }
+.bolt__ico { width: 132px; flex: 0 0 132px; }
+.bolt__ntxt { font-family: var(--serif); font-size: 54px; line-height: 1.05; }
+.bonustag { display: inline-block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: var(--peach);
+  padding: 5px 11px; border-radius: 3px; }
+.bolt__d { font-family: var(--sans); font-weight: 300; font-size: 28px; line-height: 1.42;
+  color: var(--cream-2); margin-top: 16px; max-width: 46ch; }
+
+/* ---------- Pricing ---------- */
+.pricelead { font-family: var(--italic); font-style: italic; font-weight: 300; font-size: 27px;
+  line-height: 1.35; color: var(--cream-2); max-width: 62ch; margin-bottom: 24px; }
+.pricelead b { font-family: var(--sans); font-style: normal; font-weight: 500; font-size: 26px; color: var(--cream); }
+.ptable { width: 100%; border-collapse: collapse; }
+.ptable th { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--muted); text-align: right; padding: 0 0 16px; border-bottom: 1px solid var(--hair-strong); }
+.ptable th:first-child { text-align: left; }
+.ptable td { padding: 18px 0; border-bottom: 1px solid var(--hair); vertical-align: middle; text-align: right; }
+.ptable td:first-child { text-align: left; }
+.ptable tr:last-child td { border-bottom: none; }
+.ptable .opt { font-family: var(--serif); font-size: 34px; line-height: 1.1; }
+.ptable .opt small { display: block; font-family: var(--sans); font-size: 17px; font-weight: 300;
+  color: var(--muted); margin-top: 7px; letter-spacing: 0; text-transform: none; }
+.ptable .big { font-family: var(--serif); font-size: 46px; color: var(--cream); }
+.ptable .ch { font-family: var(--sans); font-size: 22px; font-weight: 300; color: var(--muted); }
+.ptag { display: inline-block; margin-left: 14px; font-family: var(--sans); font-size: 10px;
+  font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #fff;
+  background: var(--peach); padding: 5px 11px; border-radius: 3px; vertical-align: middle; }
+.pweeks { margin-top: 20px; font-family: var(--sans); font-size: 15px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.pweeks b { color: var(--peach); font-weight: 600; }
+.pcards { margin-top: 22px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.pcard { border: 1px solid var(--hair-strong); border-radius: 16px; padding: 20px 22px 18px; }
+.pcard__n { font-family: var(--serif); font-size: 26px; line-height: 1.1; }
+.pcard__d { font-family: var(--sans); font-weight: 300; font-size: 17px; line-height: 1.4;
+  color: var(--muted); margin-top: 10px; }
+.pcard__price { margin-top: 16px; display: flex; align-items: baseline; gap: 10px; }
+.pcard__price .now { font-family: var(--serif); font-size: 30px; color: var(--peach-deep); }
+.pcard__price .was { font-family: var(--sans); font-size: 16px; color: var(--muted-soft);
+  text-decoration: line-through; }
+
+.bonus-grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 30px; }
+.bcard { border: 1px solid var(--hair-strong); border-radius: 18px; padding: 30px 32px; display: flex; gap: 26px; align-items: flex-start; }
+.bcard__ico { width: 92px; flex: 0 0 92px; margin-top: 4px; }
+.bcard__n { font-family: var(--serif); font-size: 32px; line-height: 1.1; }
+.bcard__d { font-family: var(--sans); font-weight: 300; font-size: 18px; line-height: 1.4;
+  color: var(--muted); margin-top: 10px; }
+.bcard__price { margin-top: 16px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.bcard__price .now { font-family: var(--serif); font-size: 32px; color: var(--peach-deep); }
+.bcard__price .was { font-family: var(--sans); font-size: 17px; color: var(--muted-soft); text-decoration: line-through; }
+.bcard__price .prov { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted-soft); }
+
+.bcard--shaded { opacity: 0.68; background: var(--bg-2); border-style: dashed; }
+.bcard--shaded .bcard__d { font-style: italic; font-family: var(--italic); }
+.bonus-foot { margin-top: 22px; font-family: var(--sans); font-weight: 300; font-size: 16px;
+  color: var(--muted); font-style: italic; }
+
+/* ---------- Guarantee ---------- */
+.guar { flex: 1; display: grid; grid-template-columns: 0.62fr 1.38fr; gap: 90px; align-items: center; }
+.guar__stat { border-right: 1px solid var(--hair-strong); padding-right: 60px; }
+.guar__num { font-family: var(--serif); font-size: 148px; line-height: 1; letter-spacing: -0.02em; color: var(--peach); }
+.guar__num span { color: var(--hair-strong); font-size: 90px; margin: 0 6px; }
+.guar__lab { margin-top: 20px; font-family: var(--sans); font-size: 13px; font-weight: 600;
+  letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); }
+.guar__h { font-family: var(--serif); font-size: 64px; line-height: 1.06; letter-spacing: -0.012em; }
+.guar__h .em { font-family: var(--italic); font-style: italic; font-weight: 300; color: var(--peach); }
+.guar__p { margin-top: 34px; font-family: var(--sans); font-weight: 300; font-size: 27px;
+  line-height: 1.45; color: var(--cream-2); max-width: 46ch; }
+.guar__p2 { margin-top: 20px; font-family: var(--italic); font-style: italic; font-weight: 300;
+  font-size: 22px; line-height: 1.4; color: var(--muted); max-width: 46ch; }
+
+.dec__urgency { margin-top: 30px; font-family: var(--italic); font-style: italic; font-weight: 300;
+  font-size: 20px; color: var(--muted); text-align: right; }
+
+/* ---------- Scarcity / availability (light-theme adaptation) ---------- */
+.scarcity { flex: 1; display: flex; flex-direction: column; justify-content: center;
+  align-items: center; text-align: center; gap: 40px; }
+.scarcity__h { font-family: var(--serif); font-size: 68px; line-height: 1.05;
+  letter-spacing: -0.01em; max-width: 20ch; }
+.scarcity__h .em { font-family: var(--italic); font-style: italic; font-weight: 300; color: var(--peach); }
+.scarcity__slots { display: flex; gap: 22px; align-items: center; }
+.scarcity__slots .slot { width: 80px; height: 80px; border: 2px solid var(--hair-strong); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 28px; color: var(--muted-soft); }
+.scarcity__slots .slot.open { border-color: var(--peach); color: var(--peach); background: var(--peach-tint); }
+.scarcity__slots .slot.taken { text-decoration: line-through; }
+.scarcity__stat { font-family: var(--serif); font-size: 26px; color: var(--cream-2); letter-spacing: -0.005em; }
+.scarcity__stat .peach { color: var(--peach); }
+.scarcity__body { font-family: var(--sans); font-weight: 300; font-size: 19px; line-height: 1.55;
+  color: var(--muted); max-width: 56ch; }
+.scarcity__body p + p { margin-top: 10px; }
+
+/* ---------- Appendix — parents-only price node ---------- */
+.apxprice { font-family: var(--serif); font-size: 46px; line-height: 1; color: var(--cream); white-space: nowrap; }
+
+/* ---------- Payment plan ---------- */
+.pay-grid { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; align-content: center; }
+.paycard { border: 1px solid var(--hair-strong); border-radius: 18px; padding: 34px 30px; text-align: center; }
+.paycard__n { font-family: var(--serif); font-size: 26px; line-height: 1.15; min-height: 62px;
+  display: flex; align-items: center; justify-content: center; }
+.paycard__row { margin-top: 20px; padding-top: 24px; border-top: 1px solid var(--hair); }
+.paycard__amt { display: block; font-family: var(--serif); font-size: 52px; color: var(--peach-deep); line-height: 1; }
+.paycard__x { display: block; margin-top: 10px; font-family: var(--sans); font-size: 13px; font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+.paycard__total { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--hair);
+  font-family: var(--sans); font-weight: 500; font-size: 19px; color: var(--cream); }
+.paycard__total span { display: block; margin-top: 6px; font-family: var(--sans); font-weight: 300;
+  font-size: 14px; color: var(--muted-soft); }
+.pay-how { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.pay-how__item { font-family: var(--sans); font-weight: 300; font-size: 19px; line-height: 1.5;
+  color: var(--cream-2); padding-left: 24px; border-left: 2px solid var(--hair-peach); }
+.pay-how__item b { font-weight: 500; color: var(--cream); }
+
+/* ---------- Summary ---------- */
+.sum3 { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; align-items: stretch; }
+.sumcol { border-top: 2px solid var(--hair); padding-top: 26px; display: flex; flex-direction: column; }
+.sumcol--rec { border-top-color: var(--peach); }
+.sumcol__n { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+.sumcol--rec .sumcol__n { color: var(--peach); }
+.sumcol__t { font-family: var(--serif); font-size: 40px; line-height: 1.06; }
+.sumcol__price { font-family: var(--serif); font-size: 52px; margin-top: 22px; }
+.sumcol__per { font-family: var(--sans); font-size: 15px; font-weight: 400; color: var(--muted);
+  letter-spacing: 0.12em; text-transform: uppercase; margin-top: 8px; }
+.sumcol__list { list-style: none; margin-top: 26px; }
+.sumcol__list li { font-family: var(--sans); font-weight: 300; font-size: 19px; line-height: 1.4;
+  padding: 13px 0; border-bottom: 1px solid var(--hair); color: var(--cream-2); }
+.sumcol__list li:last-child { border-bottom: none; }
+.sumcol__foot { margin-top: auto; padding-top: 22px; font-family: var(--italic); font-style: italic;
+  font-weight: 300; font-size: 19px; line-height: 1.4; color: var(--cream-2); }
+.sumcol__attrib { display: block; margin-top: 8px; font-family: var(--sans); font-style: normal;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+
+/* ---------- Decision ---------- */
+.dec { flex: 1; display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 96px; align-items: center; }
+.dec__h { font-family: var(--serif); font-size: 76px; line-height: 1.03; letter-spacing: -0.014em; }
+.dec__h .em { font-family: var(--italic); font-style: italic; font-weight: 300; color: var(--peach); }
+.dec__q { margin-top: 36px; padding-left: 26px; border-left: 2px solid var(--hair-peach);
+  font-family: var(--italic); font-style: italic; font-weight: 300; font-size: 26px;
+  line-height: 1.45; color: var(--cream-2); }
+.steps2 { list-style: none; }
+.step2 { display: flex; gap: 28px; align-items: flex-start; padding: 24px 0; border-bottom: 1px solid var(--hair); }
+.step2:last-child { border-bottom: none; }
+.step2__n { font-family: var(--serif); font-size: 32px; color: var(--peach); width: 46px; flex: 0 0 46px; line-height: 1.1; }
+.step2__t { font-family: var(--sans); font-weight: 400; font-size: 26px; line-height: 1.35; }
+.step2__t span { display: block; font-weight: 300; font-size: 20px; color: var(--muted); margin-top: 7px; }
+
+/* ---------- Appendix ---------- */
+.appx { flex: 1; display: grid; grid-template-columns: 0.76fr 1.24fr; gap: 70px; align-items: center; }
+.appx__h { font-family: var(--serif); font-size: 60px; line-height: 1.05; }
+.appx__h .em { font-family: var(--italic); font-style: italic; font-weight: 300; color: var(--peach); }
+.appx__d { font-family: var(--sans); font-weight: 300; font-size: 25px; line-height: 1.45;
+  color: var(--cream-2); margin-top: 26px; max-width: 42ch; }
+.appx__price { font-family: var(--serif); font-size: 76px; margin-top: 40px; }
+.appx__per { font-family: var(--sans); font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted); margin-top: 10px; }
+
+/* ---------- Title (rebuilt as a proper cover card) ---------- */
+.cover-q__kicker { font-family: var(--sans); font-size: 14px; font-weight: 500; letter-spacing: 0.4em;
+  text-transform: uppercase; color: rgba(255,255,255,0.62); margin-bottom: 36px; }
+.cover-q__rule { width: 90px; height: 2px; background: rgba(255,255,255,0.55); margin: 42px 0; }
+.cover-q__sub { font-family: var(--italic); font-style: italic; font-weight: 300; font-size: 27px;
+  line-height: 1.4; color: rgba(255,255,255,0.88); max-width: 46ch; }
+.cover-q__date { margin-top: 40px; font-family: var(--sans); font-size: 14px; font-weight: 500;
+  letter-spacing: 0.28em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+</style>
+</head>
+<body>
+<deck-stage width="1920" height="1080">
+
+<section data-label="Title" class="is-title">
+  <div class="page-d">
+    <div class="tdhead">
+      <div class="tdhead__brand"><span class="dot"></span><span class="name">Me &amp; My Old Man</span></div>
+      <div>For Henry Sturgess &middot; September 2026</div>
+    </div>
+    <div class="cover-q">
+      <div class="cover-q__kicker">A Proposal for the Sturgess Family</div>
+      <h1 class="cover-q__text">The Gift to <span class="em">Tell Their Stories</span></h1>
+      <div class="cover-q__rule"></div>
+      <p class="cover-q__sub">&ldquo;I would like them to have the opportunity to really tell their story, because they wouldn't otherwise offer it&nbsp;up.&rdquo;</p>
+      <div class="cover-q__date">11 September 2026</div>
+    </div>
+    <div class="tdfoot"><span>A proposal for the Sturgess family</span><span>01</span></div>
+  </div>
+</section>
+
+<section data-label="Agenda">
+  <div class="page-d">
+    <div class="dhead">
+      <div class="dhead__brand"><span class="dot"></span><span class="name">Me &amp; My Old Man</span></div>
+      <div>Agenda</div>
+    </div>
+    <div class="agenda">
+      <div>
+        <h2 class="agenda__h">One family.<br>Two continents.<br><span class="em">One&nbsp;record.</span></h2>
+        <p class="agenda__q">&ldquo;I've been away for 15 years, but I want to make sure we get the story&nbsp;down.&rdquo;</p>
+      </div>
+      <ul class="agenda__list">
+        <li class="agenda__item"><span class="agenda__n">01</span><span class="agenda__t">Scope</span><span class="agenda__d">What I heard</span></li>
+        <li class="agenda__item"><span class="agenda__n">02</span><span class="agenda__t">Approach</span><span class="agenda__d">How it works</span></li>
+        <li class="agenda__item"><span class="agenda__n">03</span><span class="agenda__t">Decision</span><span class="agenda__d">What happens next</span></li>
+      </ul>
+    </div>
+    <div class="dfoot"><span>Agenda</span><span class="num">02</span></div>
+  </div>
+</section>
+
+<section data-label="Divider &mdash; Scope" class="is-divider">
+  <div class="divider">
+    <div class="divider__num">Section One</div>
+    <h2 class="divider__word">Scope</h2>
+    <div class="divider__rule"></div>
+    <p class="divider__sub">Playing back what I've understood.</p>
+    <p class="divider__sub2">&ldquo;We British are so reserved about talking about oneself. It's built into one's&nbsp;DNA.&rdquo;</p>
+    <div class="divider__foot"><span>Me &amp; My Old Man</span><span>03</span></div>
+  </div>
+</section>
+
+<section data-label="Why we're here">
+  <div class="page-d">
+    <div class="dhead">
+      <div class="dhead__brand"><span class="dot"></span><span class="name">Me &amp; My Old Man</span></div>
+      <div>Scope &middot; What I heard</div>
+    </div>
+    <div class="why why--v2">
+      <h2 class="why__h">Why we're <span class="em">here.</span></h2>
+      <p class="why__hero">&ldquo;I see friends whose parents pass away, and the story only gets captured <span class="em">almost at the&nbsp;funeral.</span>&rdquo;<span class="attrib">Henry, on the call</span></p>
+      <ul class="why__bullets why__bullets--v2">
+        <li class="why__b"><span class="why__dot"></span><span>Your dad started work at 16, retired last year, sang in City choirs &mdash; and his <b>memory is starting to go</b>.</span></li>
+        <li class="why__b"><span class="why__dot"></span><span>Your mum <b>grew up and travelled across Africa</b>, and she still remembers the things he forgets.</span></li>
+        <li class="why__b"><span class="why__dot"></span><span>You've been in Brazil since 2010. Home every quarter. Not there for the stories that fall out over a pub&nbsp;lunch.</span></li>
+        <li class="why__b"><span class="why__dot"></span><span>The cast: two parents. You. Four grandchildren behind&nbsp;them.</span></li>
+      </ul>
+    </div>
+    <div class="dfoot"><span>Scope</span><span class="num">04</span></div>
+  </div>
+</section>
+
+<section data-label="Divider &mdash; Approach" class="is-divider">
+  <div class="divider">
+    <div class="divider__num">Section Two</div>
+    <h2 class="divider__word">Approach</h2>
+    <div class="divider__rule"></div>
+    <p class="divider__sub">One core experience. Your own hour added to&nbsp;it.</p>
+    <div class="divider__foot"><span>Me &amp; My Old Man</span><span>05</span></div>
+  </div>
+</section>
+
+<section data-label="The core">
+  <div class="page-d">
+    <div class="dhead">
+      <div class="dhead__brand"><span class="dot"></span><span class="name">Me &amp; My Old Man</span></div>
+      <div>Approach &middot; The core</div>
+    </div>
+    <div class="flow-h">
+      <h2 class="flow-h__t">This part <span class="em">never changes.</span></h2>
+      <div class="flow-h__opt">Every option contains this</div>
+    </div>
+    <div class="flow">
+      <div class="flow__cell flow__cell--pre"></div>
+      <div class="flow__cell"><div class="core">
+          
+          <div class="core__tag">The part that never changes</div>
+          <div class="core__in">
+            
+            <div class="strands">
+              <div class="strand"><svg class="fig" viewBox="0 0 80 92" aria-hidden="true">
+              <path d="M40 43c-3.6 0-6.2 3.6-6.2 8.7 0 4.1-1.2 6.2-4.3 7.4C14.8 64.6 6 76 6 99h68c0-23-8.8-34.4-23.5-39.9-3.1-1.2-4.3-3.3-4.3-7.4C46.2 46.6 43.6 43 40 43z" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6" stroke-linejoin="round"/>
+              <circle cx="40" cy="27" r="17.6" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6"/>
+              <path d="M23.2 31.5c-.5-5.4.6-9.8 3.2-13.1M56.8 31.5c.5-5.4-.6-9.8-3.2-13.1" fill="none" stroke="#b8674e" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="33.8" cy="28.4" r="4.7" fill="none" stroke="#b8674e" stroke-width="1.3"/>
+              <circle cx="46.2" cy="28.4" r="4.7" fill="none" stroke="#b8674e" stroke-width="1.3"/>
+              <path d="M38.5 28.4h3M29.1 27.6c-1.7-.3-3.3-.8-4.6-1.5M50.9 27.6c1.7-.3 3.3-.8 4.6-1.5" fill="none" stroke="#b8674e" stroke-width="1.3" stroke-linecap="round"/>
+            </svg><div class="bubs"><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span></div></div>
+              <div class="strand"><svg class="fig" viewBox="0 0 80 92" aria-hidden="true">
+              <path d="M40 43c-3.6 0-6.2 3.6-6.2 8.7 0 4.1-1.2 6.2-4.3 7.4C14.8 64.6 6 76 6 99h68c0-23-8.8-34.4-23.5-39.9-3.1-1.2-4.3-3.3-4.3-7.4C46.2 46.6 43.6 43 40 43z" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M17.6 30.5C17.6 16.3 27.6 6.5 40 6.5s22.4 9.8 22.4 24c0 8.8-.6 16.4-1.7 22.4a4.6 4.6 0 0 1-9.1 0c-.7-3.9-1.1-7.8-1.1-11.6-3.6 3.2-6.6 4.4-10.5 4.4s-6.9-1.2-10.5-4.4c0 3.8-.4 7.7-1.1 11.6a4.6 4.6 0 0 1-9.1 0c-1.1-6-1.7-13.6-1.7-22.4z" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6" stroke-linejoin="round"/>
+              <circle cx="40" cy="28.5" r="15.2" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6"/>
+            </svg><div class="bubs"><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span></div></div>
+            </div>
+            <div class="deliver">
+              <div class="deliver__n">12</div>
+              <div class="deliver__l">Chapters</div>
+              <div class="deliver__s">Two albums.<br>One for each of them.</div>
+            </div>
+          </div>
+        </div></div>
+      <div class="flow__cell flow__cell--post"></div>
+    <div class="bens">
+      <div class="bens__h">What that means</div>
+      <ul>
+        <li class="is-new">Your mum and your dad's stories in their own voices.</li>
+        <li class="is-new">A gift they get to experience, not just unwrap.</li>
+        <li class="is-new">Something your daughter can play in forty years.</li>
+      </ul>
+    </div>
+    </div>
+    <div class="dfoot"><span>Approach</span><span class="num">06</span></div>
+  </div>
+</section>
+
+<section data-label="Child briefing">
+  <div class="page-d">
+    <div class="dhead">
+      <div class="dhead__brand"><span class="dot"></span><span class="name">Me &amp; My Old Man</span></div>
+      <div>Approach &middot; The briefing</div>
+    </div>
+    <div class="flow-h">
+      <h2 class="flow-h__t">Nobody walks in <span class="em">cold.</span></h2>
+      <div class="flow-h__opt">Before any of you speak to me</div>
+    </div>
+    <div class="flow">
+      <div class="flow__cell flow__cell--pre"></div>
+      <div class="flow__cell"><div class="core">
+          <div class="core__brief">
+            <div class="core__brief-badge"><span></span><span></span><span></span></div>
+            <div class="core__brief-lab">Child briefing</div>
+          </div>
+          <div class="core__tag">The part that never changes</div>
+          <div class="core__in">
+            <div class="refl">
+              <div class="refl__icons">
+                <div class="refl__i" title="Chart"><svg viewBox="0 0 40 20" width="66" height="33" aria-hidden="true"><g stroke="#b8674e" stroke-width="1.2" fill="none"><rect x="2.5" y="2.5" width="35" height="15" rx="2"/><path d="M2.5 8h35M14 2.5v15M26 2.5v15"/></g></svg></div>
+                <div class="refl__i" title="Guide"><svg viewBox="0 0 40 20" width="66" height="33" aria-hidden="true"><g stroke="#b8674e" stroke-width="1.2" fill="none" stroke-linecap="round"><path d="M13 3.2h11.5L28 6.7V17H13z"/><path d="M24.2 3.4v3.4h3.4M16 10h9M16 13.4h6.5"/></g></svg></div>
+                <div class="refl__i" title="Audio"><svg viewBox="0 0 40 20" width="66" height="33" aria-hidden="true"><g stroke="#b8674e" stroke-width="1.2" fill="none" stroke-linecap="round"><path d="M13 14V5.4l9-1.8V12"/><circle cx="11" cy="14.4" r="2.2"/><circle cx="24" cy="12.4" r="2.2"/></g></svg></div>
+              </div>
+              <div class="refl__lab">Reflection<br>guides</div>
+            </div>
+            <div class="strands">
+              <div class="strand"><svg class="fig" viewBox="0 0 80 92" aria-hidden="true">
+              <path d="M40 43c-3.6 0-6.2 3.6-6.2 8.7 0 4.1-1.2 6.2-4.3 7.4C14.8 64.6 6 76 6 99h68c0-23-8.8-34.4-23.5-39.9-3.1-1.2-4.3-3.3-4.3-7.4C46.2 46.6 43.6 43 40 43z" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6" stroke-linejoin="round"/>
+              <circle cx="40" cy="27" r="17.6" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6"/>
+              <path d="M23.2 31.5c-.5-5.4.6-9.8 3.2-13.1M56.8 31.5c.5-5.4-.6-9.8-3.2-13.1" fill="none" stroke="#b8674e" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="33.8" cy="28.4" r="4.7" fill="none" stroke="#b8674e" stroke-width="1.3"/>
+              <circle cx="46.2" cy="28.4" r="4.7" fill="none" stroke="#b8674e" stroke-width="1.3"/>
+              <path d="M38.5 28.4h3M29.1 27.6c-1.7-.3-3.3-.8-4.6-1.5M50.9 27.6c1.7-.3 3.3-.8 4.6-1.5" fill="none" stroke="#b8674e" stroke-width="1.3" stroke-linecap="round"/>
+            </svg><div class="bubs"><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span></div></div>
+              <div class="strand"><svg class="fig" viewBox="0 0 80 92" aria-hidden="true">
+              <path d="M40 43c-3.6 0-6.2 3.6-6.2 8.7 0 4.1-1.2 6.2-4.3 7.4C14.8 64.6 6 76 6 99h68c0-23-8.8-34.4-23.5-39.9-3.1-1.2-4.3-3.3-4.3-7.4C46.2 46.6 43.6 43 40 43z" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M17.6 30.5C17.6 16.3 27.6 6.5 40 6.5s22.4 9.8 22.4 24c0 8.8-.6 16.4-1.7 22.4a4.6 4.6 0 0 1-9.1 0c-.7-3.9-1.1-7.8-1.1-11.6-3.6 3.2-6.6 4.4-10.5 4.4s-6.9-1.2-10.5-4.4c0 3.8-.4 7.7-1.1 11.6a4.6 4.6 0 0 1-9.1 0c-1.1-6-1.7-13.6-1.7-22.4z" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6" stroke-linejoin="round"/>
+              <circle cx="40" cy="28.5" r="15.2" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6"/>
+            </svg><div class="bubs"><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span></div></div>
+            </div>
+            <div class="deliver">
+              <div class="deliver__n">12</div>
+              <div class="deliver__l">Chapters</div>
+              <div class="deliver__s">Two albums.<br>One for each of them.</div>
+            </div>
+          </div>
+        </div></div>
+      <div class="flow__cell flow__cell--post"></div>
+    <div class="bens">
+      <div class="bens__h">What that means</div>
+      <ul>
+        <li class="was">Your mum and your dad's stories in their own voices.</li>
+        <li class="was">A gift they get to experience, not just unwrap.</li>
+        <li class="was">Something your daughter can play in forty years.</li>
+        <li class="is-new">Nobody is put on the spot. Everyone arrives having already remembered.</li>
+        <li class="is-new">I arrive briefed on what's important.</li>
+      </ul>
+    </div>
+    </div>
+    <div class="dfoot"><span>Approach</span><span class="num">07</span></div>
+  </div>
+</section>
+
+<section data-label="Hero Story &mdash; Your hour">
+  <div class="page-d">
+    <div class="dhead">
+      <div class="dhead__brand"><span class="dot"></span><span class="name">Me &amp; My Old Man</span></div>
+      <div>Approach &middot; Hero Story</div>
+    </div>
+    <div class="flow-h">
+      <h2 class="flow-h__t">Your hour, <span class="em">in the record.</span></h2>
+      <div class="flow-h__opt">Hero Story</div>
+    </div>
+    <div class="flow">
+      <div class="flow__cell flow__cell--pre"><div class="siderows"><div class="siderow"><div class="siderow-group"><span class="bub bub--p bub--sm">H</span></div><i class="lnk"></i></div><div class="siderow"><div class="siderow-group"><span class="bub bub--p bub--sm">H</span></div><i class="lnk"></i></div></div></div>
+      <div class="flow__cell"><div class="core">
+          <div class="core__brief">
+            <div class="core__brief-badge"><span></span><span></span><span></span></div>
+            <div class="core__brief-lab">Child briefing</div>
+          </div>
+          <div class="core__tag">The part that never changes</div>
+          <div class="core__in">
+            <div class="refl">
+              <div class="refl__icons">
+                <div class="refl__i" title="Chart"><svg viewBox="0 0 40 20" width="66" height="33" aria-hidden="true"><g stroke="#b8674e" stroke-width="1.2" fill="none"><rect x="2.5" y="2.5" width="35" height="15" rx="2"/><path d="M2.5 8h35M14 2.5v15M26 2.5v15"/></g></svg></div>
+                <div class="refl__i" title="Guide"><svg viewBox="0 0 40 20" width="66" height="33" aria-hidden="true"><g stroke="#b8674e" stroke-width="1.2" fill="none" stroke-linecap="round"><path d="M13 3.2h11.5L28 6.7V17H13z"/><path d="M24.2 3.4v3.4h3.4M16 10h9M16 13.4h6.5"/></g></svg></div>
+                <div class="refl__i" title="Audio"><svg viewBox="0 0 40 20" width="66" height="33" aria-hidden="true"><g stroke="#b8674e" stroke-width="1.2" fill="none" stroke-linecap="round"><path d="M13 14V5.4l9-1.8V12"/><circle cx="11" cy="14.4" r="2.2"/><circle cx="24" cy="12.4" r="2.2"/></g></svg></div>
+              </div>
+              <div class="refl__lab">Reflection<br>guides</div>
+            </div>
+            <div class="strands">
+              <div class="strand"><svg class="fig" viewBox="0 0 80 92" aria-hidden="true">
+              <path d="M40 43c-3.6 0-6.2 3.6-6.2 8.7 0 4.1-1.2 6.2-4.3 7.4C14.8 64.6 6 76 6 99h68c0-23-8.8-34.4-23.5-39.9-3.1-1.2-4.3-3.3-4.3-7.4C46.2 46.6 43.6 43 40 43z" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6" stroke-linejoin="round"/>
+              <circle cx="40" cy="27" r="17.6" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6"/>
+              <path d="M23.2 31.5c-.5-5.4.6-9.8 3.2-13.1M56.8 31.5c.5-5.4-.6-9.8-3.2-13.1" fill="none" stroke="#b8674e" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="33.8" cy="28.4" r="4.7" fill="none" stroke="#b8674e" stroke-width="1.3"/>
+              <circle cx="46.2" cy="28.4" r="4.7" fill="none" stroke="#b8674e" stroke-width="1.3"/>
+              <path d="M38.5 28.4h3M29.1 27.6c-1.7-.3-3.3-.8-4.6-1.5M50.9 27.6c1.7-.3 3.3-.8 4.6-1.5" fill="none" stroke="#b8674e" stroke-width="1.3" stroke-linecap="round"/>
+            </svg><div class="bubs"><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span></div></div>
+              <div class="strand"><svg class="fig" viewBox="0 0 80 92" aria-hidden="true">
+              <path d="M40 43c-3.6 0-6.2 3.6-6.2 8.7 0 4.1-1.2 6.2-4.3 7.4C14.8 64.6 6 76 6 99h68c0-23-8.8-34.4-23.5-39.9-3.1-1.2-4.3-3.3-4.3-7.4C46.2 46.6 43.6 43 40 43z" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M17.6 30.5C17.6 16.3 27.6 6.5 40 6.5s22.4 9.8 22.4 24c0 8.8-.6 16.4-1.7 22.4a4.6 4.6 0 0 1-9.1 0c-.7-3.9-1.1-7.8-1.1-11.6-3.6 3.2-6.6 4.4-10.5 4.4s-6.9-1.2-10.5-4.4c0 3.8-.4 7.7-1.1 11.6a4.6 4.6 0 0 1-9.1 0c-1.1-6-1.7-13.6-1.7-22.4z" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6" stroke-linejoin="round"/>
+              <circle cx="40" cy="28.5" r="15.2" fill="#f5e8e3" stroke="#b8674e" stroke-width="1.6"/>
+            </svg><div class="bubs"><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span><i class="lnk"></i><span class="bub">2<small>hrs</small></span></div></div>
+            </div>
+            <div class="deliver">
+              <div class="deliver__n">15</div>
+              <div class="deliver__l">Chapters</div>
+              <div class="deliver__s">Twelve theirs.<br>Three yours.</div>
+            </div>
+          </div>
+        </div></div>
+      <div class="flow__cell flow__cell--post"><div class="node">
+        <div class="all-sq" style="width:132px;height:132px">
+          <span class="kid kid--p">M</span><span class="kid kid--p">D</span><span class="kid kid--p">H</span>
+        </div>
+        <div class="node__lab">Family wrap-up</div>
+        <div class="node__sub">1.5 hrs, together,<br>once you've listened.</div>
+      </div></div>
+    <div class="bens">
+      <div class="bens__h">What that means</div>
+      <ul>
+        <li class="was">Your mum and your dad's stories in their own voices.</li>
+        <li class="was">A gift they get to experience, not just unwrap.</li>
+        <li class="was">Something your daughter can play in forty years.</li>
+        <li class="was">Nobody is put on the spot. Everyone arrives having already remembered.</li>
+        <li class="was">I arrive briefed on what's important.</li>
+        <li class="is-new">This becomes a gift to them: to hear your perspective on their lives, what you're interested in, and your happy memories.</li>
+      </ul>
+    </div>
+    </div>
+    <div class="dfoot"><span>Approach</span><span class="num">08</span></div>
+  </div>
+</section>
+
+<section data-label="Guarantee">
+  <div class="page-d">
+    <div class="dhead">
+      <div class="dhead__brand"><span class="dot"></span><span class="name">Me &amp; My Old Man</span></div>
+      <div>You're protected</div>
+    </div>
+    <div class="guar">
+      <div class="guar__stat">
+        <div class="guar__num">35<span>/</span>0</div>
+        <div class="guar__lab">Families &middot; guarantees invoked</div>
+      </div>
+      <div class="guar__body">
+        <h2 class="guar__h">You are <span class="em">completely protected.</span></h2>
+        <p class="guar__p">If after your first parent's opening session you're not feeling it &mdash; for any reason &mdash; we stop, and I refund you in full. No questions.</p>
+        <p class="guar__p2">In 35 families, that guarantee has never once been invoked. But it's there.</p>
+      </div>
+    </div>
+    <div class="dfoot"><span>Guarantee</span><span class="num">09</span></div>
+  </div>
+</section>
+
+<section data-label="Decision">
+  <div class="page-d">
+    <div class="dhead">
+      <div class="dhead__brand"><span class="dot"></span><span class="name">Me &amp; My Old Man</span></div>
+      <div>Decision &middot; What happens next</div>
+    </div>
+    <div class="dec">
+      <div>
+        <h2 class="dec__h">What happens <span class="em">next.</span></h2>
+        <p class="dec__q">&ldquo;It'd be more me going &mdash; hey Dad and Mum, I want to give a present here. A family&nbsp;present.&rdquo;</p>
+      </div>
+      <ul class="steps2">
+        <li class="step2"><span class="step2__n">01</span><span class="step2__t">Choose your extras.<span>Grandchildren, Mementos, or neither. We can also decide this later.</span></span></li>
+        <li class="step2"><span class="step2__n">02</span><span class="step2__t">We book the 1-hour kickoff call.<span>Your only bit of admin: we meet for 1hr online, get everyone on the same page and schedule all of the sessions. Happy, excited and ready.</span></span></li>
+        <li class="step2"><span class="step2__n">03</span><span class="step2__t">24hrs later, you receive your reflection guides.<span>Chart, written guide and audio to your parents. Your briefing form comes to you.</span></span></li>
+        <li class="step2"><span class="step2__n">04</span><span class="step2__t">Session start as soon as next week.<span>Twelve weeks start to finish, and the album lands with all of you at once.</span></span></li>
+      </ul>
+    </div>
+    <div class="dfoot"><span>Decision</span><span class="num">10</span></div>
+  </div>
+</section>
+
+<section data-label="Close" class="is-divider">
+  <div class="divider" style="align-items:flex-start">
+    <h2 class="divider__word" style="font-size:104px">Stories That&nbsp;Matter.<br>With People You&nbsp;Love.</h2>
+    <div class="divider__rule"></div>
+    <div class="divider__foot"><span>Me &amp; My Old Man</span><span>11</span></div>
+  </div>
+</section>
+
+</deck-stage>
+<script>
+/**
+ * <deck-stage> — reusable web component for HTML decks.
+ *
+ * Handles:
+ *  (a) speaker notes — reads <script type="application/json" id="speaker-notes">
+ *      and posts {slideIndexChanged: N} to the parent window on nav.
+ *  (b) keyboard navigation — ←/→, PgUp/PgDn, Space, Home/End, number keys.
+ *  (c) press R to reset to slide 0 (with a tasteful keyboard hint).
+ *  (d) bottom-center overlay showing slide count + hints, fades out on idle.
+ *  (e) auto-scaling — inner canvas is a fixed design size (default 1920×1080)
+ *      scaled with `transform: scale()` to fit the viewport, letterboxed.
+ *      Set the `noscale` attribute to render at authored size (1:1) — the
+ *      PPTX exporter sets this so its DOM capture sees unscaled geometry.
+ *  (f) print — `@media print` lays every slide out as its own page at the
+ *      design size, so the browser's Print → Save as PDF produces a clean
+ *      one-page-per-slide PDF with no extra setup.
+ *  (g) thumbnail rail — resizable left-hand column of per-slide thumbnails
+ *      (static clones). Click to navigate; ↑/↓ with a thumbnail focused to
+ *      step between slides; drag to reorder; right-click for
+ *      Skip / Move up / Move down / Delete (opens a Cancel/Delete confirm
+ *      dialog). Drag the rail's right edge to resize; width persists to
+ *      localStorage. Skipped slides carry `data-deck-skip`, are dimmed in
+ *      the rail, omitted from prev/next navigation, and hidden at print.
+ *      The rail is suppressed in presenting mode, in the host's Preview
+ *      mode (ViewerMode='none'), on `noscale`, and via the `no-rail`
+ *      attribute. Rail mutations dispatch a `deckchange`
+ *      CustomEvent on the element: detail = {action, from, to, slide}.
+ *
+ * Slides are HIDDEN, not unmounted. Non-active slides stay in the DOM with
+ * `visibility: hidden` + `opacity: 0`, so their state (videos, iframes,
+ * form inputs, React trees) is preserved across navigation.
+ *
+ * Lifecycle event — the component dispatches a `slidechange` CustomEvent on
+ * itself whenever the active slide changes (including the initial mount).
+ * The event bubbles and composes out of shadow DOM, so you can listen on
+ * the <deck-stage> element or on document:
+ *
+ *   document.querySelector('deck-stage').addEventListener('slidechange', (e) => {
+ *     e.detail.index         // new 0-based index
+ *     e.detail.previousIndex // previous index, or -1 on init
+ *     e.detail.total         // total slide count
+ *     e.detail.slide         // the new active slide element
+ *     e.detail.previousSlide // the prior slide element, or null on init
+ *     e.detail.reason        // 'init' | 'keyboard' | 'click' | 'tap' | 'api'
+ *   });
+ *
+ * Persistence: none at the deck level. The host app keeps the current slide
+ * in its own URL (?slide=) and re-delivers it via location.hash on load, so a
+ * bare load with no hash always starts at slide 1.
+ *
+ * Usage:
+ *   <style>deck-stage:not(:defined){visibility:hidden}</style>
+ *   <deck-stage width="1920" height="1080">
+ *     <section data-label="Title">...</section>
+ *     <section data-label="Agenda">...</section>
+ *   </deck-stage>
+ *   <script src="deck-stage.js"><\/script>
+ *
+ * The :not(:defined) rule prevents a flash of the first slide at its
+ * authored styles before this script runs and attaches the shadow root.
+ *
+ * Slides are the direct element children of <deck-stage>. Each slide is
+ * automatically tagged with:
+ *   - data-screen-label="NN Label"   (1-indexed, for comment flow)
+ *   - data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text"
+ */
+
+(() => {
+  const DESIGN_W_DEFAULT = 1920;
+  const DESIGN_H_DEFAULT = 1080;
+  const OVERLAY_HIDE_MS = 1800;
+  const VALIDATE_ATTR = 'no_overflowing_text,no_overlapping_text,slide_sized_text';
+
+  const pad2 = (n) => String(n).padStart(2, '0');
+
+  // Label precedence: data-label → data-screen-label (number stripped) → first heading → "Slide".
+  const getSlideLabel = (el) => {
+    const explicit = el.getAttribute('data-label');
+    if (explicit) return explicit;
+
+    const existing = el.getAttribute('data-screen-label');
+    if (existing) return existing.replace(/^\s*\d+\s*/, '').trim() || existing;
+
+    const h = el.querySelector('h1, h2, h3, [data-title]');
+    const t = h && (h.textContent || '').trim().slice(0, 40);
+    if (t) return t;
+
+    return 'Slide';
+  };
+
+  const stylesheet = `
+    :host {
+      position: fixed;
+      inset: 0;
+      display: block;
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      overflow: hidden;
+    }
+    /* connectedCallback holds this until document.fonts.ready (capped 2s) so
+     * the first visible paint has the deck's real typography + final rail
+     * layout. opacity (not visibility) so the active slide can't un-hide
+     * itself via the ::slotted([data-deck-active]) visibility:visible rule.
+     * Only the stage/rail hide — the black :host background stays, so the
+     * iframe doesn't flash the page's default white. */
+    :host([data-fonts-pending]) .stage,
+    :host([data-fonts-pending]) .rail { opacity: 0; pointer-events: none; }
+
+    .stage {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .canvas {
+      position: relative;
+      transform-origin: center center;
+      flex-shrink: 0;
+      background: #fff;
+      will-change: transform;
+    }
+
+    /* Slides live in light DOM (via <slot>) so authored CSS still applies.
+       We absolutely position each slotted child to stack them. */
+    ::slotted(*) {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      box-sizing: border-box !important;
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+    ::slotted([data-deck-active]) {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+    }
+
+    /* Tap zones for mobile — back/forward thirds like Stories.
+       Transparent, no visible UI, don't block the overlay. */
+    .tapzones {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      z-index: 2147482000;
+      pointer-events: none;
+    }
+    .tapzone {
+      flex: 1;
+      pointer-events: auto;
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* Only activate tap zones on coarse pointers (touch devices). */
+    @media (hover: hover) and (pointer: fine) {
+      .tapzones { display: none; }
+    }
+
+    .overlay {
+      position: fixed;
+      left: 50%;
+      bottom: 22px;
+      transform: translate(-50%, 6px) scale(0.92);
+      filter: blur(6px);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px;
+      background: #000;
+      color: #fff;
+      border-radius: 999px;
+      font-size: 12px;
+      font-feature-settings: "tnum" 1;
+      letter-spacing: 0.01em;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 260ms ease, transform 260ms cubic-bezier(.2,.8,.2,1), filter 260ms ease;
+      transform-origin: center bottom;
+      z-index: 2147483000;
+      user-select: none;
+    }
+    .overlay[data-visible] {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0) scale(1);
+      filter: blur(0);
+    }
+
+    .btn {
+      appearance: none;
+      -webkit-appearance: none;
+      background: transparent;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      color: inherit;
+      font: inherit;
+      cursor: default;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 28px;
+      min-width: 28px;
+      border-radius: 999px;
+      color: rgba(255,255,255,0.72);
+      transition: background 140ms ease, color 140ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:hover { background: rgba(255,255,255,0.12); color: #fff; }
+    .btn:active { background: rgba(255,255,255,0.18); }
+    .btn:focus { outline: none; }
+    .btn:focus-visible { outline: none; }
+    .btn::-moz-focus-inner { border: 0; }
+    .btn svg { width: 14px; height: 14px; display: block; }
+    .btn.reset {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      padding: 0 10px 0 12px;
+      gap: 6px;
+      color: rgba(255,255,255,0.72);
+    }
+    .btn.reset .kbd {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 16px;
+      height: 16px;
+      padding: 0 4px;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 10px;
+      line-height: 1;
+      color: rgba(255,255,255,0.88);
+      background: rgba(255,255,255,0.12);
+      border-radius: 4px;
+    }
+
+    .count {
+      font-variant-numeric: tabular-nums;
+      color: #fff;
+      font-weight: 500;
+      padding: 0 8px;
+      min-width: 42px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .count .sep { color: rgba(255,255,255,0.45); margin: 0 3px; font-weight: 400; }
+    .count .total { color: rgba(255,255,255,0.55); }
+
+    .divider {
+      width: 1px;
+      height: 14px;
+      background: rgba(255,255,255,0.18);
+      margin: 0 2px;
+    }
+
+    /* ── Thumbnail rail ──────────────────────────────────────────────────
+       Fixed column on the left; each thumbnail is a static deep-clone of
+       the light-DOM slide scaled into a 16:9 (or design-aspect) frame. The
+       stage re-fits around it (see _fit); hidden during present / noscale
+       / print so capture geometry and fullscreen output are unchanged. */
+    .rail {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: var(--deck-rail-w, 188px);
+      background: #141414;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 12px 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 2147482500;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.18) transparent;
+    }
+    .rail::-webkit-scrollbar { width: 8px; }
+    .rail::-webkit-scrollbar-track { background: transparent; margin: 2px; }
+    .rail::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.18);
+      border-radius: 4px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+    .rail::-webkit-scrollbar-thumb:hover {
+      background: rgba(255,255,255,0.28);
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+    :host([no-rail]) .rail,
+    :host([noscale]) .rail { display: none; }
+    .rail[data-presenting] { display: none; }
+    /* User-driven show/hide (the TweaksPanel toggle) slides instead of
+       popping. Transitions are gated on :host([data-rail-anim]) — set only
+       for the 200ms around the toggle — so window-resize and rail-width
+       drag (which also call _fit) don't lag behind the cursor. */
+    .rail[data-user-hidden] { transform: translateX(-100%); }
+    :host([data-rail-anim]) .rail { transition: transform 200ms cubic-bezier(.3,.7,.4,1); }
+    :host([data-rail-anim]) .stage { transition: left 200ms cubic-bezier(.3,.7,.4,1); }
+    :host([data-rail-anim]) .canvas { transition: transform 200ms cubic-bezier(.3,.7,.4,1); }
+    /* transition shorthand replaces rather than merges — repeat the base
+       .overlay opacity/transform/filter transitions so visibility changes
+       during the 200ms toggle window still fade instead of popping. */
+    :host([data-rail-anim]) .overlay {
+      transition: margin-left 200ms cubic-bezier(.3,.7,.4,1),
+                  opacity 260ms ease,
+                  transform 260ms cubic-bezier(.2,.8,.2,1),
+                  filter 260ms ease;
+    }
+    :host([data-rail-anim]) .tapzones { transition: left 200ms cubic-bezier(.3,.7,.4,1); }
+
+    .thumb {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .thumb .num {
+      width: 16px;
+      flex-shrink: 0;
+      font-size: 11px;
+      font-weight: 500;
+      text-align: right;
+      color: rgba(255,255,255,0.55);
+      padding-top: 2px;
+      font-variant-numeric: tabular-nums;
+    }
+    .thumb .frame {
+      position: relative;
+      flex: 1;
+      min-width: 0;
+      aspect-ratio: var(--deck-aspect);
+      background: #fff;
+      border-radius: 4px;
+      outline: 2px solid transparent;
+      outline-offset: 0;
+      overflow: hidden;
+      transition: outline-color 120ms ease;
+    }
+    .thumb:hover .frame { outline-color: rgba(255,255,255,0.25); }
+    .thumb { outline: none; }
+    .thumb:focus-visible .frame { outline-color: rgba(255,255,255,0.5); }
+    .thumb[data-current] .num { color: #fff; }
+    .thumb[data-current] .frame { outline-color: #D97757; }
+    .thumb[data-dragging] { opacity: 0.35; }
+    .thumb::before {
+      content: '';
+      position: absolute;
+      left: 24px;
+      right: 0;
+      height: 3px;
+      border-radius: 2px;
+      background: #D97757;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .thumb[data-drop="before"]::before { top: -8px; opacity: 1; }
+    .thumb[data-drop="after"]::before { bottom: -8px; opacity: 1; }
+    .thumb[data-skip] .frame { opacity: 0.35; }
+    .thumb[data-skip] .frame::after {
+      content: 'Skipped';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.45);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
+    .ctxmenu {
+      position: fixed;
+      min-width: 150px;
+      padding: 4px;
+      background: #242424;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 7px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+      z-index: 2147483100;
+      display: none;
+      font-size: 12px;
+    }
+    .ctxmenu[data-open] { display: block; }
+    .ctxmenu button {
+      display: block;
+      width: 100%;
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: #e8e8e8;
+      font: inherit;
+      text-align: left;
+      padding: 6px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .ctxmenu button:hover:not(:disabled) { background: rgba(255,255,255,0.08); }
+    .ctxmenu button:disabled { opacity: 0.35; cursor: default; }
+    .ctxmenu hr {
+      border: 0;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin: 4px 2px;
+    }
+
+    .rail-resize {
+      position: fixed;
+      left: calc(var(--deck-rail-w, 188px) - 3px);
+      top: 0;
+      bottom: 0;
+      width: 6px;
+      cursor: col-resize;
+      z-index: 2147482600;
+      touch-action: none;
+    }
+    .rail-resize:hover,
+    .rail-resize[data-dragging] { background: rgba(255,255,255,0.12); }
+    :host([no-rail]) .rail-resize,
+    :host([noscale]) .rail-resize,
+    .rail[data-presenting] + .rail-resize,
+    .rail[data-user-hidden] + .rail-resize { display: none; }
+
+    /* Delete-confirm popup — matches the SPA's ConfirmDialog layout
+       (title + message body, depressed footer with Cancel / Delete). */
+    .confirm-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 2147483200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .confirm-backdrop[data-open] { display: flex; }
+    .confirm {
+      width: 320px;
+      max-width: calc(100vw - 32px);
+      background: #2a2a2a;
+      color: #e8e8e8;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+      overflow: hidden;
+      font-family: inherit;
+      animation: deck-confirm-in 0.18s ease;
+    }
+    @keyframes deck-confirm-in {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .confirm .body { padding: 20px 20px 16px; }
+    .confirm .title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .confirm .msg { font-size: 13px; line-height: 1.5; color: rgba(255,255,255,0.65); }
+    .confirm .footer {
+      padding: 14px 20px;
+      background: #1f1f1f;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+    .confirm button {
+      appearance: none;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .confirm .cancel {
+      background: transparent;
+      border: 0;
+      color: rgba(255,255,255,0.8);
+    }
+    .confirm .cancel:hover { background: rgba(255,255,255,0.08); }
+    .confirm .danger {
+      background: #c96442;
+      border: 1px solid rgba(0,0,0,0.15);
+      color: #fff;
+      box-shadow: 0 1px 3px rgba(166,50,68,0.3), 0 2px 6px rgba(166,50,68,0.18);
+    }
+    .confirm .danger:hover { background: #b5563a; }
+
+    /* ── Print: one page per slide, no chrome ────────────────────────────
+       The screen layout stacks every slide at inset:0 inside a scaled
+       canvas; for print we want them in document flow at the authored
+       design size so the browser paginates one slide per sheet. The
+       @page size is set from the width/height attributes via the inline
+       <style id="deck-stage-print-page"> that connectedCallback injects
+       into <head> (the @page at-rule has no effect inside shadow DOM). */
+    @media print {
+      :host {
+        position: static;
+        inset: auto;
+        background: none;
+        overflow: visible;
+        color: inherit;
+      }
+      .stage { position: static; display: block; }
+      .canvas {
+        transform: none !important;
+        width: auto !important;
+        height: auto !important;
+        background: none;
+        will-change: auto;
+      }
+      ::slotted(*) {
+        position: relative !important;
+        inset: auto !important;
+        width: var(--deck-design-w) !important;
+        height: var(--deck-design-h) !important;
+        box-sizing: border-box !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto;
+        break-after: page;
+        page-break-after: always;
+        break-inside: avoid;
+        overflow: hidden;
+      }
+      /* :last-child alone isn't enough once data-deck-skip hides the
+         trailing slide(s) — the last *visible* slide still carries
+         break-after:page and prints a blank sheet. _markLastVisible()
+         maintains data-deck-last-visible on the last non-skipped slide. */
+      ::slotted(*:last-child),
+      ::slotted([data-deck-last-visible]) {
+        break-after: auto;
+        page-break-after: auto;
+      }
+      ::slotted([data-deck-skip]) { display: none !important; }
+      .overlay, .tapzones, .rail, .rail-resize, .ctxmenu, .confirm-backdrop { display: none !important; }
+    }
+  `;
+
+  class DeckStage extends HTMLElement {
+    static get observedAttributes() { return ['width', 'height', 'noscale', 'no-rail']; }
+
+    constructor() {
+      super();
+      this._root = this.attachShadow({ mode: 'open' });
+      this._index = 0;
+      this._slides = [];
+      this._notes = [];
+      this._hideTimer = null;
+      this._mouseIdleTimer = null;
+      this._menuIndex = -1;
+
+      this._onKey = this._onKey.bind(this);
+      this._onResize = this._onResize.bind(this);
+      this._onSlotChange = this._onSlotChange.bind(this);
+      this._onMouseMove = this._onMouseMove.bind(this);
+      this._onTapBack = this._onTapBack.bind(this);
+      this._onTapForward = this._onTapForward.bind(this);
+      this._onMessage = this._onMessage.bind(this);
+      // Capture-phase close so a click anywhere dismisses the menu, but
+      // ignore clicks that land inside the menu itself — otherwise the
+      // capture handler runs before the menu's own (bubble) handler and
+      // clears _menuIndex out from under it.
+      this._onDocClick = (e) => {
+        if (this._menu && e.composedPath && e.composedPath().includes(this._menu)) return;
+        this._closeMenu();
+      };
+    }
+
+    get designWidth() {
+      return parseInt(this.getAttribute('width'), 10) || DESIGN_W_DEFAULT;
+    }
+    get designHeight() {
+      return parseInt(this.getAttribute('height'), 10) || DESIGN_H_DEFAULT;
+    }
+
+    connectedCallback() {
+      // Presenter-view popup loads deckUrl?_snthumb=...#N for its prev/cur/
+      // next thumbnails — the rail has no business rendering inside those
+      // (wrong scale, and it offsets the stage so the thumb shows a gutter).
+      if (/[?&]_snthumb=/.test(location.search)) this.setAttribute('no-rail', '');
+      this._render();
+      this._loadNotes();
+      this._syncPrintPageRule();
+      window.addEventListener('keydown', this._onKey);
+      window.addEventListener('resize', this._onResize);
+      window.addEventListener('mousemove', this._onMouseMove, { passive: true });
+      window.addEventListener('message', this._onMessage);
+      window.addEventListener('click', this._onDocClick, true);
+      // Initial collection + layout happens via slotchange, which fires on mount.
+      this._enableRail();
+      // Hold the stage hidden until webfonts are ready so the first visible
+      // paint has the deck's real typography — the :not(:defined) guard in
+      // the page HTML only covers custom-element upgrade, not font load.
+      // Capped so a 404'd font URL can't blank the deck indefinitely.
+      this.setAttribute('data-fonts-pending', '');
+      const reveal = () => this.removeAttribute('data-fonts-pending');
+      // rAF first: fonts.ready is a pre-resolved promise until layout has
+      // resolved the slotted text's font-family and pushed a FontFace into
+      // 'loading'. Reading it here in connectedCallback (parse-time) would
+      // settle the race in a microtask before any font fetch starts.
+      requestAnimationFrame(() => {
+        Promise.race([
+          document.fonts ? document.fonts.ready : Promise.resolve(),
+          new Promise((r) => setTimeout(r, 2000)),
+        ]).then(reveal, reveal);
+      });
+    }
+
+    _enableRail() {
+      // Idempotent — older host builds still post __omelette_rail_enabled.
+      // no-rail guard keeps the observers/stylesheet walk off the cheap path
+      // for presenter-popup thumbnail iframes (up to 9 per view).
+      if (this._railEnabled || this.hasAttribute('no-rail')) return;
+      this._railEnabled = true;
+      // Per-viewer preference — restored alongside rail width. Default on;
+      // only a stored '0' (from the TweaksPanel toggle) hides it.
+      this._railVisible = true;
+      try {
+        if (localStorage.getItem('deck-stage.railVisible') === '0') this._railVisible = false;
+      } catch (e) {}
+      // Live thumbnail updates: watch the light-DOM slides for content
+      // edits and re-clone just the affected thumb(s), debounced. Ignore
+      // the data-deck-* / data-screen-label / data-om-validate attributes
+      // this component itself writes so nav and skip don't trigger
+      // spurious refreshes.
+      const OWN_ATTRS = /^data-(deck-|screen-label$|om-validate$)/;
+      this._liveDirty = new Set();
+      this._liveObserver = new MutationObserver((records) => {
+        for (const r of records) {
+          if (r.type === 'attributes' && OWN_ATTRS.test(r.attributeName || '')) continue;
+          let n = r.target;
+          while (n && n.parentElement !== this) n = n.parentElement;
+          if (n && this._slideSet && this._slideSet.has(n)) this._liveDirty.add(n);
+        }
+        if (this._liveDirty.size && !this._liveTimer) {
+          this._liveTimer = setTimeout(() => {
+            this._liveTimer = null;
+            this._liveDirty.forEach((s) => this._refreshThumb(s));
+            this._liveDirty.clear();
+          }, 200);
+        }
+      });
+      this._liveObserver.observe(this, {
+        subtree: true, childList: true, characterData: true, attributes: true,
+      });
+      // Lazy thumbnail materialization — clone the slide only when its
+      // frame scrolls into (or near) the rail viewport. rootMargin gives
+      // ~4 thumbs of pre-load so fast scrolling doesn't flash blanks.
+      this._railObserver = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting && e.target.__deckThumb) {
+            this._materialize(e.target.__deckThumb);
+          }
+        });
+      }, { root: this._rail, rootMargin: '400px 0px' });
+      // Tweaks typically change CSS vars / attrs OUTSIDE <deck-stage>
+      // (on <html>, <body>, a wrapper div, or a <style> tag), which
+      // _liveObserver can't see. Re-snapshot author CSS (constructable
+      // sheet is shared by reference, so one replaceSync updates every
+      // thumb shadow root) and re-sync each thumb host's attrs + custom
+      // properties. In-slide DOM mutations are _liveObserver's job.
+      // Debounced so slider drags don't thrash.
+      this._onTweakChange = () => {
+        clearTimeout(this._tweakTimer);
+        this._tweakTimer = setTimeout(() => {
+          this._snapshotAuthorCss();
+          // One getComputedStyle for the whole batch — each
+          // getPropertyValue read below reuses the same computed style
+          // as long as nothing invalidates layout between thumbs.
+          const cs = getComputedStyle(this);
+          (this._thumbs || []).forEach((t) => {
+            if (t.host) this._syncThumbHostAttrs(t.host, cs);
+          });
+        }, 120);
+      };
+      window.addEventListener('tweakchange', this._onTweakChange);
+      this._snapshotAuthorCss();
+      // Build the rail now that it's enabled — slotchange already fired,
+      // so _renderRail's early-return skipped the initial build.
+      this._syncRailHidden();
+      this._renderRail();
+      this._fit();
+    }
+
+    /** Snapshot document stylesheets into a constructable sheet that each
+     *  thumbnail's nested shadow root adopts — so author CSS styles the
+     *  cloned slide content without touching this component's chrome.
+     *  Cross-origin sheets throw on .cssRules — skip them. Re-callable:
+     *  the existing constructable sheet is reused via replaceSync so every
+     *  already-adopted shadow root picks up the fresh CSS without re-adopt. */
+    _snapshotAuthorCss() {
+      // :root in an adopted sheet inside a shadow root matches nothing
+      // (only the document root qualifies), so author rules like
+      // `:root[data-voice="modern"] .serif` never reach the clones.
+      // Rewrite :root → :host and mirror <html>'s data-*/class/lang onto
+      // each thumb host (see _syncThumbHostAttrs) so the same selectors
+      // match inside the thumbnail's shadow tree.
+      const authorCss = Array.from(document.styleSheets).map((sh) => {
+        try {
+          return Array.from(sh.cssRules).map((r) => r.cssText).join('\n');
+        } catch (e) { return ''; }
+      }).join('\n')
+        // The shadow host is featureless outside the functional :host(...)
+        // form, so any compound on :root — [attr], .class, #id, :pseudo —
+        // must become :host(<compound>) not :host<compound>. Same for the
+        // html type selector (Tailwind class-strategy dark mode emits
+        // html.dark; Pico uses html[data-theme]), which has nothing to
+        // match inside the thumb's shadow tree.
+        .replace(/:root((?:\[[^\]]*\]|[.#][-\w]+|:[-\w]+(?:\([^)]*\))?)+)/g, ':host($1)')
+        .replace(/:root\b/g, ':host')
+        .replace(/(^|[\s,>~+(}])html((?:\[[^\]]*\]|[.#][-\w]+|:[-\w]+(?:\([^)]*\))?)+)(?![-\w])/g, '$1:host($2)')
+        .replace(/(^|[\s,>~+(}])html(?![-\w])/g, '$1:host');
+      // Every custom property the author references. _syncThumbHostAttrs
+      // mirrors each one's *computed* value at <deck-stage> onto the
+      // thumb host so the live value wins over the :host default above
+      // regardless of which ancestor the tweak wrote to (<html>, <body>,
+      // a wrapper div, or the deck-stage element itself all inherit
+      // down to getComputedStyle(this)).
+      this._authorVars = new Set(authorCss.match(/--[\w-]+/g) || []);
+      try {
+        if (!this._adoptedSheet) this._adoptedSheet = new CSSStyleSheet();
+        this._adoptedSheet.replaceSync(authorCss);
+      } catch (e) {
+        this._adoptedSheet = null;
+        this._authorCss = authorCss;
+      }
+    }
+
+    _syncThumbHostAttrs(host, cs) {
+      const de = document.documentElement;
+      // setAttribute overwrites but can't delete — an attr removed from
+      // <html> (toggleAttribute off, classList emptied) would linger on
+      // the host and :host([data-*]) / :host(.foo) rules would keep
+      // matching. Remove stale mirrored attrs first; iterate backward
+      // because removeAttribute mutates the live NamedNodeMap.
+      for (let i = host.attributes.length - 1; i >= 0; i--) {
+        const n = host.attributes[i].name;
+        if ((n.startsWith('data-') || n === 'class' || n === 'lang')
+            && !de.hasAttribute(n)) {
+          host.removeAttribute(n);
+        }
+      }
+      for (const a of de.attributes) {
+        if (a.name.startsWith('data-') || a.name === 'class' || a.name === 'lang') {
+          host.setAttribute(a.name, a.value);
+        }
+      }
+      // The :root→:host rewrite in _snapshotAuthorCss pins each custom
+      // property to its stylesheet default on the thumb host, shadowing
+      // the live value that would otherwise inherit. Tweaks can write the
+      // live value on any ancestor — <html>, <body>, a wrapper div, the
+      // deck-stage element — so read it as the *computed* value at
+      // <deck-stage> (which sees the whole inheritance chain) rather than
+      // trying to guess which element the author wrote to. Inline on the
+      // host beats the :host{} rule. remove-stale covers vars dropped
+      // from the stylesheet between snapshots.
+      const vars = this._authorVars || new Set();
+      for (let i = host.style.length - 1; i >= 0; i--) {
+        const p = host.style[i];
+        if (p.startsWith('--') && !vars.has(p)) host.style.removeProperty(p);
+      }
+      const live = cs || getComputedStyle(this);
+      vars.forEach((p) => {
+        const v = live.getPropertyValue(p);
+        if (v) host.style.setProperty(p, v.trim());
+        else host.style.removeProperty(p);
+      });
+    }
+
+    disconnectedCallback() {
+      window.removeEventListener('keydown', this._onKey);
+      window.removeEventListener('resize', this._onResize);
+      window.removeEventListener('mousemove', this._onMouseMove);
+      window.removeEventListener('message', this._onMessage);
+      window.removeEventListener('click', this._onDocClick, true);
+      if (this._hideTimer) clearTimeout(this._hideTimer);
+      if (this._mouseIdleTimer) clearTimeout(this._mouseIdleTimer);
+      if (this._liveTimer) clearTimeout(this._liveTimer);
+      if (this._tweakTimer) clearTimeout(this._tweakTimer);
+      if (this._railAnimTimer) clearTimeout(this._railAnimTimer);
+      if (this._scaleRaf) cancelAnimationFrame(this._scaleRaf);
+      if (this._liveObserver) this._liveObserver.disconnect();
+      if (this._railObserver) this._railObserver.disconnect();
+      if (this._onTweakChange) window.removeEventListener('tweakchange', this._onTweakChange);
+    }
+
+    attributeChangedCallback() {
+      if (this._canvas) {
+        this._canvas.style.width = this.designWidth + 'px';
+        this._canvas.style.height = this.designHeight + 'px';
+        this._canvas.style.setProperty('--deck-design-w', this.designWidth + 'px');
+        this._canvas.style.setProperty('--deck-design-h', this.designHeight + 'px');
+        if (this._rail) {
+          this._rail.style.setProperty('--deck-aspect', this.designWidth + '/' + this.designHeight);
+        }
+        this._fit();
+        this._scaleThumbs();
+        this._syncPrintPageRule();
+      }
+    }
+
+    _render() {
+      const style = document.createElement('style');
+      style.textContent = stylesheet;
+
+      const stage = document.createElement('div');
+      stage.className = 'stage';
+
+      const canvas = document.createElement('div');
+      canvas.className = 'canvas';
+      canvas.style.width = this.designWidth + 'px';
+      canvas.style.height = this.designHeight + 'px';
+      canvas.style.setProperty('--deck-design-w', this.designWidth + 'px');
+      canvas.style.setProperty('--deck-design-h', this.designHeight + 'px');
+
+      const slot = document.createElement('slot');
+      slot.addEventListener('slotchange', this._onSlotChange);
+      canvas.appendChild(slot);
+      stage.appendChild(canvas);
+
+      // Tap zones (mobile): left third = back, right third = forward.
+      const tapzones = document.createElement('div');
+      tapzones.className = 'tapzones export-hidden';
+      tapzones.setAttribute('aria-hidden', 'true');
+      tapzones.setAttribute('data-noncommentable', '');
+      const tzBack = document.createElement('div');
+      tzBack.className = 'tapzone tapzone--back';
+      const tzMid = document.createElement('div');
+      tzMid.className = 'tapzone tapzone--mid';
+      tzMid.style.pointerEvents = 'none';
+      const tzFwd = document.createElement('div');
+      tzFwd.className = 'tapzone tapzone--fwd';
+      tzBack.addEventListener('click', this._onTapBack);
+      tzFwd.addEventListener('click', this._onTapForward);
+      tapzones.append(tzBack, tzMid, tzFwd);
+
+      // Overlay: compact, solid black, with clickable controls.
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay export-hidden';
+      overlay.setAttribute('role', 'toolbar');
+      overlay.setAttribute('aria-label', 'Deck controls');
+      overlay.setAttribute('data-noncommentable', '');
+      overlay.innerHTML = `
+        <button class="btn prev" type="button" aria-label="Previous slide" title="Previous (←)">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>
+        </button>
+        <span class="count" aria-live="polite"><span class="current">1</span><span class="sep">/</span><span class="total">1</span></span>
+        <button class="btn next" type="button" aria-label="Next slide" title="Next (→)">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg>
+        </button>
+        <span class="divider"></span>
+        <button class="btn reset" type="button" aria-label="Reset to first slide" title="Reset (R)">Reset<span class="kbd">R</span></button>
+      `;
+
+      overlay.querySelector('.prev').addEventListener('click', () => this._advance(-1, 'click'));
+      overlay.querySelector('.next').addEventListener('click', () => this._advance(1, 'click'));
+      overlay.querySelector('.reset').addEventListener('click', () => this._go(0, 'click'));
+
+      // Thumbnail rail + context menu. Thumbnails are populated in
+      // _renderRail() after _collectSlides().
+      const rail = document.createElement('div');
+      rail.className = 'rail export-hidden';
+      rail.setAttribute('data-noncommentable', '');
+      rail.style.setProperty('--deck-aspect', this.designWidth + '/' + this.designHeight);
+      // Edge auto-scroll while dragging a thumb near the rail's top/bottom
+      // so off-screen drop targets are reachable. Native dragover fires
+      // continuously while the pointer is stationary, so a per-event nudge
+      // (ramped by edge proximity) is enough — no rAF loop needed.
+      rail.addEventListener('dragover', (e) => {
+        if (this._dragFrom == null) return;
+        const r = rail.getBoundingClientRect();
+        const EDGE = 40;
+        const dt = e.clientY - r.top;
+        const db = r.bottom - e.clientY;
+        if (dt < EDGE) rail.scrollTop -= Math.ceil((EDGE - dt) / 3);
+        else if (db < EDGE) rail.scrollTop += Math.ceil((EDGE - db) / 3);
+      });
+
+      const menu = document.createElement('div');
+      menu.className = 'ctxmenu export-hidden';
+      menu.setAttribute('data-noncommentable', '');
+      menu.innerHTML = `
+        <button type="button" data-act="skip">Skip slide</button>
+        <button type="button" data-act="up">Move up</button>
+        <button type="button" data-act="down">Move down</button>
+        <hr>
+        <button type="button" data-act="delete">Delete slide</button>
+      `;
+      menu.addEventListener('click', (e) => {
+        const act = e.target && e.target.getAttribute && e.target.getAttribute('data-act');
+        if (!act) return;
+        const i = this._menuIndex;
+        this._closeMenu();
+        if (act === 'skip') this._toggleSkip(i);
+        else if (act === 'up') this._moveSlide(i, i - 1);
+        else if (act === 'down') this._moveSlide(i, i + 1);
+        else if (act === 'delete') this._openConfirm(i);
+      });
+      menu.addEventListener('contextmenu', (e) => e.preventDefault());
+
+      // Rail resize handle — drag to set --deck-rail-w, persisted to
+      // localStorage so the width survives reloads.
+      const resize = document.createElement('div');
+      resize.className = 'rail-resize export-hidden';
+      resize.setAttribute('data-noncommentable', '');
+      resize.addEventListener('pointerdown', (e) => {
+        e.preventDefault();
+        resize.setPointerCapture(e.pointerId);
+        resize.setAttribute('data-dragging', '');
+        const move = (ev) => this._setRailWidth(ev.clientX);
+        const up = () => {
+          resize.removeEventListener('pointermove', move);
+          resize.removeEventListener('pointerup', up);
+          resize.removeEventListener('pointercancel', up);
+          resize.removeAttribute('data-dragging');
+          try { localStorage.setItem('deck-stage.railWidth', String(this._railPx)); } catch (err) {}
+        };
+        resize.addEventListener('pointermove', move);
+        resize.addEventListener('pointerup', up);
+        resize.addEventListener('pointercancel', up);
+      });
+
+      // Delete-confirm dialog — mirrors the SPA's ConfirmDialog layout.
+      const confirm = document.createElement('div');
+      confirm.className = 'confirm-backdrop export-hidden';
+      confirm.setAttribute('data-noncommentable', '');
+      confirm.innerHTML = `
+        <div class="confirm" role="dialog" aria-modal="true">
+          <div class="body">
+            <div class="title">Delete slide?</div>
+            <div class="msg">This slide will be removed from the deck.</div>
+          </div>
+          <div class="footer">
+            <button type="button" class="cancel">Cancel</button>
+            <button type="button" class="danger">Delete</button>
+          </div>
+        </div>
+      `;
+      confirm.addEventListener('click', (e) => {
+        if (e.target === confirm) this._closeConfirm();
+      });
+      confirm.querySelector('.cancel').addEventListener('click', () => this._closeConfirm());
+      confirm.querySelector('.danger').addEventListener('click', () => {
+        const i = this._confirmIndex;
+        this._closeConfirm();
+        this._deleteSlide(i);
+      });
+
+      this._root.append(style, rail, resize, stage, tapzones, overlay, menu, confirm);
+      this._canvas = canvas;
+      this._slot = slot;
+      this._overlay = overlay;
+      this._tapzones = tapzones;
+      this._rail = rail;
+      this._resize = resize;
+      this._menu = menu;
+      this._confirm = confirm;
+      this._countEl = overlay.querySelector('.current');
+      this._totalEl = overlay.querySelector('.total');
+
+      // Restore persisted rail width.
+      let rw = 188;
+      try {
+        const s = localStorage.getItem('deck-stage.railWidth');
+        if (s) rw = parseInt(s, 10) || rw;
+      } catch (err) {}
+      this._setRailWidth(rw);
+      this._syncRailHidden();
+    }
+
+    _setRailWidth(px) {
+      const w = Math.max(120, Math.min(360, Math.round(px)));
+      this._railPx = w;
+      this.style.setProperty('--deck-rail-w', w + 'px');
+      this._fit();
+      // _scaleThumbs forces a sync layout (frame.offsetWidth) then writes
+      // N transforms. During a resize drag this runs per-pointermove;
+      // coalesce to one per frame.
+      if (!this._scaleRaf) {
+        this._scaleRaf = requestAnimationFrame(() => {
+          this._scaleRaf = null;
+          this._scaleThumbs();
+        });
+      }
+    }
+
+    /** @page must live in the document stylesheet — it's a no-op inside
+     *  shadow DOM. Inject/update a single <head> style tag so the print
+     *  sheet matches the design size and Save-as-PDF yields one slide per
+     *  page with no margins. */
+    _syncPrintPageRule() {
+      const id = 'deck-stage-print-page';
+      let tag = document.getElementById(id);
+      if (!tag) {
+        tag = document.createElement('style');
+        tag.id = id;
+        document.head.appendChild(tag);
+      }
+      tag.textContent =
+        '@page { size: ' + this.designWidth + 'px ' + this.designHeight + 'px; margin: 0; } ' +
+        '@media print { html, body { margin: 0 !important; padding: 0 !important; background: none !important; overflow: visible !important; height: auto !important; } ' +
+        '* { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }';
+    }
+
+    _onSlotChange() {
+      // Rail mutations (delete/move) already reconcile synchronously and
+      // emit slidechange with reason 'api'; skip the async slotchange that
+      // would otherwise re-broadcast with reason 'init'.
+      if (this._squelchSlotChange) { this._squelchSlotChange = false; return; }
+      this._collectSlides();
+      this._restoreIndex();
+      this._applyIndex({ showOverlay: false, broadcast: true, reason: 'init' });
+      this._fit();
+    }
+
+    _collectSlides() {
+      const assigned = this._slot.assignedElements({ flatten: true });
+      this._slides = assigned.filter((el) => {
+        // Skip template/style/script nodes even if someone slots them.
+        const tag = el.tagName;
+        return tag !== 'TEMPLATE' && tag !== 'SCRIPT' && tag !== 'STYLE';
+      });
+      this._slideSet = new Set(this._slides);
+
+      this._slides.forEach((slide, i) => {
+        const n = i + 1;
+        slide.setAttribute('data-screen-label', `${pad2(n)} ${getSlideLabel(slide)}`);
+
+        // Validation attribute for comment flow / auto-checks.
+        if (!slide.hasAttribute('data-om-validate')) {
+          slide.setAttribute('data-om-validate', VALIDATE_ATTR);
+        }
+
+        slide.setAttribute('data-deck-slide', String(i));
+      });
+
+      if (this._totalEl) this._totalEl.textContent = String(this._slides.length || 1);
+      if (this._index >= this._slides.length) this._index = Math.max(0, this._slides.length - 1);
+      this._markLastVisible();
+      this._renderRail();
+    }
+
+    /** Tag the last non-skipped slide so print CSS can drop its
+     *  break-after (see the @media print comment above — :last-child
+     *  alone matches a hidden skipped slide). */
+    _markLastVisible() {
+      let last = null;
+      this._slides.forEach((s) => {
+        s.removeAttribute('data-deck-last-visible');
+        if (!s.hasAttribute('data-deck-skip')) last = s;
+      });
+      if (last) last.setAttribute('data-deck-last-visible', '');
+    }
+
+    _loadNotes() {
+      const tag = document.getElementById('speaker-notes');
+      if (!tag) { this._notes = []; return; }
+      try {
+        const parsed = JSON.parse(tag.textContent || '[]');
+        if (Array.isArray(parsed)) this._notes = parsed;
+      } catch (e) {
+        console.warn('[deck-stage] Failed to parse #speaker-notes JSON:', e);
+        this._notes = [];
+      }
+    }
+
+    _restoreIndex() {
+      // The host's ?slide= param is delivered as a #<int> hash (1-indexed) on
+      // the iframe src. No hash → slide 1; the deck itself keeps no position
+      // state across loads.
+      const h = (location.hash || '').match(/^#(\d+)$/);
+      if (h) {
+        const n = parseInt(h[1], 10) - 1;
+        if (n >= 0 && n < this._slides.length) this._index = n;
+      }
+    }
+
+    _applyIndex({ showOverlay = true, broadcast = true, reason = 'init' } = {}) {
+      if (!this._slides.length) return;
+      const prev = this._prevIndex == null ? -1 : this._prevIndex;
+      const curr = this._index;
+      // Keep the iframe's own hash in sync so an in-iframe location.reload()
+      // (reload banner path in viewer-handle.ts) lands on the current slide,
+      // not the stale deep-link hash from initial load.
+      try { history.replaceState(null, '', '#' + (curr + 1)); } catch (e) {}
+      this._slides.forEach((s, i) => {
+        if (i === curr) s.setAttribute('data-deck-active', '');
+        else s.removeAttribute('data-deck-active');
+      });
+      if (this._countEl) this._countEl.textContent = String(curr + 1);
+      // Follow-scroll on every navigation (init deep-link, keyboard, click,
+      // tap, external goTo) — the only time we *don't* want the rail to
+      // track current is after a rail-internal mutation, where _renderRail
+      // has already restored the user's scroll position and yanking back to
+      // current would undo it.
+      this._syncRail(reason !== 'mutation');
+
+      if (broadcast) {
+        // (1) Legacy: host-window postMessage for speaker-notes renderers.
+        try { window.postMessage({ slideIndexChanged: curr, deckTotal: this._slides.length, deckSkipped: this._skippedIndices() }, '*'); } catch (e) {}
+
+        // (2) In-page CustomEvent on the <deck-stage> element itself.
+        //     Bubbles and composes out of shadow DOM so slide code can listen:
+        //       document.querySelector('deck-stage').addEventListener('slidechange', e => {
+        //         e.detail.index, e.detail.previousIndex, e.detail.total, e.detail.slide, e.detail.reason
+        //       });
+        const detail = {
+          index: curr,
+          previousIndex: prev,
+          total: this._slides.length,
+          slide: this._slides[curr] || null,
+          previousSlide: prev >= 0 ? (this._slides[prev] || null) : null,
+          reason: reason, // 'init' | 'keyboard' | 'click' | 'tap' | 'api'
+        };
+        this.dispatchEvent(new CustomEvent('slidechange', {
+          detail,
+          bubbles: true,
+          composed: true,
+        }));
+      }
+
+      this._prevIndex = curr;
+      if (showOverlay) this._flashOverlay();
+    }
+
+    _flashOverlay() {
+      // Host posts __omelette_presenting while in fullscreen/tab presentation
+      // mode — suppress the nav footer entirely (both hover and slide-change
+      // flash) so the audience sees clean slides.
+      if (!this._overlay || this._presenting) return;
+      this._overlay.setAttribute('data-visible', '');
+      if (this._hideTimer) clearTimeout(this._hideTimer);
+      this._hideTimer = setTimeout(() => {
+        this._overlay.removeAttribute('data-visible');
+      }, OVERLAY_HIDE_MS);
+    }
+
+    _railWidth() {
+      // State-based, no offsetWidth: the first _fit() can run before the
+      // rail has had layout on some load paths, and a 0 there paints the
+      // slide full-width for one frame before the post-slotchange _fit()
+      // corrects it.
+      if (!this._railEnabled || !this._railVisible || this.hasAttribute('no-rail')
+          || this.hasAttribute('noscale') || this._presenting || this._previewMode) return 0;
+      return this._railPx || 0;
+    }
+
+    _fit() {
+      if (!this._canvas) return;
+      const stage = this._canvas.parentElement;
+      // PPTX export sets noscale so the DOM capture sees authored-size
+      // geometry — the scaled canvas is in shadow DOM, so the exporter's
+      // resetTransformSelector can't reach .canvas.style.transform directly.
+      if (this.hasAttribute('noscale')) {
+        this._canvas.style.transform = 'none';
+        if (stage) stage.style.left = '0';
+        if (this._overlay) this._overlay.style.marginLeft = '0';
+        if (this._tapzones) this._tapzones.style.left = '0';
+        return;
+      }
+      const rw = this._railWidth();
+      if (stage) stage.style.left = rw + 'px';
+      // Overlay is centred on the viewport via left:50% + translate(-50%);
+      // marginLeft shifts the centre by rw/2 so it lands in the middle of
+      // the [rw, innerWidth] stage region. Tapzones just inset from rw.
+      if (this._overlay) this._overlay.style.marginLeft = (rw / 2) + 'px';
+      if (this._tapzones) this._tapzones.style.left = rw + 'px';
+      const vw = window.innerWidth - rw;
+      const vh = window.innerHeight;
+      const s = Math.min(vw / this.designWidth, vh / this.designHeight);
+      this._canvas.style.transform = `scale(${s})`;
+    }
+
+    _onResize() { this._fit(); }
+
+    _onMouseMove() {
+      // Keep overlay visible while mouse moves; hide after idle.
+      this._flashOverlay();
+    }
+
+    _onMessage(e) {
+      const d = e.data;
+      if (d && typeof d.__omelette_presenting === 'boolean') {
+        this._presenting = d.__omelette_presenting;
+        if (this._presenting && this._overlay) {
+          this._overlay.removeAttribute('data-visible');
+          if (this._hideTimer) clearTimeout(this._hideTimer);
+        }
+        this._syncRailHidden();
+        this._closeMenu();
+        this._closeConfirm();
+        this._fit();
+        this._scaleThumbs();
+      }
+      // Host's Preview segment (ViewerMode='none'): the rail's drag-reorder /
+      // right-click skip-delete affordances are editing chrome, so hide it
+      // while the user is just looking at the deck. Same hard-hide path as
+      // presenting; independent of the user's _railVisible preference so
+      // returning to Edit restores whatever they had.
+      if (d && typeof d.__omelette_preview_mode === 'boolean') {
+        if (d.__omelette_preview_mode === this._previewMode) return;
+        this._previewMode = d.__omelette_preview_mode;
+        this._syncRailHidden();
+        this._closeMenu();
+        this._closeConfirm();
+        this._fit();
+        this._scaleThumbs();
+      }
+      // Per-viewer show/hide, driven by the TweaksPanel's auto-injected
+      // "Thumbnail rail" toggle (or any author script). Independent of
+      // whether the Tweaks panel itself is open — closing the panel
+      // doesn't change rail visibility. Persists alongside rail width.
+      if (d && d.type === '__deck_rail_visible' && typeof d.on === 'boolean') {
+        if (d.on === this._railVisible) return;
+        this._railVisible = d.on;
+        try { localStorage.setItem('deck-stage.railVisible', d.on ? '1' : '0'); } catch (e) {}
+        // Arm the transition, commit it, then flip state — otherwise the
+        // browser coalesces both writes and nothing animates on show.
+        this.setAttribute('data-rail-anim', '');
+        void (this._rail && this._rail.offsetHeight);
+        this._syncRailHidden();
+        this._fit();
+        this._scaleThumbs();
+        clearTimeout(this._railAnimTimer);
+        this._railAnimTimer = setTimeout(() => this.removeAttribute('data-rail-anim'), 220);
+      }
+      if (d && d.type === '__omelette_rail_enabled') this._enableRail();
+    }
+
+    _syncRailHidden() {
+      if (!this._rail) return;
+      // data-presenting is the hard hide (display:none) for flag-off,
+      // presentation mode, and the host's Preview segment — instant, no
+      // transition. data-user-hidden is the soft hide (translateX(-100%))
+      // for the viewer's rail toggle, so show/hide slides under
+      // :host([data-rail-anim]).
+      const hard = !this._railEnabled || this._presenting || this._previewMode;
+      if (hard) this._rail.setAttribute('data-presenting', '');
+      else this._rail.removeAttribute('data-presenting');
+      if (!this._railVisible) this._rail.setAttribute('data-user-hidden', '');
+      else this._rail.removeAttribute('data-user-hidden');
+      // translateX hide leaves thumbs (tabIndex=0) in the tab order —
+      // inert keeps them unfocusable while the rail is off-screen.
+      this._rail.inert = hard || !this._railVisible;
+    }
+
+    _onTapBack(e) {
+      e.preventDefault();
+      this._advance(-1, 'tap');
+    }
+
+    _onTapForward(e) {
+      e.preventDefault();
+      this._advance(1, 'tap');
+    }
+
+    _onKey(e) {
+      // Ignore when the user is typing.
+      const t = e.target;
+      if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+      // Confirm dialog swallows nav keys while open; Escape cancels. Enter
+      // is left to the focused button's native activation so Tab→Cancel
+      // →Enter activates Cancel, not the window-level confirm path.
+      if (this._confirm && this._confirm.hasAttribute('data-open')) {
+        if (e.key === 'Escape') { this._closeConfirm(); e.preventDefault(); }
+        return;
+      }
+      if (e.key === 'Escape' && this._menu && this._menu.hasAttribute('data-open')) {
+        this._closeMenu();
+        e.preventDefault();
+        return;
+      }
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+      const key = e.key;
+      let handled = true;
+
+      if (key === 'ArrowRight' || key === 'PageDown' || key === ' ' || key === 'Spacebar') {
+        this._advance(1, 'keyboard');
+      } else if (key === 'ArrowLeft' || key === 'PageUp') {
+        this._advance(-1, 'keyboard');
+      } else if (key === 'Home') {
+        this._go(0, 'keyboard');
+      } else if (key === 'End') {
+        this._go(this._slides.length - 1, 'keyboard');
+      } else if (key === 'r' || key === 'R') {
+        this._go(0, 'keyboard');
+      } else if (/^[0-9]$/.test(key)) {
+        // 1..9 jump to that slide; 0 jumps to 10.
+        const n = key === '0' ? 9 : parseInt(key, 10) - 1;
+        if (n < this._slides.length) this._go(n, 'keyboard');
+      } else {
+        handled = false;
+      }
+
+      if (handled) {
+        e.preventDefault();
+        this._flashOverlay();
+      }
+    }
+
+    _go(i, reason = 'api') {
+      if (!this._slides.length) return;
+      const clamped = Math.max(0, Math.min(this._slides.length - 1, i));
+      if (clamped === this._index) {
+        this._flashOverlay();
+        return;
+      }
+      this._index = clamped;
+      this._applyIndex({ showOverlay: true, broadcast: true, reason });
+    }
+
+    /** Step forward/back skipping any slide marked data-deck-skip. Falls
+     *  back to _go's clamp-at-ends behaviour (flash overlay) when there's
+     *  nothing further in that direction. */
+    _advance(dir, reason) {
+      if (!this._slides.length) return;
+      let i = this._index + dir;
+      while (i >= 0 && i < this._slides.length && this._slides[i].hasAttribute('data-deck-skip')) {
+        i += dir;
+      }
+      if (i < 0 || i >= this._slides.length) { this._flashOverlay(); return; }
+      this._go(i, reason);
+    }
+
+    // ── Thumbnail rail ────────────────────────────────────────────────────
+    //
+    // Thumbs are keyed by slide element and reused across _renderRail()
+    // calls, so a reorder/delete is an O(changed) DOM shuffle instead of an
+    // O(N) teardown-and-re-clone. Each thumb starts as a lightweight shell
+    // (num + empty frame); the clone is materialized lazily by an
+    // IntersectionObserver when the frame scrolls into (or near) view, so
+    // only visible-ish slides pay the clone + image-decode cost.
+
+    _renderRail() {
+      if (!this._rail || !this._railEnabled) { this._thumbs = []; return; }
+      // FLIP: record each *materialized* thumb's top before the reconcile.
+      // Off-screen (non-materialized) thumbs don't need the animation and
+      // skipping their getBoundingClientRect saves a forced layout per
+      // off-screen thumb on large decks.
+      const prevTops = new Map();
+      (this._thumbs || []).forEach(({ thumb, slide, host }) => {
+        if (host) prevTops.set(slide, thumb.getBoundingClientRect().top);
+      });
+      const st = this._rail.scrollTop;
+
+      // Reconcile: reuse thumbs that already exist for a slide, create
+      // shells for new slides, drop thumbs for removed slides.
+      const bySlide = new Map();
+      (this._thumbs || []).forEach((t) => bySlide.set(t.slide, t));
+      const next = [];
+      this._slides.forEach((slide) => {
+        let t = bySlide.get(slide);
+        if (t) bySlide.delete(slide);
+        else t = this._makeThumb(slide);
+        next.push(t);
+      });
+      // Orphans — slides removed since last render.
+      bySlide.forEach((t) => {
+        if (this._railObserver) this._railObserver.unobserve(t.frame);
+        t.thumb.remove();
+      });
+      // Put thumbs into document order to match _slides. insertBefore on
+      // an already-correctly-placed node is a no-op, so this is cheap
+      // when nothing moved.
+      next.forEach((t, i) => {
+        const want = t.thumb;
+        const at = this._rail.children[i];
+        if (at !== want) this._rail.insertBefore(want, at || null);
+        t.i = i;
+        t.num.textContent = String(i + 1);
+        if (t.slide.hasAttribute('data-deck-skip')) t.thumb.setAttribute('data-skip', '');
+        else t.thumb.removeAttribute('data-skip');
+      });
+      this._thumbs = next;
+
+      this._rail.scrollTop = st;
+      if (prevTops.size) {
+        const moved = [];
+        this._thumbs.forEach(({ thumb, slide }) => {
+          const old = prevTops.get(slide);
+          if (old == null) return;
+          const dy = old - thumb.getBoundingClientRect().top;
+          if (Math.abs(dy) < 1) return;
+          thumb.style.transition = 'none';
+          thumb.style.transform = `translateY(${dy}px)`;
+          moved.push(thumb);
+        });
+        if (moved.length) {
+          // Commit the inverted positions before flipping the transition
+          // on — otherwise the browser coalesces both style writes and
+          // nothing animates.
+          void this._rail.offsetHeight;
+          moved.forEach((t) => {
+            t.style.transition = 'transform 180ms cubic-bezier(.2,.7,.3,1)';
+            t.style.transform = '';
+          });
+          setTimeout(() => moved.forEach((t) => { t.style.transition = ''; }), 220);
+        }
+      }
+      requestAnimationFrame(() => this._scaleThumbs());
+      this._syncRail(false);
+    }
+
+    /** Create a lightweight thumb shell for one slide. The clone is
+     *  materialized later by the IntersectionObserver. Event handlers
+     *  look up the thumb's *current* index (via _thumbs.indexOf) so the
+     *  same element can be reused across reorders. */
+    _makeThumb(slide) {
+      const thumb = document.createElement('div');
+      thumb.className = 'thumb';
+      thumb.tabIndex = 0;
+      const num = document.createElement('div');
+      num.className = 'num';
+      const frame = document.createElement('div');
+      frame.className = 'frame';
+      thumb.append(num, frame);
+
+      const entry = { thumb, num, frame, slide, clone: null, host: null, i: -1 };
+      // entry.i is refreshed on every _renderRail reconcile pass, so
+      // handlers read the thumb's current position without an O(N) scan.
+      const idx = () => entry.i;
+
+      thumb.addEventListener('click', () => this._go(idx(), 'click'));
+      // ↑/↓ step through the rail when a thumb has focus. _go clamps at the
+      // ends and _applyIndex→_syncRail scrolls the new current thumb into
+      // view; we move focus to it (preventScroll — _syncRail already
+      // scrolled) so a held key walks the whole list. stopPropagation keeps
+      // this out of the window-level _onKey nav handler.
+      thumb.addEventListener('keydown', (e) => {
+        if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return;
+        if (e.metaKey || e.ctrlKey || e.altKey) return;
+        e.preventDefault();
+        e.stopPropagation();
+        this._go(idx() + (e.key === 'ArrowDown' ? 1 : -1), 'keyboard');
+        const cur = this._thumbs && this._thumbs[this._index];
+        if (cur) cur.thumb.focus({ preventScroll: true });
+      });
+      thumb.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        this._openMenu(idx(), e.clientX, e.clientY);
+      });
+      thumb.draggable = true;
+      thumb.addEventListener('dragstart', (e) => {
+        this._dragFrom = idx();
+        thumb.setAttribute('data-dragging', '');
+        e.dataTransfer.effectAllowed = 'move';
+        try { e.dataTransfer.setData('text/plain', String(this._dragFrom)); } catch (err) {}
+      });
+      thumb.addEventListener('dragend', () => {
+        thumb.removeAttribute('data-dragging');
+        this._clearDrop();
+        this._dragFrom = null;
+      });
+      thumb.addEventListener('dragover', (e) => {
+        if (this._dragFrom == null) return;
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        const r = thumb.getBoundingClientRect();
+        this._setDrop(idx(), e.clientY < r.top + r.height / 2 ? 'before' : 'after');
+      });
+      thumb.addEventListener('drop', (e) => {
+        if (this._dragFrom == null) return;
+        e.preventDefault();
+        const i = idx();
+        const r = thumb.getBoundingClientRect();
+        let to = e.clientY >= r.top + r.height / 2 ? i + 1 : i;
+        if (this._dragFrom < to) to--;
+        const from = this._dragFrom;
+        this._clearDrop();
+        this._dragFrom = null;
+        if (to !== from) this._moveSlide(from, to);
+      });
+
+      if (this._railObserver) this._railObserver.observe(frame);
+      frame.__deckThumb = entry;
+      return entry;
+    }
+
+    /** Lazily build the clone for a thumb that has scrolled into view. */
+    _materialize(entry) {
+      if (entry.host) return;
+      const dw = this.designWidth, dh = this.designHeight;
+      let clone = entry.slide.cloneNode(true);
+      clone.removeAttribute('id');
+      clone.removeAttribute('data-deck-active');
+      clone.querySelectorAll('[id]').forEach((el) => el.removeAttribute('id'));
+      // Neuter heavy media; replace <video> with its poster so the box
+      // keeps a visual. <iframe>/<audio> become empty placeholders.
+      clone.querySelectorAll('iframe, audio, object, embed').forEach((el) => {
+        el.removeAttribute('src');
+        el.removeAttribute('srcdoc');
+        el.removeAttribute('data');
+        el.innerHTML = '';
+      });
+      clone.querySelectorAll('video').forEach((el) => {
+        if (!el.poster) { el.removeAttribute('src'); el.innerHTML = ''; return; }
+        const img = document.createElement('img');
+        img.src = el.poster;
+        img.alt = '';
+        img.style.cssText = el.style.cssText + ';object-fit:cover;width:100%;height:100%;';
+        img.className = el.className;
+        el.replaceWith(img);
+      });
+      // Images: defer decode and let the browser pick the smallest
+      // srcset candidate for the ~140px thumb. Same-URL clones reuse the
+      // slide's decoded bitmap (URL-keyed cache), so the remaining cost
+      // is paint/composite — lazy+async keeps that off the main thread.
+      clone.querySelectorAll('img').forEach((el) => {
+        el.loading = 'lazy';
+        el.decoding = 'async';
+        if (el.srcset) el.sizes = (this._railPx || 188) + 'px';
+      });
+      // Custom elements inside the slide would have their
+      // connectedCallback fire when the clone is appended. Replace them
+      // with inert boxes so a component-heavy deck doesn't run N copies
+      // of each component's mount logic in the rail. Children are
+      // preserved so layout-wrapper elements (<my-column><h2>…</h2>)
+      // still show their authored content; the querySelectorAll NodeList
+      // is static, so nested custom elements in the moved subtree are
+      // still visited on later iterations.
+      const neuter = (el) => {
+        const box = document.createElement('div');
+        box.style.cssText = (el.getAttribute('style') || '') +
+          ';background:rgba(0,0,0,0.06);border:1px dashed rgba(0,0,0,0.15);';
+        box.className = el.className;
+        // Preserve theming/i18n hooks so [data-*] / :lang() / [dir]
+        // descendant selectors still match the neutered root.
+        for (const a of el.attributes) {
+          const n = a.name;
+          if (n.startsWith('data-') || n.startsWith('aria-') ||
+              n === 'lang' || n === 'dir' || n === 'role' || n === 'title') {
+            box.setAttribute(n, a.value);
+          }
+        }
+        while (el.firstChild) box.appendChild(el.firstChild);
+        return box;
+      };
+      // querySelectorAll('*') returns descendants only — a custom-element
+      // slide root (<my-slide>…</my-slide>) would slip through and upgrade
+      // on append. Swap the root first.
+      if (clone.tagName.includes('-')) clone = neuter(clone);
+      clone.querySelectorAll('*').forEach((el) => {
+        if (el.tagName.includes('-')) el.replaceWith(neuter(el));
+      });
+      clone.style.cssText += ';position:absolute;top:0;left:0;transform-origin:0 0;' +
+        'pointer-events:none;width:' + dw + 'px;height:' + dh + 'px;' +
+        'box-sizing:border-box;overflow:hidden;visibility:visible;opacity:1;';
+      const host = document.createElement('div');
+      host.style.cssText = 'position:absolute;inset:0;';
+      this._syncThumbHostAttrs(host);
+      const sr = host.attachShadow({ mode: 'open' });
+      if (this._adoptedSheet) sr.adoptedStyleSheets = [this._adoptedSheet];
+      else {
+        const st = document.createElement('style');
+        st.textContent = this._authorCss || '';
+        sr.appendChild(st);
+      }
+      sr.appendChild(clone);
+      entry.frame.appendChild(host);
+      entry.host = host;
+      entry.clone = clone;
+      if (this._thumbScale) clone.style.transform = 'scale(' + this._thumbScale + ')';
+      // Once materialized the IO callback is a no-op early-return —
+      // unobserve so scroll doesn't keep firing it.
+      if (this._railObserver) this._railObserver.unobserve(entry.frame);
+    }
+
+    /** Re-clone a single thumb (live-update path). No-op if the thumb
+     *  hasn't been materialized yet — it'll pick up current content when
+     *  it scrolls into view. */
+    _refreshThumb(slide) {
+      const entry = (this._thumbs || []).find((t) => t.slide === slide);
+      if (!entry || !entry.host) return;
+      entry.host.remove();
+      entry.host = entry.clone = null;
+      this._materialize(entry);
+    }
+
+    _scaleThumbs() {
+      if (!this._thumbs || !this._thumbs.length) return;
+      // Every frame is the same width; if it reads 0 the rail is
+      // display:none (noscale / no-rail / presenting / print) — leave the
+      // clones as-is and re-run when the rail is revealed.
+      const fw = this._thumbs[0].frame.offsetWidth;
+      if (!fw) return;
+      this._thumbScale = fw / this.designWidth;
+      this._thumbs.forEach(({ clone }) => {
+        if (clone) clone.style.transform = 'scale(' + this._thumbScale + ')';
+      });
+    }
+
+    _setDrop(i, where) {
+      // dragover fires at pointer-event rate; touch only the previous
+      // and new target rather than sweeping all N thumbs.
+      const t = this._thumbs && this._thumbs[i];
+      if (this._dropOn && this._dropOn !== t) {
+        this._dropOn.thumb.removeAttribute('data-drop');
+      }
+      if (t) t.thumb.setAttribute('data-drop', where);
+      this._dropOn = t || null;
+    }
+
+    _clearDrop() {
+      if (this._dropOn) this._dropOn.thumb.removeAttribute('data-drop');
+      this._dropOn = null;
+    }
+
+    _syncRail(follow) {
+      if (!this._thumbs) return;
+      this._thumbs.forEach(({ thumb }, i) => {
+        if (i === this._index) {
+          thumb.setAttribute('data-current', '');
+          if (follow && typeof thumb.scrollIntoView === 'function') {
+            thumb.scrollIntoView({ block: 'nearest' });
+          }
+        } else {
+          thumb.removeAttribute('data-current');
+        }
+      });
+    }
+
+    _openMenu(i, x, y) {
+      if (!this._menu) return;
+      this._menuIndex = i;
+      const slide = this._slides[i];
+      const skip = slide && slide.hasAttribute('data-deck-skip');
+      this._menu.querySelector('[data-act="skip"]').textContent = skip ? 'Unskip slide' : 'Skip slide';
+      this._menu.querySelector('[data-act="up"]').disabled = i <= 0;
+      this._menu.querySelector('[data-act="down"]').disabled = i >= this._slides.length - 1;
+      this._menu.querySelector('[data-act="delete"]').disabled = this._slides.length <= 1;
+      // Place, then clamp to viewport after it's measurable.
+      this._menu.style.left = x + 'px';
+      this._menu.style.top = y + 'px';
+      this._menu.setAttribute('data-open', '');
+      const r = this._menu.getBoundingClientRect();
+      const nx = Math.min(x, window.innerWidth - r.width - 4);
+      const ny = Math.min(y, window.innerHeight - r.height - 4);
+      this._menu.style.left = Math.max(4, nx) + 'px';
+      this._menu.style.top = Math.max(4, ny) + 'px';
+    }
+
+    _closeMenu() {
+      if (this._menu) this._menu.removeAttribute('data-open');
+      this._menuIndex = -1;
+    }
+
+    _openConfirm(i) {
+      if (!this._confirm) return;
+      this._confirmIndex = i;
+      this._confirm.querySelector('.title').textContent = 'Delete slide ' + (i + 1) + '?';
+      this._confirm.setAttribute('data-open', '');
+      const btn = this._confirm.querySelector('.danger');
+      if (btn && btn.focus) btn.focus();
+    }
+
+    _closeConfirm() {
+      if (this._confirm) this._confirm.removeAttribute('data-open');
+      this._confirmIndex = -1;
+    }
+
+    _emitDeckChange(detail) {
+      this.dispatchEvent(new CustomEvent('deckchange', {
+        detail, bubbles: true, composed: true,
+      }));
+    }
+
+    _deleteSlide(i) {
+      const slide = this._slides[i];
+      if (!slide || this._slides.length <= 1) return;
+      const wasCurrent = i === this._index;
+      if (i < this._index || (wasCurrent && i === this._slides.length - 1)) this._index--;
+      this._squelchSlotChange = true;
+      slide.remove();
+      this._emitDeckChange({ action: 'delete', from: i, slide });
+      this._collectSlides();
+      this._applyIndex({ showOverlay: true, broadcast: true, reason: 'mutation' });
+    }
+
+    _toggleSkip(i) {
+      const slide = this._slides[i];
+      if (!slide) return;
+      const on = !slide.hasAttribute('data-deck-skip');
+      if (on) slide.setAttribute('data-deck-skip', '');
+      else slide.removeAttribute('data-deck-skip');
+      if (this._thumbs && this._thumbs[i]) {
+        if (on) this._thumbs[i].thumb.setAttribute('data-skip', '');
+        else this._thumbs[i].thumb.removeAttribute('data-skip');
+      }
+      this._markLastVisible();
+      this._emitDeckChange({ action: on ? 'skip' : 'unskip', from: i, slide });
+      // Re-broadcast so the presenter popup's prev/next thumbnails re-pick
+      // the nearest non-skipped slide without waiting for a nav event.
+      try { window.postMessage({ slideIndexChanged: this._index, deckTotal: this._slides.length, deckSkipped: this._skippedIndices() }, '*'); } catch (e) {}
+    }
+
+    _skippedIndices() {
+      const out = [];
+      for (let i = 0; i < this._slides.length; i++) {
+        if (this._slides[i].hasAttribute('data-deck-skip')) out.push(i);
+      }
+      return out;
+    }
+
+    _moveSlide(i, j) {
+      if (j < 0 || j >= this._slides.length || j === i) return;
+      const slide = this._slides[i];
+      const ref = j < i ? this._slides[j] : this._slides[j].nextSibling;
+      // Track the active slide across the reorder so the same content
+      // stays on screen.
+      const cur = this._index;
+      if (cur === i) this._index = j;
+      else if (i < cur && j >= cur) this._index = cur - 1;
+      else if (i > cur && j <= cur) this._index = cur + 1;
+      this._squelchSlotChange = true;
+      this.insertBefore(slide, ref);
+      this._emitDeckChange({ action: 'move', from: i, to: j, slide });
+      this._collectSlides();
+      this._applyIndex({ showOverlay: false, broadcast: true, reason: 'mutation' });
+    }
+
+    // Public API ------------------------------------------------------------
+
+    /** Current slide index (0-based). */
+    get index() { return this._index; }
+    /** Total slide count. */
+    get length() { return this._slides.length; }
+    /** Programmatically navigate. */
+    goTo(i) { this._go(i, 'api'); }
+    next() { this._advance(1, 'api'); }
+    prev() { this._advance(-1, 'api'); }
+    reset() { this._go(0, 'api'); }
+  }
+
+  if (!customElements.get('deck-stage')) {
+    customElements.define('deck-stage', DeckStage);
+  }
+})();
+
+</script>
+<script>
+
+(function() {
+  function wire() {
+    var btn = document.getElementById('pinkham-play');
+    var audio = document.getElementById('pinkham-audio');
+    if (!btn || !audio) return;
+    var playIcon = "<svg viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M8 5.5v13l11-6.5-11-6.5z\" fill=\"#b8674e\"/></svg>";
+    var pauseIcon = "<svg viewBox=\"0 0 24 24\" fill=\"none\"><rect x=\"6\" y=\"5\" width=\"4\" height=\"14\" rx=\"1\" fill=\"#b8674e\"/><rect x=\"14\" y=\"5\" width=\"4\" height=\"14\" rx=\"1\" fill=\"#b8674e\"/></svg>";
+    btn.addEventListener('click', function() {
+      if (audio.paused) { audio.play(); btn.innerHTML = pauseIcon; }
+      else { audio.pause(); btn.innerHTML = playIcon; }
+    });
+    audio.addEventListener('ended', function() { btn.innerHTML = playIcon; });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', wire);
+  } else { wire(); }
+})();
+
+</script>
+</body>
+</html>

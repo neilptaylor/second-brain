@@ -118,3 +118,10 @@ Totals, one parent: A 6, B 8, C 8, D 9 to 11. Two parents: A 12, B 15, C 14, D 1
 2. Clips and audiograms are not costed at all. Needs writing into the editor brief per chapter, then a price agreed.
 3. Overheads, tools and subscriptions are not yet real numbers, so profit and cash lines read too good.
 4. Overages are not in the standard prices. Jodie charges £1.50 per minute of raw beyond 6 hours.
+
+## Instalments and clips (added 9 October 2026, Neil)
+
+- **Instalment plan:** 3 months, with a 2.5% surcharge on the price. The 10 September Sturgess drafts used 5%, so treat 2.5% as current. Total split into three, the last payment takes the rounding penny.
+- **Target price may be rounded** to the nearest £100 for a close. Sturgess Hero Story: LIST £6,200, TARGET £5,900 (5% would be £5,890). Check the rounded figure still clears the 7.5% floor (£5,735) and the 50% margin before using it.
+- **"Audiograms" are audio clips.** Three clips take about 30 minutes with Claude. This partly answers open item 2 above (clips uncosted), but a price has not been agreed.
+
