@@ -62,10 +62,10 @@ Facts:
 
 When Neil says "Hormozi", read all of these, never one alone:
 
-1. **The books** (PDFs, Drive `My Drive/Ex-FounderOS/02 Hormozi Books/`): `$100M Offers`, `100M Leads Guide`, `$100M Playbook Lead Nurture`. Extract with `pdftotext`. The books own the frameworks: value equation, Grand Slam Offer, scarcity, urgency, bonuses, guarantees, naming, referrals.
+1. **The books** (PDFs, Drive `My Drive/Ex-FounderOS/02 Hormozi Books/`): `$100M Offers`, `100M Leads Guide`, `$100M Playbook Lead Nurture`, `$100M Money Models` (added 12 Oct 2026; the books also own the Money Models frameworks: upsells, downsells, continuity, attraction offers). Extract with `pdftotext`. The books own the frameworks: value equation, Grand Slam Offer, scarcity, urgency, bonuses, guarantees, naming, referrals.
 2. **The proposal techniques doc**: `knowledge/hormozi/hormozi-techniques.md`. Use it as the checklist an offer gets scored against.
 3. **The YouTube corpus**: the `alex-hormozi-youtube` skill. It owns current tactics and numbers, cited with video date and timestamp. Check the `speaker` field, never credit a guest's point to Hormozi.
-4. **$100M Money Models** is not on this machine yet. Say so in any review until it is.
+4. **Money Models digest**: `knowledge/hormozi/100m-money-models.md` is the working summary, read this first. The full PDF is in the Drive books folder (file ID `1-ReZDnL2p0NQ21Es42nK-prwg7neDA7s`) for exact quotes. If neither can be reached, name it as missing.
 
 Every Hormozi review names the sources it used and the ones it couldn't reach. Translate the thinking into Neil's voice in anything client-facing, and never name Hormozi there.
 
