@@ -296,3 +296,10 @@ These aren't logged mistakes yet — they're pre-emptive rules based on known te
 
 [2026-10-09] MISTAKE: In the flow diagram on the approach slides the strands moved sideways each time a new element appeared, because the dashed frame shrank and grew with its contents. | RULE: In a build-up sequence, keep every element in the same place by leaving placeholders in the layout with visibility:hidden on the slides before it arrives, rather than adding and removing it.
 
+
+[2026-10-11] CORRECTION (cross-cutting, FAQ rebuild): Neil's copy said "died". RULE: always "passed away", never "died", in anything client-facing or in Neil's voice, his dad included.
+[2026-10-11] DECISION: Family count is 37 (was 35 in pricing.md, README and elsewhere). The guarantee wording is now "refund in full if it doesn't feel right after your first recording", replacing both "after your first session" (homepage) and "after the kickoff call and before the first recorded session" (proposals). TODO: update both across the website, proposal skill, README, pricing.md and every other place they appear.
+[2026-10-11] DECISION: Website FAQ holds back prices and leaves Snapshot out for now; Snapshot copy has other work pending.
+[2026-10-12] CONTEXT: Kit lead magnets with no Kit form are delivered by the site adding subscribers straight to a sequence plus a tag via the API (no form ID needed). "How Do I Actually Bring This Up?" = tag BringThisUp 24535979, sequence 2925977. Conversation Playbook = tag 23059068, sequence 2882072. The Bring This Up Google Doc still says "35 families" and "after the first session": add it to the 37 / "after your first recording" update list.
+
+[2026-10-12] CORRECTION (cross-cutting, Snapshot strategy): Claude proposed £299 a year and £399 single. Neil: £199 a year, £299 single, "I would never pay 299". Rollover credit £200, not £300. RULE: test Snapshot prices against what Neil would pay himself, not only the margin floor. Pricing is in pricing.md.

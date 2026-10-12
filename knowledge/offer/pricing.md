@@ -43,7 +43,7 @@ Option B is sold as Hero Story with the buyer's own hour added, not as a fourth 
 
 Worth knowing: the two most recent sent proposals, Catlin 15 September and Sturgess 9 September 2026, use the brand names only. The metals do not appear as visible text on either. So the pairing above is the rule, not something those two decks demonstrate.
 
-Every proposal also carries the guarantee: full refund if it doesn't feel right after the kickoff call and before the first recorded session. Thirty-five families, never invoked.
+Every proposal also carries the guarantee: full refund if it doesn't feel right after your first recording (wording set 11 Oct 2026). Thirty-seven families, never invoked.
 
 ## Bolt-on prices, and where the model disagrees
 
@@ -70,6 +70,12 @@ Confirmed by Neil 22 September 2026. Anchor means the struck-through "usually" p
 **Snapshot founding five: £99, set by Neil 2 October 2026.** The first five Snapshot buyers pay £99, video included, in return for a 30-minute feedback call (a 2-minute video testimonial plus 20 minutes of feedback). They also commit to a 30-minute pre-session form and the 1.5-hour session within two weeks of saying yes. The offer closes Friday 16 October 2026 or when five are booked. This is below the £145 full cost, so treat it as marketing spend and cap it hard at five. The public price stays £300, with video at £50 extra. The deliverable is framed as "the story of your year": about an hour, fully produced, audio and video. Parked idea: an annual Snapshot recorded the week before the client's birthday and delivered on the day. It is teased in the drip only, and is not for sale until the founding five have been delivered.
 
 **Mementos is costed at last.** Two hours of work plus £45 to Vuk. Neil is refining the process, and the intent is to fold it into the editor briefing so highlight stories get flagged during the normal edit. At £350 the margin is **72.9%**, the strongest bolt-on on the sheet. One assumption to confirm: those two hours are priced as ops time at £25/hr, because the work is assembly rather than interviewing. If any of it is really session time at £80/hr the picture changes sharply, and at two full hours of session time the margin falls to 41.4%.
+
+**Snapshot pricing under review, parked by Neil 12 October 2026. Not settled, do not quote.** Working figures being discussed: Snapshot every year: **£199 a year**, billed yearly. Single Snapshot: **£299**. On the £145 full cost, £199 is **27.1%** margin, under the 50% minimum. Neil chose it knowingly: he wouldn't pay £299 a year himself, and testimonials and marketing have to carry £199. Revisit once the founding six are delivered. The single is £299 at **51.5%**.
+
+- Founding six (Sam Olf, Ed Finley, Laura and Ed Heaton, Geoff Griffiths, Emma): £199 a year, locked for five years, plus one free year for every friend who books. Offered after their feedback call.
+- Influencer readers (Kevin Maguire first): normal price, video version included as the bonus. The influencer gets £50 per booking, leaving £4 on a £199 annual and £104 on a £299 single.
+- Rollover credit: anyone who has bought a Snapshot gets £200 off a family documentary.
 
 ## Price band rules
 
