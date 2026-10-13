@@ -9,11 +9,15 @@ Source: [Family Hours & Countries Tracker](https://docs.google.com/spreadsheets/
 the sheet Neil updates per family. This file is the rounded, copy-ready
 version of that sheet's totals.
 
-## Current numbers (as of 2026-09-22)
+**Check the tracker first.** Before quoting any figure, open the tracker
+sheet and compare its totals with the numbers below. If they differ, tell
+Neil and ask which is right before using either.
 
-- **Families: 38** (exact — count of families logged in the tracker, including any not yet recorded)
-- **Hours: 390** (sheet total 396, rounded DOWN to the nearest 10)
-- **Countries: 11** (exact — count of flagged entries in the tracker's Country # column, i.e. countries outside the UK)
+## Current numbers (as of 2026-10-13, set by Neil)
+
+- **Families: 38** (set by Neil 13 Oct 2026, matches the tracker)
+- **Hours: 370+** (set by Neil 12 Oct 2026)
+- **Countries: 7** (set by Neil 12 Oct 2026)
 
 ## Rounding rules
 
@@ -25,9 +29,9 @@ version of that sheet's totals.
 
 Use whichever framing the skill/platform calls for, but the numbers must
 match this file exactly:
-- "38 families · 11 countries · 390+ hours"
-- "390+ hours of interviews across 38 families"
-- "38 families, 11 countries"
+- "38 families · 7 countries · 370+ hours"
+- "370+ hours of interviews across 38 families"
+- "38 families, 7 countries"
 
 ## Update rule
 
@@ -35,3 +39,9 @@ Updated by the `new-client` skill every time a new client is won and logged
 into the tracker sheet. Do not hand-edit the numbers here without also
 updating the tracker sheet — the two must stay in sync. Note the date of
 the last update above.
+
+## LinkedIn headline (set by Neil 13 Oct 2026)
+
+"Recording parents' life stories that bring families closer | 38 families · 7 countries"
+
+Keeps "parents'" while parents are still the core product. Revisit once Snapshot is live. Swap the numbers whenever they change.

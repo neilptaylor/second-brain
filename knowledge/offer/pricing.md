@@ -43,7 +43,7 @@ Option B is sold as Hero Story with the buyer's own hour added, not as a fourth 
 
 Worth knowing: the two most recent sent proposals, Catlin 15 September and Sturgess 9 September 2026, use the brand names only. The metals do not appear as visible text on either. So the pairing above is the rule, not something those two decks demonstrate.
 
-Every proposal also carries the guarantee: full refund if it doesn't feel right after your first recording (wording set 11 Oct 2026). Thirty-seven families, never invoked.
+Every proposal also carries the guarantee: full refund if it doesn't feel right after your first recording (wording set 11 Oct 2026). Thirty-eight families, never invoked.
 
 ## Bolt-on prices, and where the model disagrees
 

@@ -20,7 +20,7 @@ The audiobook is the proof it happened. The connection is the actual product.
 
 ## What Drives This Work
 
-I've done 350+ hours of interviews across 35 families. That's changed me. I understand now, cognitively, emotionally, viscerally, how much gets lost when we don't stop and ask. How families drift not because they stopped loving each other, but because life got louder. How a parent can be a brilliant storyteller in public and a closed book at home. How siblings don't realise how much they miss each other until they're in a room together for reasons that matter.
+I've done 370+ hours of interviews across 38 families in 7 countries. That's changed me. I understand now, cognitively, emotionally, viscerally, how much gets lost when we don't stop and ask. How families drift not because they stopped loving each other, but because life got louder. How a parent can be a brilliant storyteller in public and a closed book at home. How siblings don't realise how much they miss each other until they're in a room together for reasons that matter.
 
 I also know the contradiction: I built a business about being present with family while the business pulls me away from mine. Not all of it has translated to my own life. That tension is real. It keeps me honest.
 
@@ -93,7 +93,7 @@ Every child gets a private hour of their own. Nothing shaped by a sibling being 
 
 Each shape is the same experience, just widened. The core never changes: three two-hour sessions with the parent, in their own voice, at their own pace. You sit with your family. You listen to each other. The drift pauses.
 
-Every family is completely protected. If it doesn't feel right after the kickoff call and before the first recorded session, I refund in full, no questions. Thirty-five families in, that has never once been invoked.
+Every family is completely protected. If it doesn't feel right after your first recording, I refund in full, no questions. Thirty-eight families in, that has never once been invoked.
 
 ## Who This Is Not For
 

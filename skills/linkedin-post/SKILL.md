@@ -5,6 +5,7 @@ description: "Write LinkedIn posts in Neil Taylor's voice for Me & My Old Man. U
 
 # LinkedIn Post Skill — Neil Taylor / Me & My Old Man
 ## Version 4.0 — October 2026 (asset is part of the post, with a delivery gate)
+<!-- v4.1 — 2026-10-12: example proof figure updated to 370+ hours across 37 families. -->
 <!-- v4.0 — 2026-10-07: asked for three posts, I delivered the copy and Notion rows but only a one-line text note under "Image", no asset built, and Neil had to ask whether any existed. The skill already said to build the visual, but it sat at the bottom after the Notion step, so it was skipped under momentum. Fix: the asset is now built BEFORE the Notion row is created, and a Delivery gate (see "The visual") must pass before replying: open the file on disk, look at it, put its filename on the row. Never reply to Neil until the check passes. No Paper needed: carousels use mmom-carousel's HTML-to-PDF route, hand-lettered cards are HTML rendered with headless Chrome, photos are cropped 1080x1350 from the Image Bank. -->
 ## Version 3.9 — September 2026 (paste-safe post copy in Notion)
 <!-- v3.9 — 2026-09-30: Neil reported (1) apostrophes dropping in Notion (dont, didnt, theres), (2) literal "quot;" appearing where speech marks should be, and (3) line breaks lost when pasting from Notion into LinkedIn's Start a post box. Fix: post copy now goes in a fenced code block in the Notion body (its copy button copies raw text, blank lines intact, no rich-text collapsing), written with literal straight characters, never HTML entities. Also copy the post to the clipboard as plain text with pbcopy on delivery. -->
@@ -39,7 +40,7 @@ Full version lives in `Claude Outputs/LinkedIn System/MAMO_LinkedIn-North-Star_v
 
 1. **Why Neil posts:** LinkedIn is the top of the Asking Engine funnel. Target by Aug 2027 — 5 discovery calls a month sourced from LinkedIn. LinkedIn gives no DM-open data: the metric is calls booked with "LinkedIn" as source, plus keyword comments and `LinkedIn`-tagged email sign-ups. Never follower count.
 2. **Internal positioning (never posted as-is):** Neil helps adult children in the sandwich-generation squeeze reconnect with their parents, through a 12-week guided story experience that becomes a private family audio documentary. Read `knowledge/offer/business-stats.md` for the current hours/families/countries figures — never hardcode or reuse an old number.
-   **External headline:** *I help families feel closer in 12 weeks than they have in 12 years — by recording a parent's life story in their own voice | [families] families · [countries] countries · [hours]+ hrs* (fill from `business-stats.md`)
+   **External headline:** *Recording parents' life stories that bring families closer | [families] families · [countries] countries* (fill from `business-stats.md`)
 3. **Personal "I" posts have carried every result so far — but that's partly survivorship** (they're the only type Neil posted at volume). Keep writing Neil, but v3 deliberately builds Pain Points and Transformation as lead drivers; re-check the Notion Pillar/Job data in ~Dec 2026.
 4. **The 5Ps build the post** (Problem → Promise → Proof → Personality → Perspective). Problem → Proof → Perspective is the spine.
 5. **Three posts a week — fixed days:** Tue, Wed, Thu.
@@ -558,7 +559,7 @@ Comments are conversations, not broadcasts. They have a different rhythm and ene
 
 **Conversational entry:** Start with agreement or a genuine question — "Agreed" or "This landed for me because..." You're joining a thought, not pronouncing from above.
 
-**Proof points, not credentials:** If you mention your work, keep it soft. "I speak with a lot of 60-70 year olds" is a proof point that's curious and humble. "After 350+ hours of interviews across 32 families" (pull the real current figures from `knowledge/offer/business-stats.md`) is a sell that makes the reader suspicious. Soft proof lets the conversation deepen; hard proof interrupts it. If they want to know more, they'll click your profile.
+**Proof points, not credentials:** If you mention your work, keep it soft. "I speak with a lot of 60-70 year olds" is a proof point that's curious and humble. "After 370+ hours of interviews across 38 families" (pull the real current figures from `knowledge/offer/business-stats.md`) is a sell that makes the reader suspicious. Soft proof lets the conversation deepen; hard proof interrupts it. If they want to know more, they'll click your profile.
 
 **Specificity and rhythm:** Comments are thinking-out-loud. Build arguments across sentences. Use your natural speaking rhythm — dashes, parenthetical asides, "yeah?" at the end of a thought. Less formatted, more alive.
 

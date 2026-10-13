@@ -10,6 +10,8 @@ description: >
   this name fires. Also trigger if Neil asks why his bio numbers look out
   of date.
 ---
+<!-- v1.2 — 2026-10-13: LinkedIn headline now the short line kept in business-stats.md (Neil). -->
+<!-- v1.1 — 2026-10-12: example figures updated to 37 families · 7 countries · 370+ hours (Neil, 12 Oct 2026). -->
 <!-- v1.0 — 2026-09-22: Created alongside knowledge/offer/business-stats.md, the new single source of truth for families/hours/countries. This skill is the monthly consumer of that file — new-client keeps it updated, this skill turns it into copy-paste bio text. -->
 
 # MMOM Bio Refresh
@@ -39,8 +41,9 @@ platform's character limit and register. Pull the families/hours/countries
 figures straight from `business-stats.md` — never invent, round differently,
 or reuse a number from a previous run of this skill.
 
-- **LinkedIn bio / headline line** — the "I help families feel closer in 12
-  weeks..." positioning line used in `linkedin-post/SKILL.md`, with the
+- **LinkedIn bio / headline line** — the headline stored in
+  `knowledge/offer/business-stats.md` ("Recording parents' life stories that
+  bring families closer | ..."). The line used in `linkedin-post/SKILL.md`, with the
   current stat string swapped in. ~220 characters.
 - **Instagram bio** — warmer, shorter, first-person. 150 character limit
   including line breaks and any emoji Neil already uses (check his current
@@ -49,7 +52,7 @@ or reuse a number from a previous run of this skill.
 - **X (Twitter) bio** — 160 character limit. Terser than LinkedIn/Instagram
   — X bios read more like a tagline than a pitch.
 - **Lovable website stats line** — whatever short trust-stat strip
-  currently exists on the site (e.g. "38 families · 11 countries · 390+
+  currently exists on the site (e.g. "38 families · 7 countries · 370+
   hours"). If Neil hasn't shared the current live wording, ask rather than
   guessing at the site's existing copy and layout.
 
@@ -77,8 +80,8 @@ itself (platforms don't render markdown). Example shape:
 ```
 
 Deliver the work plus one line noting the source figures used (e.g. "Using
-38 families · 11 countries · 390+ hours from business-stats.md, updated
-2026-09-22") — nothing else. Neil copies each block by hand into the
+38 families · 7 countries · 370+ hours from business-stats.md, updated
+2026-10-12") — nothing else. Neil copies each block by hand into the
 platform; this skill never posts, publishes, or edits a live site or
 profile.
 
