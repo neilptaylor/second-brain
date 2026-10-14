@@ -715,3 +715,22 @@ Nicola is a clinical psychologist. Useful framing for the grief and memorial off
 |---|---|---|---|
 | Nicola Griffiths testimonial call | Oct 2026 | Post-delivery testimonial | The hour, parent hears their worth, tension release, behaviour change, family historian, grief framing |
 | Daniel Beard handover call | Oct 2026 | Post-delivery handover | Emotional bandwidth, friendship pressure, referral link shyness, Ancestry, Snapshot validation |
+
+## NEW SECTION T: GEOFF GRIFFITHS, PUBLIC LINKEDIN TESTIMONIAL (13 October 2026)
+
+Geoff posted unprompted on LinkedIn about doing the experience with his dad Vaughan (Nicola is his wife). Post: https://lnkd.in/p/eRe2zMjt (also logged in Neil's Testimonials Google Doc). First public testimonial from a buyer who came in through the "while he's temporarily open" lane (Section on Vaughan's heart bypass). Early comments were warm but thin ("love this idea", "will definitely check it out"). Geoff is a mate of Neil's, so his network is a warm-adjacent audience, not cold.
+
+- "I have learned more about my dad in the past 12 weeks than the previous four decades, simply because of time, space and crucially a hugely talented 3rd party in Neil making the whole thing happen."
+- "Yes you're working towards the end product, but the process itself is such an immersive and thought-provoking experience."
+- "Myself and Dr Nicola Griffiths are fortunate enough for our 'why' to simply be because we wanted to. As Neil says, you always assume there's more time, but there's not."
+- "In today's digital-first world, where human connection is seemingly being replaced by AI and everything conspires to prevent you from taking a step back and addressing what's important, Me & My Old Man is such a compelling and elegant proposition."
+- "It forces you to stop, take time, reflect and connect with the people you love, through the stories that bind you together."
+- "My dad was so chuffed to be asked, loved the entire process and not only do we have this lovely 'thing' forever, it has had an amazing impact on our family connection."
+- "It isn't just for dads too, we'll be doing it with my mum very soon." (Repeat purchase signal: Neil replied "Ready to roll for Mum as and when".)
+- "If you're lucky enough to have a living parent check it out, you won't regret it."
+
+*NEIL INSIGHT: Geoff names the process as the value, not the end product ("such gold in the HOW"). That is the strongest public statement yet that the 12 weeks is the product. He also gives the clean "why" for the buyer with no ticking clock: "because we wanted to". His AI contrast ("the complete antithesis") is unprompted and matches the anti-AI position in Q92.*
+
+| Source | Date | Type | Key themes |
+|---|---|---|---|
+| Geoff Griffiths LinkedIn post | 13 Oct 2026 | Public post-delivery testimonial | Process as value, four decades vs 12 weeks, "because we wanted to", anti-AI, mum next |
