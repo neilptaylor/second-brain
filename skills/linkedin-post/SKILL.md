@@ -623,6 +623,16 @@ These rules come from Neil's hand-edits to the locked 10-post ICP set (May 2026)
 
 ---
 
+## Final typography sweep (mechanical, last step before saving or showing anything)
+
+Run on the post text and every Notion write: replace every curly apostrophe or quote (’ ‘ “ ”) with the straight one (' and "), and strip any `<br>` tags (use real line breaks). Notion and Docs round trips reintroduce curly marks, so re-check the text after the Notion write too. Also search for and remove the literal strings `quot`, `&quot;`, `&#39;`, `&amp;`, `&nbsp;`: they show up as visible text when Notion or HTML-escaped text is pasted into LinkedIn. Same sweep as the em-dash sweep, same non-negotiable status.
+
+**Paste-ready spacing (hard rule).** Neil must never re-space a post after pasting into LinkedIn. Notion drops blank lines when body text is copied, so the finished post goes into the Notion page body as a **code block** (plain text, exact line breaks, copy button), already laid out with the blank-line / tight-block rhythm from the formatting section: one blank line between beats, no blank lines inside stacked blocks. Never put the post in ordinary paragraphs, never use `<br>`. Fix the typography in the code block, then re-fetch the page and check it.
+
+**Document title for carousels.** Whenever a carousel/document is built, also write the Document title: the one required field LinkedIn shows on PDF upload ("Add a descriptive title to your document", hard limit 58 characters, count them). Write it for a stranger who has never heard of Neil or MMOM and may not read the post: plain, didactic, self-explanatory, names the situation and what the swipe delivers (e.g. "When You Think Your Parents Will Say No: Six Answers"). Neil's rewrite of a 29-character version into this one is the model: do not shorten for the sake of it, use the room, but never go over 58. No jargon, no brand names, no hashtags, no em dashes, straight quotes. Put it in the Notion page body in its own code block under the post, and give it to Neil in chat.
+
+---
+
 ## Output format
 
 Deliver one polished post, ready to copy-paste into LinkedIn. Format it as:
@@ -711,13 +721,15 @@ The design spec is `Claude Outputs/LinkedIn System/MMOM_Carousel-Design-Brief_v1
 4. Put that filename on the Notion row's `Visual:` line (in Notes) so Neil can click straight to it in Review mode.
 5. If the Paper.design MCP is unavailable (Paper Desktop not open): write the full brief into the row body, set the Notes `Visual:` line to `BRIEF ONLY — Paper not running: <one-line concept>`, and tell Neil in one line so he can open Paper and ask for the batch.
 
+**Carousels are built, linked and clickable. Never a description alone.** Any post with a carousel (Pain Points, List posts) must leave this skill with a finished PDF (plus PNGs if made) saved to **03B Linkedin Carousels**, Drive folder `1H_5DZ5D5RSiqk7uu2vdWdI_ODFQLAWjf` (https://drive.google.com/drive/folders/1H_5DZ5D5RSiqk7uu2vdWdI_ODFQLAWjf), named `MMOM_LI_<post-slug>_v1.pdf`. The Notion row's Notes `Visual:` line and the body must carry a clickable Drive link to the PDF so Neil can click, download and upload it as a LinkedIn document post. A slide brief in the Notion body is only a fallback when the build genuinely cannot run, flagged in one line. Single cards and photos still go to 03 Linkedin Assets 2026.
+
 **Not every post is a Paper card.** There are three visual sources — pick the one that fits the post, don't default:
 
 1. **A real photo from the Image Bank.** Often the best choice for The Drift and The Transformation — "this is my family too" travels further than a designed card. Index: `Shared drives/Systems/01 Awareness/Linkedin 2026/03 Linkedin Assets 2026/00 Image Bank Index - LinkedIn Assets 2026` (a Google Sheet) and, if built, `Neil Image Bank/_INDEX.md`. Propose 1–2 images + a one-line caption in Neil's voice. Nothing suitable → `Visual: needs a photo — [what it should show]`.
 
 **No repeat image within 30 days.** Before proposing a real photo, check the Image bullet on every "The Content" row dated within the last 30 days (`notion-query-data-sources` SQL against the CTA/date columns, or search the image's Drive file id) and rule out anything already used in that window. Same rule for a card/carousel asset filename. If the only strong match for this post's brief was used inside the last 30 days, say so and propose the next-best option rather than repeating it silently — never assume Neil will notice or catch a repeat himself.
 2. **A hand-lettered / typographic card** (`mmom-visual`, Paper). For The Drift, The Now, and pull-quotes. Propose 2–3 short lines in Neil's voice, pick one, build it. Signed `— Neil` for the wistful ones.
-3. **A carousel or infographic** (`mmom-carousel`, Paper). The default for Pain Points — the framework rides along as slides. **WIP: the carousel/infographic templates are not fully worked out with Neil yet.** Until they are, write the full slide brief into the row body and flag `Visual: CAROUSEL BRIEF — templates still to finalise with Neil` on the Notes line; don't auto-build a carousel he hasn't signed off the look of. Cards (source 2) and photos (source 1) are safe to build now.
+3. **A carousel or infographic** (`mmom-carousel`, Paper). The default for Pain Points — the framework rides along as slides. **WIP: the carousel/infographic templates are not fully worked out with Neil yet.** Build it (see the carousel rule above). Paper is not reachable from Claude Code sessions, so build the slides as flat HTML rendered to PNG and combined into a PDF with headless Chrome, as described under List posts. Cards (source 2) and photos (source 1) are safe to build now.
 
 By pillar, as a starting point (override when the post says otherwise):
 - **The Drift** → a real photo, or a hand-lettered card. Offer both.
