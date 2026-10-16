@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Normans, That's A Wrap</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Tokens lifted from meandmyoldman.co.uk, 25 Sep 2026 */
+  :root{
+    --bg:#f9f5f0; --tint:#f3e9e1; --ink:#1c1612; --body:#3a302a; --muted:#6e635b;
+    --tc:#b8624a; --tc-deep:#9c4f3a; --hair:rgba(28,22,18,.12);
+    --serif:"Lora",Georgia,serif; --sans:"DM Sans",system-ui,sans-serif;
+  }
+  @page{size:1600px 900px;margin:0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg)}
+  body{font-family:var(--sans);color:var(--body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  a{color:var(--tc);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+
+  .page{width:1600px;height:900px;position:relative;overflow:hidden;background:var(--bg);page-break-after:always;display:flex}
+  .page:last-child{page-break-after:auto}
+  .text{flex:1;padding:96px 104px 80px;display:flex;flex-direction:column}
+  .photo{height:100%;flex:none;background-size:cover;background-position:center}
+  .w40{width:40%}.w45{width:45%}.w50{width:50%}
+
+  .mark{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:56px}
+  .mark b{color:var(--tc);font-weight:600}
+  .kicker{font-size:15px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--tc);margin-bottom:18px}
+  h1{font-family:var(--serif);font-weight:400;font-size:64px;line-height:1.1;color:var(--ink);letter-spacing:-.01em}
+  h1 em{color:var(--tc)}
+  .rule{width:64px;height:2px;background:var(--tc);margin:34px 0 34px}
+  p{font-size:23px;line-height:1.6;max-width:760px}
+  p+p{margin-top:18px}
+  .lead{font-family:var(--serif);font-style:italic;font-size:27px;line-height:1.5;color:var(--ink)}
+  .small{font-size:18px;color:var(--muted)}
+  .foot{margin-top:auto;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+  ol.ch{list-style:none;counter-reset:c;columns:1}
+  ol.ch2{columns:2;column-gap:64px;font-size:0}
+  ol.ch2 li{font-size:18px;break-inside:avoid;line-height:1.3;padding:8px 0}
+  ol.ch li{counter-increment:c;font-family:var(--serif);font-size:23px;line-height:1.3;color:var(--ink);padding:9px 0;border-bottom:1px solid var(--hair);display:flex;gap:20px}
+  ol.ch li::before{content:counter(c,decimal-leading-zero);font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:.12em;color:var(--tc);padding-top:7px;width:26px;flex:none}
+
+  .note{margin-top:28px;background:var(--tint);border-left:3px solid var(--tc);padding:18px 24px;font-size:19px;line-height:1.5;color:var(--ink);max-width:820px}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:8px}
+  .cols h3,.steps h3{font-family:var(--serif);font-weight:400;font-size:28px;color:var(--ink);margin-bottom:14px}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:8px}
+  .num{font-family:var(--serif);font-size:72px;line-height:1;color:var(--tc);margin-bottom:14px}
+  ul.t,ol.t{padding-left:24px;font-size:20px;line-height:1.55}
+  ul.t li,ol.t li{margin:5px 0;padding-left:4px}
+  ol.t li::marker{color:var(--tc);font-weight:600}
+  ul.t li::marker{color:var(--tc)}
+  .cols p,.steps p{font-size:20px;line-height:1.55}
+
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 22px}
+  .tile{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink)}
+  .tile .card{aspect-ratio:16/9;background:#f1eee3;border:1px solid var(--hair);border-radius:6px;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;font-family:var(--serif);font-size:22px;line-height:1.2;color:#8f8c84}
+  .tile img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:1px solid var(--hair)}
+  .tile span{font-family:var(--sans);font-size:14px;font-weight:500;line-height:1.3;color:var(--body);text-decoration:underline;text-decoration-color:var(--tc);text-underline-offset:3px}
+
+  /* cover + closing panels */
+  .panel{background:var(--tc);color:var(--bg)}
+  .panel h1,.panel .lead,.panel p{color:var(--bg)}
+  .panel .mark,.panel .mark b,.panel .foot{color:rgba(249,245,240,.8)}
+  .panel .rule{background:var(--bg)}
+  .panel a{color:var(--bg)}
+  .quote{align-items:center;justify-content:center;text-align:center;flex-direction:column;padding:0 240px}
+  .quote blockquote{font-family:var(--serif);font-size:54px;line-height:1.3;color:var(--bg)}
+  .quote cite{display:block;margin-top:44px;font-style:normal;font-size:17px;letter-spacing:.18em;text-transform:uppercase;color:rgba(249,245,240,.85)}
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="text panel w45" style="flex:none;justify-content:center">
+    <div class="mark" style="margin-bottom:auto">• Me <b style="color:var(--bg)">&amp;</b> My Old Man</div>
+    <div class="kicker" style="color:rgba(249,245,240,.85)">That's a wrap</div>
+    <h1 style="font-size:80px">The Norman Family</h1>
+    <div class="rule"></div>
+    <p class="lead">David's life story, in his own voice.</p>
+    <div class="foot" style="margin-top:auto">Thursday 15 October 2026</div>
+  </div>
+  <div class="photo" style="flex:1;background-image:url(img/p07.jpg);background-position:50% 40%"></div>
+</section>
+
+<section class="page">
+  <div class="text">
+    <div class="mark">• Me <b>&amp;</b> My Old Man</div>
+    <h1>Dear Alison, Tim, Jill <em>&amp;</em> David,</h1>
+    <div class="rule"></div>
+    <p>Here it is. Every chapter and every memento, all in one place and all yours to keep.</p>
+    <p>From tobacco tin footy and Chelsea buns to Games Maker 2012 and tea at the Palace, it's all here.</p>
+    <p>I hope these last few months have been as reflective and as joyful for you as they have been for me.</p>
+    <p class="lead" style="margin-top:34px">Neil</p>
+  </div>
+  <div class="photo w40" style="background-image:url(img/p04.jpg);background-position:50% 30%"></div>
+</section>
+
+<section class="page">
+  <div class="text" style="padding-top:64px;padding-bottom:40px">
+    <div class="kicker">The final chapters</div>
+    <h1 style="font-size:50px">David's life story, in twelve chapters</h1>
+    <p style="margin:14px 0 16px;font-size:20px">All twelve are <a href="https://drive.google.com/drive/folders/1h35lUfA27lAeTI6PF50sXJCmA5BgtJw8">in your Stories folder here</a>.</p>
+    <ol class="ch ch2">
+      <li>Alison &amp; The Old Man</li>
+      <li>Tim &amp; The Old Man</li>
+      <li>Jill &amp; The Old Man</li>
+      <li>Fleet Street Unions, Grandpa Arthur, £10 Passage, Armature Winder, Children's Home, Morrison Shelters, Tiddle Parade, Dick Barton's Agent, Scrapbook Sundays, The Arsenal &amp; Seeing Dad</li>
+      <li>Pitshanger Lane, Tobacco Tin Footy, Fag Card Champ, Mr. Minter Maths, Nelson House Captain, Green Bands, Effort Prizes, The Dancing Scene &amp; Meeting Ruth</li>
+      <li>Structured School, Teacher's Mugs, Chelsea Buns, Christmas, Rations, Dad’s Saturday Ritual, My First Ice Cream, Festival Of Britain, Ballroom Fridays, Spin Turns &amp; Quick-Step</li>
+      <li>‘Beatles Breakup’, The 4th Stile, Holding Hands, "We had a connection", Best Man Peter, Key Flats, Nora’s Apple Pies, Class Divide, National Service, "You with the glasses!", Mail &amp; Marriage</li>
+      <li>Great Smog Dance, Homeboy Doubts, Richmond Park Cycles, Union Secretary, Norman Fisher's Minutes, Silver Jubilee Volunteer, Little Red Book &amp; "A Perfect Year"</li>
+      <li>Tim's Arrival, WC '66, Allison &amp; Jill, Norfolk Holidays, Plump Hill Move, Progress Chasers, AlphaTool Ends, Rotary Days, 2015 Singapore Dreams, Melbourne Cricket &amp; Lottery Promises</li>
+      <li>Games Maker 2012, Russian Boxers, Tea At The Palace, Honouring Ruth, EMF Japan Hook-Ups, Meeting Susan, Gold Cup Treats &amp; Lottery Dreams</li>
+      <li>Hot Plates, "Dad the Pie Man", Sharp Knife Obsession, German Pacemaker, Financial Regrets, Theatre Appreciation, Lurpak Breakfasts, Singapore Dreams &amp; "Be Happy"</li>
+      <li>Family Wrap Up &amp; Reflections</li>
+    </ol>
+  </div>
+</section>
+
+<section class="page">
+  <div class="text">
+    <div class="kicker">David's Mementos</div>
+    <h1 style="font-size:54px">Seven short stories, <em>made for sharing.</em></h1>
+    <div class="rule"></div>
+    <p style="font-size:21px">All seven are ready now, and all <a href="https://drive.google.com/drive/folders/1g5ydbFap6eO6OvpDwPBvIdl7PgqVCkwt">in your Mementos folder here</a>. The next page has each one to tap and play.</p>
+    <ol class="ch" style="margin-top:22px;max-width:680px">
+      <li>Bacon &amp; Saturday Morning Routines</li>
+      <li>Saturday Buns &amp; Routines</li>
+      <li>The Festival of Britain</li>
+      <li>Commanding Russian Boxers</li>
+      <li>Be Happy &amp; Follow Your Passions</li>
+      <li>National Service Testimonial</li>
+      <li>Leading the Jubilee</li>
+    </ol>
+  </div>
+  <div class="photo w45" style="background-image:url(img/p11.jpg);background-position:50% 30%"></div>
+</section>
+
+<section class="page">
+  <div class="text" style="padding:72px 96px">
+    <div class="kicker">Tap to play</div>
+    <h1 style="font-size:46px">David's Mementos</h1>
+    <div class="rule" style="margin:24px 0 32px"></div>
+    <div class="gallery">
+      <a href="https://drive.google.com/file/d/1cYKvckS10BvHe4pUopAyvrT3nqjHlpsR/view" class="tile">
+        <div class="card">Bacon &amp; Saturday Morning Routines</div>
+        <span>Bacon &amp; Saturday Morning Routines (audio)</span>
+      </a>
+      <a href="https://drive.google.com/file/d/1pmTbQmHPrhfCwwr0voVTR9YohDRAPu1n/view" class="tile">
+        <img src="m/SaturdayBuns.jpg" alt="">
+        <span>Saturday Buns &amp; Routines (video)</span>
+      </a>
+      <a href="https://drive.google.com/file/d/1SHQKW_FntXeBIlC85-5tSu04LArdyFqE/view" class="tile">
+        <div class="card">The Festival of Britain</div>
+        <span>The Festival of Britain (audio)</span>
+      </a>
+      <a href="https://drive.google.com/file/d/1QdBjbnnjQfMd_WF3bZcu37o3ynYnZ7So/view" class="tile">
+        <div class="card">Commanding Russian Boxers</div>
+        <span>Commanding Russian Boxers (audio)</span>
+      </a>
+      <a href="https://drive.google.com/file/d/1owKLSvIiQThfHiYKMItLQgnJ09DHPN_u/view" class="tile">
+        <div class="card">Be Happy &amp; Follow Your Passions</div>
+        <span>Be Happy &amp; Follow Your Passions (audio)</span>
+      </a>
+      <a href="https://drive.google.com/file/d/14vLb-7fSKaAte_p2JlKYzCfguJmmlsOB/view" class="tile">
+        <div class="card">National Service Testimonial</div>
+        <span>National Service Testimonial (audio)</span>
+      </a>
+      <a href="https://drive.google.com/file/d/17yqx3EZkz06wa5GL2sbHmDLP8LC4ALBs/view" class="tile">
+        <div class="card">Leading the Jubilee</div>
+        <span>Leading the Jubilee (audio)</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOADING -->
+<section class="page">
+  <div class="text">
+    <div class="kicker">Getting it onto your phone</div>
+    <h1>Downloading</h1>
+    <div class="rule"></div>
+    <div class="steps">
+      <div><div class="num">1</div><h3>Download</h3>
+        <p>Open the <a href="https://drive.google.com/drive/folders/1h35lUfA27lAeTI6PF50sXJCmA5BgtJw8">Stories folder</a>. Tap each chapter, then <b>Download</b>. On a computer, click the arrow next to the folder name and choose <b>Download</b> to get all twelve at once.</p></div>
+      <div><div class="num">2</div><h3>iPhone</h3>
+        <p>Quickest: open the <b>Files</b> app and tap a chapter to play. For the full experience, with CarPlay, tap and hold each chapter, choose <b>Share</b>, then <b>Add to Music</b>. On a Mac, ctrl + click the files and open with <b>Music</b>.</p></div>
+      <div><div class="num">3</div><h3>Android or PC</h3>
+        <p>The files play in any music app or media player.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. SYNC -->
+<section class="page">
+  <div class="text">
+    <div class="kicker">Added them on your Mac?</div>
+    <h1>Getting them onto your iPhone</h1>
+    <div class="rule"></div>
+    <div class="cols">
+      <div><h3>On your Mac</h3>
+        <ol class="t">
+          <li>Open <b>Music</b>.</li>
+          <li>Go to Music → Settings → General.</li>
+          <li>Tick <b>Sync Library</b>.</li>
+          <li>Check you're signed into the same Apple Account as your iPhone.</li>
+          <li>Add the chapters to Music, if you haven't already.</li>
+          <li>Give it a few minutes to sync to your iCloud Music Library.</li>
+        </ol></div>
+      <div><h3>On your iPhone</h3>
+        <ol class="t">
+          <li>Open <b>Settings</b>.</li>
+          <li>Go to Apps → Music.</li>
+          <li>Turn <b>Sync Library</b> on.</li>
+          <li>Open the Music app.</li>
+          <li>Go to Library → Albums and look for David's.</li>
+        </ol>
+        <p class="small" style="margin-top:18px">No cables needed. You don't have to plug the phone into the Mac.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. LISTENING & SHARING -->
+<section class="page">
+  <div class="text">
+    <div class="kicker">Listening and sharing</div>
+    <h1>Pass it round the family</h1>
+    <div class="rule"></div>
+    <div class="cols">
+      <div><h3>Sharing the folder</h3>
+        <ol class="t">
+          <li>Keep everything in Google Drive.</li>
+          <li>Click the three dots next to the folder.</li>
+          <li>Click <b>Share</b> → <b>Copy link</b>.</li>
+          <li>Send it to the family.</li>
+          <li>They download, they listen. Done.</li>
+        </ol></div>
+      <div><h3>A note on Spotify</h3>
+        <p>I'd steer clear of Spotify for this. It needs setting up on every device separately, and it won't share between family members unless you pay for a hosting platform. The Google Drive route is much smoother for everyone.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. SAVING -->
+<section class="page">
+  <div class="text" style="justify-content:center">
+    <div class="kicker">Keeping it safe</div>
+    <h1>Save it <em>everywhere.</em></h1>
+    <div class="rule"></div>
+    <p>I'd love <u>every one of you</u> to keep your own copy of the chapters and mementos, in as many places as you can: your computer, Google Drive, Dropbox, iCloud, a USB stick, an external hard drive.</p>
+    <p>And put it in your wills. I mean it.</p>
+  </div>
+  <div class="photo w40" style="background-image:url(img/p01.jpg);background-position:50% 30%"></div>
+</section>
+
+<!-- THANK YOU -->
+<section class="page">
+  <div class="photo w45" style="background-image:url(img/p08.jpg);background-position:50% 40%"></div>
+  <div class="text panel" style="justify-content:center">
+    <h1>Thank you.</h1>
+    <div class="rule"></div>
+    <p>Thank you for trusting me to be your guide, and for letting me into your family for a while.</p>
+    <p>David, thank you for every story. The Old Man is on the record now, in his own voice, for Alison, for Tim, for Jill, and for whoever comes next.</p>
+    <p class="lead" style="margin-top:30px">Neil</p>
+    <div class="foot">Stories that matter. With people you love.</div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="text">
+    <div class="kicker">Pass it on</div>
+    <h1>Somebody came to mind. <em>Didn't they?</em></h1>
+    <div class="rule"></div>
+    <p>A friend whose dad has never really been asked. A colleague whose mum drops enormous stories into conversation and moves straight on.</p>
+    <p>You can hand them what you've just had. Send them to <a href="https://meandmyoldman.co.uk/refer-norman">meandmyoldman.co.uk/refer-norman</a>.</p>
+    <p>And there's a <b>Life Story Snapshot</b> waiting for you: a 1.5-hour session with a trained listener, recorded and edited, worth £750. Use it for a new chapter with David in a year's time, or give it to one of you so you can start your own.</p>
+  </div>
+  <div class="photo" style="width:36%;background-image:url(img/p12.jpg);background-position:50% 40%"></div>
+</section>
+
+<section class="page panel quote">
+  <blockquote>"Our parents are our link to the past, and our children are our bridge to the future."</blockquote>
+  <cite>Man's Search for Meaning · Viktor E. Frankl, 1946</cite>
+  <div class="foot" style="position:absolute;bottom:56px;left:0;right:0;margin:0">meandmyoldman.co.uk</div>
+</section>
+
+</body>
+</html>

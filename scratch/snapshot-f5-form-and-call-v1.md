@@ -79,6 +79,8 @@ It starts light (ticks and names), goes deep in the middle, and ends looking for
 
 **11. What's a phrase you've said a lot this year?** The thing your family would do an impression of. (short answer)
 
+**11b. What song captures your year? Or which artist have you been playing on repeat?** The one that goes in the background of your Snapshot. Add the song name and artist if you can. (short answer, optional)
+
 **12. Looking twelve months ahead, what are you hoping for?** (paragraph)
 
 **13. When you listen back in ten years, what do you hope you'll hear?** (paragraph)
@@ -92,7 +94,7 @@ It starts light (ticks and names), goes deep in the middle, and ends looking for
 - Ask me first
 - No thanks
 
-15 questions, 6 optional. About 25 to 30 minutes.
+16 questions, 7 optional. About 25 to 30 minutes.
 
 ---
 

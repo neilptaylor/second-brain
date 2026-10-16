@@ -43,6 +43,8 @@ function buildSnapshotForm() {
   f.addPageBreakItem().setTitle('Right now, and next');
   f.addTextItem().setTitle("What's a phrase you've said a lot this year?")
     .setHelpText('The thing your family would do an impression of.').setRequired(true);
+  f.addTextItem().setTitle('What song captures your year? Or which artist have you been playing on repeat?')
+    .setHelpText('The one that goes in the background of your Snapshot. Song name and artist if you can.');
   f.addParagraphTextItem().setTitle('Looking twelve months ahead, what are you hoping for?').setRequired(true);
   f.addParagraphTextItem().setTitle('When you listen back in ten years, what do you hope you\'ll hear?').setRequired(true);
   f.addTextItem().setTitle('Anything off limits?');
