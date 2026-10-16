@@ -5,6 +5,7 @@ description: "Write LinkedIn posts in Neil Taylor's voice for Me & My Old Man. U
 
 # LinkedIn Post Skill — Neil Taylor / Me & My Old Man
 ## Version 4.0 — October 2026 (asset is part of the post, with a delivery gate)
+<!-- v4.2 — 2026-10-15: hook and carousel slide 1 must name the real subject in plain words, never a bare "this" or "it" ("Why do you even want this?" meant nothing to a stranger). Count list items before stating a number. See "Shareability test". -->
 <!-- v4.1 — 2026-10-12: example proof figure updated to 370+ hours across 37 families. -->
 <!-- v4.0 — 2026-10-07: asked for three posts, I delivered the copy and Notion rows but only a one-line text note under "Image", no asset built, and Neil had to ask whether any existed. The skill already said to build the visual, but it sat at the bottom after the Notion step, so it was skipped under momentum. Fix: the asset is now built BEFORE the Notion row is created, and a Delivery gate (see "The visual") must pass before replying: open the file on disk, look at it, put its filename on the row. Never reply to Neil until the check passes. No Paper needed: carousels use mmom-carousel's HTML-to-PDF route, hand-lettered cards are HTML rendered with headless Chrome, photos are cropped 1080x1350 from the Image Bank. -->
 ## Version 3.9 — September 2026 (paste-safe post copy in Notion)
@@ -498,6 +499,8 @@ Every post must work for **THREE tiers simultaneously:**
 3. **Drop-Ins (strangers)** — Total strangers who landed on the post by algorithmic accident. Zero context, zero trust, no idea if you're worth listening to. They need the hook to work in three seconds, the scene to be crystal clear, and no assumptions about who you are.
 
 **The practical test:** Does this post make sense to someone who has never heard of Neil before, in the first three seconds? Can a complete stranger read the first line and understand what's happening without needing to know your origin story, your dad's death, or your business?
+
+**Cover test:** the first line of the post and slide 1 of any carousel must name the actual subject in plain words. No bare "this", "it" or "that" standing in for the topic. If a drop-in can't say what the post is about from the first line alone, rewrite it.
 
 If the answer is no, rewrite. The post is too inside. The die-hards will get it regardless — they always do. But you've lost the drop-ins, and that's where the exponential growth lives.
 

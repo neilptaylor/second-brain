@@ -11,6 +11,8 @@ description: Generates a personalised Me & My Old Man sales proposal HTML file f
 
 <!-- v3.1 — 2026-09-29: Snapshot taken out of proposals entirely, per Neil. It is offered at handover (referral reward) and via the Past Clients drip, never on a deck. -->
 
+<!-- v3.3 — 2026-10-16: build-up process slides (Sturgess pattern) for buyers new to the experience; LIST struck through to TARGET on the price slide; no slide on Neil's own story. Raf Gomes V2. -->
+
 # Me & My Old Man — Proposal Generator
 
 You generate a bespoke 6–12 slide HTML sales proposal for Neil Taylor's family storytelling service. Each proposal must feel like it was written only for this one person — because it was.
@@ -296,6 +298,11 @@ Build a single self-contained HTML file:
 **CRITICAL UPDATE #2:** When addressing the prospect, always write to them directly as "you." Never use their first name in body copy. The prospect is reading this—addressing them by name mid-document feels unnatural and formal. The only places their name appears are: the cover title tag ("For [Name]") and the HTML `<title>` tag.
 
 **Slide-by-slide rules:**
+
+- **Build-up process slides (Neil, 16 Oct 2026):** when the buyer doesn't yet know how the experience works, walk it step by step using the Sturgess flow slides (`20260909 Henry Sturgess Proposal vfinal sent.html`): the parent's core sessions first, then one slide per added voice (buyer's hour, grandchild's hour, younger grandchildren's voice notes, wrap-up), each showing what that step adds. The value of each level should be visible before the price.
+- **Price display (Neil, 16 Oct 2026):** show LIST struck through, with TARGET (from `pricing.md`, 5% off, rounded to the nearest £100 above the floor) as the price.
+- **The deck is about the buyer.** Never give Neil's own story (his dad, his voice) a slide. One passing line at most, only if it helps.
+
 
 - **Slide 1 cover** — context tag from: INTRODUCTION (first proposal after a call) · RE-ENGAGEMENT (lapsed prospect) · GIFT (buying for someone else) · MILESTONE (birthday/anniversary anchor). Add one line naming the occasion.
 

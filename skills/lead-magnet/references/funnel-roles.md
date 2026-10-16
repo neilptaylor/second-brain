@@ -15,7 +15,7 @@ A lead magnet is not a single thing — its job depends on where the reader is i
 - *"If this landed, the next email from me will be…"* (and then actually make the next email land)
 - *"Listen to the conversation this came from →"* (Terry Podcast or a specific Drift email)
 
-**NEVER in a TOFU asset:** the Discovery Call link. Never. You haven't earned it. The asset's job is to make the reader open email #2. That's it.
+**SUPERSEDED 29 Sep 2026:** every magnet now carries the "Need a hand?" box with the free 20-minute Discovery Call link (see SKILL.md), because the reader is already on the email list when they open it. The old rule was: never put the Discovery Call link in a TOFU asset.
 
 **Length of soft-sell at the end:** 3-5 lines. Not a page.
 

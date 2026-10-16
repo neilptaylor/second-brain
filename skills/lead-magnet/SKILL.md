@@ -2,6 +2,7 @@
 name: lead-magnet
 description: "Build lead magnets for Me & My Old Man — downloadable question lists, prompt sheets, checklists, and scripts designed to turn cold traffic into email subscribers and nurture existing lists. Use this skill whenever the user asks to create, plan, draft, or design a lead magnet, opt-in, freebie, free guide, free PDF, downloadable, infographic, tripwire, content upgrade, or list-builder. Also trigger when Neil mentions 'questions to ask your parents', 'conversation starters', 'prompt sheet', 'checklist', 'starter guide', 'how to bring it up script', 'definitive questions list', or anything designed to drive an email signup or discovery call. Trigger on phrases like 'let's build a lead magnet', 'I need an opt-in', 'make a freebie', 'design a PDF for LinkedIn', or 'create a downloadable' even when the type isn't specified."
 ---
+<!-- v1.3, 2026-09-29: every magnet carries a "Need a hand?" box with the free 20-min Discovery Call link, mid-way and at the end. Neil: readers are already on the email list, so the next step is a call. Supersedes the old "no Discovery Call link in a TOFU asset" rule. -->
 <!-- v1.2, 2026-09-23: added references/google-doc-design-template.md — locked HTML/CSS method for shipping the Google Doc format pre-styled to match the Conversation Playbook design (Marcellus/terracotta headings, Merriweather body, teal script accents), uploaded via Drive create_file HTML-to-Doc conversion. Supersedes the "plain text, no design" instruction in Step 2A for this format. -->
 
 # Lead Magnet Skill — Me & My Old Man
@@ -115,6 +116,14 @@ For **Lead Magnet #2 (How to Bring It Up — Your Why Script)**, the strategy is
 - **Closing reflection (75-100 words)** — not a sales pitch. Emotional landing. E.g., *"These questions are invitations, not interrogations. The goal isn't to get through them all. The goal is connection. One real conversation beats 100 surface chats. Pick one. Ask it. Listen. See what opens up."*
 - **The CTA** — one short paragraph. Soft but clear. E.g., *"If you want help turning these conversations into something your whole family can revisit and treasure, we do that. Book a Discovery Call. 30 minutes. No obligation."*
 - **About Me & My Old Man (75-100 words)** — boilerplate in first person. Short bio + what the service is.
+
+### The "Need a hand?" box (required in every magnet)
+
+Every magnet carries this shaded box twice: once mid-way, just before the deepest section (for the questions list, before "The door to the room you've never walked into"), and once at the end, before the About section. The Conversation Playbook already does this.
+
+Text, verbatim: "Need a hand? If you feel like you need help with any of this, I'm here. → Book a free 20-min Discovery Call" (link to the 20-minute Calendly).
+
+Why the call link is fine here: the reader has already given their email and is on the list, so the next step is a call. Neil's words, 29 Sep 2026: "they're on my email list, next step is book a call!!" Build it as a one-cell table in the Google Doc HTML (see `references/google-doc-design-template.md`).
 
 ### B. Three Formats of the Deliverable
 

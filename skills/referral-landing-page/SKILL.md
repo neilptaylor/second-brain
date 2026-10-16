@@ -5,6 +5,7 @@ description: Builds or updates a family's forwardable /refer-[family] referral l
 
 <!-- v1.0 — 2026-09-25: built from Neil's existing Marsh/Pinkham/Normans/Mcmullan referral pages, which were hand-built one at a time. This skill systemises that same process. -->
 <!-- v1.1 — 2026-10-05: renamed from referral-page. Added the copy-deck-only path and the video vs text testimonial split, from the Beard build. -->
+<!-- v1.2 — 2026-10-05: every quote must speak warmly about the experience; video orientation check. From the Griffiths build. -->
 
 ## What this builds
 
@@ -26,6 +27,8 @@ Read the brief and hosting doc fresh each run — they are the source of truth, 
 When Neil already has consent and the clips cut (usually a Riverside clip brief plus a Drive folder of testimonial videos), skip Steps 1 and 2 and write the copy deck straight from those. Reference build: `scratch/refer-beard-lovable-copy-deck.md` (Beard, 5 Oct 2026).
 
 - **Video carries the testimonial. Text is for short, sharp hooks only.** Never put a text quote on the page that repeats what someone says in one of the videos. Text slots (hero pull-quote, section 3 quotes, why-now quote) go to lines that are NOT clipped: an aside, a one-line exchange, the parent on their own parent.
+- **Every quote and clip must speak positively about the experience.** Read each line as a stranger would: does it make them want this? A funny or self-deprecating line that could read as criticism of the family or the process ("you bothered to take an interest in my poor father more than I have") is out, however true.
+- Check each video's orientation with ffprobe and list it in the assets table. Families often mix portrait phone clips and landscape Riverside clips; tell Lovable to frame each to its own shape.
 - Map every video file to the clip it contains. If the filenames do not say which is which, state the inferred mapping in the deck and ask Neil to confirm. Never guess silently.
 - Slots: strongest child video in the hero, parent video in section 2 (after "What it is"), remaining videos in section 3 grouped by person.
 - The "What it is" detail clause uses three concrete story moments from the clip brief, never the held-back or private ones. List the held-back items at the foot of the deck so Lovable never picks them up.

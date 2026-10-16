@@ -54,3 +54,16 @@ Confirmed working method, locked in 23 Sep 2026 against "How Do I Actually Bring
 ```
 
 Copy the full template out of `scratch/20260923_how-to-tell-your-parents_v1.md`'s companion HTML build (see the "How Do I Actually Bring This Up?" doc, 23 Sep 2026) for a complete worked example with all section types.
+
+
+## The "Need a hand?" box
+
+One-cell table, cream fill, teal left border. Use it twice per magnet (mid-way and at the end).
+
+```html
+<table style="width:100%; border-collapse:collapse; margin-top:16pt; margin-bottom:8pt;"><tr><td style="background-color:#F6EFE4; border-left:4px solid #1F7A85; padding:14pt;">
+<p style="font-family:'Marcellus', serif; color:#A85639; font-weight:normal; font-size:16pt; margin:0 0 6pt 0;">Need a hand?</p>
+<p style="font-family:'Merriweather', serif; font-size:11pt; line-height:1.5; color:#2B2420; margin:0 0 6pt 0;">If you feel like you need help with any of this, I'm here.</p>
+<p style="font-family:'Merriweather', serif; font-size:11pt; line-height:1.5; margin:0;">&rarr; <a href="https://calendly.com/meandmyoldman/20min-family-story-discovery-session" style="color:#1F7A85;"><b>Book a free 20-min Discovery Call</b></a></p>
+</td></tr></table>
+```

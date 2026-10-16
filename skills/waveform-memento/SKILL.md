@@ -18,6 +18,8 @@ description: >
 <!-- v1.5 — 2026-09-28: Third review pass, same Josephides build — Neil reversed v1.3's whole "withhold the title" premise. He wants the title card back to the STANDARD front-loaded layout (title text + subtitle + date, upfront, even when the closing line is the punchline) — the "spoiler" framing in v1.3 was this skill's own assumption, not something he'd asked for. Separately, the mid-video "Poor Lizards" moment should be a CAPTION-styled callback (same size/font as the running captions, sentence case, "Poor lizards.") on a blank beat, not a second big title screen — his exact words: "I wanted it on its own as a caption. Not as a title!!". And the end card reverts fully to the original (tagline + website); the date/website swap from v1.4 is undone — date stays on the title card, website stays on the end card. | RULE: Rewrote the "Title reveal" section as "Title card and the punchline moment" — default is now the plain, standard title card (no withholding), and a punchline callback (when wanted) is explicitly a `.caption-line`-styled element, never `.title-main`. Cross-cutting: when a stylistic pattern gets added to a skill off a single build's outcome, treat it as provisional until confirmed on a second pass — Neil approving the render once is not the same as him confirming he wants that pattern as the new default going forward. -->
 <!-- v1.6 — 2026-09-28: Fourth review pass, same Josephides build. Even after v1.5's caption-styled callback and the v1.4 crossfade fix, Neil still heard "that new track that comes in" — the swell into the end card was itself the problem, not just the loop-restart artifact. He asked to cut the caption callback entirely and have the end card "coming on in silence." | RULE: Cut the reveal-caption clip and the music-bed swell for this build; bed now fades to TRUE silence together with the narration by the point the story ends, and the end card runs with no audio under it at all. Added to "Music bed": if Neil flags "another track" a SECOND time after the crossfade-loop fix, stop re-tuning the swell/crossfade parameters and switch to a flat fade-to-silence bed instead — a swell into the end card is the default, but it is not worth defending after two rounds of the same complaint. Cross-cutting: when the same class of complaint ("something audibly changes near the end") survives a targeted technical fix, consider that the FEATURE itself (not just its implementation) may be what's unwanted, rather than continuing to patch the implementation. -->
 <!-- v1.7 — 2026-10-02: Beard "Six Brothers Go & One Left Behind" build. Neil, who normally edits the music fades himself, handed over the fades as a brief for the first time and asked for the brief plus this build to be kept as the worked example. Added the "Brief-driven music arc" section, the arc mixer at references/music-arc-mix.py (numpy, builds the whole gain envelope in code, so no nested ffmpeg `if()` and no concat segments), and the title card now carries a "Recorded in [Month Year]" meta line again (confirm the date with Neil, never invent it). | RULE: when Neil supplies a music brief like the one below, follow it literally and use the arc mixer; the default music bed section applies only when he gives no brief. -->
+<!-- v1.8 — 2026-10-05: Norman "Bossing Olympic Boxers" build (audio arrived with its own music). Neil: letting the music tail fade out under the end card "cuts them off as though another story is about to happen". RULE: bookend the sting (see "Clear ending"). -->
+<!-- v1.9 — 2026-10-05: Beard "Hunting for Dinner" build. Neil: once the main file is under 10MB, a second WhatsApp version is unnecessary. | RULE: Delivery section now sends one file unless the render is over 10MB. -->
 
 ## Speech onset, noise floor, and colour gamma — check these even when the colour code looks right
 
@@ -200,6 +202,15 @@ that's a **caption-styled callback, not a second title card**:
   (in its meta line), website lives on the end card, as in every other
   waveform-memento.
 
+## Clear ending: bookend the opening sting (applies to every build, including pre-mixed audio)
+
+A bed that just fades out after the last word reads as a musing, as if another story is about to start. Every memento must end on the same sting it opens with:
+1. Fade any music under the voice to silence within about 1s of the last word (`afade=t=out:st=<last word + 0.1>:d=1.2`).
+2. Hold a short breath of silence, then play the opening sting again from its start, with a 0.3s fade in and a fade-out across its last second.
+3. The end card comes on as the bed drops and stays up over the sting. Fade the card out about 2s before the end.
+4. Pad about 2s of true silence after the sting. Total length = sting end + 2s.
+When the audio arrives already mixed (music baked in, "no music needed"), take the intro (file start to just before the first word) as the sting and trim the end of the file at the last word plus the fade, then append the intro copy. Build with `atrim`/`afade`/`concat` (single-level filters only). Re-derive END_START, TOTAL and the end-card duration from the new length.
+
 ## Music bed (default, not on-request)
 
 Every waveform-memento carries a very light instrumental bed under the narration unless Neil says otherwise — a bare waveform reads cold against this content. Add it as a standard build step, before checks:
@@ -338,7 +349,8 @@ every render.
 
 ## Delivery
 
-Same as `video-memento`: compress to a WhatsApp-shareable file
-(`-crf 26 -maxrate 620k`, lands ~13-14MB) and send that by default,
-alongside the full-quality render. See `video-memento`'s SKILL.md
-"Delivery" section for the exact ffmpeg command — identical here.
+Deliver ONE file: the full-quality render, remuxed. Check its size. If it is under
+10MB, do not make a separate WhatsApp version. Only if the render is over 10MB,
+compress a WhatsApp-shareable copy as in `video-memento`'s SKILL.md "Delivery"
+section (`-crf 26 -maxrate 620k`) and send that alongside it. Waveform mementos of
+a minute or two usually land at 6-8MB, so they rarely need one.

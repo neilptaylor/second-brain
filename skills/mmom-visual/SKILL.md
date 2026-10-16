@@ -5,6 +5,9 @@ description: Builds a single branded visual (quote card, stat/myth callout, test
 
 # MMOM — Single Visual Builder (Paper MCP)
 
+<!-- v1.2: 2026-10-15. Neil said the hand-lettered card (MMOM_LI_how-big-a-shag-is-it_v1.png) did not look like real handwriting. Cause: it was Caveat (Biro Script was not loaded in the HTML route), set in clean uniform CSS on a flat vignette, so it read as a font. Fix: hand-lettered notes now render through scripts/handwritten.py (Biro Script reduced, per-letter jitter, stroke wobble, ink bleed, paper grain). Paper is not used for these. -->
+<!-- v1.1: a name at the end of Neil's brief on a hand-lettered note is the signature, render it as the attribution line -->
+
 You build one branded image — not a multi-slide carousel — using the `paper` MCP tools, and export it ready to post.
 
 **Companion skill:** `mmom-carousel` is for multi-slide LinkedIn document posts. Use this skill only for a single standalone image.
@@ -37,6 +40,10 @@ Also confirm the **format**: LinkedIn single image is best at 1080×1350 (4:5) o
 
 ---
 
+**Signature rule:** if the brief ends with a name (e.g. "Neil"), that is the signature. On a hand-lettered note, render it as a "— Neil" attribution line in `var(--color-ink-soft)`. Never leave it off and never ask whether to add it.
+
+---
+
 ## Step 2 — Set up the file
 
 1. `get_basic_info` on the open file — reuse it if blank, otherwise `create_file` named `"[YYYY-MM-DD] Visual — [topic]"` and `open_file`.
@@ -45,6 +52,15 @@ Also confirm the **format**: LinkedIn single image is best at 1080×1350 (4:5) o
 ---
 
 ## Step 3 — Build it
+
+**Hand-lettered note: do not use Paper. Run the script.** It is the only route that reads as real handwriting rather than a font (a plain webfont in CSS always looks typed, and Paper is unreachable from Claude Code anyway).
+
+```bash
+python3 skills/mmom-visual/scripts/handwritten.py "<out dir>/MMOM_LI_<post-slug>_v1.png" "Line one." "Line two." "Line three." --sign Neil
+```
+
+One quoted argument per line of handwriting, `--sign Neil` for the signature (always, per the signature rule). Change `--seed` for a different hand. Open the PNG and look at it before handing back: the ink should vary in weight, letters should sit at slightly different angles and heights, lines should drift, and the paper should have grain and a lit falloff, not a flat fill. If it looks typed, something broke (check Biro Script reduced is in ~/Library/Fonts). Then skip to Step 4's save location. The Paper steps below are for quote cards and stat cards only.
+
 
 1. `create_artboard` at the confirmed size, named `"Visual — [topic]"`.
 2. `write_html` incrementally (`mode: "insert-children"`) — background treatment first, then the main text/quote, then any hand-lettered annotation layer, then a small MMOM mark. Build in pieces so progress is visible.
