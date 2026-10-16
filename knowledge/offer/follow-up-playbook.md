@@ -8,7 +8,7 @@ Sources: Pitch OS and Sales OS (Drive, `Sales OS/`), the Hormozi YouTube corpus,
 
 1. **One ask per message, and make it small.** A time, a yes/no, a date. Never "let me know your thoughts".
 2. **Give two times, not a link.** "Monday 8pm or Tuesday 8.30pm?" gets an answer, where "when suits?" lets the question drift. Send the Calendly link only as a backup.
-3. **Talk price on a call, never in a message.** Numbers sent by message get answered with silence. Messages move people towards a call, and the numbers get talked through on it.
+3. **Exact price on a call. When someone asks "how much" directly, give the range in the message, never a dodge.** Dodging a direct question costs openness, and a lead who has the range and still books is pre-qualified. The range is per parent, LIST, read from `pricing.md` at run time: it starts at the Hero Story figure (parent as the hero) and tops out at the largest Full Chorus figure for one parent. Add that most land in the middle only if the Airtable record backs it. Then point to the call for the figure that fits their family. Set 14 Oct 2026 (Dele). Do not volunteer a range in an unprompted chase, only answer one that was asked.
 4. **Solve the real block, not the one they name.** "Need to speak to my brother" means the brother has not heard it from Neil. "Can't afford it" means the smallest option has not been shown. Go straight at the real thing.
 5. **Every message must be fine to send even if it never gets a reply.** No guilt, no "just checking in", no mention of how long it has been.
 
@@ -33,7 +33,7 @@ Neil's problem is not wording, it is deciding how hard to push. This takes the d
 **Shortcuts that beat chasing.**
 - **Send the invite, not the question.** Put 20 or 30 minutes in their diary with one line ("move it if it's wrong"). Silence then means no, and a moved invite means yes. This removes the "when suits?" reply they never send.
 - **Diary link plus the fork** for the elusive (phone tennis, can't pin a time): "I can't keep chasing you, so here's my diary. If you want to take it forward, book a slot." End on the link. Never add "just say and I'll park it". If they don't book, they have parked it, and that line makes Neil sound in control when he isn't. Silence is the answer: move the row to Lapsed after about two weeks without a booking, with no further message.
-- **Price goes on a call.** If a deck went out with numbers and the call never covered them, own it ("I should have talked you through those") and offer a call to go through the options.
+- **Exact price goes on a call, the range goes in the message if they ask.** If a deck went out with numbers and the call never covered them, offer a call to go through the options, and own the deck only if the lead raised it. An "I should have talked you through it" line casts a busy lead as waiting on Neil (Brittany Gregory, 15 Oct 2026).
 
 **Target price is a landing zone, not a concession.** TARGET (5% off LIST) is where deals are designed to land. Offer it in return for a decision ("if we book the first session by [date]"), never to break a silence. The floor (7.5% off) is never offered first. Read `pricing.md` before any figure is said, and say it on the call.
 
