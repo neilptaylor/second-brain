@@ -1,5 +1,5 @@
 ---
-name: audiobook-artwork
+name: album-artwork
 description: >
   End to end: import a family's chapter MP3s into Apple Music (desktop),
   set metadata and per-chapter artwork automatically, build a designed
@@ -7,7 +7,7 @@ description: >
   client instructions doc into the family's own Stories Drive folder.
   Use whenever Neil says "build the audio documentary for [family]",
   "import [family]'s chapters", "add artwork to [family]'s audio
-  documentary", "deliver [family]'s chapters", or references the "Adding
+  documentary", "album artwork for [family]", "/album-artwork", "deliver [family]'s chapters", or references the "Adding
   Artwork to Final Audiobook Delivery" doc. Requires the chapter MP3s and
   matching photos to already be prepared and named per the ChNN
   convention below — this skill does not crop or select photos. Never
@@ -17,6 +17,7 @@ description: >
 <!-- v1.0 — 2026-09-23: Built from "Adding Artwork to Final Audiobook Delivery" (Drive doc), replacing the manual Apple Music GUI workflow (Get Info -> Artwork tab, per track) with an AppleScript-driven import. -->
 <!-- v1.1 — 2026-09-23: Added a designed cover step (make_cover.py). Apple Music shows Chapter 1's artwork as the album cover, so a bare uncropped chapter photo there looks unfinished — build a proper cover (title + subtitle in Marcellus over a scrim, "A Me & My Old Man production" credit bottom right in a backing plate) from a chosen chapter photo and set it as Ch1's artwork instead. Confirmed on the Griffiths build: title must sit tight to the top of the frame (clear of any head lower in the photo) and the credit needs a solid dark backing plate, not just a text shadow, to stand out on busy photo texture. Neil calls these "audio documentaries", never "audiobooks" — keep that word out of anything client-facing this skill produces or touches. -->
 <!-- v1.2 — 2026-09-23: Fixed a real bug found on the Griffiths build — Music's AppleScript "set name of track" does not reliably flush the title into the file's ID3 tag before the command returns. Artist/album/genre/track-number/artwork all wrote correctly every time, but 9 of the 10 chapters had NO title tag at all on disk (would show blank on some phones/CarPlay). import_track.applescript now returns the track's on-disk path, and build_audiobook.py writes TIT2 directly with mutagen as a guaranteed backstop after every track. Needs `mutagen` (pip install mutagen — already present on this Mac). -->
+<!-- v1.4 — 2026-10-15: Renamed from audiobook-artwork to album-artwork (invoked as /album-artwork). Workflow unchanged. -->
 <!-- v1.3 — 2026-09-23: Added the delivery step, approved on the Griffiths build. No export command needed and no zip: Music writes tags/artwork straight into the on-disk MP3 (get its path from each track's `location` property), so just copy those files directly into the family's own "04 Stories" Drive folder, replacing the untagged originals. Confirmed working through the Google Drive desktop mount at ~/Library/CloudStorage/GoogleDrive-.../Shared drives/Families/[Family]/04 Stories. Also added the generic client-facing instructions doc (references/family-instructions-template.html) — built as HTML per CLAUDE.md's Google Docs rule, uploaded via the first-party Drive connector's create_file (contentMimeType text/html) into the same Stories folder, sign-off included by default. Calls it an "audio documentary", never "audiobook" throughout. -->
 
 # Audiobook Artwork — Automated Apple Music Import & Delivery
@@ -62,7 +63,7 @@ Security > Automation** and enable access to Music for the relevant app.
    touch Music.app:
 
    ```bash
-   python3 skills/audiobook-artwork/scripts/build_audiobook.py \
+   python3 skills/album-artwork/scripts/build_audiobook.py \
      --folder "/path/to/Family Folder/Audiobook" \
      --client "Judy Dickson" \
      --dry-run
@@ -74,7 +75,7 @@ Security > Automation** and enable access to Music for the relevant app.
 4. Run for real (same command, without `--dry-run`):
 
    ```bash
-   python3 skills/audiobook-artwork/scripts/build_audiobook.py \
+   python3 skills/album-artwork/scripts/build_audiobook.py \
      --folder "/path/to/Family Folder/Audiobook" \
      --client "Judy Dickson" \
      --album "Judy Dickson's Life Story"
@@ -93,7 +94,7 @@ Security > Automation** and enable access to Music for the relevant app.
    b. Build it:
 
       ```bash
-      python3 skills/audiobook-artwork/scripts/make_cover.py \
+      python3 skills/album-artwork/scripts/make_cover.py \
         --image "/path/to/Chosen chapter photo.jpg" \
         --title "Client Name" \
         --subtitle "Album subtitle" \
