@@ -700,6 +700,20 @@ No "First comment" block, no "Image selection" writeup, no source/hook-strategy/
 
 **The asset comes first, not last.** Build the visual (next section) BEFORE creating the Notion row, so the row's Image bullet can hold a real filename. A row whose Image bullet is a description ("needs a card") is an unfinished row.
 
+**Definition of done: Neil opens the row each morning and finds the post AND the asset, ready to post.** A row is NOT finished, and you must not report it as finished, until all of these are true:
+1. The post text is in the code block (see above).
+2. The Notes property contains a `Visual:` line. Empty Notes means the row is incomplete.
+3. The asset is attached to the row: a chosen Image Bank photo, a built card, or a carousel PDF, uploaded to the page body (or linked by Drive URL directly under the code block) with the filename. A brief alone does not count unless the fallback below applies.
+4. If you cannot build or pick the asset, the row's Status stays `Idea`, Notes starts with `NO ASSET YET:` plus the exact blocker, and you tell Neil in your reply which rows are blocked and why. Never leave Notes blank and say nothing.
+
+**When a post is logged without its asset, or Neil asks for a batch:** query the Content database for rows dated today and the next 10 days, and for each one with empty Notes or no asset, run the visual step before anything else. Do this as the first step of any LinkedIn session, so no post inside the next week ever sits without its image.
+
+**Building assets without Paper (works from any session).** Render cards and carousels in headless Chromium: embed Marcellus, Cormorant Garamond and Inter as base64 `@font-face` (a Google Fonts `<link>` silently falls back to Times in the sandbox), 1080x1350 per slide, `page.pdf` for carousels, screenshot for cards, 1080x1920 for reel covers. Reference build script: `scratch/linkedin-assets-2026-10/build.js`. Check page count and look at one slide before reporting done.
+
+**Getting the file to Neil. Every asset must end up in two places:** the Drive assets folder (`03 Linkedin Assets 2026`, folder id `1knMSHsrKPhThLaLecy7OQOROvkoq-yZc`) AND the repo under `scratch/linkedin-assets-<month>/`, and the row must carry the DIRECT Drive file link twice: in an `## Asset` section above the post code block and in the Notes `Visual:` line. Photos from the Image Bank are copied into the assets folder with the Drive `copy_file` tool (named `MMOM_LI_<slug>_photo_v1.jpg`) so the folder holds everything. Do not use Zapier (Neil has retired it). Do not hand-transcribe base64 into `create_file`. If the session has no way to write a binary file to Drive, commit and push the file, put the repo link on the row, set Notes to start `NOT IN DRIVE YET:` and tell Neil in one line. Never leave a row with no asset link.
+
+**Pick the photo, don't defer it.** For Drift and Transformation, open the Image Bank index, choose one image, and write its filename and a one-line caption in Notes. Only write "needs a photo" if the index has nothing that fits, and say what is missing.
+
 ---
 
 ## The visual — every post gets one, and the skill BUILDS it
