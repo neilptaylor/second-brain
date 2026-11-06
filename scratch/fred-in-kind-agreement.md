@@ -20,7 +20,15 @@ And we accept now that it won't be perfectly even. One of us will probably put i
 
 ## What Neil would love to have
 
-Fred's help with storyboard, script and shooting on each of these. Timing: as soon as is workable.
+I can handle the words. Where I really need Fred is the craft: the storyboard, the shot list, and the edit. Getting the music right, and getting the edit and the production to a standard I can't reach on my own.
+
+It doesn't need high-tech camera work. I've already got:
+
+- an SLR and an iPhone
+- some lighting
+- a lavalier (clip-on) mic
+
+So it's less a shoot crew, more Fred's eye and Fred's edit. Timing: as soon as is workable.
 
 | Film | Length | Where it lives | What it does | Fred's notes |
 |---|---|---|---|---|
@@ -33,18 +41,18 @@ Fred's help with storyboard, script and shooting on each of these. Timing: as so
 
 ## What Neil would love to give
 
-A full audio documentary of Fred's mum and dad's life stories.
+A full audio documentary of a parent's life story.
 
-| Part | Hours |
-|---|---|
-| Interview with Fred about his mum | 1 |
-| Interviews with his mum | 6 |
-| Interview with Fred about his dad | 1 |
-| Interviews with his dad | 6 |
-| Wrap-up call with them both | 1 |
-| **Total interview time** | **15** |
+Being honest, both parents is a big chunk. It's 15 hours of interviews before any editing starts. So the starting point might be one side of the family, and we see where it goes from there.
+
+| Option | What's involved | Interview hours |
+|---|---|---|
+| **One parent** | 1 hour with Fred about them, 6 hours with them, 1 wrap-up call | **8** |
+| **Both parents** | 1 hour with Fred on each, 6 hours with each, 1 wrap-up call | **15** |
 
 That's interview time only. Research, editing, music and production sit on top.
+
+The right level probably depends on how much the films end up taking from Fred. Something to talk through today, not settle on paper.
 
 **Timing:** from Q1 2027.
 
@@ -74,7 +82,8 @@ That's interview time only. Research, editing, music and production sit on top.
 |---|---|
 | Which film goes first? | |
 | Shoot dates or a rough window? | |
-| Do both parents want to do it? Who asks them? | |
+| One parent or both? Which side first? | |
+| Does that parent want to do it? Who asks them? | |
 | Who owns and can use the finished films and the audio documentary? | |
 | How do we check in, and how often? | |
 | What does "stepping back" look like if life gets in the way? | |
